@@ -1,0 +1,19 @@
+Scenario,Scope,Series,Year,Value,Unit
+baseline_noce,Global,Cement,2019,104.60506988172908,billion USD_2010/yr
+baseline_noce,Global,Cement,2024,178.88634915972986,billion USD_2010/yr
+baseline_noce,Global,Cement,2030,331.0938925343282,billion USD_2010/yr
+baseline_noce,Global,Cement,2035,422.9326031034711,billion USD_2010/yr
+baseline_noce,Global,Cement,2040,584.1146752148795,billion USD_2010/yr
+baseline_noce,Global,Cement,2050,777.1423333003592,billion USD_2010/yr
+baseline_noce,Global,Iron and steel,2019,4959.455128965229,billion USD_2010/yr
+baseline_noce,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr
+baseline_noce,Global,Iron and steel,2030,295.9827557650916,billion USD_2010/yr
+baseline_noce,Global,Iron and steel,2035,319.7627455424265,billion USD_2010/yr
+baseline_noce,Global,Iron and steel,2040,511.2241972481363,billion USD_2010/yr
+baseline_noce,Global,Iron and steel,2050,709.3272214321663,billion USD_2010/yr
+baseline_noce,Global,Aluminium,2019,25.017308460003065,billion USD_2010/yr
+baseline_noce,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr
+baseline_noce,Global,Aluminium,2030,188.40886133137334,billion USD_2010/yr
+baseline_noce,Global,Aluminium,2035,161.63235160096602,billion USD_2010/yr
+baseline_noce,Global,Aluminium,2040,229.56612533538592,billion USD_2010/yr
+baseline_noce,Global,Aluminium,2050,184.47509579221477,billion USD_2010/yr

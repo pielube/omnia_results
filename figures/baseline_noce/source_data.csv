@@ -1,0 +1,1093 @@
+Scenario,Scope,Series,Year,Value,Unit,Figure
+baseline_noce,Global,Cement,2019,4201.409299940433,Mt/yr,production_cement_global
+baseline_noce,Global,Cement,2024,3949.47131787373,Mt/yr,production_cement_global
+baseline_noce,Global,Cement,2030,3754.656802568388,Mt/yr,production_cement_global
+baseline_noce,Global,Cement,2035,3663.033167717458,Mt/yr,production_cement_global
+baseline_noce,Global,Cement,2040,3660.4167449910474,Mt/yr,production_cement_global
+baseline_noce,Global,Cement,2050,3660.135942423824,Mt/yr,production_cement_global
+baseline_noce,Global,Clinker,2019,3030.4398866528886,Mt/yr,production_cement_global
+baseline_noce,Global,Clinker,2024,2864.3071106476964,Mt/yr,production_cement_global
+baseline_noce,Global,Clinker,2030,2726.8563868435053,Mt/yr,production_cement_global
+baseline_noce,Global,Clinker,2035,2659.5047763533066,Mt/yr,production_cement_global
+baseline_noce,Global,Clinker,2040,2636.3747900615363,Mt/yr,production_cement_global
+baseline_noce,Global,Clinker,2050,2599.115827280662,Mt/yr,production_cement_global
+baseline_noce,Global,Total,2019,1754.711551232852,Mt/yr,production_steel_global
+baseline_noce,Global,Total,2024,1725.0794351254624,Mt/yr,production_steel_global
+baseline_noce,Global,Total,2030,,Mt/yr,production_steel_global
+baseline_noce,Global,Total,2035,1595.6387432321321,Mt/yr,production_steel_global
+baseline_noce,Global,Total,2040,1683.4605942344915,Mt/yr,production_steel_global
+baseline_noce,Global,Total,2050,,Mt/yr,production_steel_global
+baseline_noce,Global,Primary,2019,1409.4021422034127,Mt/yr,production_steel_global
+baseline_noce,Global,Primary,2024,1300.4264955551444,Mt/yr,production_steel_global
+baseline_noce,Global,Primary,2030,,Mt/yr,production_steel_global
+baseline_noce,Global,Primary,2035,1100.3399785320971,Mt/yr,production_steel_global
+baseline_noce,Global,Primary,2040,1133.0724194653944,Mt/yr,production_steel_global
+baseline_noce,Global,Primary,2050,1399.6350022548183,Mt/yr,production_steel_global
+baseline_noce,Global,Secondary,2019,345.30940902943917,Mt/yr,production_steel_global
+baseline_noce,Global,Secondary,2024,424.652939570318,Mt/yr,production_steel_global
+baseline_noce,Global,Secondary,2030,482.54302254841133,Mt/yr,production_steel_global
+baseline_noce,Global,Secondary,2035,495.29876470003495,Mt/yr,production_steel_global
+baseline_noce,Global,Secondary,2040,550.388174769097,Mt/yr,production_steel_global
+baseline_noce,Global,Secondary,2050,,Mt/yr,production_steel_global
+baseline_noce,Global,Total,2019,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Total,2024,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Total,2030,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Total,2035,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Total,2040,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Total,2050,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Primary,2019,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Primary,2024,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Primary,2030,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Primary,2035,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Primary,2040,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Primary,2050,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Secondary,2019,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Secondary,2024,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Secondary,2030,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Secondary,2035,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Secondary,2040,,Mt/yr,production_aluminium_global
+baseline_noce,Global,Secondary,2050,,Mt/yr,production_aluminium_global
+baseline_noce,ENE,Cement,2019,20.7505999978626,Mt/yr,production_cement_ene
+baseline_noce,ENE,Cement,2024,18.084148291582,Mt/yr,production_cement_ene
+baseline_noce,ENE,Cement,2030,20.0035784022039,Mt/yr,production_cement_ene
+baseline_noce,ENE,Cement,2035,21.6636264029912,Mt/yr,production_cement_ene
+baseline_noce,ENE,Cement,2040,22.4728998021253,Mt/yr,production_cement_ene
+baseline_noce,ENE,Cement,2050,23.0331660033304,Mt/yr,production_cement_ene
+baseline_noce,ENE,Clinker,2019,17.4299999873566,Mt/yr,production_cement_ene
+baseline_noce,ENE,Clinker,2024,15.1237206847189,Mt/yr,production_cement_ene
+baseline_noce,ENE,Clinker,2030,16.2261680013348,Mt/yr,production_cement_ene
+baseline_noce,ENE,Clinker,2035,17.1906280021889,Mt/yr,production_cement_ene
+baseline_noce,ENE,Clinker,2040,17.5119210017529,Mt/yr,production_cement_ene
+baseline_noce,ENE,Clinker,2050,17.412570003192,Mt/yr,production_cement_ene
+baseline_noce,ENE,Total,2019,44.49030232009415,Mt/yr,production_steel_ene
+baseline_noce,ENE,Total,2024,19.130830561027288,Mt/yr,production_steel_ene
+baseline_noce,ENE,Total,2030,18.90837848246239,Mt/yr,production_steel_ene
+baseline_noce,ENE,Total,2035,18.374494866529897,Mt/yr,production_steel_ene
+baseline_noce,ENE,Total,2040,17.84061122823282,Mt/yr,production_steel_ene
+baseline_noce,ENE,Total,2050,16.90631489032139,Mt/yr,production_steel_ene
+baseline_noce,ENE,Primary,2019,42.3856456300339,Mt/yr,production_steel_ene
+baseline_noce,ENE,Primary,2024,9.22029448649593,Mt/yr,production_steel_ene
+baseline_noce,ENE,Primary,2030,9.50297671460302,Mt/yr,production_steel_ene
+baseline_noce,ENE,Primary,2035,18.3744947557153,Mt/yr,production_steel_ene
+baseline_noce,ENE,Primary,2040,16.211178964104,Mt/yr,production_steel_ene
+baseline_noce,ENE,Primary,2050,9.58642854494714,Mt/yr,production_steel_ene
+baseline_noce,ENE,Secondary,2019,2.10465669006025,Mt/yr,production_steel_ene
+baseline_noce,ENE,Secondary,2024,9.91053607453136,Mt/yr,production_steel_ene
+baseline_noce,ENE,Secondary,2030,9.40540176785937,Mt/yr,production_steel_ene
+baseline_noce,ENE,Secondary,2035,1.10814595231549e-07,Mt/yr,production_steel_ene
+baseline_noce,ENE,Secondary,2040,1.62943226412882,Mt/yr,production_steel_ene
+baseline_noce,ENE,Secondary,2050,7.31988634537425,Mt/yr,production_steel_ene
+baseline_noce,ENE,Total,2019,0.164999995415161,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Total,2024,0.1348875414166193,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Total,2030,0.1516349856211645,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Total,2035,0.1697849896234169,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Total,2040,0.185624982976887,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Total,2050,0.20872496965153142,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Primary,2019,0.114999996858529,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Primary,2024,0.0644822777379715,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Primary,2030,0.0774931526659037,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Primary,2035,0.0931021166095086,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Primary,2040,0.106401078267916,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Primary,2050,0.124419001580314,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Secondary,2019,0.049999998556632,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Secondary,2024,0.0704052636786478,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Secondary,2030,0.0741418329552608,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Secondary,2035,0.0766828730139083,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Secondary,2040,0.079223904708971,Mt/yr,production_aluminium_ene
+baseline_noce,ENE,Secondary,2050,0.0843059680712174,Mt/yr,production_aluminium_ene
+baseline_noce,ENW,Cement,2019,13.2889999977749,Mt/yr,production_cement_enw
+baseline_noce,ENW,Cement,2024,11.9534557089186,Mt/yr,production_cement_enw
+baseline_noce,ENW,Cement,2030,12.3986370007141,Mt/yr,production_cement_enw
+baseline_noce,ENW,Cement,2035,13.0630870013201,Mt/yr,production_cement_enw
+baseline_noce,ENW,Cement,2040,13.541491000946,Mt/yr,production_cement_enw
+baseline_noce,ENW,Cement,2050,14.7507900004842,Mt/yr,production_cement_enw
+baseline_noce,ENW,Clinker,2019,13.2340384464369,Mt/yr,production_cement_enw
+baseline_noce,ENW,Clinker,2024,11.8164523727044,Mt/yr,production_cement_enw
+baseline_noce,ENW,Clinker,2030,11.9507778647139,Mt/yr,production_cement_enw
+baseline_noce,ENW,Clinker,2035,12.3257422890974,Mt/yr,production_cement_enw
+baseline_noce,ENW,Clinker,2040,12.533957827398,Mt/yr,production_cement_enw
+baseline_noce,ENW,Clinker,2050,13.2208044134676,Mt/yr,production_cement_enw
+baseline_noce,ENW,Total,2019,9.437634567604551,Mt/yr,production_steel_enw
+baseline_noce,ENW,Total,2024,6.09199345914961,Mt/yr,production_steel_enw
+baseline_noce,ENW,Total,2030,4.020432322868868,Mt/yr,production_steel_enw
+baseline_noce,ENW,Total,2035,3.624051669153567,Mt/yr,production_steel_enw
+baseline_noce,ENW,Total,2040,3.274859191208,Mt/yr,production_steel_enw
+baseline_noce,ENW,Total,2050,,Mt/yr,production_steel_enw
+baseline_noce,ENW,Primary,2019,6.83914348288014,Mt/yr,production_steel_enw
+baseline_noce,ENW,Primary,2024,0.84109043331369,Mt/yr,production_steel_enw
+baseline_noce,ENW,Primary,2030,0.0207621501951281,Mt/yr,production_steel_enw
+baseline_noce,ENW,Primary,2035,0.957996904097267,Mt/yr,production_steel_enw
+baseline_noce,ENW,Primary,2040,2.47114547754177,Mt/yr,production_steel_enw
+baseline_noce,ENW,Primary,2050,2.67085058000008,Mt/yr,production_steel_enw
+baseline_noce,ENW,Secondary,2019,2.59849108472441,Mt/yr,production_steel_enw
+baseline_noce,ENW,Secondary,2024,5.25090302583592,Mt/yr,production_steel_enw
+baseline_noce,ENW,Secondary,2030,3.99967017267374,Mt/yr,production_steel_enw
+baseline_noce,ENW,Secondary,2035,2.6660547650563,Mt/yr,production_steel_enw
+baseline_noce,ENW,Secondary,2040,0.80371371366623,Mt/yr,production_steel_enw
+baseline_noce,ENW,Secondary,2050,,Mt/yr,production_steel_enw
+baseline_noce,ENW,Total,2019,3.40299998803522,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Total,2024,2.531832023354278,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Total,2030,2.416129997280464,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Total,2035,1.9124859972936872,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Total,2040,1.2965429732730327,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Total,2050,,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Primary,2019,2.29299998964491,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Primary,2024,2.18579127764237,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Primary,2030,2.00990525443548,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Primary,2035,1.48829414490905,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Primary,2040,1.22865655143914,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Primary,2050,0.360717994926575,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Secondary,2019,1.10999999839031,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Secondary,2024,0.346040745711908,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Secondary,2030,0.406224742844984,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Secondary,2035,0.424191852384637,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Secondary,2040,0.0678864218338927,Mt/yr,production_aluminium_enw
+baseline_noce,ENW,Secondary,2050,,Mt/yr,production_aluminium_enw
+baseline_noce,EUE,Cement,2019,48.9649999978808,Mt/yr,production_cement_eue
+baseline_noce,EUE,Cement,2024,47.2512253386675,Mt/yr,production_cement_eue
+baseline_noce,EUE,Cement,2030,48.4753500023685,Mt/yr,production_cement_eue
+baseline_noce,EUE,Cement,2035,48.769140002026,Mt/yr,production_cement_eue
+baseline_noce,EUE,Cement,2040,48.0346650012374,Mt/yr,production_cement_eue
+baseline_noce,EUE,Cement,2050,46.6146800015422,Mt/yr,production_cement_eue
+baseline_noce,EUE,Clinker,2019,38.0397999837204,Mt/yr,production_cement_eue
+baseline_noce,EUE,Clinker,2024,36.2075497443247,Mt/yr,production_cement_eue
+baseline_noce,EUE,Clinker,2030,36.3026491345685,Mt/yr,production_cement_eue
+baseline_noce,EUE,Clinker,2035,35.8740673882882,Mt/yr,production_cement_eue
+baseline_noce,EUE,Clinker,2040,34.7265334214449,Mt/yr,production_cement_eue
+baseline_noce,EUE,Clinker,2050,32.5925006301082,Mt/yr,production_cement_eue
+baseline_noce,EUE,Total,2019,26.275772628902928,Mt/yr,production_steel_eue
+baseline_noce,EUE,Total,2024,18.0645945588677,Mt/yr,production_steel_eue
+baseline_noce,EUE,Total,2030,15.818015083776,Mt/yr,production_steel_eue
+baseline_noce,EUE,Total,2035,14.924638810220289,Mt/yr,production_steel_eue
+baseline_noce,EUE,Total,2040,14.08381409704151,Mt/yr,production_steel_eue
+baseline_noce,EUE,Total,2050,,Mt/yr,production_steel_eue
+baseline_noce,EUE,Primary,2019,21.2887547116015,Mt/yr,production_steel_eue
+baseline_noce,EUE,Primary,2024,11.2356943268682,Mt/yr,production_steel_eue
+baseline_noce,EUE,Primary,2030,0.3568586099092,Mt/yr,production_steel_eue
+baseline_noce,EUE,Primary,2035,0.872486790188588,Mt/yr,production_steel_eue
+baseline_noce,EUE,Primary,2040,3.81191413320501,Mt/yr,production_steel_eue
+baseline_noce,EUE,Primary,2050,12.5072677535169,Mt/yr,production_steel_eue
+baseline_noce,EUE,Secondary,2019,4.98701791730143,Mt/yr,production_steel_eue
+baseline_noce,EUE,Secondary,2024,6.8289002319995,Mt/yr,production_steel_eue
+baseline_noce,EUE,Secondary,2030,15.4611564738668,Mt/yr,production_steel_eue
+baseline_noce,EUE,Secondary,2035,14.0521520200317,Mt/yr,production_steel_eue
+baseline_noce,EUE,Secondary,2040,10.2718999638365,Mt/yr,production_steel_eue
+baseline_noce,EUE,Secondary,2050,,Mt/yr,production_steel_eue
+baseline_noce,EUE,Total,2019,0.799999990402699,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Total,2024,1.55640002991838,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Total,2030,1.798399994566379,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Total,2035,1.859999991771723,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Total,2040,1.879999985659731,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Total,2050,1.749599987746402,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Primary,2019,0.579999991550749,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Primary,2024,1.04208782778928,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Primary,2030,0.647264555695339,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Primary,2035,0.457062253751323,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Primary,2040,0.430573244810381,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Primary,2050,0.509720798004782,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Secondary,2019,0.21999999885195,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Secondary,2024,0.5143122021291,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Secondary,2030,1.15113543887104,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Secondary,2035,1.4029377380204,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Secondary,2040,1.44942674084935,Mt/yr,production_aluminium_eue
+baseline_noce,EUE,Secondary,2050,1.23987918974162,Mt/yr,production_aluminium_eue
+baseline_noce,EUM,Cement,2019,64.3814999978085,Mt/yr,production_cement_eum
+baseline_noce,EUM,Cement,2024,67.4396215653284,Mt/yr,production_cement_eum
+baseline_noce,EUM,Cement,2030,67.7937195004579,Mt/yr,production_cement_eum
+baseline_noce,EUM,Cement,2035,68.1800085012766,Mt/yr,production_cement_eum
+baseline_noce,EUM,Cement,2040,66.9567600004655,Mt/yr,production_cement_eum
+baseline_noce,EUM,Cement,2050,64.3171185026458,Mt/yr,production_cement_eum
+baseline_noce,EUM,Clinker,2019,57.7762999860838,Mt/yr,production_cement_eum
+baseline_noce,EUM,Clinker,2024,59.2832985609418,Mt/yr,production_cement_eum
+baseline_noce,EUM,Clinker,2030,58.4137651735762,Mt/yr,production_cement_eum
+baseline_noce,EUM,Clinker,2035,57.7628188633195,Mt/yr,production_cement_eum
+baseline_noce,EUM,Clinker,2040,55.811905799489,Mt/yr,production_cement_eum
+baseline_noce,EUM,Clinker,2050,51.9466713202322,Mt/yr,production_cement_eum
+baseline_noce,EUM,Total,2019,52.9707615348957,Mt/yr,production_steel_eum
+baseline_noce,EUM,Total,2024,44.4159837900278,Mt/yr,production_steel_eum
+baseline_noce,EUM,Total,2030,40.3107495075571,Mt/yr,production_steel_eum
+baseline_noce,EUM,Total,2035,36.5498254435119,Mt/yr,production_steel_eum
+baseline_noce,EUM,Total,2040,33.1596967011398,Mt/yr,production_steel_eum
+baseline_noce,EUM,Total,2050,,Mt/yr,production_steel_eum
+baseline_noce,EUM,Primary,2019,21.5991967067637,Mt/yr,production_steel_eum
+baseline_noce,EUM,Primary,2024,18.2625950187116,Mt/yr,production_steel_eum
+baseline_noce,EUM,Primary,2030,13.0104436880835,Mt/yr,production_steel_eum
+baseline_noce,EUM,Primary,2035,10.5941527865039,Mt/yr,production_steel_eum
+baseline_noce,EUM,Primary,2040,13.8280707274653,Mt/yr,production_steel_eum
+baseline_noce,EUM,Primary,2050,27.2269714174146,Mt/yr,production_steel_eum
+baseline_noce,EUM,Secondary,2019,31.371564828132,Mt/yr,production_steel_eum
+baseline_noce,EUM,Secondary,2024,26.1533887713162,Mt/yr,production_steel_eum
+baseline_noce,EUM,Secondary,2030,27.3003058194736,Mt/yr,production_steel_eum
+baseline_noce,EUM,Secondary,2035,25.955672657008,Mt/yr,production_steel_eum
+baseline_noce,EUM,Secondary,2040,19.3316259736745,Mt/yr,production_steel_eum
+baseline_noce,EUM,Secondary,2050,,Mt/yr,production_steel_eum
+baseline_noce,EUM,Total,2019,4.219999991142858,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Total,2024,2.694470028617829,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Total,2030,2.51933999635217,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Total,2035,2.51933999905258,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Total,2040,2.4475999699784348,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Total,2050,,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Primary,2019,0.849999992894308,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Primary,2024,0.872380934138219,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Primary,2030,1.20967350905079,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Primary,2035,1.16478786146461,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Primary,2040,2.14797998326601,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Primary,2050,2.14797998372544,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Secondary,2019,3.36999999824855,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Secondary,2024,1.82208909447961,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Secondary,2030,1.30966648730138,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Secondary,2035,1.35455213758797,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Secondary,2040,0.299619986712425,Mt/yr,production_aluminium_eum
+baseline_noce,EUM,Secondary,2050,,Mt/yr,production_aluminium_eum
+baseline_noce,EUW,Cement,2019,58.6514999978945,Mt/yr,production_cement_euw
+baseline_noce,EUW,Cement,2024,51.8772520628976,Mt/yr,production_cement_euw
+baseline_noce,EUW,Cement,2030,51.8479260019438,Mt/yr,production_cement_euw
+baseline_noce,EUW,Cement,2035,52.1998350019006,Mt/yr,production_cement_euw
+baseline_noce,EUW,Cement,2040,51.4373655016584,Mt/yr,production_cement_euw
+baseline_noce,EUW,Cement,2050,49.9710780033902,Mt/yr,production_cement_euw
+baseline_noce,EUW,Clinker,2019,43.6349999834506,Mt/yr,production_cement_euw
+baseline_noce,EUW,Clinker,2024,38.3718918417063,Mt/yr,production_cement_euw
+baseline_noce,EUW,Clinker,2030,37.4795560011207,Mt/yr,production_cement_euw
+baseline_noce,EUW,Clinker,2035,36.9879350015625,Mt/yr,production_cement_euw
+baseline_noce,EUW,Clinker,2040,35.7501555015316,Mt/yr,production_cement_euw
+baseline_noce,EUW,Clinker,2050,33.4593179896489,Mt/yr,production_cement_euw
+baseline_noce,EUW,Total,2019,69.42126276674139,Mt/yr,production_steel_euw
+baseline_noce,EUW,Total,2024,61.784924028610504,Mt/yr,production_steel_euw
+baseline_noce,EUW,Total,2030,56.8560141908287,Mt/yr,production_steel_euw
+baseline_noce,EUW,Total,2035,51.6494194495071,Mt/yr,production_steel_euw
+baseline_noce,EUW,Total,2040,46.9287736001222,Mt/yr,production_steel_euw
+baseline_noce,EUW,Total,2050,,Mt/yr,production_steel_euw
+baseline_noce,EUW,Primary,2019,52.7135204697284,Mt/yr,production_steel_euw
+baseline_noce,EUW,Primary,2024,42.3928867176171,Mt/yr,production_steel_euw
+baseline_noce,EUW,Primary,2030,35.8089135679003,Mt/yr,production_steel_euw
+baseline_noce,EUW,Primary,2035,27.2580660913221,Mt/yr,production_steel_euw
+baseline_noce,EUW,Primary,2040,24.5213086040942,Mt/yr,production_steel_euw
+baseline_noce,EUW,Primary,2050,38.7370646098543,Mt/yr,production_steel_euw
+baseline_noce,EUW,Secondary,2019,16.707742297013,Mt/yr,production_steel_euw
+baseline_noce,EUW,Secondary,2024,19.3920373109934,Mt/yr,production_steel_euw
+baseline_noce,EUW,Secondary,2030,21.0471006229284,Mt/yr,production_steel_euw
+baseline_noce,EUW,Secondary,2035,24.391353358185,Mt/yr,production_steel_euw
+baseline_noce,EUW,Secondary,2040,22.407464996028,Mt/yr,production_steel_euw
+baseline_noce,EUW,Secondary,2050,,Mt/yr,production_steel_euw
+baseline_noce,EUW,Total,2019,2.740000006294508,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Total,2024,6.449960031178991,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Total,2030,7.41991999690756,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Total,2035,7.90489999771805,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Total,2040,8.25013999585119,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Total,2050,8.02271999746821,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Primary,2019,0.819999998434798,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Primary,2024,1.1268970986063,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Primary,2030,1.26851656670508,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Primary,2035,1.54267208182544,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Primary,2040,1.70358453984375,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Primary,2050,4.00420571484936,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Secondary,2019,1.92000000785971,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Secondary,2024,5.32306293257269,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Secondary,2030,6.15140343020248,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Secondary,2035,6.36222791589261,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Secondary,2040,6.54655545600744,Mt/yr,production_aluminium_euw
+baseline_noce,EUW,Secondary,2050,4.01851428261885,Mt/yr,production_aluminium_euw
+baseline_noce,Global,Cement,2019,,EJ/yr,energy
+baseline_noce,Global,Cement,2024,11.408035618838122,EJ/yr,energy
+baseline_noce,Global,Cement,2030,10.831210346396302,EJ/yr,energy
+baseline_noce,Global,Cement,2035,10.569945632238754,EJ/yr,energy
+baseline_noce,Global,Cement,2040,10.421978867098597,EJ/yr,energy
+baseline_noce,Global,Cement,2050,10.19422959728947,EJ/yr,energy
+baseline_noce,Global,Iron and steel,2019,,EJ/yr,energy
+baseline_noce,Global,Iron and steel,2024,,EJ/yr,energy
+baseline_noce,Global,Iron and steel,2030,,EJ/yr,energy
+baseline_noce,Global,Iron and steel,2035,,EJ/yr,energy
+baseline_noce,Global,Iron and steel,2040,,EJ/yr,energy
+baseline_noce,Global,Iron and steel,2050,,EJ/yr,energy
+baseline_noce,Global,Aluminium,2019,,EJ/yr,energy
+baseline_noce,Global,Aluminium,2024,,EJ/yr,energy
+baseline_noce,Global,Aluminium,2030,,EJ/yr,energy
+baseline_noce,Global,Aluminium,2035,,EJ/yr,energy
+baseline_noce,Global,Aluminium,2040,,EJ/yr,energy
+baseline_noce,Global,Aluminium,2050,,EJ/yr,energy
+baseline_noce,Global,Cement,2019,,GJ/t,energy_intensity
+baseline_noce,Global,Cement,2024,2.888496890003963,GJ/t,energy_intensity
+baseline_noce,Global,Cement,2030,2.8847404479118226,GJ/t,energy_intensity
+baseline_noce,Global,Cement,2035,2.8855719149344186,GJ/t,energy_intensity
+baseline_noce,Global,Cement,2040,2.8472110126149275,GJ/t,energy_intensity
+baseline_noce,Global,Cement,2050,2.785205182990723,GJ/t,energy_intensity
+baseline_noce,Global,Iron and steel,2019,,GJ/t,energy_intensity
+baseline_noce,Global,Iron and steel,2024,,GJ/t,energy_intensity
+baseline_noce,Global,Iron and steel,2030,,GJ/t,energy_intensity
+baseline_noce,Global,Iron and steel,2035,,GJ/t,energy_intensity
+baseline_noce,Global,Iron and steel,2040,,GJ/t,energy_intensity
+baseline_noce,Global,Iron and steel,2050,,GJ/t,energy_intensity
+baseline_noce,Global,Aluminium,2019,,GJ/t,energy_intensity
+baseline_noce,Global,Aluminium,2024,,GJ/t,energy_intensity
+baseline_noce,Global,Aluminium,2030,,GJ/t,energy_intensity
+baseline_noce,Global,Aluminium,2035,,GJ/t,energy_intensity
+baseline_noce,Global,Aluminium,2040,,GJ/t,energy_intensity
+baseline_noce,Global,Aluminium,2050,,GJ/t,energy_intensity
+baseline_noce,Global,Cement,2019,2.542758438447978,GtCO2e/yr,emissions
+baseline_noce,Global,Cement,2024,2.36069368367247,GtCO2e/yr,emissions
+baseline_noce,Global,Cement,2030,2.0977976651628745,GtCO2e/yr,emissions
+baseline_noce,Global,Cement,2035,1.9921680957149694,GtCO2e/yr,emissions
+baseline_noce,Global,Cement,2040,1.9110899971156512,GtCO2e/yr,emissions
+baseline_noce,Global,Cement,2050,1.7181234608434015,GtCO2e/yr,emissions
+baseline_noce,Global,Iron and steel,2019,2.74565603423791,GtCO2e/yr,emissions
+baseline_noce,Global,Iron and steel,2024,2.6405834046078245,GtCO2e/yr,emissions
+baseline_noce,Global,Iron and steel,2030,2.273480511099978,GtCO2e/yr,emissions
+baseline_noce,Global,Iron and steel,2035,1.7835914059599012,GtCO2e/yr,emissions
+baseline_noce,Global,Iron and steel,2040,1.402917936420128,GtCO2e/yr,emissions
+baseline_noce,Global,Iron and steel,2050,,GtCO2e/yr,emissions
+baseline_noce,Global,Aluminium,2019,,GtCO2e/yr,emissions
+baseline_noce,Global,Aluminium,2024,,GtCO2e/yr,emissions
+baseline_noce,Global,Aluminium,2030,,GtCO2e/yr,emissions
+baseline_noce,Global,Aluminium,2035,,GtCO2e/yr,emissions
+baseline_noce,Global,Aluminium,2040,,GtCO2e/yr,emissions
+baseline_noce,Global,Aluminium,2050,,GtCO2e/yr,emissions
+baseline_noce,Global,Cement,2019,27.356840966058222,%,emissions_share
+baseline_noce,Global,Cement,2024,24.127643958029335,%,emissions_share
+baseline_noce,Global,Cement,2030,21.29557149365643,%,emissions_share
+baseline_noce,Global,Cement,2035,21.049018098421573,%,emissions_share
+baseline_noce,Global,Cement,2040,21.94098749588175,%,emissions_share
+baseline_noce,Global,Cement,2050,38.58798026074687,%,emissions_share
+baseline_noce,Global,Iron and steel,2019,29.539760576703067,%,emissions_share
+baseline_noce,Global,Iron and steel,2024,26.98827750017311,%,emissions_share
+baseline_noce,Global,Iron and steel,2030,23.078997354020395,%,emissions_share
+baseline_noce,Global,Iron and steel,2035,18.845220875181912,%,emissions_share
+baseline_noce,Global,Iron and steel,2040,16.106727023426252,%,emissions_share
+baseline_noce,Global,Iron and steel,2050,,%,emissions_share
+baseline_noce,Global,Aluminium,2019,,%,emissions_share
+baseline_noce,Global,Aluminium,2024,,%,emissions_share
+baseline_noce,Global,Aluminium,2030,,%,emissions_share
+baseline_noce,Global,Aluminium,2035,,%,emissions_share
+baseline_noce,Global,Aluminium,2040,,%,emissions_share
+baseline_noce,Global,Aluminium,2050,,%,emissions_share
+baseline_noce,Global,Cement,2019,0.6052155971768874,tCO2e/t,emissions_intensity
+baseline_noce,Global,Cement,2024,0.5977239720640364,tCO2e/t,emissions_intensity
+baseline_noce,Global,Cement,2030,0.5587188857655027,tCO2e/t,emissions_intensity
+baseline_noce,Global,Cement,2035,0.5438575094738624,tCO2e/t,emissions_intensity
+baseline_noce,Global,Cement,2040,0.5220962885526099,tCO2e/t,emissions_intensity
+baseline_noce,Global,Cement,2050,0.4694152042084048,tCO2e/t,emissions_intensity
+baseline_noce,Global,Iron and steel,2019,1.5647335496873123,tCO2e/t,emissions_intensity
+baseline_noce,Global,Iron and steel,2024,1.5307025003261827,tCO2e/t,emissions_intensity
+baseline_noce,Global,Iron and steel,2030,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Iron and steel,2035,1.1177914885339593,tCO2e/t,emissions_intensity
+baseline_noce,Global,Iron and steel,2040,0.8333535939153167,tCO2e/t,emissions_intensity
+baseline_noce,Global,Iron and steel,2050,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Aluminium,2019,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Aluminium,2024,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Aluminium,2030,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Aluminium,2035,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Aluminium,2040,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Aluminium,2050,,tCO2e/t,emissions_intensity
+baseline_noce,Global,Cement,2019,,MtCO2/yr,capture
+baseline_noce,Global,Cement,2024,,MtCO2/yr,capture
+baseline_noce,Global,Cement,2030,,MtCO2/yr,capture
+baseline_noce,Global,Cement,2035,,MtCO2/yr,capture
+baseline_noce,Global,Cement,2040,,MtCO2/yr,capture
+baseline_noce,Global,Cement,2050,,MtCO2/yr,capture
+baseline_noce,Global,Iron and steel,2019,,MtCO2/yr,capture
+baseline_noce,Global,Iron and steel,2024,,MtCO2/yr,capture
+baseline_noce,Global,Iron and steel,2030,,MtCO2/yr,capture
+baseline_noce,Global,Iron and steel,2035,,MtCO2/yr,capture
+baseline_noce,Global,Iron and steel,2040,,MtCO2/yr,capture
+baseline_noce,Global,Iron and steel,2050,,MtCO2/yr,capture
+baseline_noce,Global,Aluminium,2019,,MtCO2/yr,capture
+baseline_noce,Global,Aluminium,2024,,MtCO2/yr,capture
+baseline_noce,Global,Aluminium,2030,,MtCO2/yr,capture
+baseline_noce,Global,Aluminium,2035,,MtCO2/yr,capture
+baseline_noce,Global,Aluminium,2040,,MtCO2/yr,capture
+baseline_noce,Global,Aluminium,2050,,MtCO2/yr,capture
+baseline_noce,Global,Cement,2019,104.60506988172908,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Cement,2030,331.0938925343282,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Cement,2035,422.9326031034711,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Cement,2040,584.1146752148795,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Cement,2050,777.1423333003592,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Iron and steel,2019,4959.455128965229,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Iron and steel,2030,295.9827557650916,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Iron and steel,2035,319.7627455424265,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Iron and steel,2040,511.2241972481363,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Iron and steel,2050,709.3272214321663,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Aluminium,2019,25.017308460003065,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Aluminium,2030,188.40886133137334,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Aluminium,2035,161.63235160096602,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Aluminium,2040,229.56612533538592,billion USD_2010/yr,sector_costs
+baseline_noce,Global,Aluminium,2050,184.47509579221477,billion USD_2010/yr,sector_costs
+baseline_noce,Global,System total,2019,3.8222701716013847,trillion USD_2010/yr,system_cost
+baseline_noce,Global,System total,2024,8.26556757917677,trillion USD_2010/yr,system_cost
+baseline_noce,Global,System total,2030,15.173706835357,trillion USD_2010/yr,system_cost
+baseline_noce,Global,System total,2035,19.664152717711595,trillion USD_2010/yr,system_cost
+baseline_noce,Global,System total,2040,24.367454241171533,trillion USD_2010/yr,system_cost
+baseline_noce,Global,System total,2050,30.076132041723973,trillion USD_2010/yr,system_cost
+baseline_noce,Regional set 1,AFE,2019,6.3101779025049,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFE,2024,5.8412571014881,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFE,2030,5.326824321707001,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFE,2035,5.2022258448883,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFE,2040,4.9269295210641,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFE,2050,4.8770020202379,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFN,2019,5.791324574545399,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFN,2024,5.599900794529001,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFN,2030,5.3777629271484,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFN,2035,5.194421829073,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFN,2040,5.0300655980852,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFN,2050,4.7771043075173,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFW,2019,3.5217197323745,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFW,2024,3.7679205431133003,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFW,2030,3.9516024134871,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFW,2035,4.0765721632838,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFW,2040,4.1800510462127995,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFW,2050,4.3118934478526,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFZ,2019,5.9079974631439,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFZ,2024,5.8045067645633,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFZ,2030,5.6935186639105,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFZ,2035,5.5367615571422,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFZ,2040,5.3140135985232,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFZ,2050,4.9238406666855,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ANZ,2019,4.5534396520319005,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ANZ,2024,4.5154144086873,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ANZ,2030,4.591435049024399,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ANZ,2035,4.6217026078908,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ANZ,2040,4.6539203771765,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ANZ,2050,4.7564593729192,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASC,2019,5.6858974022186,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASC,2024,5.4073191379732,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASC,2030,5.1674387358317,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASC,2035,5.0205138873853,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASC,2040,4.898362298145201,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASC,2050,4.711893210800399,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASE,2019,6.9302625979186,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASE,2024,6.4906582620707995,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASE,2030,6.1633564806048,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASE,2035,5.8205996902019,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASE,2040,5.4610534378704,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,ASE,2050,4.9322896513159,GJ/t,regional_energy_intensity_cement_1
+baseline_noce,Regional set 1,AFE,2019,5.105741994975,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFE,2024,16.3772564936992,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFE,2030,14.2153355465168,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFE,2035,9.149657370327901,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFE,2040,5.1057397439331,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFE,2050,2.1437139868239004,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFN,2019,27.842313262395,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFN,2024,20.3989815808133,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFN,2030,14.0886874219557,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFN,2035,9.5543582888708,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFN,2040,3.5339586259111,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFN,2050,3.8340872627186,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFW,2019,5.1057418568056,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFW,2024,2.1009652144625997,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFW,2030,2.1002067377116,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFW,2035,3.3906713750078,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFW,2040,2.908465148111,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFW,2050,4.1234326554106,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFZ,2019,35.2215543708135,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFZ,2024,12.155427955178299,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFZ,2030,11.2031808596322,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFZ,2035,23.7045277572689,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFZ,2040,20.7271108528321,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFZ,2050,4.1950362388796005,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ANZ,2019,30.0629974399412,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ANZ,2024,18.650922531550098,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ANZ,2030,2.1298912507597,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ANZ,2035,2.6859368352676998,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ANZ,2040,3.6493171785168,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ANZ,2050,6.930001378368201,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASC,2019,86.07278438249969,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASC,2024,58.8240903340706,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASC,2030,15.252654596463199,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASC,2035,10.4296428055923,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASC,2040,3.1742344538947003,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASC,2050,3.8338715693014,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASE,2019,13.2721601714128,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASE,2024,2.1000189710438,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASE,2030,2.1000094468906,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASE,2035,2.1000001078976,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASE,2040,2.1000001364499,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,ASE,2050,2.6084213406431003,GJ/t,regional_energy_intensity_steel_1
+baseline_noce,Regional set 1,AFE,2019,,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFE,2024,,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFE,2030,,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFE,2035,,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFE,2040,,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFE,2050,,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFN,2019,86.0215767344937,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFN,2024,73.8918689093465,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFN,2030,45.1345672318161,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFN,2035,58.1094299056072,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFN,2040,61.2500360481404,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFN,2050,75.79095031754301,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFW,2019,89.77990407772809,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFW,2024,75.2725174808879,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFW,2030,50.017396453403705,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFW,2035,36.5366552805335,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFW,2040,15.533194303067098,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFW,2050,16.349574328074002,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFZ,2019,93.828423341574,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFZ,2024,79.6558979931122,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFZ,2030,55.1551250545044,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFZ,2035,46.553797326942004,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFZ,2040,42.776850292496,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFZ,2050,42.630183780376896,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ANZ,2019,67.15340153073839,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ANZ,2024,91.3210197037867,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ANZ,2030,88.9561460525881,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ANZ,2035,78.9147524845545,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ANZ,2040,71.2738797661813,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ANZ,2050,71.2479722205878,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASC,2019,91.5481685513619,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASC,2024,77.6019070984359,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASC,2030,51.9435138845244,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASC,2035,41.2926930609716,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASC,2040,5.9933053865443995,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASC,2050,15.9575471676742,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASE,2019,69.4636558658931,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASE,2024,43.3128699747511,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASE,2030,36.7076890094313,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASE,2035,31.835157548562496,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASE,2040,27.417373293809202,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,ASE,2050,21.9343000259816,GJ/t,regional_energy_intensity_aluminium_1
+baseline_noce,Regional set 1,AFE,2019,6.4375495438117e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFE,2024,10.7914987821083,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFE,2030,164.561506998678,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFE,2035,127.821793160128,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFE,2040,327.459211981471,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFE,2050,85.0012258609473,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFN,2019,1.27469413372404e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFN,2024,4.05778578092238e-06,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFN,2030,2.41138782531231e-08,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFN,2035,150.563100737303,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFN,2040,248.53696185685504,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFN,2050,253.49740699630203,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFW,2019,5.20223616201246e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFW,2024,1.55067147579407e-06,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFW,2030,1.7976689864110505e-07,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFW,2035,3.58291834252597e-08,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFW,2040,111.556603638348,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFW,2050,240.64747830827295,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFZ,2019,1.28156551014386e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFZ,2024,4.6041533990692205,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFZ,2030,67.3439777417158,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFZ,2035,7.5321113514458e-08,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFZ,2040,72.4691731051868,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,AFZ,2050,249.28898548258,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ANZ,2019,1.56178919935201e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ANZ,2024,52.072405477123006,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ANZ,2030,374.085331806142,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ANZ,2035,431.059019959808,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ANZ,2040,491.753468329532,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ANZ,2050,1010.67086177617,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASC,2019,1.45276314991777e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASC,2024,4.34613342575925e-07,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASC,2030,2.55612956776681e-08,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASC,2035,35.9991026689346,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASC,2040,265.096420003436,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASC,2050,329.965254630883,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASE,2019,1.03635425258715e-05,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASE,2024,12.0646711284619,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASE,2030,1.35552459572404e-08,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASE,2035,599.736881302178,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASE,2040,873.264488113254,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 1,ASE,2050,511.869202694429,USD_2010/tCO2e,carbon_price_1
+baseline_noce,Regional set 2,ASO,2019,3.7894057563637,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ASO,2024,3.8648637066686,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ASO,2030,3.9340564388927,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ASO,2035,3.9243032878540998,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ASO,2040,3.8201742148523,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ASO,2050,3.9790778957245996,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,BRA,2019,5.1711022980955,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,BRA,2024,4.6984373432053,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,BRA,2030,4.3410082137043,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,BRA,2035,3.819060945513,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,BRA,2040,3.6367469866145,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,BRA,2050,3.3462440881864,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CAN,2019,7.3129239009011995,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CAN,2024,7.0474821566022,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CAN,2030,6.873716787157701,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CAN,2035,6.8289945290013,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CAN,2040,6.7276556808887005,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CAN,2050,6.720093886374199,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHL,2019,2.7156666406914,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHL,2024,2.8371742429994997,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHL,2030,3.4358977358651,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHL,2035,3.780954342782,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHL,2040,4.1029359145486,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHL,2050,4.746302114922,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHN,2019,4.921160903425299,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHN,2024,4.8745741833609,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHN,2030,4.8676120347816,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHN,2035,4.9337426778978,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHN,2040,4.7669993910766,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,CHN,2050,4.006873444435199,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENE,2019,6.333181244479101,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENE,2024,6.279425197724899,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENE,2030,5.9027737192095,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENE,2035,5.6457454884021,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENE,2040,5.4374031185538,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENE,2050,5.097593351994799,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENW,2019,7.056689341098,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENW,2024,6.7264345493967,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENW,2030,6.2727785924603,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENW,2035,5.7747009590305,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENW,2040,5.2791495281475,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ENW,2050,4.6160270340958,GJ/t,regional_energy_intensity_cement_2
+baseline_noce,Regional set 2,ASO,2019,5.0908419754583,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ASO,2024,2.1000042495271,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ASO,2030,2.0999999999999,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ASO,2035,2.1000004248674,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ASO,2040,2.1000000662664,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ASO,2050,2.1000006343034996,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,BRA,2019,32.913533498273004,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,BRA,2024,29.6192209403731,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,BRA,2030,23.8492573755437,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,BRA,2035,17.2866709684761,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,BRA,2040,10.8526926769846,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,BRA,2050,6.3523011116603,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CAN,2019,27.213506411083202,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CAN,2024,13.8003471082449,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CAN,2030,2.9186294776031003,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CAN,2035,3.5441211291733,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CAN,2040,3.7062118889864,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CAN,2050,6.929999999999899,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHL,2019,15.249562637745301,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHL,2024,8.591324764484,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHL,2030,16.7948882231316,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHL,2035,11.9389961695752,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHL,2040,8.1480343090289,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHL,2050,6.9300893240831005,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHN,2019,32.310306031848796,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHN,2024,30.7780774402668,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHN,2030,30.2332506272974,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHN,2035,27.647042585699,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHN,2040,20.7720148787763,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,CHN,2050,4.4039649388463,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENE,2019,23.7000861969448,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENE,2024,13.0077465007409,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENE,2030,13.4744248104945,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENE,2035,26.639601742988,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENE,2040,28.5290087823791,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENE,2050,21.2069010527343,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENW,2019,33.2455127416452,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENW,2024,8.1125821659226,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENW,2030,2.3248937881827,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENW,2035,3.5288509201236002,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENW,2040,5.8326067802364,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ENW,2050,6.9300021197151,GJ/t,regional_energy_intensity_steel_2
+baseline_noce,Regional set 2,ASO,2019,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ASO,2024,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ASO,2030,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ASO,2035,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ASO,2040,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ASO,2050,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,BRA,2019,16.1636981128483,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,BRA,2024,47.230952876489106,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,BRA,2030,43.9307561613798,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,BRA,2035,38.381315812826,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,BRA,2040,50.5787097011506,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,BRA,2050,71.1514077604359,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CAN,2019,51.923757469650795,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CAN,2024,70.0083455233019,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CAN,2030,70.7168733860286,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CAN,2035,81.04326911381091,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CAN,2040,72.98541620370901,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CAN,2050,71.4237288021065,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHL,2019,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHL,2024,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHL,2030,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHL,2035,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHL,2040,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHL,2050,,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHN,2019,72.5385084731966,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHN,2024,70.5576389077595,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHN,2030,66.7060533753802,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHN,2035,59.9266891564545,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHN,2040,53.250666555952,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,CHN,2050,32.856560738661905,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENE,2019,82.5749439564416,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENE,2024,58.5618405650581,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENE,2030,60.8665749399711,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENE,2035,56.1479367934302,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENE,2040,52.2357561846288,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENE,2050,45.8289691857577,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENW,2019,62.948332749643605,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENW,2024,79.4226213338205,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENW,2030,71.07805343414731,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENW,2035,59.105063149839395,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENW,2040,67.9801920616992,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ENW,2050,70.9999999999999,GJ/t,regional_energy_intensity_aluminium_2
+baseline_noce,Regional set 2,ASO,2019,2.35343081689066e-05,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ASO,2024,166.153336586602,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ASO,2030,1.02363590568566e-09,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ASO,2035,-1.27321322680774e-10,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ASO,2040,1.0526453750232999e-09,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ASO,2050,2.81273749266189e-07,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,BRA,2019,1.39488356838645e-05,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,BRA,2024,1197.865173294,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,BRA,2030,153.296193183156,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,BRA,2035,109.236781925216,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,BRA,2040,188.643628949766,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,BRA,2050,2345.95732693887,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CAN,2019,1.33626818013245e-05,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CAN,2024,3.60868058566015e-06,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CAN,2030,1043.74386590184,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CAN,2035,189.38963678369,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CAN,2040,385.2054294277221,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CAN,2050,1725.46480377875,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHL,2019,8.65904652084371e-05,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHL,2024,444.184690793571,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHL,2030,2.4777159970680502,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHL,2035,64.7699349175856,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHL,2040,107.663971259726,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHL,2050,544.832625858604,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHN,2019,7.570391565583399e-07,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHN,2024,1.95255393005672e-08,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHN,2030,6.27092073052521e-10,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHN,2035,2.92949616552683,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHN,2040,84.67762871149941,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,CHN,2050,219.17100800365895,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENE,2019,2.27969113700746e-05,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENE,2024,71.8777845629012,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENE,2030,1.06229569929947e-08,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENE,2035,7.7205322310285505,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENE,2040,84.38635687519209,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENE,2050,98.0094952854062,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENW,2019,1.63327740664868e-05,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENW,2024,408.201437089124,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENW,2030,865.5714301394199,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENW,2035,656.542636161685,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENW,2040,828.199041386468,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 2,ENW,2050,2712.98321009641,USD_2010/tCO2e,carbon_price_2
+baseline_noce,Regional set 3,EUE,2019,5.3265966366668005,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUE,2024,5.1014592575498,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUE,2030,5.1204839659851,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUE,2035,4.8648075317151,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUE,2040,4.6025859927885,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUE,2050,4.1106691845495,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUM,2019,6.5306685569975995,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUM,2024,6.1595972209504,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUM,2030,5.6632025176876,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUM,2035,5.3290160066659,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUM,2040,4.9752095942454,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUM,2050,4.1934637016242,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUW,2019,5.3007777273834,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUW,2024,5.2579967665,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUW,2030,5.2361979504104,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUW,2035,4.9065771341527995,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUW,2040,4.5913292008852995,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUW,2050,3.9389247410409003,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IDN,2019,6.6056067190397005,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IDN,2024,6.3756920434303,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IDN,2030,6.056185283761599,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IDN,2035,5.8069938797049,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IDN,2040,5.5968882956646,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IDN,2050,5.1236394911779,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IND,2019,5.2537242241844,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IND,2024,4.9320442906711,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IND,2030,4.6212236932878,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IND,2035,4.381250836195,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IND,2040,4.2376567689307,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,IND,2050,3.9737638954027,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,JPN,2019,6.0758168230652,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,JPN,2024,5.9987260893161,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,JPN,2030,6.0377486414553,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,JPN,2035,5.8439460471241,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,JPN,2040,5.3667858464883,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,JPN,2050,4.5725552729336,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,LAM,2019,5.926083025400899,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,LAM,2024,5.64042802279,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,LAM,2030,5.3255639902365,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,LAM,2035,4.981181019572699,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,LAM,2040,4.6467652932165,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,LAM,2050,4.0899566016222,GJ/t,regional_energy_intensity_cement_3
+baseline_noce,Regional set 3,EUE,2019,27.6490062251117,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUE,2024,21.7420536603818,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUE,2030,2.8124582135439,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUE,2035,2.8469257042262996,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUE,2040,3.7807398413896,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUE,2050,7.970571603808801,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUM,2019,18.362265354406897,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUM,2024,16.018567489366202,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUM,2030,7.8488927489326,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUM,2035,3.8434788197774,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUM,2040,4.1141800326363995,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUM,2050,6.9300003104426,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUW,2019,31.106004200135402,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUW,2024,28.2590764978537,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUW,2030,22.795242199024802,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUW,2035,14.2153058064189,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUW,2040,5.168048280406199,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUW,2050,6.9300002400153,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IDN,2019,30.480034078354,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IDN,2024,23.5542051968074,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IDN,2030,22.978836846634003,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IDN,2035,28.6336132749317,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IDN,2040,22.2978059368775,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IDN,2050,2.3479473503437998,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IND,2019,38.0080718359443,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IND,2024,34.3915999901329,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IND,2030,26.0596471458872,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IND,2035,21.6181146111524,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IND,2040,18.1191615398002,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,IND,2050,15.6457032950668,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,JPN,2019,34.4166110035666,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,JPN,2024,27.0173144045196,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,JPN,2030,21.1867771551669,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,JPN,2035,7.0217826349615,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,JPN,2040,5.3118014675323995,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,JPN,2050,7.7043028904831,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,LAM,2019,21.3902271695577,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,LAM,2024,5.0084941757564,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,LAM,2030,2.4913438829689,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,LAM,2035,6.3529007713398995,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,LAM,2040,2.1000001342915997,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,LAM,2050,2.2610541871029004,GJ/t,regional_energy_intensity_steel_3
+baseline_noce,Regional set 3,EUE,2019,85.6494829553787,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUE,2024,72.09535915595299,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUE,2030,39.0119509141321,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUE,2035,26.6162639001053,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUE,2040,23.189288748273,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUE,2050,23.0234215058336,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUM,2019,24.0580595316355,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUM,2024,34.9404658469656,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUM,2030,40.6427851827659,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUM,2035,35.166027548684,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUM,2040,63.0574140625227,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUM,2050,71.39292730279969,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUW,2019,32.768779751766004,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUW,2024,21.670148666332,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUW,2030,20.246833301047598,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUW,2035,20.962659353951402,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUW,2040,19.7618224876088,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUW,2050,37.097510768852196,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IDN,2019,81.1309417288549,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IDN,2024,28.0641867104891,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IDN,2030,24.8267688695234,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IDN,2035,21.1656709770527,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IDN,2040,18.8779976286088,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IDN,2050,16.0213509759949,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IND,2019,69.4504014409989,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IND,2024,67.57387427999629,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IND,2030,60.5224659789984,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IND,2035,54.8972220745691,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IND,2040,50.6721237852605,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,IND,2050,40.0189238329749,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,JPN,2019,6.1269412134548,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,JPN,2024,8.2665093151977,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,JPN,2030,6.1269412134548,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,JPN,2035,5.7626446677046,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,JPN,2040,5.1376974827523,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,JPN,2050,3.2999999999999,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,LAM,2019,60.143954215011505,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,LAM,2024,73.0201489822542,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,LAM,2030,71.75944410593239,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,LAM,2035,67.24997422994839,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,LAM,2040,62.4057164316004,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,LAM,2050,72.6139432984154,GJ/t,regional_energy_intensity_aluminium_3
+baseline_noce,Regional set 3,EUE,2019,1.22820280063608e-05,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUE,2024,49.156985614244,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUE,2030,146.417751508185,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUE,2035,242.67276470599,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUE,2040,478.582316796861,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUE,2050,2747.17128948591,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUM,2019,8.26619568416022e-06,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUM,2024,72.1789411178147,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUM,2030,1376.10259710732,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUM,2035,698.235911911751,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUM,2040,926.182544708739,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUM,2050,2825.2355859642503,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUW,2019,8.977875605769579e-06,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUW,2024,181.757793676086,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUW,2030,224.507240949844,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUW,2035,273.523207638459,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUW,2040,417.924789899988,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,EUW,2050,2642.2244026463104,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IDN,2019,6.31380513319861e-06,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IDN,2024,2.51421169934328e-07,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IDN,2030,1.37237219229241e-09,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IDN,2035,2.46133554611978e-08,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IDN,2040,91.9759020222907,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IDN,2050,338.491163922425,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IND,2019,2.81024775948614e-06,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IND,2024,4.75410557843413e-07,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IND,2030,231.787796121395,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IND,2035,306.640127434621,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IND,2040,554.165416810466,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,IND,2050,1129.10690177458,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,JPN,2019,7.207519265957399e-06,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,JPN,2024,166.478710415875,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,JPN,2030,828.489898900482,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,JPN,2035,693.251737789491,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,JPN,2040,911.352516996126,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,JPN,2050,3237.26987752406,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,LAM,2019,1.35298143109943e-05,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,LAM,2024,44.8447409022472,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,LAM,2030,108.863184233821,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,LAM,2035,186.760210714842,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,LAM,2040,466.32349248529897,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 3,LAM,2050,306.764280527798,USD_2010/tCO2e,carbon_price_3
+baseline_noce,Regional set 4,MDA,2019,6.2123875201905,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MDA,2024,5.6556113273315,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MDA,2030,5.6562360561477,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MDA,2035,5.4344957122306,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MDA,2040,5.375112847682,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MDA,2050,5.3830555798458,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEA,2019,7.065632279177,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEA,2024,6.6341507492533,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEA,2030,6.4516456103243005,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEA,2035,6.249492276734,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEA,2040,6.0730533466422,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEA,2050,5.7839075680500995,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEX,2019,6.5146950630769,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEX,2024,6.080910929439501,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEX,2030,5.6096361182739,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEX,2035,5.220628596216,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEX,2040,4.8905247437293,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MEX,2050,4.6229495551335,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,NIG,2019,5.5811628294468,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,NIG,2024,5.2771815715953005,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,NIG,2030,4.9670545610592,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,NIG,2035,4.6249421302466995,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,NIG,2040,4.2658570945738,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,NIG,2050,3.7848175413005,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,RUS,2019,4.1819980293893,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,RUS,2024,4.0761804714428,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,RUS,2030,4.3028361229023,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,RUS,2035,4.1707838879708,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,RUS,2040,4.052011693655199,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,RUS,2050,4.101568609229701,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,SKT,2019,6.5772850257475,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,SKT,2024,6.4581520098593,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,SKT,2030,6.2718784093007,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,SKT,2035,5.7469945936814,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,SKT,2040,5.3229433609251,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,SKT,2050,4.2350884713091,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,USA,2019,6.9585138811343,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,USA,2024,6.6385674711012,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,USA,2030,6.1187527435761995,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,USA,2035,6.0553515182544,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,USA,2040,5.8222568896305,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,USA,2050,5.4754109962727,GJ/t,regional_energy_intensity_cement_4
+baseline_noce,Regional set 4,MDA,2019,27.533931671734802,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MDA,2024,10.3706681740265,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MDA,2030,6.712875711801,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MDA,2035,5.120350031666,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MDA,2040,4.8816493529287,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MDA,2050,4.059994748021301,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEA,2019,22.131494799170902,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEA,2024,17.443851109496098,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEA,2030,6.0444775303399,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEA,2035,9.402753445909301,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEA,2040,5.6560997129423,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEA,2050,7.3360013753484,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEX,2019,17.3897149952881,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEX,2024,18.151427743839502,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEX,2030,13.1183874227936,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEX,2035,3.5192595855817004,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEX,2040,3.4507750086088,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MEX,2050,3.5491232070806,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,NIG,2019,5.1057420574195,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,NIG,2024,2.1000200994079,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,NIG,2030,2.1,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,NIG,2035,2.1000003877102,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,NIG,2040,2.100000120827,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,NIG,2050,2.1157622818372,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,RUS,2019,58.0262709430273,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,RUS,2024,47.4665184340682,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,RUS,2030,35.3301737123655,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,RUS,2035,9.801930608199301,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,RUS,2040,5.3688698369313,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,RUS,2050,9.863757511187,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,SKT,2019,28.0601719854614,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,SKT,2024,28.208912010221102,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,SKT,2030,22.7026137075395,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,SKT,2035,13.1120961175108,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,SKT,2040,5.092302147483401,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,SKT,2050,6.9300001055964,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,USA,2019,19.439364545372502,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,USA,2024,19.971767025205498,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,USA,2030,8.1058106527018,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,USA,2035,3.7294668332564,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,USA,2040,4.9649718032307,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,USA,2050,6.929999999999899,GJ/t,regional_energy_intensity_steel_4
+baseline_noce,Regional set 4,MDA,2019,15.986622616159199,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MDA,2024,27.2161000012094,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MDA,2030,31.5831984054738,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MDA,2035,39.240686190650095,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MDA,2040,53.308708444397894,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MDA,2050,71.0000013425591,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEA,2019,90.2290621801593,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEA,2024,85.6003028735056,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEA,2030,80.3725989024863,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEA,2035,74.98684489995749,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEA,2040,69.9138430665365,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEA,2050,74.7054560242612,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEX,2019,6.1269412134548,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEX,2024,6.1269456958701,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEX,2030,6.1269412134548995,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEX,2035,6.1269411677968,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEX,2040,6.1269411876854,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MEX,2050,6.2079839034466,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,NIG,2019,,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,NIG,2024,,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,NIG,2030,,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,NIG,2035,,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,NIG,2040,,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,NIG,2050,,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,RUS,2019,71.2823172872854,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,RUS,2024,65.67179069788739,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,RUS,2030,62.5413541049647,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,RUS,2035,57.9267284367066,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,RUS,2040,54.7169054995083,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,RUS,2050,74.9713979263355,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,SKT,2019,6.1269412134548,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,SKT,2024,6.1269443848283,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,SKT,2030,6.1269412134548995,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,SKT,2035,5.618057385924001,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,SKT,2040,4.7879876267241,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,SKT,2050,3.2999999999999,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,USA,2019,22.7752563221569,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,USA,2024,15.9281491231766,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,USA,2030,14.0157518412906,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,USA,2035,26.6840343192721,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,USA,2040,48.9625520688342,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,USA,2050,71.54425500869719,GJ/t,regional_energy_intensity_aluminium_4
+baseline_noce,Regional set 4,MDA,2019,1.1708484217132e-05,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MDA,2024,12.7263052292843,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MDA,2030,10.8071312846607,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MDA,2035,37.7504803049681,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MDA,2040,155.846132886533,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MDA,2050,974.988570167142,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEA,2019,3.25924472323011e-06,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEA,2024,4.30062186315719e-07,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEA,2030,486.531528865807,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEA,2035,176.194935447024,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEA,2040,390.532645969027,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEA,2050,349.042666537538,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEX,2019,1.77627797722573e-05,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEX,2024,1.12614980710583e-06,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEX,2030,2.47780505825297e-08,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEX,2035,484.35402774346,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEX,2040,546.348206634741,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,MEX,2050,135.19594180814502,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,NIG,2019,3.79849249220973e-05,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,NIG,2024,128.252861926504,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,NIG,2030,125.273752927235,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,NIG,2035,185.60603609373,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,NIG,2040,374.662723032886,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,NIG,2050,357.973720361468,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,RUS,2019,3.81571711083183e-06,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,RUS,2024,4.55335428248339e-07,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,RUS,2030,1.67210178198535e-08,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,RUS,2035,724.007446532576,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,RUS,2040,925.950560680791,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,RUS,2050,347.436199398999,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,SKT,2019,4.47021538609397e-06,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,SKT,2024,67.2721830744182,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,SKT,2030,184.906205773187,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,SKT,2035,489.288440876983,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,SKT,2040,590.1657238812879,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,SKT,2050,3826.98935907109,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,USA,2019,1.7862999808939398e-06,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,USA,2024,148.61832552322198,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,USA,2030,1501.2900393588,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,USA,2035,621.188499508276,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,USA,2040,703.273624063811,USD_2010/tCO2e,carbon_price_4
+baseline_noce,Regional set 4,USA,2050,4175.68382873723,USD_2010/tCO2e,carbon_price_4

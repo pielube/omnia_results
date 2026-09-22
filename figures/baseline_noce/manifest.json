@@ -1,0 +1,758 @@
+[
+  {
+    "slug": "production_cement_global",
+    "title": "Cement production",
+    "scope": "Global",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Cement production. Baseline · no CE; Global; 2019–2050. Cement and clinker are distinct products; they are not added together. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 12,
+    "expected_points": 12,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_steel_global",
+    "title": "Iron and steel production",
+    "scope": "Global",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Iron and steel production. Baseline · no CE; Global; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 14,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_aluminium_global",
+    "title": "Aluminium production",
+    "scope": "Global",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Aluminium production. Baseline · no CE; Global; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 0,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_cement_ene",
+    "title": "Cement production",
+    "scope": "ENE",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Cement production. Baseline · no CE; ENE; 2019–2050. Cement and clinker are distinct products; they are not added together. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 12,
+    "expected_points": 12,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_steel_ene",
+    "title": "Iron and steel production",
+    "scope": "ENE",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Iron and steel production. Baseline · no CE; ENE; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 18,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_aluminium_ene",
+    "title": "Aluminium production",
+    "scope": "ENE",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Aluminium production. Baseline · no CE; ENE; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 18,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_cement_enw",
+    "title": "Cement production",
+    "scope": "ENW",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Cement production. Baseline · no CE; ENW; 2019–2050. Cement and clinker are distinct products; they are not added together. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 12,
+    "expected_points": 12,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_steel_enw",
+    "title": "Iron and steel production",
+    "scope": "ENW",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Iron and steel production. Baseline · no CE; ENW; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 16,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_aluminium_enw",
+    "title": "Aluminium production",
+    "scope": "ENW",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Aluminium production. Baseline · no CE; ENW; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 16,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_cement_eue",
+    "title": "Cement production",
+    "scope": "EUE",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Cement production. Baseline · no CE; EUE; 2019–2050. Cement and clinker are distinct products; they are not added together. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 12,
+    "expected_points": 12,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_steel_eue",
+    "title": "Iron and steel production",
+    "scope": "EUE",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Iron and steel production. Baseline · no CE; EUE; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 16,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_aluminium_eue",
+    "title": "Aluminium production",
+    "scope": "EUE",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Aluminium production. Baseline · no CE; EUE; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 18,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_cement_eum",
+    "title": "Cement production",
+    "scope": "EUM",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Cement production. Baseline · no CE; EUM; 2019–2050. Cement and clinker are distinct products; they are not added together. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 12,
+    "expected_points": 12,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_steel_eum",
+    "title": "Iron and steel production",
+    "scope": "EUM",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Iron and steel production. Baseline · no CE; EUM; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 16,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_aluminium_eum",
+    "title": "Aluminium production",
+    "scope": "EUM",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Aluminium production. Baseline · no CE; EUM; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 16,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_cement_euw",
+    "title": "Cement production",
+    "scope": "EUW",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Cement production. Baseline · no CE; EUW; 2019–2050. Cement and clinker are distinct products; they are not added together. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 12,
+    "expected_points": 12,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_steel_euw",
+    "title": "Iron and steel production",
+    "scope": "EUW",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Iron and steel production. Baseline · no CE; EUW; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 16,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "production_aluminium_euw",
+    "title": "Aluminium production",
+    "scope": "EUW",
+    "family": "Production",
+    "unit": "Mt/yr",
+    "caption": "Aluminium production. Baseline · no CE; EUW; 2019–2050. Total production is primary plus secondary production. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 18,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "energy",
+    "title": "Industrial final energy",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "EJ/yr",
+    "caption": "Industrial final energy. Baseline · no CE; Global; 2019–2050. Sector totals sum the specified carrier-level final-energy variables; nested fuel subcategories are excluded. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 5,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "energy_intensity",
+    "title": "Energy intensity",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "GJ/t",
+    "caption": "Energy intensity. Baseline · no CE; Global; 2019–2050. Global final energy divided by global production, multiplied by 1,000 to convert EJ/Mt to GJ/t. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 5,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "emissions",
+    "title": "Industrial greenhouse-gas emissions",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "GtCO2e/yr",
+    "caption": "Industrial greenhouse-gas emissions. Baseline · no CE; Global; 2019–2050. Sector greenhouse-gas emissions, selecting MtCO2e/yr source rows and converting Mt to Gt. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 11,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "emissions_share",
+    "title": "Share of industry emissions",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "%",
+    "caption": "Share of industry emissions. Baseline · no CE; Global; 2019–2050. Each sector's global emissions divided by global Emissions|GHG|Industry, multiplied by 100. The three sectors are not assumed to exhaust industry. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 11,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "emissions_intensity",
+    "title": "Emissions intensity",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "tCO2e/t",
+    "caption": "Emissions intensity. Baseline · no CE; Global; 2019–2050. Global sector greenhouse-gas emissions divided by global sector production. MtCO2e/Mt is numerically equal to tCO2e/t. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 10,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "capture",
+    "title": "Industrial carbon capture",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "MtCO2/yr",
+    "caption": "Industrial carbon capture. Baseline · no CE; Global; 2019–2050. Sum of reported sector carbon capture across model regions; capture is kept separate from greenhouse-gas emissions. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 0,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "sector_costs",
+    "title": "Annualised industrial costs",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "billion USD_2010/yr",
+    "caption": "Annualised industrial costs. Baseline · no CE; Global; 2019–2050. Sector annualised costs converted from millions to billions of 2010 USD. All source years and signed values are retained. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 18,
+    "expected_points": 18,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "system_cost",
+    "title": "Total annualised system cost",
+    "scope": "Global",
+    "family": "Global metrics",
+    "unit": "trillion USD_2010/yr",
+    "caption": "Total annualised system cost. Baseline · no CE; Global; 2019–2050. Sum of Total Annualised Cost across model regions, converted to trillions of 2010 USD. Negative regional source values are retained. System and sector costs have separate plots and scales. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 6,
+    "expected_points": 6,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 89,
+    "height_mm": 78,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_cement_1",
+    "title": "Cement: energy intensity",
+    "scope": "Regional set 1",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Cement: energy intensity. Baseline · no CE; Regional set 1; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_steel_1",
+    "title": "Iron and steel: energy intensity",
+    "scope": "Regional set 1",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Iron and steel: energy intensity. Baseline · no CE; Regional set 1; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_aluminium_1",
+    "title": "Aluminium: energy intensity",
+    "scope": "Regional set 1",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Aluminium: energy intensity. Baseline · no CE; Regional set 1; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 36,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "carbon_price_1",
+    "title": "Carbon price",
+    "scope": "Regional set 1",
+    "family": "Regional metrics",
+    "unit": "USD_2010/tCO2e",
+    "caption": "Carbon price. Baseline · no CE; Regional set 1; 2019–2050. Regional carbon prices in 2010 USD per tonne CO₂-equivalent. Prices are not aggregated. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_cement_2",
+    "title": "Cement: energy intensity",
+    "scope": "Regional set 2",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Cement: energy intensity. Baseline · no CE; Regional set 2; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_steel_2",
+    "title": "Iron and steel: energy intensity",
+    "scope": "Regional set 2",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Iron and steel: energy intensity. Baseline · no CE; Regional set 2; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_aluminium_2",
+    "title": "Aluminium: energy intensity",
+    "scope": "Regional set 2",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Aluminium: energy intensity. Baseline · no CE; Regional set 2; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 30,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "carbon_price_2",
+    "title": "Carbon price",
+    "scope": "Regional set 2",
+    "family": "Regional metrics",
+    "unit": "USD_2010/tCO2e",
+    "caption": "Carbon price. Baseline · no CE; Regional set 2; 2019–2050. Regional carbon prices in 2010 USD per tonne CO₂-equivalent. Prices are not aggregated. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_cement_3",
+    "title": "Cement: energy intensity",
+    "scope": "Regional set 3",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Cement: energy intensity. Baseline · no CE; Regional set 3; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_steel_3",
+    "title": "Iron and steel: energy intensity",
+    "scope": "Regional set 3",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Iron and steel: energy intensity. Baseline · no CE; Regional set 3; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_aluminium_3",
+    "title": "Aluminium: energy intensity",
+    "scope": "Regional set 3",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Aluminium: energy intensity. Baseline · no CE; Regional set 3; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "carbon_price_3",
+    "title": "Carbon price",
+    "scope": "Regional set 3",
+    "family": "Regional metrics",
+    "unit": "USD_2010/tCO2e",
+    "caption": "Carbon price. Baseline · no CE; Regional set 3; 2019–2050. Regional carbon prices in 2010 USD per tonne CO₂-equivalent. Prices are not aggregated. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_cement_4",
+    "title": "Cement: energy intensity",
+    "scope": "Regional set 4",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Cement: energy intensity. Baseline · no CE; Regional set 4; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_steel_4",
+    "title": "Iron and steel: energy intensity",
+    "scope": "Regional set 4",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Iron and steel: energy intensity. Baseline · no CE; Regional set 4; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "regional_energy_intensity_aluminium_4",
+    "title": "Aluminium: energy intensity",
+    "scope": "Regional set 4",
+    "family": "Regional metrics",
+    "unit": "GJ/t",
+    "caption": "Aluminium: energy intensity. Baseline · no CE; Regional set 4; 2019–2050. Regional energy intensity as supplied in the CSV, converted from EJ/Mt to GJ/t. These source intensities need not match the derived energy/production definition; see the audit. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 36,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  },
+  {
+    "slug": "carbon_price_4",
+    "title": "Carbon price",
+    "scope": "Regional set 4",
+    "family": "Regional metrics",
+    "unit": "USD_2010/tCO2e",
+    "caption": "Carbon price. Baseline · no CE; Regional set 4; 2019–2050. Regional carbon prices in 2010 USD per tonne CO₂-equivalent. Prices are not aggregated. Region codes retain the source naming. Missing inputs remain gaps; global totals require complete regional coverage. Markers denote supplied model years, joined by straight line segments; no uncertainty estimates were supplied.",
+    "available_points": 42,
+    "expected_points": 42,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "width_mm": 120,
+    "height_mm": 85,
+    "font": "DejaVuSans.ttf"
+  }
+]

@@ -1,0 +1,19 @@
+Scenario,Scope,Series,Year,Value,Unit
+baseline_noce,Global,Cement,2019,0.6052155971768874,tCO2e/t
+baseline_noce,Global,Cement,2024,0.5977239720640364,tCO2e/t
+baseline_noce,Global,Cement,2030,0.5587188857655027,tCO2e/t
+baseline_noce,Global,Cement,2035,0.5438575094738624,tCO2e/t
+baseline_noce,Global,Cement,2040,0.5220962885526099,tCO2e/t
+baseline_noce,Global,Cement,2050,0.4694152042084048,tCO2e/t
+baseline_noce,Global,Iron and steel,2019,1.5647335496873123,tCO2e/t
+baseline_noce,Global,Iron and steel,2024,1.5307025003261827,tCO2e/t
+baseline_noce,Global,Iron and steel,2030,,tCO2e/t
+baseline_noce,Global,Iron and steel,2035,1.1177914885339593,tCO2e/t
+baseline_noce,Global,Iron and steel,2040,0.8333535939153167,tCO2e/t
+baseline_noce,Global,Iron and steel,2050,,tCO2e/t
+baseline_noce,Global,Aluminium,2019,,tCO2e/t
+baseline_noce,Global,Aluminium,2024,,tCO2e/t
+baseline_noce,Global,Aluminium,2030,,tCO2e/t
+baseline_noce,Global,Aluminium,2035,,tCO2e/t
+baseline_noce,Global,Aluminium,2040,,tCO2e/t
+baseline_noce,Global,Aluminium,2050,,tCO2e/t

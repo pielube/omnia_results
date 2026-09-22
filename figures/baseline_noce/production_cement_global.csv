@@ -1,0 +1,13 @@
+Scenario,Scope,Series,Year,Value,Unit
+baseline_noce,Global,Cement,2019,4201.409299940433,Mt/yr
+baseline_noce,Global,Cement,2024,3949.47131787373,Mt/yr
+baseline_noce,Global,Cement,2030,3754.656802568388,Mt/yr
+baseline_noce,Global,Cement,2035,3663.033167717458,Mt/yr
+baseline_noce,Global,Cement,2040,3660.4167449910474,Mt/yr
+baseline_noce,Global,Cement,2050,3660.135942423824,Mt/yr
+baseline_noce,Global,Clinker,2019,3030.4398866528886,Mt/yr
+baseline_noce,Global,Clinker,2024,2864.3071106476964,Mt/yr
+baseline_noce,Global,Clinker,2030,2726.8563868435053,Mt/yr
+baseline_noce,Global,Clinker,2035,2659.5047763533066,Mt/yr
+baseline_noce,Global,Clinker,2040,2636.3747900615363,Mt/yr
+baseline_noce,Global,Clinker,2050,2599.115827280662,Mt/yr

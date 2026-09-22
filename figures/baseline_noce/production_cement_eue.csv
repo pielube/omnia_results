@@ -1,0 +1,13 @@
+Scenario,Scope,Series,Year,Value,Unit
+baseline_noce,EUE,Cement,2019,48.9649999978808,Mt/yr
+baseline_noce,EUE,Cement,2024,47.2512253386675,Mt/yr
+baseline_noce,EUE,Cement,2030,48.4753500023685,Mt/yr
+baseline_noce,EUE,Cement,2035,48.769140002026,Mt/yr
+baseline_noce,EUE,Cement,2040,48.0346650012374,Mt/yr
+baseline_noce,EUE,Cement,2050,46.6146800015422,Mt/yr
+baseline_noce,EUE,Clinker,2019,38.0397999837204,Mt/yr
+baseline_noce,EUE,Clinker,2024,36.2075497443247,Mt/yr
+baseline_noce,EUE,Clinker,2030,36.3026491345685,Mt/yr
+baseline_noce,EUE,Clinker,2035,35.8740673882882,Mt/yr
+baseline_noce,EUE,Clinker,2040,34.7265334214449,Mt/yr
+baseline_noce,EUE,Clinker,2050,32.5925006301082,Mt/yr

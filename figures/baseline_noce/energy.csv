@@ -1,0 +1,19 @@
+Scenario,Scope,Series,Year,Value,Unit
+baseline_noce,Global,Cement,2019,,EJ/yr
+baseline_noce,Global,Cement,2024,11.408035618838122,EJ/yr
+baseline_noce,Global,Cement,2030,10.831210346396302,EJ/yr
+baseline_noce,Global,Cement,2035,10.569945632238754,EJ/yr
+baseline_noce,Global,Cement,2040,10.421978867098597,EJ/yr
+baseline_noce,Global,Cement,2050,10.19422959728947,EJ/yr
+baseline_noce,Global,Iron and steel,2019,,EJ/yr
+baseline_noce,Global,Iron and steel,2024,,EJ/yr
+baseline_noce,Global,Iron and steel,2030,,EJ/yr
+baseline_noce,Global,Iron and steel,2035,,EJ/yr
+baseline_noce,Global,Iron and steel,2040,,EJ/yr
+baseline_noce,Global,Iron and steel,2050,,EJ/yr
+baseline_noce,Global,Aluminium,2019,,EJ/yr
+baseline_noce,Global,Aluminium,2024,,EJ/yr
+baseline_noce,Global,Aluminium,2030,,EJ/yr
+baseline_noce,Global,Aluminium,2035,,EJ/yr
+baseline_noce,Global,Aluminium,2040,,EJ/yr
+baseline_noce,Global,Aluminium,2050,,EJ/yr

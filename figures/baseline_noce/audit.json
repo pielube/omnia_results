@@ -1,0 +1,132 @@
+{
+  "generated_utc": "2026-09-22T07:04:48.306562+00:00",
+  "source": "results_NoCE_260915.csv",
+  "source_sha256": "df87374b6f7522669952b757a1530dfefec17cf3b875c95c8c7e2a83b7507cca",
+  "scenario": "baseline_noce",
+  "source_rows_selected": 2445,
+  "figure_count": 42,
+  "missing_input_count": 1051,
+  "negative_cost_count": 14,
+  "intensity_comparable_count": 228,
+  "intensity_mismatch_count": 220,
+  "max_intensity_difference_GJ_per_t": 15.838301853293007,
+  "config": {
+    "input": "results_NoCE_260915.csv",
+    "output": "figures",
+    "scenarios": [
+      "baseline_noce"
+    ],
+    "scenario_labels": {
+      "baseline_noce": "Baseline · no CE",
+      "ndc_noce": "NDC · no CE"
+    },
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "regions": [
+      "AFE",
+      "AFN",
+      "AFW",
+      "AFZ",
+      "ANZ",
+      "ASC",
+      "ASE",
+      "ASO",
+      "BRA",
+      "CAN",
+      "CHL",
+      "CHN",
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW",
+      "IDN",
+      "IND",
+      "JPN",
+      "LAM",
+      "MDA",
+      "MEA",
+      "MEX",
+      "NIG",
+      "RUS",
+      "SKT",
+      "USA"
+    ],
+    "europe_regions": [
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW"
+    ],
+    "regional_groups": {
+      "Regional set 1": [
+        "AFE",
+        "AFN",
+        "AFW",
+        "AFZ",
+        "ANZ",
+        "ASC",
+        "ASE"
+      ],
+      "Regional set 2": [
+        "ASO",
+        "BRA",
+        "CAN",
+        "CHL",
+        "CHN",
+        "ENE",
+        "ENW"
+      ],
+      "Regional set 3": [
+        "EUE",
+        "EUM",
+        "EUW",
+        "IDN",
+        "IND",
+        "JPN",
+        "LAM"
+      ],
+      "Regional set 4": [
+        "MDA",
+        "MEA",
+        "MEX",
+        "NIG",
+        "RUS",
+        "SKT",
+        "USA"
+      ]
+    },
+    "missing_activity": "preserve",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  "versions": {
+    "python": "3.11.15",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.9"
+  },
+  "notes": [
+    "Only baseline_noce is plotted. Source scenarios: baseline_noce, ndc_noce.",
+    "Global quantities sum the 28 configured source regions, assumed to form a disjoint world partition. No global aggregate is supplied in the CSV.",
+    "Blank cells and absent regional rows are kept missing. Global sums require every region; incomplete totals appear as gaps. Prices, costs and reported intensities always retain missing values. The missing-input ledger records every affected input.",
+    "European production is shown separately for ENE, ENW, EUE, EUM, EUW. Region names are not expanded without a model codebook.",
+    "Regional sets contain at most seven regions in source-code order for legibility; these sets do not represent geographic aggregates.",
+    "Cement production is the cement-sector intensity denominator. Steel and aluminium production are primary plus secondary; cement and clinker are not summed.",
+    "Global energy and emissions intensities are ratios of summed quantities, never unweighted averages of regional intensities.",
+    "Reported regional energy intensities differ from the document's energy/production calculation by more than 1% in 220 of 228 comparable region-sector-years. Both definitions are retained and exported in intensity_comparison.csv.",
+    "The source contains 14 negative regional cost observations. All are preserved (negative_costs.csv). Global steel cost exceeds the global system total in 2019; check the source cost accounting before interpreting this comparison.",
+    "No smoothing, extrapolation, uncertainty bands, clipping of negative data, or normalization to an arbitrary base year is applied."
+  ]
+}

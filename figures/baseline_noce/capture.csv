@@ -1,0 +1,19 @@
+Scenario,Scope,Series,Year,Value,Unit
+baseline_noce,Global,Cement,2019,,MtCO2/yr
+baseline_noce,Global,Cement,2024,,MtCO2/yr
+baseline_noce,Global,Cement,2030,,MtCO2/yr
+baseline_noce,Global,Cement,2035,,MtCO2/yr
+baseline_noce,Global,Cement,2040,,MtCO2/yr
+baseline_noce,Global,Cement,2050,,MtCO2/yr
+baseline_noce,Global,Iron and steel,2019,,MtCO2/yr
+baseline_noce,Global,Iron and steel,2024,,MtCO2/yr
+baseline_noce,Global,Iron and steel,2030,,MtCO2/yr
+baseline_noce,Global,Iron and steel,2035,,MtCO2/yr
+baseline_noce,Global,Iron and steel,2040,,MtCO2/yr
+baseline_noce,Global,Iron and steel,2050,,MtCO2/yr
+baseline_noce,Global,Aluminium,2019,,MtCO2/yr
+baseline_noce,Global,Aluminium,2024,,MtCO2/yr
+baseline_noce,Global,Aluminium,2030,,MtCO2/yr
+baseline_noce,Global,Aluminium,2035,,MtCO2/yr
+baseline_noce,Global,Aluminium,2040,,MtCO2/yr
+baseline_noce,Global,Aluminium,2050,,MtCO2/yr
