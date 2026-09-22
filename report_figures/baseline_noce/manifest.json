@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "fig01_production",
+    "number": "1",
+    "title": "Material production and production routes",
+    "question": "How do global material output and production routes evolve?",
+    "section": "Main report",
+    "caption": "Figure 1. Material production and production routes. Baseline · no CE. Global production of (a) cement and clinker, (b) iron and steel, and (c) aluminium. Steel and aluminium totals are primary plus secondary production. Cement and clinker are distinct products and are not added. Each sector has its own vertical scale; markers show the supplied model years. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 83.0,
+    "panel_count": 3,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "fig02_leading_producers",
+    "number": "2",
+    "title": "The geography of industrial production",
+    "question": "Where is production concentrated, and how does it move between 2019 and 2050?",
+    "section": "Main report",
+    "caption": "Figure 2. The geography of industrial production. Baseline · no CE. The 12 largest producer groups in 2050, ranked separately for each sector. The same 2050 cohort and ordering are used for both endpoint years (2019 and 2050). Europe aggregates ENE, ENW, EUE, EUM and EUW; remaining producer groups preserve individual model regions. China denotes the CHN model region (including Hong Kong, Macao and Taiwan). Indonesia group includes Indonesia, Philippines and Viet Nam. Exact memberships accompany the figures. The final row is the unranked sum of all remaining groups, retaining complete global accounting. Open circles show the first year; filled diamonds show the ranking year. Thin connectors indicate endpoint changes, not intervening trajectories. Production axes are logarithmic to make changes visible across producers spanning several orders of magnitude. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 149.0,
+    "panel_count": 3,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "fig03_carbon_prices",
+    "number": "3",
+    "title": "Regional carbon-price indices",
+    "question": "How do carbon-price paths differ across economically meaningful regional groups?",
+    "section": "Main report",
+    "caption": "Figure 3. Regional carbon-price indices. Baseline · no CE. 9 disjoint groups cover all 28 model regions. Each line is an index calculated as the weighted mean of model-region carbon prices, using fixed 2019 industrial greenhouse-gas emissions as weights. The weights do not change with decarbonisation or relocation of industry, so changes reflect the price paths. These indices are not uniform regional policies, population-weighted prices, or averages across countries. North America includes the United States, Canada and Mexico; Europe contains the five European model regions; China is the CHN model region. Exact membership and numerical weights are supplied in CSV files. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "panel_count": 1,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "fig04_energy",
+    "number": "4",
+    "title": "Industrial energy requirements",
+    "question": "How do total energy requirements and energy per tonne evolve together?",
+    "section": "Main report",
+    "caption": "Figure 4. Industrial energy requirements. Baseline · no CE. Global sectoral final energy (a–c) and derived energy intensity (d–f), with sector columns aligned. Energy sums exactly the carrier-level variables listed in ResultsMetrics.docx, excluding nested fuel subcategories. Global intensity is global final energy divided by global sector production, converted from EJ/Mt to GJ/t. Cement uses cement production; steel and aluminium use primary plus secondary production. Each panel has its own vertical scale. Reported regional intensities, a different source definition, are in Figure S1. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 141.0,
+    "panel_count": 6,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "fig05_emissions",
+    "number": "5",
+    "title": "Industrial emissions and carbon capture",
+    "question": "How do sector emissions, emissions intensity and capture change?",
+    "section": "Main report",
+    "caption": "Figure 5. Industrial emissions and carbon capture. Baseline · no CE. Global sectoral (a) greenhouse-gas emissions, (b) share of total industry greenhouse-gas emissions, (c) emissions per tonne of production, and (d) CO₂ capture. Industry shares use Emissions|GHG|Industry as denominator; the three sectors are not assumed to exhaust industry. Emissions intensity is a ratio of global sums. Capture is shown separately and is not subtracted again from reported emissions. GHG emissions and CO₂ capture use their distinct source units. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 141.0,
+    "panel_count": 4,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "fig06_costs",
+    "number": "6",
+    "title": "Annualised costs, 2024–2050",
+    "question": "How do system and industrial costs evolve?",
+    "section": "Main report",
+    "caption": "Figure 6. Annualised costs, 2024–2050. Baseline · no CE. Global annualised (a) whole-system and (b) sector costs, in constant 2010 USD. The system axis uses trillions and the sector axis billions; costs are not stacked or interpreted as an exhaustive system breakdown. The main report shows 2024–2050 to keep later trends legible. Initial-year cost anomalies are not corrected or discarded: the full-period series appear in Figure S2 and the audit identifies negative regional costs. Source cost accounting needs checking before substantive interpretation. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 90.0,
+    "panel_count": 2,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "figS1_producer_intensity",
+    "number": "S1",
+    "title": "Energy intensity in the leading producer regions",
+    "question": "How do energy intensities compare within the same leading-producer cohort?",
+    "section": "Supporting figures",
+    "caption": "Figure S1. Energy intensity in the leading producer regions. Baseline · no CE. The 12 largest producer groups in 2050, ranked separately for each sector. The same 2050 cohort and ordering are used for both endpoint years (2019 and 2050). Europe aggregates ENE, ENW, EUE, EUM and EUW; remaining producer groups preserve individual model regions. China denotes the CHN model region (including Hong Kong, Macao and Taiwan). Indonesia group includes Indonesia, Philippines and Viet Nam. Exact memberships accompany the figures. Dots show supplied regional energy intensity, converted to GJ/t. Europe's source intensities are weighted by contemporaneous sector production. These reported intensities use the source definition and differ from the derived global final-energy/production intensities in Figure 4. Missing intensity values remain gaps. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 149.0,
+    "panel_count": 3,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "slug": "figS2_costs_full_period",
+    "number": "S2",
+    "title": "Annualised costs: full source period",
+    "question": "How do system and industrial costs evolve?",
+    "section": "Supporting figures",
+    "caption": "Figure S2. Annualised costs: full source period. Baseline · no CE. Global annualised (a) whole-system and (b) sector costs, in constant 2010 USD. The system axis uses trillions and the sector axis billions; costs are not stacked or interpreted as an exhaustive system breakdown. All years and signed source values are retained. In the supplied baseline export, 2019 steel costs exceed total-system costs, and several regional system costs are negative. This figure makes the anomalous values visible without compressing the main report's later-period trends. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.",
+    "width_mm": 183.0,
+    "height_mm": 90.0,
+    "panel_count": 2,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  }
+]

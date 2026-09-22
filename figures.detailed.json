@@ -1,0 +1,18 @@
+{
+  "input": "results_NoCE_260915.csv",
+  "output": "figures",
+  "scenarios": ["baseline_noce"],
+  "scenario_labels": {"baseline_noce": "Baseline · no CE", "ndc_noce": "NDC · no CE"},
+  "years": [2019, 2024, 2030, 2035, 2040, 2050],
+  "regions": ["AFE", "AFN", "AFW", "AFZ", "ANZ", "ASC", "ASE", "ASO", "BRA", "CAN", "CHL", "CHN", "ENE", "ENW", "EUE", "EUM", "EUW", "IDN", "IND", "JPN", "LAM", "MDA", "MEA", "MEX", "NIG", "RUS", "SKT", "USA"],
+  "europe_regions": ["ENE", "ENW", "EUE", "EUM", "EUW"],
+  "regional_groups": {
+    "Regional set 1": ["AFE", "AFN", "AFW", "AFZ", "ANZ", "ASC", "ASE"],
+    "Regional set 2": ["ASO", "BRA", "CAN", "CHL", "CHN", "ENE", "ENW"],
+    "Regional set 3": ["EUE", "EUM", "EUW", "IDN", "IND", "JPN", "LAM"],
+    "Regional set 4": ["MDA", "MEA", "MEX", "NIG", "RUS", "SKT", "USA"]
+  },
+  "missing_activity": "preserve",
+  "formats": ["pdf", "svg", "png"],
+  "dpi": 600
+}

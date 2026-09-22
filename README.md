@@ -1,96 +1,103 @@
-# OMNIA report figures
+﻿# OMNIA report figures
 
-Reproducible, standalone trend plots from `results_NoCE_260915.csv`, following the metric definitions in `ResultsMetrics.docx`. The default run selects **`baseline_noce` only**, even though the input also contains `ndc_noce`.
+A reproducible report collection from `results_NoCE_260915.csv`: **six main figures and two supporting figures**, selecting `baseline_noce` by default. [ResultsMetrics.docx](ResultsMetrics.docx) supplies the metric definitions; the revised report design groups related metrics and meaningful geographic comparisons into a manageable set of figures.
 
-Open [the figure gallery](figures/baseline_noce/index.html) in a browser. It starts with the 11 global figures; filters reveal European production and regional metrics. Each figure has an editable PDF, an SVG with editable text, a 600 dpi PNG, a source-data CSV, and a caption.
+Open the [report gallery](report_figures/baseline_noce/index.html) or the [complete eight-page PDF](report_figures/baseline_noce/report_figures.pdf). Each figure also has an editable PDF/SVG, a 600 dpi PNG, a source-data CSV and a caption. The original detailed collection remains in [figures/](figures/baseline_noce/index.html).
 
 ## Generate the figures
 
-Use Python 3.11 or newer. In the existing `dataviz-env`, the dependencies are already available:
+Use Python 3.11 or newer. The existing `dataviz-env` already contains the dependencies; a fresh environment can install them with `python -m pip install -e .`.
 
 ```powershell
 python -m omnia_results
 python -m unittest discover -s tests -v
 ```
 
-For a fresh environment:
+The default [figures.json](figures.json) selects the report suite and writes to `report_figures/baseline_noce`. Paths resolve relative to the configuration file. Re-running replaces matching generated files without deleting unrelated files. There are currently 26 calculation tests, covering source selection, units, aggregation, weights, rankings and missing inputs.
 
 ```powershell
-python -m pip install -e .
-python -m omnia_results
-```
+# Write a separate review copy
+python -m omnia_results --output figures_review
 
-Paths in [figures.json](figures.json) resolve relative to that configuration file. Re-running replaces the generated files with matching names; it does not delete unrelated files. If changing region lists, use a fresh output directory to avoid keeping old figures alongside the new set.
+# Regenerate the original detailed collection
+python -m omnia_results --config figures.detailed.json
 
-```powershell
-python -m omnia_results --config figures.json --output figures_review
-```
-
-## Missing values and source checks
-
-**The initial configuration preserves missing data.** The CSV and metrics document do not establish whether blank cells and absent regional rows mean zero activity. Consequently, a global total is available only when all 28 regional inputs are available. Incomplete series have gaps and a figure note; the gallery reports their coverage. Global aluminium production and carbon capture have no complete points under this policy.
-
-If the model's export convention is confirmed to mean zero activity, set `"missing_activity": "zero"` in `figures.json` and regenerate, or use:
-
-```powershell
-python -m omnia_results --missing-activity zero
-```
-
-That policy applies only to additive production, fuel use, emissions and capture. It never fills missing prices, costs or reported intensities, and never turns an entirely absent variable/unit into zero. Every missing input is recorded with its treatment in `missing_inputs.csv`. A zero denominator produces an undefined intensity, not zero.
-
-Further source details:
-
-- There is no `Global` or `World` row. Global quantities sum the 28 explicitly configured regions, assumed to be a disjoint world partition. The loader rejects unexpected regions so an aggregate cannot accidentally be summed with its components.
-- European production currently uses **ENE, ENW, EUE, EUM and EUW**, separately. This selection is configurable. Region codes are kept unchanged because no region codebook was supplied.
-- The emissions variables occur under both `MtCO2e/yr` and `MtCO2e/Mt`. The latter rows are blank in this export. Calculations select the full variable **and** unit.
-- Fuel parent totals overlap their detailed subcategories. The pipeline sums only the exact carriers in the document, never `Gases|Gas`, `Liquids|Oil` or `Solids|Coal` alongside their parents.
-- Many reported regional energy intensities differ from the document's final-energy/production formula. Regional charts show the supplied intensity, while global charts use the requested derived formula. `intensity_comparison.csv` preserves both definitions without altering either.
-- There are 14 negative regional cost observations in `baseline_noce`, all in 2019. Global steel annualised cost in 2019 exceeds the global system total. Values are retained in the plots and listed in `negative_costs.csv`; their accounting needs interpretation before making claims about costs.
-
-`audit.json` records the configuration, selected scenario, input SHA-256, software versions, coverage and source checks. `manifest.json` lists figure dimensions, filenames and captions. `source_data.csv` contains every plotted value; an empty value denotes missingness.
-
-## Figure coverage
-
-| Metric in the document | Output | Calculation / display unit |
-| --- | --- | --- |
-| Production | Three sector plots globally and for each of five European regions (18 figures) | Cement and clinker separately; steel and aluminium total, primary and secondary; Mt/yr |
-| Production (derived) | Total curves in steel and aluminium production plots | Primary + secondary; Mt/yr |
-| Sector energy use | `energy` | Sum the listed carriers; EJ/yr. Carrier inputs are not plotted separately. |
-| Global energy intensity | `energy_intensity` | Global EJ/yr ÷ global Mt/yr × 1,000 = GJ/t |
-| Regional energy intensity | Three sectors × four regional sets (12 figures) | Supplied EJ/Mt × 1,000 = GJ/t |
-| Regional carbon price | Four regional sets | Supplied USD_2010/t CO2e |
-| Sectoral emissions | `emissions` | Global MtCO2e/yr ÷ 1,000 = GtCO2e/yr |
-| Share of industry emissions | `emissions_share` | Global sector emissions ÷ global industry emissions × 100 |
-| Emissions intensity | `emissions_intensity` | Global MtCO2e/yr ÷ global Mt/yr = tCO2e/t |
-| CO₂ capture | `capture` | Global MtCO2/yr |
-| System costs | `system_cost`, `sector_costs` | Trillion and billion USD_2010/yr respectively; separate axes/scales |
-
-The full default suite contains **42 single-panel figures**: 11 global, 15 European production, and 16 regional. Regional sets partition the source-code order into groups of seven to keep individual curves legible; these sets have no geographic or aggregation meaning. Edit `regional_groups` to arrange the codes differently, preserving each region exactly once.
-
-Cement production, rather than clinker production, is the cement-sector intensity denominator. Cement and clinker are never added together. The duplicated steel/aluminium total variable names in the document's “Production (derived)” row are interpreted as one total per sector. Global intensities and emissions shares are ratios of global sums, not unweighted averages of regional ratios.
-
-## Visual conventions
-
-Figures use white backgrounds, restrained horizontal guides, 1 pt lines, 5–7 pt sans-serif text, and distinct colours with redundant markers and line patterns. The portable DejaVu Sans font is embedded in PDFs; SVG text remains editable and includes fallback font families. Single-column plots are 89 × 78 mm; the regional plots are 120 × 85 mm. The image canvas is not tightly cropped on export, preserving the physical dimensions.
-
-These choices follow [Nature's figure preparation guidance](https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/) on figure sizes, legible text and editable artwork. They provide a report-ready visual style, rather than asserting compliance with every journal's submission requirements. Use PDF or SVG for layout, and retain the native physical size when judging label legibility. PNG files are provided for report software that needs raster images.
-
-Markers show the six supplied years, positioned on a numerical time axis. Straight segments connect the supplied values; there is no smoothing, extrapolation or invented uncertainty. All plots include zero unless negative source values require a lower bound. Sector colours and line patterns are consistent across the global metric plots. Production-route plots distinguish totals, primary and secondary using separate markers and dashes.
-
-## Extend to later scenarios and panel figures
-
-Add scenario names to `scenarios` in the configuration, or repeat the command-line option:
-
-```powershell
+# Generate a separate report collection for each selected scenario
 python -m omnia_results --scenario baseline_noce --scenario ndc_noce
 ```
 
-Each scenario receives its own directory and audit. This does not combine scenarios into a single chart yet. No `ndc_noce` figures are generated by default.
+Multiple scenarios receive separate directories and audits. Combined scenario panels are a future extension; only `baseline_noce` is generated by default.
 
-The code separates calculation from rendering:
+## Report structure
 
-- [metrics.py](omnia_results/metrics.py): source validation, exact variable/unit selection, aggregation and unit conversions.
-- [plots.py](omnia_results/plots.py): curve/panel definitions, style, axes-level rendering and export.
-- [pipeline.py](omnia_results/pipeline.py): configuration, generation, provenance and review gallery.
+| Figure | Contents | Purpose |
+| --- | --- | --- |
+| 1 | Global cement/clinker, steel and aluminium production; three panels | Establish material demand and production routes. |
+| 2 | The 12 largest producer groups in 2050, comparing 2019 and 2050; three panels | Show production geography, with an additional remainder row for all other groups. |
+| 3 | Carbon-price indices for nine geographic groups; one plot | Compare Europe, China, India, North America and other regions on one consistent basis. |
+| 4 | Global final energy and derived energy intensity; six panels | Connect sector energy demand with energy per tonne. |
+| 5 | Emissions, share of industrial emissions, emissions intensity and capture; four panels | Present the emissions story together. |
+| 6 | System and sector annualised costs, 2024–2050; two panels | Make later-period cost trends legible. |
+| S1 | Reported energy intensity for the same producer cohorts as Figure 2; three panels | Retain regional efficiency detail in the supporting material. |
+| S2 | System and sector costs over 2019–2050; two panels | Retain the full source period, including anomalous initial costs. |
 
-`draw_panel(ax, panel)` accepts an existing Matplotlib `Axes`, so later panel figures can compose these same plots without rewriting the metric calculations. Shared scales and scenario encodings can be chosen when the comparison design is known.
+Figure 2 ranks groups separately for each sector after combining Europe. It uses the same 2050 cohort and ordering at both endpoints, rather than selecting different leaders in each year. Top-12 coverage in 2050 is approximately **85.7% for cement, 95.1% for steel and 94.0% for aluminium**, under the draft activity assumption below. The remainder completes the regional accounting.
+
+Production axes in Figure 2 are **logarithmic** so changes remain visible across producers of very different sizes. Endpoint connectors show changes between two observations, not intervening trajectories. Set `"producer_axis_scale": "linear"` in the configuration for linear axes. Logarithmic axes require positive observed endpoints; zero or negative endpoints raise an error requesting linear axes. Missing endpoints remain gaps. Figure S1 uses linear intensity axes.
+
+## Missing activity: a provisional assumption
+
+**The revised report provisionally treats blank cells and absent regional rows for additive activity as zero. The user has not confirmed this export convention.** This assumption is printed on the figures and gallery and recorded in the audit. It applies to production, fuel use, emissions and capture. Prices, costs and reported intensities retain missing values, and an entirely absent variable/unit is always an error.
+
+To retain all missing inputs, generate a separate copy:
+
+```powershell
+python -m omnia_results --missing-activity preserve --output report_figures_preserve
+```
+
+Under `preserve`, sums require complete regional coverage. Global aluminium production and carbon capture have no complete points in this export; other incomplete totals also appear as gaps. Producer rankings then describe the largest groups **with available ranking-year totals**, with fewer than 12 where necessary. They cannot establish an unconditional global top 12 when other totals are unknown, and global coverage may be unavailable. Every affected input and its treatment is listed in `missing_inputs.csv`.
+
+## Regional definitions and aggregation
+
+The supplied mapping is stored unchanged as [data/OMNIA_region_mapping_241120.csv](data/OMNIA_region_mapping_241120.csv), copied from `C:\git\omnia_demand_industry\shared_inputs\OMNIA_region_mapping_241120.csv`. Aggregation uses whole model-region codes in its `region` column. The separate `ZijieRegion` classification crosses model-region boundaries and is not used to aggregate results. Country rows describe membership; duplicate country rows do not become weights or duplicate result values.
+
+- **Europe** combines ENE, ENW, EUE, EUM and EUW before summation or ranking.
+- **North America**, in the carbon-price plot, combines USA, CAN and MEX.
+- **China** denotes CHN, whose source mapping also includes Hong Kong, Macao and Taiwan.
+- **Indonesia group** denotes IDN, which includes Indonesia, the Philippines and Viet Nam.
+- Other producer groups preserve individual model regions; their readable labels and exact memberships are exported. Broad geographic labels follow the supplied model partition rather than strict political borders.
+
+Both carbon-price groups and producer groups must partition all 28 result regions exactly once. See [region memberships](report_figures/baseline_noce/region_membership.csv), [country memberships](report_figures/baseline_noce/country_membership.csv) and [producer rankings](report_figures/baseline_noce/producer_rankings.csv).
+
+Carbon prices are weighted averages, not sums. Each geographic group's index uses **fixed 2019 industrial greenhouse-gas-emissions weights**, normalized within the group, for every plotted year. These are model price indices rather than uniform regional policies or country averages. Base emissions must be complete, finite and nonnegative, with a positive group total. Missing prices with positive weights invalidate the corresponding index; zero-weight members do not. Numerical weights are in [carbon_price_weights.csv](report_figures/baseline_noce/carbon_price_weights.csv).
+
+## Metric safeguards and source interpretation
+
+The original source-calculation module remains in use. Calculations select the exact scenario, variable and unit; reject duplicate source keys and unexpected regions; and never combine scenarios implicitly. Global additive quantities sum each of the 28 source regions once.
+
+- Cement production and clinker production are separate products, never added. Steel and aluminium production are primary plus secondary.
+- Final energy sums the exact carrier parents specified in the document, without adding overlapping detailed fuel subcategories.
+- Global energy intensity is summed EJ/yr divided by summed Mt/yr, multiplied by 1,000 to obtain GJ/t. Emissions intensity is summed MtCO2e/yr divided by summed Mt/yr. Nonpositive or missing denominators are undefined.
+- Emissions shares divide sector emissions by all-industry emissions. Capture is reported separately and is not subtracted again from reported emissions.
+- Figure S1 uses the supplied regional energy intensities. Europe's values are weighted by contemporaneous sector production; positive production with missing intensity makes the group intensity undefined. Reported and derived intensities differ in this export, so [intensity_comparison.csv](report_figures/baseline_noce/intensity_comparison.csv) retains both definitions.
+- Costs convert source millions of 2010 USD to trillions for the system and billions for sectors. Negative values are retained. In 2019, global steel costs exceed the system total and 14 regional cost observations are negative. Figure 6 starts in 2024; Figure S2 retains all years without correction. [negative_costs.csv](report_figures/baseline_noce/negative_costs.csv) identifies affected source values. Cost accounting needs checking before substantive interpretation.
+
+## Export and visual conventions
+
+Figures are 183 mm wide and at most 149 mm tall, with consistent sector colours, panel letters, markers and line patterns. Main plot text is approximately 6–8 pt, with smaller methodological notes. PDF embeds fonts and preserves vector artwork; SVG text remains editable; PNG exports use 600 dpi. Physical dimensions are preserved without tight cropping.
+
+[Nature's figure preparation guidance](https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/) is a style reference, not a claim of journal-specific submission compliance. Inspect legibility at the intended report size and use PDF/SVG in layouts where possible. Time-series markers show supplied model years on numerical time axes. No smoothing, extrapolation or uncertainty is invented.
+
+The [methods](report_figures/baseline_noce/methods.md) and [captions](report_figures/baseline_noce/captions.md) describe each aggregation and figure choice. [source_data.csv](report_figures/baseline_noce/source_data.csv) contains figure/panel identifiers, values, units and roles; `plotted` identifies chart data and `context` identifies producer-coverage information. Empty values denote missingness. Individual figure CSVs contain the same data for that figure.
+
+[audit.json](report_figures/baseline_noce/audit.json) records the selected scenario, complete configuration, input/mapping SHA-256 hashes, software versions and interpretation notes. [manifest.json](report_figures/baseline_noce/manifest.json) lists filenames, dimensions, panel counts and captions. These accompany the exports so the calculations and presentation can be reviewed together.
+
+## Code organization
+
+- [metrics.py](omnia_results/metrics.py): source validation, exact selection and metric calculations.
+- [report_data.py](omnia_results/report_data.py): regional partitions, fixed price weights, producer cohorts and weighted intensities.
+- [report.py](omnia_results/report.py): report figures, source-data exports, captions and audit.
+- [report_gallery.py](omnia_results/report_gallery.py): the sequential report gallery.
+- [pipeline.py](omnia_results/pipeline.py): configuration and command-line entry point; [plots.py](omnia_results/plots.py) retains the detailed figure workflow and shared style.
+
+Calculation and rendering remain separate so later comparisons can reuse the same metrics and geographic definitions when multiple scenarios are arranged into shared panel figures.

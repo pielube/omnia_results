@@ -1,0 +1,455 @@
+GroupType,Group,Region,region,country_OMNIA,ISO2,ISO3,ZijieRegion
+macroregion,Europe,ENE,ENE,Ukraine,UA,UKR,Europe
+macroregion,Europe,ENE,ENE,Belarus,BY,BLR,Rest of World
+macroregion,Europe,ENE,ENE,Serbia,RS,SRB,Europe
+macroregion,Europe,ENE,ENE,Bosnia and Herzegovina,BA,BIH,Rest of World
+macroregion,Europe,ENE,ENE,Republic of Moldova,MD,MDA,Europe
+macroregion,Europe,ENE,ENE,Republic of North Macedonia,MK,MKD,Europe
+macroregion,Europe,ENE,ENE,Kosovo,XK,XKX,Rest of World
+macroregion,Europe,ENE,ENE,Albania,AL,ALB,Rest of World
+macroregion,Europe,ENE,ENE,Montenegro,ME,MNE,Europe
+macroregion,Europe,ENW,ENW,Norway,NO,NOR,Europe
+macroregion,Europe,ENW,ENW,Svalbard and Jan Mayen Islands,SJ,SJM,Rest of World
+macroregion,Europe,ENW,ENW,Switzerland,CH,CHE,Europe
+macroregion,Europe,ENW,ENW,Liechtenstein,LI,LIE,Rest of World
+macroregion,Europe,ENW,ENW,Iceland,IS,ISL,Europe
+macroregion,Europe,ENW,ENW,United Kingdom of Great Britain and Northern Ireland,GB,GBR,UK
+macroregion,Europe,ENW,ENW,Gibraltar,GI,GIB,Rest of World
+macroregion,Europe,ENW,ENW,Saint Helena,SH ,SHN,Rest of World
+macroregion,Europe,EUE,EUE,Poland,PL,POL,Europe
+macroregion,Europe,EUE,EUE,Czechia,CZ,CZE,Europe
+macroregion,Europe,EUE,EUE,Romania,RO,ROU,Europe
+macroregion,Europe,EUE,EUE,Hungary,HU,HUN,Europe
+macroregion,Europe,EUE,EUE,Bulgaria,BG,BGR,Europe
+macroregion,Europe,EUE,EUE,Slovakia,SK,SVK,Europe
+macroregion,Europe,EUE,EUE,Croatia,HR,HRV,Europe
+macroregion,Europe,EUE,EUE,Lithuania,LT,LTU,Europe
+macroregion,Europe,EUE,EUE,Slovenia,SI,SVN,Europe
+macroregion,Europe,EUE,EUE,Estonia,EE,EST,Europe
+macroregion,Europe,EUE,EUE,Latvia,LV,LVA,Europe
+macroregion,Europe,EUM,EUM,France,FR,FRA,Europe
+macroregion,Europe,EUM,EUM,Monaco,MC,MCO,Rest of World
+macroregion,Europe,EUM,EUM,Italy,IT,ITA,Europe
+macroregion,Europe,EUM,EUM,San Marino,SM,SMR,Rest of World
+macroregion,Europe,EUM,EUM,Spain,ES,ESP,Europe
+macroregion,Europe,EUM,EUM,Greece,GR,GRC,Europe
+macroregion,Europe,EUM,EUM,Portugal,PT,PRT,Europe
+macroregion,Europe,EUM,EUM,Cyprus,CY,CYP,Europe
+macroregion,Europe,EUM,EUM,Malta,MT,MLT,Europe
+macroregion,Europe,EUW,EUW,Germany,DE,DEU,Europe
+macroregion,Europe,EUW,EUW,Netherlands,NL,NLD,Europe
+macroregion,Europe,EUW,EUW,Belgium,BE,BEL,Europe
+macroregion,Europe,EUW,EUW,Sweden,SE,SWE,Europe
+macroregion,Europe,EUW,EUW,Austria,AT,AUT,Europe
+macroregion,Europe,EUW,EUW,Finland,FI,FIN,Europe
+macroregion,Europe,EUW,EUW,Denmark,DK,DNK,Europe
+macroregion,Europe,EUW,EUW,Ireland,IE,IRL,Europe
+macroregion,Europe,EUW,EUW,Luxembourg,LU,LUX,Europe
+macroregion,Europe,EUW,EUW,Greenland,GL,GRL,Rest of World
+macroregion,Europe,EUW,EUW,Faroe Islands,FO,FRO,Rest of World
+macroregion,Europe,EUW,EUW,Andorra,AD,AND,Rest of World
+macroregion,China region,CHN,CHN,China,CN,CHN,China
+macroregion,China region,CHN,CHN,"China, Hong Kong Special Administrative Region",HK,HKG,Rest of World
+macroregion,China region,CHN,CHN,"China, Macao Special Administrative Region",MO,MAC,Rest of World
+macroregion,China region,CHN,CHN,"Taiwan, Province of China",TW,TWN,Other Asia
+macroregion,India,IND,IND,India,IN,IND,Other Asia
+macroregion,North America,USA,USA,United States of America,US,USA,North America
+macroregion,North America,CAN,CAN,Canada,CA,CAN,North America
+macroregion,North America,MEX,MEX,Mexico,MX,MEX,South America
+macroregion,Latin America & Caribbean,BRA,BRA,Brazil,BR,BRA,South America
+macroregion,Latin America & Caribbean,CHL,CHL,Chile,CL,CHL,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Argentina,AR,ARG,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Venezuela (Bolivarian Republic of),VE,VEN,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Colombia,CO,COL,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Peru,PE,PER,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Trinidad and Tobago,TT,TTO,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Ecuador,EC,ECU,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Guatemala,GT,GTM,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Cuba,CU,CUB,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Bolivia (Plurinational State of),BO,BOL,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Dominican Republic,DO,DOM,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Honduras,HN,HND,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Paraguay,PY,PRY,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Uruguay,UY,URY,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Costa Rica,CR,CRI,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,El Salvador,SV,SLV,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Haiti,HT,HTI,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Panama,PA,PAN,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Nicaragua,NI,NIC,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Jamaica,JM,JAM,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Curaçao,CW,CUW,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Suriname,SR,SUR,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Antigua and Barbuda,AG,ATG,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Aruba,AW,ABW,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Bahamas,BS,BHS,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Barbados,BB,BRB,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Belize,BZ,BLZ,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Bermuda,BM,BMU,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,British Virgin Islands,VG,VGB,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Cayman Islands,KY,CYM,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Dominica,DM,DMA,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Falkland Islands (Malvinas),FK,FLK,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Guyana,GY,GUY,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Grenada,GD,GRD,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Guadeloupe,GP,GLP,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Cooperative Republic of Guyana,GY,GUY,South America
+macroregion,Latin America & Caribbean,LAM,LAM,Martinique,MQ,MTQ,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Montserrat,MS,MSR,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Puerto Rico,PR,PRI,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,"Bonaire, Sint Eustatius and Saba",BQ,BES,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Saint Kitts and Nevis,KN,KNA,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Saint Lucia,LC,LCA,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Saint Pierre and Miquelon,PM,SPM,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Saint Vincent and the Grenadines,VC,VCT,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Saint Martin,MF,MAF,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Turks and Caicos Islands,TC,TCA,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Sint Maarten (Dutch part),SX,SXM,Rest of World
+macroregion,Latin America & Caribbean,LAM,LAM,Anguilla,AI,AIA,Rest of World
+macroregion,Other Asia–Pacific,ANZ,ANZ,Australia,AU,AUS,Other main producer
+macroregion,Other Asia–Pacific,ANZ,ANZ,New Zealand,NZ,NZL,Other main producer
+macroregion,Other Asia–Pacific,ASE,ASE,Thailand,TH,THA,Other Asia
+macroregion,Other Asia–Pacific,ASE,ASE,Malaysia,MY,MYS,Other Asia
+macroregion,Other Asia–Pacific,ASE,ASE,Singapore,SG,SGP,Other Asia
+macroregion,Other Asia–Pacific,ASE,ASE,Myanmar,MM,MMR,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Cambodia,KH,KHM,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Brunei Darussalam,BN,BRN,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Lao People's Democratic Republic,LA,LAO,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Democratic People's Republic of Korea,KP,PRK,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Cook Islands,CK,COK,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Timor-Leste,TL,TLS,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Fiji,FJ,FJI,Other main producer
+macroregion,Other Asia–Pacific,ASE,ASE,French Polynesia,PF,PYF,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Kiribati,KI,KIR,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,New Caledonia,NC,NCL,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Palau,PW,PLW,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Papua New Guinea,PG,PNG,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,American Samoa,AS,ASM,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Solomon Islands,SB,SLB,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Tonga,TO,TON,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Vanuatu,VU,VUT,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Niue,NU,NIU,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Samoa,WS,WSM,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Wallis and Futuna Islands,WF,WLF,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Micronesia (Federated States of),FM,FSM,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Nauru,NR,NRU,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Tuvalu,TV,TUV,Rest of World
+macroregion,Other Asia–Pacific,ASE,ASE,Northern Mariana Islands,MP,MNP,Rest of World
+macroregion,Other Asia–Pacific,ASO,ASO,Bangladesh,BD,BGD,Rest of World
+macroregion,Other Asia–Pacific,ASO,ASO,Nepal,NP,NPL,Rest of World
+macroregion,Other Asia–Pacific,ASO,ASO,Sri Lanka,LK,LKA,Rest of World
+macroregion,Other Asia–Pacific,ASO,ASO,Pakistan,PK,PAK,Other Asia
+macroregion,Other Asia–Pacific,ASO,ASO,Bhutan,BT,BTN,Rest of World
+macroregion,Other Asia–Pacific,ASO,ASO,Maldives,MV,MDV,Rest of World
+macroregion,Other Asia–Pacific,IDN,IDN,Indonesia,ID,IDN,Other Asia
+macroregion,Other Asia–Pacific,IDN,IDN,Philippines,PH,PHL,Rest of World
+macroregion,Other Asia–Pacific,IDN,IDN,Viet Nam,VN,VNM,Other Asia
+macroregion,Other Asia–Pacific,JPN,JPN,Japan,JP,JPN,Japan
+macroregion,Other Asia–Pacific,SKT,SKT,Republic of Korea,KR,KOR,Other Asia
+macroregion,Russia & Central Asia,RUS,RUS,Russian Federation,RU,RUS,Other main producer
+macroregion,Russia & Central Asia,ASC,ASC,Kazakhstan,KZ,KAZ,Other main producer
+macroregion,Russia & Central Asia,ASC,ASC,Uzbekistan,UZ,UZB,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Turkmenistan,TM,TKM,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Azerbaijan,AZ,AZE,Other main producer
+macroregion,Russia & Central Asia,ASC,ASC,Mongolia,MN,MNG,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Georgia,GE,GEO,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Kyrgyzstan,KG,KGZ,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Armenia,AM,ARM,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Tajikistan,TJ,TJK,Rest of World
+macroregion,Russia & Central Asia,ASC,ASC,Afghanistan,AF,AFG,Rest of World
+macroregion,Middle East,MDA,MDA,Turkey,TR,TUR,Europe
+macroregion,Middle East,MDA,MDA,Israel,IL,ISR,Rest of World
+macroregion,Middle East,MDA,MDA,Syrian Arab Republic,SY,SYR,Rest of World
+macroregion,Middle East,MDA,MDA,Jordan,JO,JOR,Rest of World
+macroregion,Middle East,MDA,MDA,Lebanon,LB,LBN,Rest of World
+macroregion,Middle East,MDA,MDA,State of Palestine,PS,PSE,Rest of World
+macroregion,Middle East,MEA,MEA,Iran (Islamic Republic of),IR,IRN,Middle East
+macroregion,Middle East,MEA,MEA,Saudi Arabia,SA,SAU,Middle East
+macroregion,Middle East,MEA,MEA,United Arab Emirates,AE,ARE,Middle East
+macroregion,Middle East,MEA,MEA,Iraq,IQ,IRQ,Rest of World
+macroregion,Middle East,MEA,MEA,Qatar,QA,QAT,Middle East
+macroregion,Middle East,MEA,MEA,Kuwait,KW,KWT,Rest of World
+macroregion,Middle East,MEA,MEA,Oman,OM,OMN,Middle East
+macroregion,Middle East,MEA,MEA,Bahrain,BH,BHR,Middle East
+macroregion,Middle East,MEA,MEA,Yemen,YE,YEM,Rest of World
+macroregion,Africa,AFE,AFE,Ethiopia,ET,ETH,Rest of World
+macroregion,Africa,AFE,AFE,Kenya,KE,KEN,Rest of World
+macroregion,Africa,AFE,AFE,Sudan,SD,SDN,Rest of World
+macroregion,Africa,AFE,AFE,Mauritius,MU,MUS,Rest of World
+macroregion,Africa,AFE,AFE,Eritrea,ER,ERI,Rest of World
+macroregion,Africa,AFE,AFE,South Sudan,SS,SSD,Rest of World
+macroregion,Africa,AFE,AFE,Burundi,BI,BDI,Rest of World
+macroregion,Africa,AFE,AFE,Comoros,KM,COM,Rest of World
+macroregion,Africa,AFE,AFE,Djibouti,DJ,DJI,Rest of World
+macroregion,Africa,AFE,AFE,Madagascar,MG,MDG,Rest of World
+macroregion,Africa,AFE,AFE,Reunion,RE,REU,Rest of World
+macroregion,Africa,AFE,AFE,Rwanda,RW,RWA,Rest of World
+macroregion,Africa,AFE,AFE,Somalia,SO,SOM,Rest of World
+macroregion,Africa,AFE,AFE,Uganda,UG,UGA,Rest of World
+macroregion,Africa,AFE,AFE,Seychelles,SC,SYC,Rest of World
+macroregion,Africa,AFE,AFE,United Republic of Tanzania,TZ,TZA,Other main producer
+macroregion,Africa,AFN,AFN,Egypt,EG,EGY,Other main producer
+macroregion,Africa,AFN,AFN,Algeria,DZ,DZA,Rest of World
+macroregion,Africa,AFN,AFN,Morocco,MA,MAR,Rest of World
+macroregion,Africa,AFN,AFN,Libya,LY,LBY,Rest of World
+macroregion,Africa,AFN,AFN,Tunisia,TN,TUN,Rest of World
+macroregion,Africa,AFW,AFW,Democratic Republic of the Congo,CD,COD,Rest of World
+macroregion,Africa,AFW,AFW,Cote d'Ivoire,CI,CIV,Rest of World
+macroregion,Africa,AFW,AFW,Ghana,GH,GHA,Rest of World
+macroregion,Africa,AFW,AFW,Cameroon,CM,CMR,Other main producer
+macroregion,Africa,AFW,AFW,Gabon,GA,GAB,Rest of World
+macroregion,Africa,AFW,AFW,Benin,BJ,BEN,Rest of World
+macroregion,Africa,AFW,AFW,Senegal,SN,SEN,Rest of World
+macroregion,Africa,AFW,AFW,Togo,TG,TGO,Rest of World
+macroregion,Africa,AFW,AFW,Niger,NE,NER,Rest of World
+macroregion,Africa,AFW,AFW,Congo,CG,COG,Rest of World
+macroregion,Africa,AFW,AFW,Burkina Faso,BF,BFA,Rest of World
+macroregion,Africa,AFW,AFW,Cabo Verde,CV,CPV,Rest of World
+macroregion,Africa,AFW,AFW,Central African Republic,CF,CAF,Rest of World
+macroregion,Africa,AFW,AFW,Chad,TD,TCD,Rest of World
+macroregion,Africa,AFW,AFW,Equatorial Guinea,GQ,GNQ,Rest of World
+macroregion,Africa,AFW,AFW,Gambia,GM,GMB,Rest of World
+macroregion,Africa,AFW,AFW,Guinea,GN,GIN,Other main producer
+macroregion,Africa,AFW,AFW,Guinea-Bissau,GW,GNB,Rest of World
+macroregion,Africa,AFW,AFW,Liberia,LR,LBR,Rest of World
+macroregion,Africa,AFW,AFW,Malawi,MW,MWI,Rest of World
+macroregion,Africa,AFW,AFW,Mali,ML,MLI,Rest of World
+macroregion,Africa,AFW,AFW,Mauritania,MR,MRT,Rest of World
+macroregion,Africa,AFW,AFW,Sao Tome and Principe,ST,STP,Rest of World
+macroregion,Africa,AFW,AFW,Sierra Leone,SL,SLE,Other main producer
+macroregion,Africa,AFZ,AFZ,Angola,AO,AGO,Rest of World
+macroregion,Africa,AFZ,AFZ,Mozambique,MZ,MOZ,Rest of World
+macroregion,Africa,AFZ,AFZ,Zimbabwe,ZW,ZWE,Other main producer
+macroregion,Africa,AFZ,AFZ,Zambia,ZM,ZMB,Rest of World
+macroregion,Africa,AFZ,AFZ,Botswana,BW,BWA,Rest of World
+macroregion,Africa,AFZ,AFZ,Namibia,,NAM,Rest of World
+macroregion,Africa,AFZ,AFZ,South Africa,ZA,ZAF,Other main producer
+macroregion,Africa,AFZ,AFZ,Eswatini,SZ,SWZ,Rest of World
+macroregion,Africa,AFZ,AFZ,Lesotho,LS,LSO,Rest of World
+macroregion,Africa,NIG,NIG,Nigeria,NG,NGA,Rest of World
+producer,Europe,ENE,ENE,Ukraine,UA,UKR,Europe
+producer,Europe,ENE,ENE,Belarus,BY,BLR,Rest of World
+producer,Europe,ENE,ENE,Serbia,RS,SRB,Europe
+producer,Europe,ENE,ENE,Bosnia and Herzegovina,BA,BIH,Rest of World
+producer,Europe,ENE,ENE,Republic of Moldova,MD,MDA,Europe
+producer,Europe,ENE,ENE,Republic of North Macedonia,MK,MKD,Europe
+producer,Europe,ENE,ENE,Kosovo,XK,XKX,Rest of World
+producer,Europe,ENE,ENE,Albania,AL,ALB,Rest of World
+producer,Europe,ENE,ENE,Montenegro,ME,MNE,Europe
+producer,Europe,ENW,ENW,Norway,NO,NOR,Europe
+producer,Europe,ENW,ENW,Svalbard and Jan Mayen Islands,SJ,SJM,Rest of World
+producer,Europe,ENW,ENW,Switzerland,CH,CHE,Europe
+producer,Europe,ENW,ENW,Liechtenstein,LI,LIE,Rest of World
+producer,Europe,ENW,ENW,Iceland,IS,ISL,Europe
+producer,Europe,ENW,ENW,United Kingdom of Great Britain and Northern Ireland,GB,GBR,UK
+producer,Europe,ENW,ENW,Gibraltar,GI,GIB,Rest of World
+producer,Europe,ENW,ENW,Saint Helena,SH ,SHN,Rest of World
+producer,Europe,EUE,EUE,Poland,PL,POL,Europe
+producer,Europe,EUE,EUE,Czechia,CZ,CZE,Europe
+producer,Europe,EUE,EUE,Romania,RO,ROU,Europe
+producer,Europe,EUE,EUE,Hungary,HU,HUN,Europe
+producer,Europe,EUE,EUE,Bulgaria,BG,BGR,Europe
+producer,Europe,EUE,EUE,Slovakia,SK,SVK,Europe
+producer,Europe,EUE,EUE,Croatia,HR,HRV,Europe
+producer,Europe,EUE,EUE,Lithuania,LT,LTU,Europe
+producer,Europe,EUE,EUE,Slovenia,SI,SVN,Europe
+producer,Europe,EUE,EUE,Estonia,EE,EST,Europe
+producer,Europe,EUE,EUE,Latvia,LV,LVA,Europe
+producer,Europe,EUM,EUM,France,FR,FRA,Europe
+producer,Europe,EUM,EUM,Monaco,MC,MCO,Rest of World
+producer,Europe,EUM,EUM,Italy,IT,ITA,Europe
+producer,Europe,EUM,EUM,San Marino,SM,SMR,Rest of World
+producer,Europe,EUM,EUM,Spain,ES,ESP,Europe
+producer,Europe,EUM,EUM,Greece,GR,GRC,Europe
+producer,Europe,EUM,EUM,Portugal,PT,PRT,Europe
+producer,Europe,EUM,EUM,Cyprus,CY,CYP,Europe
+producer,Europe,EUM,EUM,Malta,MT,MLT,Europe
+producer,Europe,EUW,EUW,Germany,DE,DEU,Europe
+producer,Europe,EUW,EUW,Netherlands,NL,NLD,Europe
+producer,Europe,EUW,EUW,Belgium,BE,BEL,Europe
+producer,Europe,EUW,EUW,Sweden,SE,SWE,Europe
+producer,Europe,EUW,EUW,Austria,AT,AUT,Europe
+producer,Europe,EUW,EUW,Finland,FI,FIN,Europe
+producer,Europe,EUW,EUW,Denmark,DK,DNK,Europe
+producer,Europe,EUW,EUW,Ireland,IE,IRL,Europe
+producer,Europe,EUW,EUW,Luxembourg,LU,LUX,Europe
+producer,Europe,EUW,EUW,Greenland,GL,GRL,Rest of World
+producer,Europe,EUW,EUW,Faroe Islands,FO,FRO,Rest of World
+producer,Europe,EUW,EUW,Andorra,AD,AND,Rest of World
+producer,China region,CHN,CHN,China,CN,CHN,China
+producer,China region,CHN,CHN,"China, Hong Kong Special Administrative Region",HK,HKG,Rest of World
+producer,China region,CHN,CHN,"China, Macao Special Administrative Region",MO,MAC,Rest of World
+producer,China region,CHN,CHN,"Taiwan, Province of China",TW,TWN,Other Asia
+producer,India,IND,IND,India,IN,IND,Other Asia
+producer,United States,USA,USA,United States of America,US,USA,North America
+producer,Canada,CAN,CAN,Canada,CA,CAN,North America
+producer,Mexico,MEX,MEX,Mexico,MX,MEX,South America
+producer,Brazil,BRA,BRA,Brazil,BR,BRA,South America
+producer,Chile,CHL,CHL,Chile,CL,CHL,Rest of World
+producer,Other Latin America,LAM,LAM,Argentina,AR,ARG,South America
+producer,Other Latin America,LAM,LAM,Venezuela (Bolivarian Republic of),VE,VEN,South America
+producer,Other Latin America,LAM,LAM,Colombia,CO,COL,Rest of World
+producer,Other Latin America,LAM,LAM,Peru,PE,PER,Rest of World
+producer,Other Latin America,LAM,LAM,Trinidad and Tobago,TT,TTO,Rest of World
+producer,Other Latin America,LAM,LAM,Ecuador,EC,ECU,Rest of World
+producer,Other Latin America,LAM,LAM,Guatemala,GT,GTM,Rest of World
+producer,Other Latin America,LAM,LAM,Cuba,CU,CUB,Rest of World
+producer,Other Latin America,LAM,LAM,Bolivia (Plurinational State of),BO,BOL,Rest of World
+producer,Other Latin America,LAM,LAM,Dominican Republic,DO,DOM,South America
+producer,Other Latin America,LAM,LAM,Honduras,HN,HND,Rest of World
+producer,Other Latin America,LAM,LAM,Paraguay,PY,PRY,Rest of World
+producer,Other Latin America,LAM,LAM,Uruguay,UY,URY,Rest of World
+producer,Other Latin America,LAM,LAM,Costa Rica,CR,CRI,Rest of World
+producer,Other Latin America,LAM,LAM,El Salvador,SV,SLV,Rest of World
+producer,Other Latin America,LAM,LAM,Haiti,HT,HTI,South America
+producer,Other Latin America,LAM,LAM,Panama,PA,PAN,Rest of World
+producer,Other Latin America,LAM,LAM,Nicaragua,NI,NIC,Rest of World
+producer,Other Latin America,LAM,LAM,Jamaica,JM,JAM,South America
+producer,Other Latin America,LAM,LAM,Curaçao,CW,CUW,Rest of World
+producer,Other Latin America,LAM,LAM,Suriname,SR,SUR,South America
+producer,Other Latin America,LAM,LAM,Antigua and Barbuda,AG,ATG,Rest of World
+producer,Other Latin America,LAM,LAM,Aruba,AW,ABW,Rest of World
+producer,Other Latin America,LAM,LAM,Bahamas,BS,BHS,Rest of World
+producer,Other Latin America,LAM,LAM,Barbados,BB,BRB,Rest of World
+producer,Other Latin America,LAM,LAM,Belize,BZ,BLZ,Rest of World
+producer,Other Latin America,LAM,LAM,Bermuda,BM,BMU,Rest of World
+producer,Other Latin America,LAM,LAM,British Virgin Islands,VG,VGB,Rest of World
+producer,Other Latin America,LAM,LAM,Cayman Islands,KY,CYM,Rest of World
+producer,Other Latin America,LAM,LAM,Dominica,DM,DMA,Rest of World
+producer,Other Latin America,LAM,LAM,Falkland Islands (Malvinas),FK,FLK,Rest of World
+producer,Other Latin America,LAM,LAM,Guyana,GY,GUY,South America
+producer,Other Latin America,LAM,LAM,Grenada,GD,GRD,Rest of World
+producer,Other Latin America,LAM,LAM,Guadeloupe,GP,GLP,Rest of World
+producer,Other Latin America,LAM,LAM,Cooperative Republic of Guyana,GY,GUY,South America
+producer,Other Latin America,LAM,LAM,Martinique,MQ,MTQ,Rest of World
+producer,Other Latin America,LAM,LAM,Montserrat,MS,MSR,Rest of World
+producer,Other Latin America,LAM,LAM,Puerto Rico,PR,PRI,Rest of World
+producer,Other Latin America,LAM,LAM,"Bonaire, Sint Eustatius and Saba",BQ,BES,Rest of World
+producer,Other Latin America,LAM,LAM,Saint Kitts and Nevis,KN,KNA,Rest of World
+producer,Other Latin America,LAM,LAM,Saint Lucia,LC,LCA,Rest of World
+producer,Other Latin America,LAM,LAM,Saint Pierre and Miquelon,PM,SPM,Rest of World
+producer,Other Latin America,LAM,LAM,Saint Vincent and the Grenadines,VC,VCT,Rest of World
+producer,Other Latin America,LAM,LAM,Saint Martin,MF,MAF,Rest of World
+producer,Other Latin America,LAM,LAM,Turks and Caicos Islands,TC,TCA,Rest of World
+producer,Other Latin America,LAM,LAM,Sint Maarten (Dutch part),SX,SXM,Rest of World
+producer,Other Latin America,LAM,LAM,Anguilla,AI,AIA,Rest of World
+producer,Australia & NZ,ANZ,ANZ,Australia,AU,AUS,Other main producer
+producer,Australia & NZ,ANZ,ANZ,New Zealand,NZ,NZL,Other main producer
+producer,Japan,JPN,JPN,Japan,JP,JPN,Japan
+producer,South Korea,SKT,SKT,Republic of Korea,KR,KOR,Other Asia
+producer,Indonesia group,IDN,IDN,Indonesia,ID,IDN,Other Asia
+producer,Indonesia group,IDN,IDN,Philippines,PH,PHL,Rest of World
+producer,Indonesia group,IDN,IDN,Viet Nam,VN,VNM,Other Asia
+producer,Other Asia–Pacific,ASE,ASE,Thailand,TH,THA,Other Asia
+producer,Other Asia–Pacific,ASE,ASE,Malaysia,MY,MYS,Other Asia
+producer,Other Asia–Pacific,ASE,ASE,Singapore,SG,SGP,Other Asia
+producer,Other Asia–Pacific,ASE,ASE,Myanmar,MM,MMR,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Cambodia,KH,KHM,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Brunei Darussalam,BN,BRN,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Lao People's Democratic Republic,LA,LAO,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Democratic People's Republic of Korea,KP,PRK,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Cook Islands,CK,COK,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Timor-Leste,TL,TLS,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Fiji,FJ,FJI,Other main producer
+producer,Other Asia–Pacific,ASE,ASE,French Polynesia,PF,PYF,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Kiribati,KI,KIR,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,New Caledonia,NC,NCL,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Palau,PW,PLW,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Papua New Guinea,PG,PNG,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,American Samoa,AS,ASM,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Solomon Islands,SB,SLB,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Tonga,TO,TON,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Vanuatu,VU,VUT,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Niue,NU,NIU,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Samoa,WS,WSM,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Wallis and Futuna Islands,WF,WLF,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Micronesia (Federated States of),FM,FSM,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Nauru,NR,NRU,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Tuvalu,TV,TUV,Rest of World
+producer,Other Asia–Pacific,ASE,ASE,Northern Mariana Islands,MP,MNP,Rest of World
+producer,Other South Asia,ASO,ASO,Bangladesh,BD,BGD,Rest of World
+producer,Other South Asia,ASO,ASO,Nepal,NP,NPL,Rest of World
+producer,Other South Asia,ASO,ASO,Sri Lanka,LK,LKA,Rest of World
+producer,Other South Asia,ASO,ASO,Pakistan,PK,PAK,Other Asia
+producer,Other South Asia,ASO,ASO,Bhutan,BT,BTN,Rest of World
+producer,Other South Asia,ASO,ASO,Maldives,MV,MDV,Rest of World
+producer,Russia,RUS,RUS,Russian Federation,RU,RUS,Other main producer
+producer,Central Asia group,ASC,ASC,Kazakhstan,KZ,KAZ,Other main producer
+producer,Central Asia group,ASC,ASC,Uzbekistan,UZ,UZB,Rest of World
+producer,Central Asia group,ASC,ASC,Turkmenistan,TM,TKM,Rest of World
+producer,Central Asia group,ASC,ASC,Azerbaijan,AZ,AZE,Other main producer
+producer,Central Asia group,ASC,ASC,Mongolia,MN,MNG,Rest of World
+producer,Central Asia group,ASC,ASC,Georgia,GE,GEO,Rest of World
+producer,Central Asia group,ASC,ASC,Kyrgyzstan,KG,KGZ,Rest of World
+producer,Central Asia group,ASC,ASC,Armenia,AM,ARM,Rest of World
+producer,Central Asia group,ASC,ASC,Tajikistan,TJ,TJK,Rest of World
+producer,Central Asia group,ASC,ASC,Afghanistan,AF,AFG,Rest of World
+producer,Eastern Africa,AFE,AFE,Ethiopia,ET,ETH,Rest of World
+producer,Eastern Africa,AFE,AFE,Kenya,KE,KEN,Rest of World
+producer,Eastern Africa,AFE,AFE,Sudan,SD,SDN,Rest of World
+producer,Eastern Africa,AFE,AFE,Mauritius,MU,MUS,Rest of World
+producer,Eastern Africa,AFE,AFE,Eritrea,ER,ERI,Rest of World
+producer,Eastern Africa,AFE,AFE,South Sudan,SS,SSD,Rest of World
+producer,Eastern Africa,AFE,AFE,Burundi,BI,BDI,Rest of World
+producer,Eastern Africa,AFE,AFE,Comoros,KM,COM,Rest of World
+producer,Eastern Africa,AFE,AFE,Djibouti,DJ,DJI,Rest of World
+producer,Eastern Africa,AFE,AFE,Madagascar,MG,MDG,Rest of World
+producer,Eastern Africa,AFE,AFE,Reunion,RE,REU,Rest of World
+producer,Eastern Africa,AFE,AFE,Rwanda,RW,RWA,Rest of World
+producer,Eastern Africa,AFE,AFE,Somalia,SO,SOM,Rest of World
+producer,Eastern Africa,AFE,AFE,Uganda,UG,UGA,Rest of World
+producer,Eastern Africa,AFE,AFE,Seychelles,SC,SYC,Rest of World
+producer,Eastern Africa,AFE,AFE,United Republic of Tanzania,TZ,TZA,Other main producer
+producer,Northern Africa,AFN,AFN,Egypt,EG,EGY,Other main producer
+producer,Northern Africa,AFN,AFN,Algeria,DZ,DZA,Rest of World
+producer,Northern Africa,AFN,AFN,Morocco,MA,MAR,Rest of World
+producer,Northern Africa,AFN,AFN,Libya,LY,LBY,Rest of World
+producer,Northern Africa,AFN,AFN,Tunisia,TN,TUN,Rest of World
+producer,West & Central Africa,AFW,AFW,Democratic Republic of the Congo,CD,COD,Rest of World
+producer,West & Central Africa,AFW,AFW,Cote d'Ivoire,CI,CIV,Rest of World
+producer,West & Central Africa,AFW,AFW,Ghana,GH,GHA,Rest of World
+producer,West & Central Africa,AFW,AFW,Cameroon,CM,CMR,Other main producer
+producer,West & Central Africa,AFW,AFW,Gabon,GA,GAB,Rest of World
+producer,West & Central Africa,AFW,AFW,Benin,BJ,BEN,Rest of World
+producer,West & Central Africa,AFW,AFW,Senegal,SN,SEN,Rest of World
+producer,West & Central Africa,AFW,AFW,Togo,TG,TGO,Rest of World
+producer,West & Central Africa,AFW,AFW,Niger,NE,NER,Rest of World
+producer,West & Central Africa,AFW,AFW,Congo,CG,COG,Rest of World
+producer,West & Central Africa,AFW,AFW,Burkina Faso,BF,BFA,Rest of World
+producer,West & Central Africa,AFW,AFW,Cabo Verde,CV,CPV,Rest of World
+producer,West & Central Africa,AFW,AFW,Central African Republic,CF,CAF,Rest of World
+producer,West & Central Africa,AFW,AFW,Chad,TD,TCD,Rest of World
+producer,West & Central Africa,AFW,AFW,Equatorial Guinea,GQ,GNQ,Rest of World
+producer,West & Central Africa,AFW,AFW,Gambia,GM,GMB,Rest of World
+producer,West & Central Africa,AFW,AFW,Guinea,GN,GIN,Other main producer
+producer,West & Central Africa,AFW,AFW,Guinea-Bissau,GW,GNB,Rest of World
+producer,West & Central Africa,AFW,AFW,Liberia,LR,LBR,Rest of World
+producer,West & Central Africa,AFW,AFW,Malawi,MW,MWI,Rest of World
+producer,West & Central Africa,AFW,AFW,Mali,ML,MLI,Rest of World
+producer,West & Central Africa,AFW,AFW,Mauritania,MR,MRT,Rest of World
+producer,West & Central Africa,AFW,AFW,Sao Tome and Principe,ST,STP,Rest of World
+producer,West & Central Africa,AFW,AFW,Sierra Leone,SL,SLE,Other main producer
+producer,Southern Africa,AFZ,AFZ,Angola,AO,AGO,Rest of World
+producer,Southern Africa,AFZ,AFZ,Mozambique,MZ,MOZ,Rest of World
+producer,Southern Africa,AFZ,AFZ,Zimbabwe,ZW,ZWE,Other main producer
+producer,Southern Africa,AFZ,AFZ,Zambia,ZM,ZMB,Rest of World
+producer,Southern Africa,AFZ,AFZ,Botswana,BW,BWA,Rest of World
+producer,Southern Africa,AFZ,AFZ,Namibia,,NAM,Rest of World
+producer,Southern Africa,AFZ,AFZ,South Africa,ZA,ZAF,Other main producer
+producer,Southern Africa,AFZ,AFZ,Eswatini,SZ,SWZ,Rest of World
+producer,Southern Africa,AFZ,AFZ,Lesotho,LS,LSO,Rest of World
+producer,Nigeria,NIG,NIG,Nigeria,NG,NGA,Rest of World
+producer,Turkey & Levant,MDA,MDA,Turkey,TR,TUR,Europe
+producer,Turkey & Levant,MDA,MDA,Israel,IL,ISR,Rest of World
+producer,Turkey & Levant,MDA,MDA,Syrian Arab Republic,SY,SYR,Rest of World
+producer,Turkey & Levant,MDA,MDA,Jordan,JO,JOR,Rest of World
+producer,Turkey & Levant,MDA,MDA,Lebanon,LB,LBN,Rest of World
+producer,Turkey & Levant,MDA,MDA,State of Palestine,PS,PSE,Rest of World
+producer,Gulf & Iran,MEA,MEA,Iran (Islamic Republic of),IR,IRN,Middle East
+producer,Gulf & Iran,MEA,MEA,Saudi Arabia,SA,SAU,Middle East
+producer,Gulf & Iran,MEA,MEA,United Arab Emirates,AE,ARE,Middle East
+producer,Gulf & Iran,MEA,MEA,Iraq,IQ,IRQ,Rest of World
+producer,Gulf & Iran,MEA,MEA,Qatar,QA,QAT,Middle East
+producer,Gulf & Iran,MEA,MEA,Kuwait,KW,KWT,Rest of World
+producer,Gulf & Iran,MEA,MEA,Oman,OM,OMN,Middle East
+producer,Gulf & Iran,MEA,MEA,Bahrain,BH,BHR,Middle East
+producer,Gulf & Iran,MEA,MEA,Yemen,YE,YEM,Rest of World

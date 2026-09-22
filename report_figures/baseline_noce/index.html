@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Industrial transitions | baseline_noce</title>
+<style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#202b32;background:#f5f6f4;font-size:16px;line-height:1.55}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}
+a{color:#006887;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#003f55}a:focus-visible,summary:focus-visible{outline:3px solid #1385a5;outline-offset:4px}
+main{max-width:1136px;margin:0 auto;padding:52px 32px 40px}
+.eyebrow{margin:0 0 12px;color:#647078;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:42px;font-weight:600;line-height:1.14;letter-spacing:-.035em;margin:0 0 16px}
+.intro{max-width:780px;margin:0;color:#56646c;font-size:17px}
+.suite-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:24px 0}
+.suite-links a{font-size:14px;font-weight:600}.suite-links .primary-link{display:inline-block;background:#173f4b;color:white;padding:10px 16px;border-radius:4px;text-decoration:none}
+.assumption{border-left:3px solid #ad7e2e;background:#fff7e8;padding:12px 16px;margin:22px 0;color:#694e24;font-size:14px}
+.figure-nav{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:24px 0 40px}
+.figure-nav span{font-size:13px;color:#5b6a72;margin-right:8px}
+.figure-nav a{display:inline-flex;min-width:34px;height:32px;justify-content:center;align-items:center;border:1px solid #cad3d5;border-radius:4px;background:white;font-size:13px;text-decoration:none}
+.figure-nav a:hover{background:#e6eff0;border-color:#7f9ca5}
+.section-heading{display:flex;gap:14px;align-items:baseline;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid #ced7d9}
+h2{font-size:19px;font-weight:600;margin:0}.section-heading p{font-size:13px;color:#69777e;margin:0}
+.figure-card{background:white;border:1px solid #dce2e2;border-radius:5px;margin-bottom:32px;overflow:hidden;scroll-margin-top:24px}
+.figure-heading{padding:24px 28px 8px}.figure-number{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#65737b;margin:0 0 6px}
+h3{font-size:23px;line-height:1.3;letter-spacing:-.012em;font-weight:600;margin:0 0 8px}
+.purpose{color:#617078;font-size:14px;margin:0;max-width:900px}figure{margin:0}
+.artwork{padding:12px 22px 16px}.artwork img{display:block;width:100%;height:auto;margin:auto}
+.no-preview{padding:32px 10px;text-align:center}
+figcaption{margin:0 28px;padding:18px 0 0;border-top:1px solid #e5e9e9;font-size:13px;line-height:1.65;color:#52616a}
+.downloads{display:flex;flex-wrap:wrap;gap:18px;padding:15px 28px 22px}
+.downloads a{font-size:12px;font-weight:600;letter-spacing:.035em}
+.support-section{margin-top:46px}summary{cursor:pointer}
+.supporting>summary{font-size:19px;font-weight:600;padding:0 0 16px;border-bottom:1px solid #ced7d9}
+.supporting>summary span{font-size:13px;font-weight:400;color:#69777e;margin-left:14px}
+.supporting-content{padding-top:20px}.methods{margin-top:38px;background:#eaf0ee;border:1px solid #d8e1dd;border-radius:5px;padding:18px 22px}
+.methods>summary{font-size:15px;font-weight:600}.methods ul{padding-left:20px;margin:16px 0}
+.methods li{font-size:13px;color:#52616a;margin:8px 0;line-height:1.6}
+.method-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px}.method-links a{font-size:13px}
+footer{margin-top:28px;font-size:12px;line-height:1.6;color:#69777e}
+@media(max-width:700px){main{padding:30px 16px}h1{font-size:34px}.intro{font-size:15px}.figure-heading{padding:20px 18px 6px}h3{font-size:20px}.artwork{padding:8px 6px 12px}figcaption{margin:0 18px}.downloads{padding:14px 18px 20px}.figure-nav{margin-bottom:30px}.supporting>summary span{display:block;margin-left:18px;margin-top:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  @page{size:A4 portrait;margin:13mm}
+  :root{background:white;color:black;font-size:10pt}main{max-width:none;padding:0}
+  h1{font-size:25pt}.intro{font-size:10pt}.eyebrow{font-size:8pt}
+  .suite-links,.figure-nav,.downloads,.methods,footer{display:none}
+  .assumption{background:white;color:black;border:1px solid #888;font-size:9pt}
+  .section-heading{margin-top:20px}.section-heading p{font-size:9pt}
+  .figure-card{break-before:page;break-inside:avoid;border:none;border-radius:0;margin:0}
+  .figure-heading{padding:0 0 6px}h3{font-size:15pt}.purpose{font-size:9pt}
+  .artwork{padding:6px 0}.artwork img{max-height:200mm;object-fit:contain}
+  figcaption{margin:0;padding-top:8px;font-size:8pt;line-height:1.45}
+  .support-section{margin-top:0}.supporting>summary{font-size:13pt;list-style:none}
+  .supporting>summary::marker{content:""}.supporting-content{display:block!important;padding:0}
+  details::details-content{display:block!important;content-visibility:visible!important}
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="eyebrow">OMNIA / Report figures</p>
+  <h1>Industrial transitions</h1>
+  <p class="intro">Baseline · no CE · 2019–2050.<br>
+  6 main figures present production, regional change, carbon prices, energy, emissions and costs.</p>
+  <div class="suite-links">
+    <a class="primary-link" href="report_figures.pdf">Download complete figure set · PDF</a>
+    <a href="captions.md">Figure captions</a>
+    <a href="methods.md">Methods &amp; definitions</a>
+  </div>
+  <aside class="assumption"><strong>Draft assumption:</strong> blank activity values are treated as zero; prices and reported intensities are not filled.</aside>
+  <nav class="figure-nav" aria-label="Jump to figure"><span>Jump to figure</span><a href="#figure1" title="Material production and production routes">1</a><a href="#figure2" title="The geography of industrial production">2</a><a href="#figure3" title="Regional carbon-price indices">3</a><a href="#figure4" title="Industrial energy requirements">4</a><a href="#figure5" title="Industrial emissions and carbon capture">5</a><a href="#figure6" title="Annualised costs, 2024–2050">6</a><a href="#figureS1" title="Energy intensity in the leading producer regions">S1</a><a href="#figureS2" title="Annualised costs: full source period">S2</a></nav>
+</header>
+<section aria-labelledby="main-title">
+  <div class="section-heading"><h2 id="main-title">Main report</h2><p>6 figures</p></div>
+  <article class="figure-card" id="figure1" aria-labelledby="title1">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 1</p>
+    <h3 id="title1">Material production and production routes</h3>
+    <p class="purpose">How do global material output and production routes evolve?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig01_production.svg" alt="Figure 1: Material production and production routes" decoding="async"></div>
+    <figcaption>Figure 1. Material production and production routes. Baseline · no CE. Global production of (a) cement and clinker, (b) iron and steel, and (c) aluminium. Steel and aluminium totals are primary plus secondary production. Cement and clinker are distinct products and are not added. Each sector has its own vertical scale; markers show the supplied model years. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 1"><a href="fig01_production.pdf">PDF</a><a href="fig01_production.svg">SVG</a><a href="fig01_production.png">PNG</a><a href="fig01_production.csv">Source CSV</a></nav>
+</article><article class="figure-card" id="figure2" aria-labelledby="title2">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 2</p>
+    <h3 id="title2">The geography of industrial production</h3>
+    <p class="purpose">Where is production concentrated, and how does it move between 2019 and 2050?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig02_leading_producers.svg" alt="Figure 2: The geography of industrial production" decoding="async"></div>
+    <figcaption>Figure 2. The geography of industrial production. Baseline · no CE. The 12 largest producer groups in 2050, ranked separately for each sector. The same 2050 cohort and ordering are used for both endpoint years (2019 and 2050). Europe aggregates ENE, ENW, EUE, EUM and EUW; remaining producer groups preserve individual model regions. China denotes the CHN model region (including Hong Kong, Macao and Taiwan). Indonesia group includes Indonesia, Philippines and Viet Nam. Exact memberships accompany the figures. The final row is the unranked sum of all remaining groups, retaining complete global accounting. Open circles show the first year; filled diamonds show the ranking year. Thin connectors indicate endpoint changes, not intervening trajectories. Production axes are logarithmic to make changes visible across producers spanning several orders of magnitude. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 2"><a href="fig02_leading_producers.pdf">PDF</a><a href="fig02_leading_producers.svg">SVG</a><a href="fig02_leading_producers.png">PNG</a><a href="fig02_leading_producers.csv">Source CSV</a></nav>
+</article><article class="figure-card" id="figure3" aria-labelledby="title3">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 3</p>
+    <h3 id="title3">Regional carbon-price indices</h3>
+    <p class="purpose">How do carbon-price paths differ across economically meaningful regional groups?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig03_carbon_prices.svg" alt="Figure 3: Regional carbon-price indices" decoding="async"></div>
+    <figcaption>Figure 3. Regional carbon-price indices. Baseline · no CE. 9 disjoint groups cover all 28 model regions. Each line is an index calculated as the weighted mean of model-region carbon prices, using fixed 2019 industrial greenhouse-gas emissions as weights. The weights do not change with decarbonisation or relocation of industry, so changes reflect the price paths. These indices are not uniform regional policies, population-weighted prices, or averages across countries. North America includes the United States, Canada and Mexico; Europe contains the five European model regions; China is the CHN model region. Exact membership and numerical weights are supplied in CSV files. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 3"><a href="fig03_carbon_prices.pdf">PDF</a><a href="fig03_carbon_prices.svg">SVG</a><a href="fig03_carbon_prices.png">PNG</a><a href="fig03_carbon_prices.csv">Source CSV</a></nav>
+</article><article class="figure-card" id="figure4" aria-labelledby="title4">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 4</p>
+    <h3 id="title4">Industrial energy requirements</h3>
+    <p class="purpose">How do total energy requirements and energy per tonne evolve together?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig04_energy.svg" alt="Figure 4: Industrial energy requirements" decoding="async"></div>
+    <figcaption>Figure 4. Industrial energy requirements. Baseline · no CE. Global sectoral final energy (a–c) and derived energy intensity (d–f), with sector columns aligned. Energy sums exactly the carrier-level variables listed in ResultsMetrics.docx, excluding nested fuel subcategories. Global intensity is global final energy divided by global sector production, converted from EJ/Mt to GJ/t. Cement uses cement production; steel and aluminium use primary plus secondary production. Each panel has its own vertical scale. Reported regional intensities, a different source definition, are in Figure S1. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 4"><a href="fig04_energy.pdf">PDF</a><a href="fig04_energy.svg">SVG</a><a href="fig04_energy.png">PNG</a><a href="fig04_energy.csv">Source CSV</a></nav>
+</article><article class="figure-card" id="figure5" aria-labelledby="title5">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 5</p>
+    <h3 id="title5">Industrial emissions and carbon capture</h3>
+    <p class="purpose">How do sector emissions, emissions intensity and capture change?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig05_emissions.svg" alt="Figure 5: Industrial emissions and carbon capture" decoding="async"></div>
+    <figcaption>Figure 5. Industrial emissions and carbon capture. Baseline · no CE. Global sectoral (a) greenhouse-gas emissions, (b) share of total industry greenhouse-gas emissions, (c) emissions per tonne of production, and (d) CO₂ capture. Industry shares use Emissions|GHG|Industry as denominator; the three sectors are not assumed to exhaust industry. Emissions intensity is a ratio of global sums. Capture is shown separately and is not subtracted again from reported emissions. GHG emissions and CO₂ capture use their distinct source units. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 5"><a href="fig05_emissions.pdf">PDF</a><a href="fig05_emissions.svg">SVG</a><a href="fig05_emissions.png">PNG</a><a href="fig05_emissions.csv">Source CSV</a></nav>
+</article><article class="figure-card" id="figure6" aria-labelledby="title6">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 6</p>
+    <h3 id="title6">Annualised costs, 2024–2050</h3>
+    <p class="purpose">How do system and industrial costs evolve?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig06_costs.svg" alt="Figure 6: Annualised costs, 2024–2050" decoding="async"></div>
+    <figcaption>Figure 6. Annualised costs, 2024–2050. Baseline · no CE. Global annualised (a) whole-system and (b) sector costs, in constant 2010 USD. The system axis uses trillions and the sector axis billions; costs are not stacked or interpreted as an exhaustive system breakdown. The main report shows 2024–2050 to keep later trends legible. Initial-year cost anomalies are not corrected or discarded: the full-period series appear in Figure S2 and the audit identifies negative regional costs. Source cost accounting needs checking before substantive interpretation. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 6"><a href="fig06_costs.pdf">PDF</a><a href="fig06_costs.svg">SVG</a><a href="fig06_costs.png">PNG</a><a href="fig06_costs.csv">Source CSV</a></nav>
+</article>
+</section>
+<section class="support-section" aria-labelledby="support-title">
+  <details class="supporting" open>
+    <summary id="support-title">Supporting figures <span>Appendix · 2 figures</span></summary>
+    <div class="supporting-content"><article class="figure-card" id="figureS1" aria-labelledby="titleS1">
+  <header class="figure-heading">
+    <p class="figure-number">Figure S1</p>
+    <h3 id="titleS1">Energy intensity in the leading producer regions</h3>
+    <p class="purpose">How do energy intensities compare within the same leading-producer cohort?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="figS1_producer_intensity.svg" alt="Figure S1: Energy intensity in the leading producer regions" decoding="async"></div>
+    <figcaption>Figure S1. Energy intensity in the leading producer regions. Baseline · no CE. The 12 largest producer groups in 2050, ranked separately for each sector. The same 2050 cohort and ordering are used for both endpoint years (2019 and 2050). Europe aggregates ENE, ENW, EUE, EUM and EUW; remaining producer groups preserve individual model regions. China denotes the CHN model region (including Hong Kong, Macao and Taiwan). Indonesia group includes Indonesia, Philippines and Viet Nam. Exact memberships accompany the figures. Dots show supplied regional energy intensity, converted to GJ/t. Europe&#x27;s source intensities are weighted by contemporaneous sector production. These reported intensities use the source definition and differ from the derived global final-energy/production intensities in Figure 4. Missing intensity values remain gaps. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure S1"><a href="figS1_producer_intensity.pdf">PDF</a><a href="figS1_producer_intensity.svg">SVG</a><a href="figS1_producer_intensity.png">PNG</a><a href="figS1_producer_intensity.csv">Source CSV</a></nav>
+</article><article class="figure-card" id="figureS2" aria-labelledby="titleS2">
+  <header class="figure-heading">
+    <p class="figure-number">Figure S2</p>
+    <h3 id="titleS2">Annualised costs: full source period</h3>
+    <p class="purpose">How do system and industrial costs evolve?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="figS2_costs_full_period.svg" alt="Figure S2: Annualised costs: full source period" decoding="async"></div>
+    <figcaption>Figure S2. Annualised costs: full source period. Baseline · no CE. Global annualised (a) whole-system and (b) sector costs, in constant 2010 USD. The system axis uses trillions and the sector axis billions; costs are not stacked or interpreted as an exhaustive system breakdown. All years and signed source values are retained. In the supplied baseline export, 2019 steel costs exceed total-system costs, and several regional system costs are negative. This figure makes the anomalous values visible without compressing the main report&#x27;s later-period trends. Blank cells and absent regional rows for additive activity variables are provisionally treated as zero; missing prices, costs and reported intensities remain missing. No uncertainty estimates were supplied.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure S2"><a href="figS2_costs_full_period.pdf">PDF</a><a href="figS2_costs_full_period.svg">SVG</a><a href="figS2_costs_full_period.png">PNG</a><a href="figS2_costs_full_period.csv">Source CSV</a></nav>
+</article></div>
+  </details>
+</section>
+<details class="methods">
+  <summary>Methods, source data and calculation checks</summary>
+  <ul><li>Six main figures tell the report story; Figures S1 and S2 hold regional-intensity detail and full-period costs.</li><li>Blank activity values are provisionally treated as zero. This is a draft assumption, not a confirmed export convention. Prices, costs and reported intensities are never zero-filled.</li><li>Carbon-price indices use fixed 2019 industrial-GHG-emissions weights. The nine geographic groups partition the 28 model regions without overlap.</li><li>Leading producers are selected independently by sector using 2050 total production. The same top-12 cohort is shown at both endpoints. Other model regions preserve the global remainder.</li><li>Europe combines ENE, ENW, EUE, EUM and EUW. North America contains USA, CAN and MEX. Regional definitions follow whole model regions, including the territories assigned to them in the mapping.</li><li>China is the CHN model region, including Hong Kong, Macao and Taiwan. Indonesia group includes Indonesia, Philippines and Viet Nam. The mapping&#x27;s ZijieRegion column crosses model boundaries and is not used for aggregation.</li><li>Global intensities are ratios of global sums. Reported producer-region energy intensities retain the source definition; Europe&#x27;s regional intensities are production-weighted. These definitions do not agree in this export.</li><li>There are 14 negative regional cost entries. Main costs start in 2024; all source years, including anomalous initial costs, remain in Figure S2 and its data.</li></ul>
+  <div class="method-links">
+    <a href="methods.md">Methods</a>
+    <a href="audit.json">Calculation audit</a>
+    <a href="source_data.csv">All plotted data</a>
+    <a href="region_membership.csv">Region definitions</a>
+    <a href="producer_rankings.csv">Producer rankings</a>
+    <a href="carbon_price_weights.csv">Carbon-price weights</a>
+    <a href="missing_inputs.csv">Missing-input ledger</a>
+    <a href="intensity_comparison.csv">Intensity comparison</a>
+  </div>
+</details>
+<footer>PDF and SVG figures preserve vector artwork. Individual source-data tables accompany each figure.</footer>
+</main>
+</body>
+</html>

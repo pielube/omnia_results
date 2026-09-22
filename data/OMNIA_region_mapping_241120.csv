@@ -1,0 +1,229 @@
+region,country_OMNIA,ISO2,ISO3,ZijieRegion
+AFE,Ethiopia,ET,ETH,Rest of World
+AFE,Kenya,KE,KEN,Rest of World
+AFE,Sudan,SD,SDN,Rest of World
+AFE,Mauritius,MU,MUS,Rest of World
+AFE,Eritrea,ER,ERI,Rest of World
+AFE,South Sudan,SS,SSD,Rest of World
+AFE,Burundi,BI,BDI,Rest of World
+AFE,Comoros,KM,COM,Rest of World
+AFE,Djibouti,DJ,DJI,Rest of World
+AFE,Madagascar,MG,MDG,Rest of World
+AFE,Reunion,RE,REU,Rest of World
+AFE,Rwanda,RW,RWA,Rest of World
+AFE,Somalia,SO,SOM,Rest of World
+AFE,Uganda,UG,UGA,Rest of World
+AFE,Seychelles,SC,SYC,Rest of World
+AFE,United Republic of Tanzania,TZ,TZA,Other main producer
+AFN,Egypt,EG,EGY,Other main producer
+AFN,Algeria,DZ,DZA,Rest of World
+AFN,Morocco,MA,MAR,Rest of World
+AFN,Libya,LY,LBY,Rest of World
+AFN,Tunisia,TN,TUN,Rest of World
+AFW,Democratic Republic of the Congo,CD,COD,Rest of World
+AFW,Cote d'Ivoire,CI,CIV,Rest of World
+AFW,Ghana,GH,GHA,Rest of World
+AFW,Cameroon,CM,CMR,Other main producer
+AFW,Gabon,GA,GAB,Rest of World
+AFW,Benin,BJ,BEN,Rest of World
+AFW,Senegal,SN,SEN,Rest of World
+AFW,Togo,TG,TGO,Rest of World
+AFW,Niger,NE,NER,Rest of World
+AFW,Congo,CG,COG,Rest of World
+AFW,Burkina Faso,BF,BFA,Rest of World
+AFW,Cabo Verde,CV,CPV,Rest of World
+AFW,Central African Republic,CF,CAF,Rest of World
+AFW,Chad,TD,TCD,Rest of World
+AFW,Equatorial Guinea,GQ,GNQ,Rest of World
+AFW,Gambia,GM,GMB,Rest of World
+AFW,Guinea,GN,GIN,Other main producer
+AFW,Guinea-Bissau,GW,GNB,Rest of World
+AFW,Liberia,LR,LBR,Rest of World
+AFW,Malawi,MW,MWI,Rest of World
+AFW,Mali,ML,MLI,Rest of World
+AFW,Mauritania,MR,MRT,Rest of World
+AFW,Sao Tome and Principe,ST,STP,Rest of World
+AFW,Sierra Leone,SL,SLE,Other main producer
+AFZ,Angola,AO,AGO,Rest of World
+AFZ,Mozambique,MZ,MOZ,Rest of World
+AFZ,Zimbabwe,ZW,ZWE,Other main producer
+AFZ,Zambia,ZM,ZMB,Rest of World
+AFZ,Botswana,BW,BWA,Rest of World
+AFZ,Namibia,,NAM,Rest of World
+AFZ,South Africa,ZA,ZAF,Other main producer
+AFZ,Eswatini,SZ,SWZ,Rest of World
+AFZ,Lesotho,LS,LSO,Rest of World
+NIG,Nigeria,NG,NGA,Rest of World
+RUS,Russian Federation,RU,RUS,Other main producer
+ASC,Kazakhstan,KZ,KAZ,Other main producer
+ASC,Uzbekistan,UZ,UZB,Rest of World
+ASC,Turkmenistan,TM,TKM,Rest of World
+ASC,Azerbaijan,AZ,AZE,Other main producer
+ASC,Mongolia,MN,MNG,Rest of World
+ASC,Georgia,GE,GEO,Rest of World
+ASC,Kyrgyzstan,KG,KGZ,Rest of World
+ASC,Armenia,AM,ARM,Rest of World
+ASC,Tajikistan,TJ,TJK,Rest of World
+ASC,Afghanistan,AF,AFG,Rest of World
+ASE,Thailand,TH,THA,Other Asia
+ASE,Malaysia,MY,MYS,Other Asia
+ASE,Singapore,SG,SGP,Other Asia
+ASE,Myanmar,MM,MMR,Rest of World
+ASE,Cambodia,KH,KHM,Rest of World
+ASE,Brunei Darussalam,BN,BRN,Rest of World
+ASE,Lao People's Democratic Republic,LA,LAO,Rest of World
+ASE,Democratic People's Republic of Korea,KP,PRK,Rest of World
+ASE,Cook Islands,CK,COK,Rest of World
+ASE,Timor-Leste,TL,TLS,Rest of World
+ASE,Fiji,FJ,FJI,Other main producer
+ASE,French Polynesia,PF,PYF,Rest of World
+ASE,Kiribati,KI,KIR,Rest of World
+ASE,New Caledonia,NC,NCL,Rest of World
+ASE,Palau,PW,PLW,Rest of World
+ASE,Papua New Guinea,PG,PNG,Rest of World
+ASE,American Samoa,AS,ASM,Rest of World
+ASE,Solomon Islands,SB,SLB,Rest of World
+ASE,Tonga,TO,TON,Rest of World
+ASE,Vanuatu,VU,VUT,Rest of World
+ASE,Niue,NU,NIU,Rest of World
+ASE,Samoa,WS,WSM,Rest of World
+ASE,Wallis and Futuna Islands,WF,WLF,Rest of World
+ASE,Micronesia (Federated States of),FM,FSM,Rest of World
+ASE,Nauru,NR,NRU,Rest of World
+ASE,Tuvalu,TV,TUV,Rest of World
+ASE,Northern Mariana Islands,MP,MNP,Rest of World
+CHN,China,CN,CHN,China
+CHN,"China, Hong Kong Special Administrative Region",HK,HKG,Rest of World
+CHN,"China, Macao Special Administrative Region",MO,MAC,Rest of World
+IDN,Indonesia,ID,IDN,Other Asia
+IDN,Philippines,PH,PHL,Rest of World
+IDN,Viet Nam,VN,VNM,Other Asia
+IND,India,IN,IND,Other Asia
+ASO,Bangladesh,BD,BGD,Rest of World
+ASO,Nepal,NP,NPL,Rest of World
+ASO,Sri Lanka,LK,LKA,Rest of World
+ASO,Pakistan,PK,PAK,Other Asia
+ASO,Bhutan,BT,BTN,Rest of World
+ASO,Maldives,MV,MDV,Rest of World
+JPN,Japan,JP,JPN,Japan
+CHN,"Taiwan, Province of China",TW,TWN,Other Asia
+SKT,Republic of Korea,KR,KOR,Other Asia
+ANZ,Australia,AU,AUS,Other main producer
+ANZ,New Zealand,NZ,NZL,Other main producer
+USA,United States of America,US,USA,North America
+CAN,Canada,CA,CAN,North America
+LAM,Argentina,AR,ARG,South America
+LAM,Venezuela (Bolivarian Republic of),VE,VEN,South America
+LAM,Colombia,CO,COL,Rest of World
+LAM,Peru,PE,PER,Rest of World
+LAM,Trinidad and Tobago,TT,TTO,Rest of World
+LAM,Ecuador,EC,ECU,Rest of World
+LAM,Guatemala,GT,GTM,Rest of World
+LAM,Cuba,CU,CUB,Rest of World
+LAM,Bolivia (Plurinational State of),BO,BOL,Rest of World
+LAM,Dominican Republic,DO,DOM,South America
+LAM,Honduras,HN,HND,Rest of World
+LAM,Paraguay,PY,PRY,Rest of World
+LAM,Uruguay,UY,URY,Rest of World
+LAM,Costa Rica,CR,CRI,Rest of World
+LAM,El Salvador,SV,SLV,Rest of World
+LAM,Haiti,HT,HTI,South America
+LAM,Panama,PA,PAN,Rest of World
+LAM,Nicaragua,NI,NIC,Rest of World
+LAM,Jamaica,JM,JAM,South America
+LAM,Curaçao,CW,CUW,Rest of World
+LAM,Suriname,SR,SUR,South America
+LAM,Antigua and Barbuda,AG,ATG,Rest of World
+LAM,Aruba,AW,ABW,Rest of World
+LAM,Bahamas,BS,BHS,Rest of World
+LAM,Barbados,BB,BRB,Rest of World
+LAM,Belize,BZ,BLZ,Rest of World
+LAM,Bermuda,BM,BMU,Rest of World
+LAM,British Virgin Islands,VG,VGB,Rest of World
+LAM,Cayman Islands,KY,CYM,Rest of World
+LAM,Dominica,DM,DMA,Rest of World
+LAM,Falkland Islands (Malvinas),FK,FLK,Rest of World
+LAM,Guyana,GY,GUY,South America
+LAM,Grenada,GD,GRD,Rest of World
+LAM,Guadeloupe,GP,GLP,Rest of World
+LAM,Cooperative Republic of Guyana,GY,GUY,South America
+LAM,Martinique,MQ,MTQ,Rest of World
+LAM,Montserrat,MS,MSR,Rest of World
+LAM,Puerto Rico,PR,PRI,Rest of World
+LAM,"Bonaire, Sint Eustatius and Saba",BQ,BES,Rest of World
+LAM,Saint Kitts and Nevis,KN,KNA,Rest of World
+LAM,Saint Lucia,LC,LCA,Rest of World
+LAM,Saint Pierre and Miquelon,PM,SPM,Rest of World
+LAM,Saint Vincent and the Grenadines,VC,VCT,Rest of World
+LAM,Saint Martin,MF,MAF,Rest of World
+LAM,Turks and Caicos Islands,TC,TCA,Rest of World
+LAM,Sint Maarten (Dutch part),SX,SXM,Rest of World
+LAM,Anguilla,AI,AIA,Rest of World
+BRA,Brazil,BR,BRA,South America
+MEX,Mexico,MX,MEX,South America
+CHL,Chile,CL,CHL,Rest of World
+ENE,Ukraine,UA,UKR,Europe
+ENE,Belarus,BY,BLR,Rest of World
+ENE,Serbia,RS,SRB,Europe
+ENE,Bosnia and Herzegovina,BA,BIH,Rest of World
+ENE,Republic of Moldova,MD,MDA,Europe
+ENE,Republic of North Macedonia,MK,MKD,Europe
+ENE,Kosovo,XK,XKX,Rest of World
+ENE,Albania,AL,ALB,Rest of World
+ENE,Montenegro,ME,MNE,Europe
+ENW,Norway,NO,NOR,Europe
+ENW,Svalbard and Jan Mayen Islands,SJ,SJM,Rest of World
+ENW,Switzerland,CH,CHE,Europe
+ENW,Liechtenstein,LI,LIE,Rest of World
+ENW,Iceland,IS,ISL,Europe
+ENW,United Kingdom of Great Britain and Northern Ireland,GB,GBR,UK
+ENW,Gibraltar,GI,GIB,Rest of World
+ENW,Saint Helena,SH ,SHN,Rest of World
+ENW,Liechtenstein,LI,LIE,Rest of World
+EUE,Poland,PL,POL,Europe
+EUE,Czechia,CZ,CZE,Europe
+EUE,Romania,RO,ROU,Europe
+EUE,Hungary,HU,HUN,Europe
+EUE,Bulgaria,BG,BGR,Europe
+EUE,Slovakia,SK,SVK,Europe
+EUE,Croatia,HR,HRV,Europe
+EUE,Lithuania,LT,LTU,Europe
+EUE,Slovenia,SI,SVN,Europe
+EUE,Estonia,EE,EST,Europe
+EUE,Latvia,LV,LVA,Europe
+EUW,Germany,DE,DEU,Europe
+EUW,Netherlands,NL,NLD,Europe
+EUW,Belgium,BE,BEL,Europe
+EUW,Sweden,SE,SWE,Europe
+EUW,Austria,AT,AUT,Europe
+EUW,Finland,FI,FIN,Europe
+EUW,Denmark,DK,DNK,Europe
+EUW,Ireland,IE,IRL,Europe
+EUW,Luxembourg,LU,LUX,Europe
+EUW,Greenland,GL,GRL,Rest of World
+EUW,Faroe Islands,FO,FRO,Rest of World
+EUW,Andorra,AD,AND,Rest of World
+EUM,France,FR,FRA,Europe
+EUM,Monaco,MC,MCO,Rest of World
+EUM,Italy,IT,ITA,Europe
+EUM,San Marino,SM,SMR,Rest of World
+EUM,Spain,ES,ESP,Europe
+EUM,Greece,GR,GRC,Europe
+EUM,Portugal,PT,PRT,Europe
+EUM,Cyprus,CY,CYP,Europe
+EUM,Malta,MT,MLT,Europe
+MEA,Iran (Islamic Republic of),IR,IRN,Middle East
+MEA,Saudi Arabia,SA,SAU,Middle East
+MEA,United Arab Emirates,AE,ARE,Middle East
+MEA,Iraq,IQ,IRQ,Rest of World
+MEA,Qatar,QA,QAT,Middle East
+MEA,Kuwait,KW,KWT,Rest of World
+MEA,Oman,OM,OMN,Middle East
+MEA,Bahrain,BH,BHR,Middle East
+MEA,Yemen,YE,YEM,Rest of World
+MDA,Turkey,TR,TUR,Europe
+MDA,Israel,IL,ISR,Rest of World
+MDA,Syrian Arab Republic,SY,SYR,Rest of World
+MDA,Jordan,JO,JOR,Rest of World
+MDA,Lebanon,LB,LBN,Rest of World
+MDA,State of Palestine,PS,PSE,Rest of World
