@@ -1,8 +1,8 @@
 ﻿# OMNIA report figures
 
-A reproducible report collection from `results_NoCE_260915.csv`: **six main figures and two supporting figures**, selecting `baseline_noce` by default. [ResultsMetrics.docx](ResultsMetrics.docx) supplies the metric definitions; the revised report design groups related metrics and meaningful geographic comparisons into a manageable set of figures.
+A reproducible report collection from `results_NoCE_260915.csv`: **seven main figures and two supporting figures**, selecting `baseline_noce` by default. [ResultsMetrics.docx](ResultsMetrics.docx) supplies the metric definitions; the revised report design groups related metrics and meaningful geographic comparisons into a manageable set of figures.
 
-Open the [report gallery](report_figures/baseline_noce/index.html) or the [complete eight-page PDF](report_figures/baseline_noce/report_figures.pdf). Each figure also has an editable PDF/SVG, a 600 dpi PNG, a source-data CSV and a caption. The original detailed collection remains in [figures/](figures/baseline_noce/index.html).
+Open the [report gallery](report_figures/baseline_noce/index.html) or the [complete nine-page PDF](report_figures/baseline_noce/report_figures.pdf). Each figure also has an editable PDF/SVG, a 600 dpi PNG, a source-data CSV and a caption. The original detailed collection remains in [figures/](figures/baseline_noce/index.html).
 
 ## Generate the figures
 
@@ -13,7 +13,7 @@ python -m omnia_results
 python -m unittest discover -s tests -v
 ```
 
-The default [figures.json](figures.json) selects the report suite and writes to `report_figures/baseline_noce`. Paths resolve relative to the configuration file. Re-running replaces matching generated files without deleting unrelated files. There are currently 26 calculation tests, covering source selection, units, aggregation, weights, rankings and missing inputs.
+The default [figures.json](figures.json) selects the report suite and writes to `report_figures/baseline_noce`. Paths resolve relative to the configuration file. Re-running replaces matching generated files without deleting unrelated files. Calculation tests cover source selection, units, aggregation, weights, producer/emitter rankings and missing inputs.
 
 ```powershell
 # Write a separate review copy
@@ -38,12 +38,15 @@ Multiple scenarios receive separate directories and audits. Combined scenario pa
 | 4 | Global final energy and derived energy intensity; six panels | Connect sector energy demand with energy per tonne. |
 | 5 | Emissions, share of industrial emissions, emissions intensity and capture; four panels | Present the emissions story together. |
 | 6 | System and sector annualised costs, 2024–2050; two panels | Make later-period cost trends legible. |
+| 7 | The 12 largest emitter groups per sector in 2050, comparing 2019 and 2050; three panels | Show emissions geography in the same layout as Figure 2, with all other regions in an unranked remainder. |
 | S1 | Reported energy intensity for the same producer cohorts as Figure 2; three panels | Retain regional efficiency detail in the supporting material. |
 | S2 | System and sector costs over 2019–2050; two panels | Retain the full source period, including anomalous initial costs. |
 
 Figure 2 ranks groups separately for each sector after combining Europe. It uses the same 2050 cohort and ordering at both endpoints, rather than selecting different leaders in each year. Top-12 coverage in 2050 is approximately **85.7% for cement, 95.1% for steel and 94.0% for aluminium**, under the draft activity assumption below. The remainder completes the regional accounting.
 
 Production axes in Figure 2 are **logarithmic** so changes remain visible across producers of very different sizes. Endpoint connectors show changes between two observations, not intervening trajectories. Set `"producer_axis_scale": "linear"` in the configuration for linear axes. Logarithmic axes require positive observed endpoints; zero or negative endpoints raise an error requesting linear axes. Missing endpoints remain gaps. Figure S1 uses linear intensity axes.
+
+[Figure 7](report_figures/baseline_noce/fig07_leading_emitters.pdf) uses the same region definitions and endpoint style, but ranks groups independently by **absolute sector GHG emissions in 2050**, not by production. The fixed top-12 cohort is compared in 2019 and 2050 for cement, steel and aluminium. Values use `MtCO2e/yr`; coverage is relative to global emissions of that sector. Capture is not subtracted again. [Emitter rankings](report_figures/baseline_noce/emitter_rankings.csv) and figure source data accompany the plot. Its axes are logarithmic by default; set `"emitter_axis_scale": "linear"` to show zero or negative endpoints on a linear scale.
 
 ## Missing activity: a provisional assumption
 

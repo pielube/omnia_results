@@ -172,6 +172,83 @@ class ReportDataTests(unittest.TestCase):
         self.assertEqual(ranking.Rank.tolist(), [1, 2, 1, 2, 1, 2])
         np.testing.assert_allclose(ranking.GlobalShare_percent, [2000 / 35, 1000 / 35] * 3)
 
+    def test_emitter_ranking_uses_emissions_and_exact_unit_with_fixed_cohort(self):
+        variable = f"Emissions|GHG|Industry|{SECTORS[0].path}"
+        rows = self.rows(variable, "MtCO2e/yr", {"A": [1, 30], "B": [2, 20], "C": [100, 10]})
+        rows += self.rows(variable, "MtCO2e/Mt", {"A": [999, 1], "B": [999, 2], "C": [999, 3]})
+        rows += self.production({"A": [1, 1], "B": [2, 2], "C": [100, 100]})
+        rows += self.rows("Emissions|GHG|Industry", "MtCO2e/yr",
+                          {"A": [1000, 1000], "B": [1000, 1000], "C": [1000, 1000]})
+        report = self.report(rows)
+        self.assertEqual(report.emissions_by_region("cement").loc["A"].tolist(), [1, 30])
+        self.assertEqual(report.ranked_emitters("cement"), ["A", "B"])
+        self.assertEqual(report.ranked_producers("cement"), ["C", "B"])
+        np.testing.assert_allclose(report.emitter_coverage("cement"), [300 / 103, 5000 / 60])
+
+    def test_emitter_regions_are_summed_before_ranking_and_remainder_closes_total(self):
+        variable = f"Emissions|GHG|Industry|{SECTORS[0].path}"
+        rows = self.rows(variable, "MtCO2e/yr", {"A": [1, 12], "B": [2, 12], "C": [100, 20]})
+        config = {**self.config, "producer_groups": {"Europe": ["A", "B"], "Other": ["C"]}, "top_n": 1}
+        report = self.report(rows, config=config)
+        groups = report.emissions_groups("cement")
+        self.assertEqual(groups.loc["Europe"].tolist(), [3, 24])
+        self.assertEqual(report.ranked_emitters("cement"), ["Europe"])
+        np.testing.assert_allclose(report.emitter_coverage("cement"), [300 / 103, 2400 / 44])
+        selected = groups.loc[report.ranked_emitters("cement")].sum(min_count=1)
+        remainder = groups.drop(index=report.ranked_emitters("cement")).sum(min_count=1)
+        np.testing.assert_allclose(selected + remainder, [103, 44])
+        np.testing.assert_allclose(selected + remainder, report.results.emissions(SECTORS[0]))
+
+    def test_missing_emissions_in_group_or_remainder_keep_coverage_undefined(self):
+        variable = f"Emissions|GHG|Industry|{SECTORS[0].path}"
+        rows = self.rows(variable, "MtCO2e/yr", {"A": [1, 12], "B": [None, 12], "C": [5, None]})
+        config = {**self.config, "producer_groups": {"Europe": ["A", "B"], "Other": ["C"]}, "top_n": 1}
+        report = self.report(rows, config=config)
+        groups = report.emissions_groups("cement")
+        self.assertTrue(np.isnan(groups.loc["Europe", 2019]))
+        self.assertEqual(groups.loc["Europe", 2050], 24)
+        self.assertTrue(np.isnan(groups.loc["Other", 2050]))
+        self.assertEqual(report.ranked_emitters("cement"), ["Europe"])
+        self.assertTrue(report.emitter_coverage("cement").isna().all())
+
+    def test_emissions_respect_explicit_zero_policy_for_blanks_and_absent_regions(self):
+        variable = f"Emissions|GHG|Industry|{SECTORS[0].path}"
+        rows = self.rows(variable, "MtCO2e/yr", {"A": [None, 10], "B": [5, 20]})
+        rows += self.rows("placeholder", "Mt/yr", {"C": [1, 1]})
+        report = self.report(rows, policy="zero")
+        self.assertEqual(report.emissions_by_region("cement").loc["A"].tolist(), [0, 10])
+        self.assertEqual(report.emissions_by_region("cement").loc["C"].tolist(), [0, 0])
+        self.assertEqual(report.ranked_emitters("cement"), ["B", "A"])
+        np.testing.assert_allclose(report.emitter_coverage("cement"), [100, 100])
+
+    def test_emitter_ties_are_deterministic_and_only_positive_totals_are_ranked(self):
+        variable = f"Emissions|GHG|Industry|{SECTORS[0].path}"
+        config = {**self.config, "producer_groups": {"C": ["C"], "B": ["B"], "A": ["A"]}, "top_n": 12}
+        for excluded in (0, -1, None):
+            rows = self.rows(variable, "MtCO2e/yr", {"A": [1, 20], "B": [2, 20], "C": [10, excluded]})
+            report = self.report(rows, config=config)
+            self.assertEqual(report.ranked_emitters("cement"), ["A", "B"])
+            if excluded == -1:
+                # Net negative emissions stay in global accounting, despite exclusion from the positive-emitter ranking.
+                self.assertEqual(report.emissions_groups("cement").loc["C", 2050], -1)
+                self.assertAlmostEqual(report.emitter_coverage("cement").loc[2050], 4000 / 39)
+
+    def test_emitter_rank_export_covers_each_sector_and_preserves_unknown_global_share(self):
+        rows = []
+        for i, sector in enumerate(SECTORS):
+            rows += self.rows(f"Emissions|GHG|Industry|{sector.path}", "MtCO2e/yr",
+                              {"A": [1, 30], "B": [2, 20], "C": [3, None if i == 2 else 10]})
+        table = self.report(rows).emitter_ranking_table()
+        self.assertEqual(table.columns.tolist(), ["Sector", "Rank", "Group", "RankingYear",
+                                                  "Emissions_MtCO2e_yr", "GlobalShare_percent"])
+        self.assertEqual(table.Sector.tolist(), [sector.label for sector in SECTORS for _ in range(2)])
+        self.assertEqual(table.Rank.tolist(), [1, 2] * 3)
+        self.assertEqual(table.Group.tolist(), ["A", "B"] * 3)
+        self.assertEqual(table.RankingYear.tolist(), [2050] * 6)
+        self.assertEqual(table.Emissions_MtCO2e_yr.tolist(), [30, 20] * 3)
+        np.testing.assert_allclose(table.GlobalShare_percent.iloc[:4], [50, 100 / 3] * 2)
+        self.assertTrue(table.GlobalShare_percent.iloc[4:].isna().all())
+
 
 if __name__ == "__main__":
     unittest.main()

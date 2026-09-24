@@ -166,6 +166,7 @@ footer{{margin-top:28px;font-size:12px;line-height:1.6;color:#69777e}}
     <a href="source_data.csv">All plotted data</a>
     <a href="region_membership.csv">Region definitions</a>
     <a href="producer_rankings.csv">Producer rankings</a>
+    <a href="emitter_rankings.csv">Emitter rankings</a>
     <a href="carbon_price_weights.csv">Carbon-price weights</a>
     <a href="missing_inputs.csv">Missing-input ledger</a>
     <a href="intensity_comparison.csv">Intensity comparison</a>

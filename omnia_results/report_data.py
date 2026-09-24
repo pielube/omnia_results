@@ -97,6 +97,29 @@ class ReportData:
         global_production = self.results.aggregate(self.production_by_region(sector))
         return ratio(selected, global_production, 100).rename("GlobalShare_percent")
 
+    def emissions_by_region(self, sector: Sector | str) -> pd.DataFrame:
+        """Sector greenhouse-gas emissions in MtCO2e/yr, not source intensity rows."""
+        sector = self._sector(sector)
+        return self.results.values(f"Emissions|GHG|Industry|{sector.path}", "MtCO2e/yr")
+
+    def emissions_groups(self, sector: Sector | str) -> pd.DataFrame:
+        """Sum sector emissions over the same geographic partition as producers."""
+        return self._group_sum(self.emissions_by_region(sector), self.producer_groups)
+
+    def ranked_emitters(self, sector: Sector | str) -> list[str]:
+        """Fixed cohort of positive emitters ranked by emissions in the configured year."""
+        values = self.emissions_groups(sector)[self.ranking_year]
+        eligible = values.loc[values.notna() & (values > 0)]
+        return sorted(eligible.index, key=lambda label: (-eligible.loc[label], label))[:self.top_n]
+
+    def emitter_coverage(self, sector: Sector | str) -> pd.Series:
+        """The selected cohort's share of global sector emissions in every source year."""
+        groups = self.emissions_groups(sector)
+        cohort = self.ranked_emitters(sector)
+        selected = groups.loc[cohort].sum(axis=0, min_count=len(cohort))
+        global_emissions = self.results.aggregate(self.emissions_by_region(sector))
+        return ratio(selected, global_emissions, 100).rename("GlobalShare_percent")
+
     def reported_intensity_groups(self, sector: Sector | str) -> pd.DataFrame:
         """Production-weighted reported energy intensities in GJ/t.
 
@@ -170,3 +193,17 @@ class ReportData:
                              if pd.notna(global_total) and global_total > 0 else np.nan})
         return pd.DataFrame(rows, columns=["Sector", "Rank", "Group", "RankingYear",
                                            "Production_Mt_yr", "GlobalShare_percent"])
+
+    def emitter_ranking_table(self) -> pd.DataFrame:
+        rows = []
+        for sector in SECTORS:
+            emissions = self.emissions_groups(sector)[self.ranking_year]
+            global_total = self.results.aggregate(self.emissions_by_region(sector)).loc[self.ranking_year]
+            for rank, label in enumerate(self.ranked_emitters(sector), start=1):
+                rows.append({"Sector": sector.label, "Rank": rank, "Group": label,
+                             "RankingYear": self.ranking_year,
+                             "Emissions_MtCO2e_yr": emissions.loc[label],
+                             "GlobalShare_percent": emissions.loc[label] / global_total * 100
+                             if pd.notna(global_total) and global_total > 0 else np.nan})
+        return pd.DataFrame(rows, columns=["Sector", "Rank", "Group", "RankingYear",
+                                           "Emissions_MtCO2e_yr", "GlobalShare_percent"])

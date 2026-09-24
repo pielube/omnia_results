@@ -1,12 +1,14 @@
 # Report design and aggregation methods
 
-Six main figures tell the report story; Figures S1 and S2 hold regional-intensity detail and full-period costs.
+7 main figures tell the report story; Figures S1 and S2 hold regional-intensity detail and full-period costs.
 
 Blank activity values are provisionally treated as zero. This is a draft assumption, not a confirmed export convention. Prices, costs and reported intensities are never zero-filled.
 
 Carbon-price indices use fixed 2019 industrial-GHG-emissions weights. The nine geographic groups partition the 28 model regions without overlap.
 
 Leading producers are selected independently by sector using 2050 total production. The same top-12 cohort is shown at both endpoints. Other model regions preserve the global remainder.
+
+Figure 7 selects the top 12 emitters independently by sector using 2050 absolute GHG emissions. It uses Figure 2's geographic groups, with a separate emissions ranking and an unranked remainder. Coverage uses each sector's global emissions as denominator.
 
 Europe combines ENE, ENW, EUE, EUM and EUW. North America contains USA, CAN and MEX. Regional definitions follow whole model regions, including the territories assigned to them in the mapping.
 
@@ -36,6 +38,7 @@ The country mapping is included as a local snapshot under data/. Country rows ar
 
 - Global additive quantities: sum once across the 28 source model regions.
 - Producer output: cement production; primary + secondary for steel/aluminium. Europe is summed before ranking.
+- Emitter rankings: absolute Emissions|GHG|Industry|sector rows in MtCO2e/yr, summed into the same groups as production. Select leading groups by emissions, not production. Coverage = selected emissions / global sector emissions × 100; the remainder includes every unselected group.
 - Carbon-price index: sum(price in year t × industry GHG in weight year) / sum(industry GHG in weight year), within each group. Weights are fixed for all plotted years.
 - Global energy intensity: sum(final energy, EJ/yr) / sum(production, Mt/yr) × 1,000 = GJ/t.
 - Reported producer-group energy intensity: sum(reported regional GJ/t × current production) / sum(current production). A missing intensity with positive production invalidates the weighted mean.
@@ -43,10 +46,10 @@ The country mapping is included as a local snapshot under data/. Country rows ar
 - Emissions share: sector GHG / all-industry GHG × 100.
 - Costs: millions USD_2010 divided by 1,000 for billions or 1,000,000 for trillions. Negative values are retained.
 
-Each figure has an accompanying CSV. Role=plotted identifies points actually drawn; Role=context records top-producer coverage, which is annotated in Figure 2. Caption text and axis labels specify when quantities or scales differ. All lines connect supplied years directly; no annual interpolation, smoothing, extrapolation or uncertainty is invented.
+Each figure has an accompanying CSV. Role=plotted identifies points actually drawn; Role=context records producer/emitter coverage, annotated in Figures 2 and 7. Caption text and axis labels specify when quantities or scales differ. All lines connect supplied years directly; no annual interpolation, smoothing, extrapolation or uncertainty is invented.
 
 ## Figure choices
 
-Figures 1–2 establish global output and geography; Figure 3 presents the regional price context; Figure 4 connects energy demand to intensity; Figure 5 shows emissions and capture; Figure 6 shows costs. Figure S1 uses the same leading-producer cohort for reported energy intensities, and Figure S2 preserves the entire cost period. The main cost view deliberately excludes the anomalous first year, with that choice stated on the figure.
+Figures 1–2 establish global output and geography; Figure 3 presents the regional price context; Figure 4 connects energy demand to intensity; Figure 5 shows emissions and capture; Figure 6 shows costs; Figure 7 compares the leading emitter regions using the endpoint layout of Figure 2. Figure S1 uses the same leading-producer cohort for reported energy intensities, and Figure S2 preserves the entire cost period. The main cost view deliberately excludes the anomalous first year, with that choice stated on the figure.
 
 All figures are 183 mm wide; the tallest is 149 mm. PDF/SVG preserve editable text and vector lines; PNG uses the configured resolution. Titles, panel letters, sector colours, marker styles and typography are consistent across the report.

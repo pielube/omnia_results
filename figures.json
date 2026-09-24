@@ -47,6 +47,7 @@
   "ranking_year": 2050,
   "top_n": 12,
   "producer_axis_scale": "log",
+  "emitter_axis_scale": "log",
   "price_weight_year": 2019,
   "main_cost_start_year": 2024,
   "missing_activity": "zero",

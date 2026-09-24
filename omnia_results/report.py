@@ -1,4 +1,4 @@
-"""A curated report: six main figures and two supporting figures."""
+"""A curated report: seven main figures and two supporting figures."""
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -122,9 +122,12 @@ class ReportBuilder:
                            "Steel and aluminium totals are primary plus secondary production. Cement and clinker are distinct products and are not added. "
                            "Each sector has its own vertical scale; markers show the supplied model years.", 3)
 
-    def endpoint_plot(self, ax, sector, panel, intensity=False):
-        groups = self.data.production_groups(sector)
-        cohort = self.data.ranked_producers(sector)
+    def endpoint_plot(self, ax, sector, panel, metric="production"):
+        if metric not in {"production", "reported_intensity", "emissions"}:
+            raise ValueError(f"Unknown endpoint metric: {metric}")
+        intensity, emissions = metric == "reported_intensity", metric == "emissions"
+        groups = self.data.emissions_groups(sector) if emissions else self.data.production_groups(sector)
+        cohort = self.data.ranked_emitters(sector) if emissions else self.data.ranked_producers(sector)
         first, last = min(self.results.years), self.config["ranking_year"]
         if intensity:
             values = self.data.reported_intensity_groups(sector).loc[cohort, [first, last]]
@@ -135,7 +138,7 @@ class ReportBuilder:
             remaining = groups.drop(index=cohort)
             values.loc["Other model regions"] = remaining.sum(axis=0, min_count=len(remaining)).loc[[first, last]] if len(remaining) else 0
             labels = list(values.index)
-            unit = "Mt/yr"
+            unit = "MtCO2e/yr" if emissions else "Mt/yr"
         self.clean_axes(ax, time=False)
         positions = np.arange(len(labels))
         x0, x1 = values[first].to_numpy(dtype=float), values[last].to_numpy(dtype=float)
@@ -147,57 +150,75 @@ class ReportBuilder:
         ax.set_yticks(positions, labels=labels, fontsize=5.8)
         ax.tick_params(axis="y", length=0, pad=4)
         ax.set_ylim(len(labels) - .3, -.75)
-        scale = "linear" if intensity else self.config.get("producer_axis_scale", "log")
+        scale_key = "emitter_axis_scale" if emissions else "producer_axis_scale"
+        scale = "linear" if intensity else self.config.get(scale_key, "log")
         if scale not in {"linear", "log"}:
-            raise ValueError("producer_axis_scale must be linear or log")
+            raise ValueError(f"{scale_key} must be linear or log")
         if scale == "log":
             finite = values.to_numpy()[np.isfinite(values.to_numpy())]
             if (finite <= 0).any():
-                raise ValueError("Logarithmic producer axes require positive endpoints; set producer_axis_scale to linear")
+                raise ValueError(f"Logarithmic axes require positive endpoints; set {scale_key} to linear")
             ax.set_xscale("log")
             if finite.size:
                 ax.set_xlim(finite.min() / 1.6, finite.max() * 1.5)
             ax.xaxis.set_major_locator(ticker.LogLocator(base=10, numticks=6))
+            if emissions and finite.size:
+                lo, hi = ax.get_xlim()
+                decades = np.arange(np.ceil(np.log10(lo)), np.floor(np.log10(hi)) + 1)
+                stride = max(1, int(np.ceil(len(decades) / 3)))
+                ax.xaxis.set_major_locator(ticker.FixedLocator(10.0 ** decades[::stride]))
             ax.xaxis.set_minor_locator(ticker.LogLocator(base=10, subs=(2, 5), numticks=12))
             ax.xaxis.set_minor_formatter(ticker.NullFormatter())
         else:
-            ax.set_xlim(left=0)
+            finite = values.to_numpy()[np.isfinite(values.to_numpy())]
+            if finite.size and finite.min() < 0:
+                ax.axvline(0, color="#63717A", linewidth=.6)
+            else:
+                ax.set_xlim(left=0)
             ax.xaxis.set_major_locator(ticker.MaxNLocator(3, min_n_ticks=3))
         ax.xaxis.set_major_formatter(ticker.StrMethodFormatter("{x:,.4g}"))
-        ax.set_xlabel("Reported intensity (GJ t⁻¹)" if intensity else
-                      "Production (Mt yr⁻¹)" + ("\nLogarithmic scale" if scale == "log" else ""), fontsize=6.5)
+        xlabel = ("Reported intensity (GJ t⁻¹)" if intensity else
+                  "GHG emissions (Mt CO₂e yr⁻¹)" if emissions else "Production (Mt yr⁻¹)")
+        ax.set_xlabel(xlabel + ("\nLogarithmic scale" if scale == "log" else ""), fontsize=6.5)
         self.panel_title(ax, panel, sector.label, pad=22 if not intensity else 9,
                          letter_y=1.105 if not intensity else 1.055)
         if not intensity:
             ax.axhline(len(labels) - 1.5, color="#B7C1C6", linewidth=.55, linestyle=(0, (2, 2)))
-            coverage = self.data.producer_coverage(sector)
-            coverage_text = (f"Top {len(cohort)}: {coverage.loc[last]:.1f}% of {last} output"
-                             if pd.notna(coverage.loc[last]) else f"{len(cohort)} groups; global coverage unavailable")
+            coverage = self.data.emitter_coverage(sector) if emissions else self.data.producer_coverage(sector)
+            quantity = "emissions" if emissions else "output"
+            share_label = f"{coverage.loc[last]:.2f}" if emissions else f"{coverage.loc[last]:.1f}"
+            coverage_text = (f"Top {len(cohort)}: {share_label}% " +
+                             (f"in {last}" if emissions else f"of {last} {quantity}")
+                             if pd.notna(coverage.loc[last]) else f"{len(cohort)} groups; coverage unavailable")
             ax.text(0, 1.025, coverage_text,
                     transform=ax.transAxes, fontsize=5.5, color="#52616A", va="bottom")
-            self.record(panel, "Selected producer coverage", coverage, "%", "Selected producers", role="context")
+            self.record(panel, "Selected emitter coverage" if emissions else "Selected producer coverage", coverage,
+                        "%", "Selected emitters" if emissions else "Selected producers", role="context")
         for label in labels:
-            self.record(panel, label, values.loc[label], unit, "Producer regions")
+            self.record(panel, label, values.loc[label], unit, "Emitter regions" if emissions else "Producer regions")
         return first, last
 
-    def producer_figure(self, intensity=False):
-        title = "Energy intensity in the leading producer regions" if intensity else "The geography of industrial production"
+    def ranked_figure(self, metric="production"):
+        intensity, emissions = metric == "reported_intensity", metric == "emissions"
+        title = ("Energy intensity in the leading producer regions" if intensity else
+                 "The geography of industrial emissions" if emissions else "The geography of industrial production")
         # Each column reserves its own left label margin; wide gaps are intentional.
         fig, axes = self.canvas(title, 149, cols=3, left=.175, right=.985,
                                 top=.755, bottom=.16, wspace=1.04)
         for i, sector in enumerate(SECTORS):
-            first, last = self.endpoint_plot(axes[0, i], sector, chr(97 + i), intensity)
+            first, last = self.endpoint_plot(axes[0, i], sector, chr(97 + i), metric)
         handles = [Line2D([], [], color="#56636B", marker="o", markerfacecolor="white", linestyle="none", markersize=4, label=str(first)),
                    Line2D([], [], color="#53626A", marker="D", linestyle="none", markersize=4, label=f"{last} (sector colour)")]
         fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(.035, .872), ncol=2,
                    fontsize=6, handletextpad=.5, columnspacing=2)
         fig.text(.035, .066, "Europe combines five model regions. Indonesia group = Indonesia, Philippines and Viet Nam.",
                  fontsize=5.5, color="#52616A")
-        cohort_description = (f"The {self.config['top_n']} largest producer groups in {last}" if self.results.missing_activity == "zero" else
-                              f"Up to {self.config['top_n']} largest groups with complete {last} production data")
+        group_type, quantity = ("emitter", "emissions") if emissions else ("producer", "production")
+        cohort_description = (f"The {self.config['top_n']} largest {group_type} groups in {last}" if self.results.missing_activity == "zero" else
+                              f"Up to {self.config['top_n']} largest groups with complete {last} {quantity} data")
         caption = (f"{cohort_description}, ranked separately for each sector. "
                    f"The same {last} cohort and ordering are used for both endpoint years ({first} and {last}). "
-                   "Europe aggregates ENE, ENW, EUE, EUM and EUW; remaining producer groups preserve individual model regions. "
+                   "Europe aggregates ENE, ENW, EUE, EUM and EUW; remaining groups preserve individual model regions. "
                    "China denotes the CHN model region (including Hong Kong, Macao and Taiwan). "
                    "Indonesia group includes Indonesia, Philippines and Viet Nam. Exact memberships accompany the figures. ")
         if intensity:
@@ -207,8 +228,15 @@ class ReportBuilder:
                                "How do energy intensities compare within the same leading-producer cohort?", caption, 3, True)
         caption += ("The final row is the unranked sum of all remaining groups, retaining complete global accounting. "
                     "Open circles show the first year; filled diamonds show the ranking year. Thin connectors indicate endpoint changes, not intervening trajectories.")
-        if self.config.get("producer_axis_scale", "log") == "log":
-            caption += " Production axes are logarithmic to make changes visible across producers spanning several orders of magnitude."
+        scale_key = "emitter_axis_scale" if emissions else "producer_axis_scale"
+        if self.config.get(scale_key, "log") == "log":
+            caption += f" {quantity.capitalize()} axes are logarithmic to make changes visible across groups spanning several orders of magnitude."
+        if emissions:
+            caption += (" Rankings use absolute sector GHG emissions in MtCO2e/yr, independently of the production ranking in Figure 2. "
+                        "Coverage is the selected groups' share of global emissions for that sector, not all-industry emissions. "
+                        "The source emissions totals are used as reported; CO2 capture is not subtracted again.")
+            return self.finish(fig, "7", "fig07_leading_emitters", title,
+                               "Where are sector emissions concentrated, and how do they change between 2019 and 2050?", caption, 3)
         return self.finish(fig, "2", "fig02_leading_producers", title,
                            "Where is production concentrated, and how does it move between 2019 and 2050?", caption, 3)
 
@@ -338,12 +366,13 @@ class ReportBuilder:
 
     def figures(self):
         yield self.production()
-        yield self.producer_figure()
+        yield self.ranked_figure()
         yield self.carbon_prices()
         yield self.energy()
         yield self.emissions()
         yield self.costs()
-        yield self.producer_figure(intensity=True)
+        yield self.ranked_figure("emissions")
+        yield self.ranked_figure("reported_intensity")
         yield self.costs(full_period=True)
 
 
@@ -414,6 +443,7 @@ def generate_report(config: dict, base: Path):
         membership.to_csv(directory / "region_membership.csv", index=False)
         membership.merge(mapping.drop_duplicates(), left_on="Region", right_on="region", how="left").to_csv(directory / "country_membership.csv", index=False)
         builder.data.producer_ranking_table().to_csv(directory / "producer_rankings.csv", index=False)
+        builder.data.emitter_ranking_table().to_csv(directory / "emitter_rankings.csv", index=False)
         comparison = results.intensity_comparison()
         comparison.to_csv(directory / "intensity_comparison.csv", index=False)
         costs = results.raw[results.raw.Variable.str.startswith("Total Annualised Cost")]
@@ -422,11 +452,14 @@ def generate_report(config: dict, base: Path):
         negative.to_csv(directory / "negative_costs.csv", index=False)
         pd.DataFrame(results.coverage, columns=["Scenario", "Region", "Variable", "Unit", "Year", "Issue", "Treatment"]).drop_duplicates().to_csv(directory / "missing_inputs.csv", index=False)
         pd.concat(all_data, ignore_index=True).to_csv(directory / "source_data.csv", index=False)
+        main_count = sum(record["section"] == "Main report" for record in records)
+        support_count = len(records) - main_count
         notes = [
-            "Six main figures tell the report story; Figures S1 and S2 hold regional-intensity detail and full-period costs.",
+            f"{main_count} main figures tell the report story; Figures S1 and S2 hold regional-intensity detail and full-period costs.",
             "Blank activity values are provisionally treated as zero. This is a draft assumption, not a confirmed export convention. Prices, costs and reported intensities are never zero-filled." if results.missing_activity == "zero" else "Missing values are preserved and aggregates require complete coverage.",
             f"Carbon-price indices use fixed {config['price_weight_year']} industrial-GHG-emissions weights. The nine geographic groups partition the 28 model regions without overlap.",
             f"Leading producers are selected independently by sector using {config['ranking_year']} total production. The same top-{config['top_n']} cohort is shown at both endpoints. Other model regions preserve the global remainder.",
+            f"Figure 7 selects the top {config['top_n']} emitters independently by sector using {config['ranking_year']} absolute GHG emissions. It uses Figure 2's geographic groups, with a separate emissions ranking and an unranked remainder. Coverage uses each sector's global emissions as denominator.",
             "Europe combines ENE, ENW, EUE, EUM and EUW. North America contains USA, CAN and MEX. Regional definitions follow whole model regions, including the territories assigned to them in the mapping.",
             "China is the CHN model region, including Hong Kong, Macao and Taiwan. Indonesia group includes Indonesia, Philippines and Viet Nam. The mapping's ZijieRegion column crosses model boundaries and is not used for aggregation.",
             "Global intensities are ratios of global sums. Reported producer-region energy intensities retain the source definition; Europe's regional intensities are production-weighted. These definitions do not agree in this export.",
@@ -436,7 +469,7 @@ def generate_report(config: dict, base: Path):
                  "generated_utc": datetime.now(timezone.utc).isoformat(), "source": source.name,
                  "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
                  "region_mapping": config["region_mapping"], "region_mapping_sha256": hashlib.sha256(mapping_path.read_bytes()).hexdigest(),
-                 "figure_count": len(records), "main_figure_count": 6, "supporting_figure_count": 2,
+                 "figure_count": len(records), "main_figure_count": main_count, "supporting_figure_count": support_count,
                  "selected_source_rows": len(results.raw), "notes": notes, "config": config,
                  "versions": {"python": platform.python_version(), "pandas": pd.__version__, "numpy": np.__version__, "matplotlib": matplotlib.__version__}}
         (directory / "audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -444,7 +477,7 @@ def generate_report(config: dict, base: Path):
         (directory / "captions.md").write_text("# Report figure captions\n\n" + "\n".join(captions), encoding="utf-8")
         write_methods(directory, config, notes)
         write_report_gallery(directory, records, audit)
-        print(f"Saved six main and two supporting figures to {directory}", flush=True)
+        print(f"Saved {main_count} main and {support_count} supporting figures to {directory}", flush=True)
 
 
 def write_methods(directory, config, notes):
@@ -459,17 +492,18 @@ def write_methods(directory, config, notes):
              "## Formulas\n\n"
              "- Global additive quantities: sum once across the 28 source model regions.\n"
              "- Producer output: cement production; primary + secondary for steel/aluminium. Europe is summed before ranking.\n"
+             "- Emitter rankings: absolute Emissions|GHG|Industry|sector rows in MtCO2e/yr, summed into the same groups as production. Select leading groups by emissions, not production. Coverage = selected emissions / global sector emissions × 100; the remainder includes every unselected group.\n"
              "- Carbon-price index: sum(price in year t × industry GHG in weight year) / sum(industry GHG in weight year), within each group. Weights are fixed for all plotted years.\n"
              "- Global energy intensity: sum(final energy, EJ/yr) / sum(production, Mt/yr) × 1,000 = GJ/t.\n"
              "- Reported producer-group energy intensity: sum(reported regional GJ/t × current production) / sum(current production). A missing intensity with positive production invalidates the weighted mean.\n"
              "- Emissions intensity: sum(MtCO2e/yr) / sum(Mt/yr) = tCO2e/t.\n"
              "- Emissions share: sector GHG / all-industry GHG × 100.\n"
              "- Costs: millions USD_2010 divided by 1,000 for billions or 1,000,000 for trillions. Negative values are retained.\n\n"
-             "Each figure has an accompanying CSV. Role=plotted identifies points actually drawn; Role=context records top-producer coverage, which is annotated in Figure 2. "
+             "Each figure has an accompanying CSV. Role=plotted identifies points actually drawn; Role=context records producer/emitter coverage, annotated in Figures 2 and 7. "
              "Caption text and axis labels specify when quantities or scales differ. All lines connect supplied years directly; no annual interpolation, smoothing, extrapolation or uncertainty is invented.\n\n"
              "## Figure choices\n\n"
              "Figures 1–2 establish global output and geography; Figure 3 presents the regional price context; Figure 4 connects energy demand to intensity; "
-             "Figure 5 shows emissions and capture; Figure 6 shows costs. Figure S1 uses the same leading-producer cohort for reported energy intensities, "
+             "Figure 5 shows emissions and capture; Figure 6 shows costs; Figure 7 compares the leading emitter regions using the endpoint layout of Figure 2. Figure S1 uses the same leading-producer cohort for reported energy intensities, "
              "and Figure S2 preserves the entire cost period. The main cost view deliberately excludes the anomalous first year, with that choice stated on the figure.\n\n"
              "All figures are 183 mm wide; the tallest is 149 mm. PDF/SVG preserve editable text and vector lines; PNG uses the configured resolution. "
              "Titles, panel letters, sector colours, marker styles and typography are consistent across the report.\n")
