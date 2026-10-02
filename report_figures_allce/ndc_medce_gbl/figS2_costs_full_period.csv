@@ -1,0 +1,25 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_medce_gbl,a,Global,System,2019,3.8222701716013847,trillion USD_2010/yr,plotted
+ndc_medce_gbl,a,Global,System,2024,8.26556757917677,trillion USD_2010/yr,plotted
+ndc_medce_gbl,a,Global,System,2030,15.035402113930086,trillion USD_2010/yr,plotted
+ndc_medce_gbl,a,Global,System,2035,19.641297988795376,trillion USD_2010/yr,plotted
+ndc_medce_gbl,a,Global,System,2040,23.459932359875303,trillion USD_2010/yr,plotted
+ndc_medce_gbl,a,Global,System,2050,26.137587341919968,trillion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Cement,2019,104.60506988172908,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Cement,2030,303.2972322411875,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Cement,2035,355.88659252225983,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Cement,2040,449.62927879441366,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Cement,2050,606.1735730960088,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Iron and steel,2019,4959.455128965229,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Iron and steel,2030,259.67471765463506,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Iron and steel,2035,247.42985281284143,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Iron and steel,2040,309.34435734942286,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Iron and steel,2050,405.78396722306354,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Aluminium,2019,25.017308460003065,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Aluminium,2030,169.71286335949392,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Aluminium,2035,124.7423901796375,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Aluminium,2040,135.83887781233477,billion USD_2010/yr,plotted
+ndc_medce_gbl,b,Global,Aluminium,2050,116.44173997494627,billion USD_2010/yr,plotted

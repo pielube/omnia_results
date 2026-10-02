@@ -1,0 +1,97 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+baseline_medce_eu,a,Selected producers,Selected producer coverage,2019,90.2947033277263,%,context
+baseline_medce_eu,a,Selected producers,Selected producer coverage,2024,89.0648927414148,%,context
+baseline_medce_eu,a,Selected producers,Selected producer coverage,2030,88.12237579592652,%,context
+baseline_medce_eu,a,Selected producers,Selected producer coverage,2035,87.2792481192322,%,context
+baseline_medce_eu,a,Selected producers,Selected producer coverage,2040,86.71422120850619,%,context
+baseline_medce_eu,a,Selected producers,Selected producer coverage,2050,85.60101655995767,%,context
+baseline_medce_eu,a,Producer regions,China region,2019,2357.17696299718,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,China region,2050,940.513608235063,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,India,2019,338.922999997768,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,India,2050,678.862769004987,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Indonesia group,2019,205.1329999978,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Indonesia group,2050,255.185452002934,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Gulf & Iran,2019,161.832199997759,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Gulf & Iran,2050,218.635302202327,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other South Asia,2019,88.6989999980088,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other South Asia,2050,202.499817004689,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Europe,2019,206.0375999892213,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Europe,2050,166.084815006803,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Northern Africa,2019,99.4559999978603,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Northern Africa,2050,135.359616003273,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other Asia–Pacific,2019,85.081199997775,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other Asia–Pacific,2050,128.812936802223,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Turkey & Levant,2019,70.8392999978275,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Turkey & Levant,2050,104.629646101703,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,United States,2019,88.0999999977914,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,United States,2050,99.3767999998268,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other Latin America,2019,66.1435999978778,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other Latin America,2050,97.0326612028445,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Eastern Africa,2019,26.2281999978476,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Eastern Africa,2050,78.2124924037157,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other model regions,2019,407.7592369757163,Mt/yr,plotted
+baseline_medce_eu,a,Producer regions,Other model regions,2050,522.3280091616841,Mt/yr,plotted
+baseline_medce_eu,b,Selected producers,Selected producer coverage,2019,96.29338094449439,%,context
+baseline_medce_eu,b,Selected producers,Selected producer coverage,2024,96.09481509253153,%,context
+baseline_medce_eu,b,Selected producers,Selected producer coverage,2030,95.65298831781683,%,context
+baseline_medce_eu,b,Selected producers,Selected producer coverage,2035,95.0873522659328,%,context
+baseline_medce_eu,b,Selected producers,Selected producer coverage,2040,94.84961432383265,%,context
+baseline_medce_eu,b,Selected producers,Selected producer coverage,2050,95.0586885826549,%,context
+baseline_medce_eu,b,Producer regions,China region,2019,948.2701578582521,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,China region,2050,796.5469325573949,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,India,2019,104.7509878412537,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,India,2050,749.912321201994,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Europe,2019,202.59573381823873,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Europe,2050,95.55721774990607,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Brazil,2019,31.608432953420397,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Brazil,2050,72.66778737777,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Japan,2019,102.44869842908881,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Japan,2050,69.05042270963345,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Russia,2019,75.7816577158891,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Russia,2050,64.18706405253617,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,United States,2019,86.7126257604092,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,United States,2050,50.9003112529733,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,South Korea,2019,69.3145074752365,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,South Korea,2050,43.598825180343,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Turkey & Levant,2019,20.38263213914522,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Turkey & Levant,2050,39.0327405263475,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Indonesia group,2019,18.99695005129331,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Indonesia group,2050,34.06153139334478,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Gulf & Iran,2019,18.76949401900283,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Gulf & Iran,2050,30.875817654971897,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Other Latin America,2019,10.039200444466541,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Other Latin America,2050,30.10756211637576,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Other model regions,2019,65.04047272715546,Mt/yr,plotted
+baseline_medce_eu,b,Producer regions,Other model regions,2050,107.93990603093721,Mt/yr,plotted
+baseline_medce_eu,c,Selected producers,Selected producer coverage,2019,93.2084637488492,%,context
+baseline_medce_eu,c,Selected producers,Selected producer coverage,2024,94.14394918869276,%,context
+baseline_medce_eu,c,Selected producers,Selected producer coverage,2030,94.57755622929466,%,context
+baseline_medce_eu,c,Selected producers,Selected producer coverage,2035,94.68069122198033,%,context
+baseline_medce_eu,c,Selected producers,Selected producer coverage,2040,94.58330388029316,%,context
+baseline_medce_eu,c,Selected producers,Selected producer coverage,2050,93.95781161853841,%,context
+baseline_medce_eu,c,Producer regions,China region,2019,45.6540000439702,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,China region,2050,54.4652219900823,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,India,2019,5.02999999512509,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,India,2050,14.0085500000927,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Europe,2019,11.327999971290446,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Europe,2050,11.258602951186257,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Gulf & Iran,2019,6.602999999837697,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Gulf & Iran,2050,9.178169989396494,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,United States,2019,4.96000001439774,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,United States,2050,8.48159999869496,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Other Asia–Pacific,2019,1.0499999961879931,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Other Asia–Pacific,2050,6.8333999925663,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Russia,2019,3.956999993172909,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Russia,2050,5.63476798338986,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Southern Africa,2019,1.331999992097333,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Southern Africa,2050,3.651011993079086,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Indonesia group,2019,0.28000001126525353,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Indonesia group,2050,3.028479987111148,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Brazil,2019,1.323973740353655,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Brazil,2050,2.7263599909748,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,South Korea,2019,1.99999999824504,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,South Korea,2050,2.39999999548234,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Canada,2019,4.56399999412659,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Canada,2050,2.15420799414655,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Other model regions,2019,6.417999972710631,Mt/yr,plotted
+baseline_medce_eu,c,Producer regions,Other model regions,2050,7.962573898143009,Mt/yr,plotted

@@ -1,5 +1,6 @@
 """A curated report: seven main figures and two supporting figures."""
 
+from contextlib import nullcontext
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import hashlib
@@ -19,7 +20,7 @@ import pandas as pd
 from .metrics import Results, SECTORS
 from .plots import STYLE
 from .report_data import ReportData
-from .report_gallery import write_report_gallery
+from .report_gallery import write_collection_gallery, write_report_gallery
 
 
 @dataclass
@@ -356,7 +357,7 @@ class ReportBuilder:
         caption = ("Global annualised (a) whole-system and (b) sector costs, in constant 2010 USD. "
                    "The system axis uses trillions and the sector axis billions; costs are not stacked or interpreted as an exhaustive system breakdown. ")
         if full_period:
-            caption += ("All years and signed source values are retained. In the supplied baseline export, 2019 steel costs exceed total-system costs, "
+            caption += ("All years and signed source values are retained. In the supplied export, 2019 steel costs exceed total-system costs, "
                         "and several regional system costs are negative. This figure makes the anomalous values visible without compressing the main report's later-period trends.")
         else:
             caption += (f"The main report shows {years[0]}–{years[-1]} to keep later trends legible. Initial-year cost anomalies are not corrected or discarded: "
@@ -409,6 +410,26 @@ def generate_report(config: dict, base: Path):
         raise ValueError("Region mapping needs region, country_OMNIA and ISO3 columns")
     if not set(config["regions"]) <= set(mapping.region):
         raise ValueError("The supplied country mapping does not cover all model regions")
+    combined_name = config.get("combined_pdf")
+    combined_context = nullcontext()
+    if combined_name is not None:
+        if (not isinstance(combined_name, str)
+                or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*\.pdf", combined_name, re.IGNORECASE)
+                or re.fullmatch(r"CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9]", combined_name[:-4], re.IGNORECASE)):
+            raise ValueError("combined_pdf must be a safe PDF filename without directory components")
+        output = (base / config["output"]).resolve()
+        combined_path = output / combined_name
+        if combined_path.is_dir() or combined_path.resolve().parent != output:
+            raise ValueError("combined_pdf must name a file within the configured output directory")
+        output.mkdir(parents=True, exist_ok=True)
+        combined_context = PdfPages(combined_path, metadata={"Title": "OMNIA report figures for all selected scenarios"})
+    with combined_context as combined_book:
+        _generate_scenarios(config, base, source, mapping_path, mapping, combined_book)
+    if combined_name is not None:
+        write_collection_gallery(output, config)
+
+
+def _generate_scenarios(config, base, source, mapping_path, mapping, combined_book):
     for scenario in config["scenarios"]:
         if not re.fullmatch(r"[A-Za-z0-9_-]+", scenario):
             raise ValueError("Scenario names must be simple identifiers")
@@ -424,6 +445,8 @@ def generate_report(config: dict, base: Path):
                     metadata = {"Title": spec.title, "Description": spec.caption} if fmt == "svg" else None
                     spec.figure.savefig(directory / f"{spec.slug}.{fmt}", dpi=config["dpi"], metadata=metadata)
                 book.savefig(spec.figure)
+                if combined_book is not None:
+                    combined_book.savefig(spec.figure)
                 width, height = spec.figure.get_size_inches() * 25.4
                 plt.close(spec.figure)
                 spec.data.to_csv(directory / f"{spec.slug}.csv", index=False)

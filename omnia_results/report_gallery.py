@@ -1,12 +1,54 @@
 """A dependency-free, sequential review page for the report figure suite."""
 
 from html import escape
+import json
 from pathlib import Path
 from urllib.parse import quote
 
 
 def _text(value: object) -> str:
     return escape(str(value), quote=True)
+
+
+def write_collection_gallery(directory: Path, config: dict) -> None:
+    """Link scenario galleries and document their pages in the combined PDF."""
+    directory = Path(directory)
+    reports, rows, first_page = [], [], 1
+    for scenario in config["scenarios"]:
+        records = json.loads((directory / scenario / "manifest.json").read_text(encoding="utf-8"))
+        last_page = first_page + len(records) - 1
+        label = config.get("scenario_labels", {}).get(scenario, scenario)
+        folder = quote(scenario, safe="")
+        reports.append({"scenario": scenario, "label": label, "first_page": first_page,
+                        "last_page": last_page, "figures": [record["slug"] for record in records]})
+        rows.append(f'<tr><th scope="row">{_text(label)}<br><small>{_text(scenario)}</small></th>'
+                    f'<td><a href="{folder}/index.html">View figures</a></td>'
+                    f'<td><a href="{folder}/report_figures.pdf">Scenario PDF</a></td>'
+                    f'<td>{first_page}–{last_page}</td></tr>')
+        first_page = last_page + 1
+    combined = quote(config["combined_pdf"], safe="")
+    assumption = ("Missing additive activity is provisionally treated as zero" if config["missing_activity"] == "zero"
+                  else "Missing activity is preserved and incomplete aggregates appear as gaps")
+    page = f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OMNIA scenario reports</title><style>
+body{{font-family:Arial,Helvetica,sans-serif;color:#233139;background:#f5f6f4;margin:0;line-height:1.6}}
+main{{max-width:1000px;margin:auto;padding:40px 24px}}h1{{line-height:1.2}}a{{color:#006887}}
+table{{width:100%;border-collapse:collapse;background:white}}th,td{{text-align:left;padding:12px;border-bottom:1px solid #dce2e2}}
+small{{font-weight:normal;color:#52616a}}.download{{display:inline-block;background:#173f4b;color:white;padding:10px 16px;border-radius:4px}}
+.assumption{{padding:12px 16px;background:#fff7e8;border-left:3px solid #ad7e2e}}
+@media(max-width:600px){{main{{padding:24px 12px}}th,td{{padding:8px;font-size:13px}}}}
+</style></head><body><main><h1>OMNIA industrial scenario reports</h1>
+<p>{len(reports)} scenarios · {first_page - 1} figures. Each scenario contains seven main figures and two supporting figures.</p>
+<p>Source: {_text(config["input"])}. Each gallery includes PDF/SVG/PNG artwork, source CSVs, captions, methods and calculation audits.</p>
+<p><a class="download" href="{combined}">Download all scenarios · {first_page - 1}-page PDF</a></p>
+<p class="assumption">{assumption}; prices, costs and reported intensities retain missing values. See each scenario's methods and audit for interpretation.</p>
+<table><thead><tr><th>Scenario</th><th>Gallery</th><th>PDF</th><th>Combined pages</th></tr></thead><tbody>{"".join(rows)}</tbody></table>
+</main></body></html>'''
+    (directory / "index.html").write_text(page, encoding="utf-8")
+    (directory / "manifest.json").write_text(json.dumps({"source": config["input"],
+        "combined_pdf": config["combined_pdf"], "page_count": first_page - 1,
+        "reports": reports}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def _figure_card(record: dict) -> str:

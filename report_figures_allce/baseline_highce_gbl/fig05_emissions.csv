@@ -1,0 +1,73 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+baseline_highce_gbl,a,Global,Cement,2019,2.542758438447978,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Cement,2024,2.36069368367247,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Cement,2030,1.7863844117338623,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Cement,2035,1.6730904231189598,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Cement,2040,1.518951186846485,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Cement,2050,1.2091659559654229,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Iron and steel,2019,2.74565603423791,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Iron and steel,2024,2.6405834046078245,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Iron and steel,2030,1.7034398538521274,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Iron and steel,2035,1.3597760777404047,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Iron and steel,2040,0.9792005709804597,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Iron and steel,2050,0.4777545428520358,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Aluminium,2019,0.20657298142796365,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Aluminium,2024,0.24798624821972323,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Aluminium,2030,0.19375457978085128,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Aluminium,2035,0.15837398167331754,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Aluminium,2040,0.11900481116890142,GtCO2e/yr,plotted
+baseline_highce_gbl,a,Global,Aluminium,2050,0.04255228564423357,GtCO2e/yr,plotted
+baseline_highce_gbl,b,Global,Cement,2019,27.356840966058222,%,plotted
+baseline_highce_gbl,b,Global,Cement,2024,24.127643958029335,%,plotted
+baseline_highce_gbl,b,Global,Cement,2030,19.49102945450407,%,plotted
+baseline_highce_gbl,b,Global,Cement,2035,19.022015974772483,%,plotted
+baseline_highce_gbl,b,Global,Cement,2040,18.601256728885787,%,plotted
+baseline_highce_gbl,b,Global,Cement,2050,29.402771271714872,%,plotted
+baseline_highce_gbl,b,Global,Iron and steel,2019,29.539760576703067,%,plotted
+baseline_highce_gbl,b,Global,Iron and steel,2024,26.98827750017311,%,plotted
+baseline_highce_gbl,b,Global,Iron and steel,2030,18.586031174097794,%,plotted
+baseline_highce_gbl,b,Global,Iron and steel,2035,15.459823280007114,%,plotted
+baseline_highce_gbl,b,Global,Iron and steel,2040,11.991406549208577,%,plotted
+baseline_highce_gbl,b,Global,Iron and steel,2050,11.617352835811072,%,plotted
+baseline_highce_gbl,b,Global,Aluminium,2019,2.2224620771521697,%,plotted
+baseline_highce_gbl,b,Global,Aluminium,2024,2.5345617455225558,%,plotted
+baseline_highce_gbl,b,Global,Aluminium,2030,2.1140333495119275,%,plotted
+baseline_highce_gbl,b,Global,Aluminium,2035,1.8006154166862802,%,plotted
+baseline_highce_gbl,b,Global,Aluminium,2040,1.4573470587432609,%,plotted
+baseline_highce_gbl,b,Global,Aluminium,2050,1.0347257262028422,%,plotted
+baseline_highce_gbl,c,Global,Cement,2019,0.6052155971768874,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Cement,2024,0.5977239720640364,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Cement,2030,0.5475998237983336,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Cement,2035,0.5357689173672973,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Cement,2040,0.4961531061222754,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Cement,2050,0.41027367989201097,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Iron and steel,2019,1.5647335496873123,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Iron and steel,2024,1.5307025003261827,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Iron and steel,2030,1.0597427388503642,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Iron and steel,2035,0.8754166697982417,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Iron and steel,2040,0.6006022788647639,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Iron and steel,2050,0.228023624297716,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Aluminium,2019,2.1859580832684005,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Aluminium,2024,2.0492475066360236,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Aluminium,2030,1.5601023955260116,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Aluminium,2035,1.295384326900605,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Aluminium,2040,0.975797721135794,tCO2e/t,plotted
+baseline_highce_gbl,c,Global,Aluminium,2050,0.3711203477860843,tCO2e/t,plotted
+baseline_highce_gbl,d,Global,Cement,2019,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Cement,2024,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Cement,2030,97.33621971102485,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Cement,2035,59.35621319886637,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Cement,2040,110.16678364744476,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Cement,2050,142.6964441330222,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Iron and steel,2019,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Iron and steel,2024,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Iron and steel,2030,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Iron and steel,2035,18.155243640526958,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Iron and steel,2040,30.93525992283816,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Iron and steel,2050,33.439415821592554,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Aluminium,2019,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Aluminium,2024,0.0,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Aluminium,2030,3.23471669964404e-08,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Aluminium,2035,2.9614922689917e-08,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Aluminium,2040,3.25570990513997e-08,MtCO2/yr,plotted
+baseline_highce_gbl,d,Global,Aluminium,2050,1.6663602025969198e-08,MtCO2/yr,plotted

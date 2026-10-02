@@ -1,0 +1,239 @@
+{
+  "scenario": "ndc_highce_eu",
+  "scenario_label": "NDC · high CE · EU",
+  "missing_activity": "zero",
+  "generated_utc": "2026-10-02T12:15:37.135262+00:00",
+  "source": "results_allCE_261002.csv",
+  "source_sha256": "f0871ccd7ae50a21667443212cdc025891156b011df70e18a40a0c0bd1abe182",
+  "region_mapping": "data/OMNIA_region_mapping_241120.csv",
+  "region_mapping_sha256": "53728d27a37fcaac1c5ea9b5a3723a3eadcd1167bbe579f2bb4b084c8b362585",
+  "figure_count": 9,
+  "main_figure_count": 7,
+  "supporting_figure_count": 2,
+  "selected_source_rows": 2452,
+  "notes": [
+    "7 main figures tell the report story; Figures S1 and S2 hold regional-intensity detail and full-period costs.",
+    "Blank activity values are provisionally treated as zero. This is a draft assumption, not a confirmed export convention. Prices, costs and reported intensities are never zero-filled.",
+    "Carbon-price indices use fixed 2019 industrial-GHG-emissions weights. The nine geographic groups partition the 28 model regions without overlap.",
+    "Leading producers are selected independently by sector using 2050 total production. The same top-12 cohort is shown at both endpoints. Other model regions preserve the global remainder.",
+    "Figure 7 selects the top 12 emitters independently by sector using 2050 absolute GHG emissions. It uses Figure 2's geographic groups, with a separate emissions ranking and an unranked remainder. Coverage uses each sector's global emissions as denominator.",
+    "Europe combines ENE, ENW, EUE, EUM and EUW. North America contains USA, CAN and MEX. Regional definitions follow whole model regions, including the territories assigned to them in the mapping.",
+    "China is the CHN model region, including Hong Kong, Macao and Taiwan. Indonesia group includes Indonesia, Philippines and Viet Nam. The mapping's ZijieRegion column crosses model boundaries and is not used for aggregation.",
+    "Global intensities are ratios of global sums. Reported producer-region energy intensities retain the source definition; Europe's regional intensities are production-weighted. These definitions do not agree in this export.",
+    "There are 14 negative regional cost entries. Main costs start in 2024; all source years, including anomalous initial costs, remain in Figure S2 and its data."
+  ],
+  "config": {
+    "suite": "report",
+    "input": "results_allCE_261002.csv",
+    "region_mapping": "data/OMNIA_region_mapping_241120.csv",
+    "output": "report_figures_allce",
+    "scenarios": [
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu",
+      "baseline_medce_gbl",
+      "baseline_highce_gbl",
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "ndc_medce_gbl",
+      "ndc_highce_gbl"
+    ],
+    "scenario_labels": {
+      "baseline_noce": "Baseline · no CE",
+      "baseline_medce_eu": "Baseline · medium CE · EU",
+      "baseline_highce_eu": "Baseline · high CE · EU",
+      "baseline_medce_gbl": "Baseline · medium CE · global",
+      "baseline_highce_gbl": "Baseline · high CE · global",
+      "ndc_noce": "NDC · no CE",
+      "ndc_medce_eu": "NDC · medium CE · EU",
+      "ndc_highce_eu": "NDC · high CE · EU",
+      "ndc_medce_gbl": "NDC · medium CE · global",
+      "ndc_highce_gbl": "NDC · high CE · global"
+    },
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "regions": [
+      "AFE",
+      "AFN",
+      "AFW",
+      "AFZ",
+      "ANZ",
+      "ASC",
+      "ASE",
+      "ASO",
+      "BRA",
+      "CAN",
+      "CHL",
+      "CHN",
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW",
+      "IDN",
+      "IND",
+      "JPN",
+      "LAM",
+      "MDA",
+      "MEA",
+      "MEX",
+      "NIG",
+      "RUS",
+      "SKT",
+      "USA"
+    ],
+    "macroregions": {
+      "Europe": [
+        "ENE",
+        "ENW",
+        "EUE",
+        "EUM",
+        "EUW"
+      ],
+      "China region": [
+        "CHN"
+      ],
+      "India": [
+        "IND"
+      ],
+      "North America": [
+        "USA",
+        "CAN",
+        "MEX"
+      ],
+      "Latin America & Caribbean": [
+        "BRA",
+        "CHL",
+        "LAM"
+      ],
+      "Other Asia–Pacific": [
+        "ANZ",
+        "ASE",
+        "ASO",
+        "IDN",
+        "JPN",
+        "SKT"
+      ],
+      "Russia & Central Asia": [
+        "RUS",
+        "ASC"
+      ],
+      "Middle East": [
+        "MDA",
+        "MEA"
+      ],
+      "Africa": [
+        "AFE",
+        "AFN",
+        "AFW",
+        "AFZ",
+        "NIG"
+      ]
+    },
+    "producer_groups": {
+      "Europe": [
+        "ENE",
+        "ENW",
+        "EUE",
+        "EUM",
+        "EUW"
+      ],
+      "China region": [
+        "CHN"
+      ],
+      "India": [
+        "IND"
+      ],
+      "United States": [
+        "USA"
+      ],
+      "Canada": [
+        "CAN"
+      ],
+      "Mexico": [
+        "MEX"
+      ],
+      "Brazil": [
+        "BRA"
+      ],
+      "Chile": [
+        "CHL"
+      ],
+      "Other Latin America": [
+        "LAM"
+      ],
+      "Australia & NZ": [
+        "ANZ"
+      ],
+      "Japan": [
+        "JPN"
+      ],
+      "South Korea": [
+        "SKT"
+      ],
+      "Indonesia group": [
+        "IDN"
+      ],
+      "Other Asia–Pacific": [
+        "ASE"
+      ],
+      "Other South Asia": [
+        "ASO"
+      ],
+      "Russia": [
+        "RUS"
+      ],
+      "Central Asia group": [
+        "ASC"
+      ],
+      "Eastern Africa": [
+        "AFE"
+      ],
+      "Northern Africa": [
+        "AFN"
+      ],
+      "West & Central Africa": [
+        "AFW"
+      ],
+      "Southern Africa": [
+        "AFZ"
+      ],
+      "Nigeria": [
+        "NIG"
+      ],
+      "Turkey & Levant": [
+        "MDA"
+      ],
+      "Gulf & Iran": [
+        "MEA"
+      ]
+    },
+    "ranking_year": 2050,
+    "top_n": 12,
+    "producer_axis_scale": "log",
+    "emitter_axis_scale": "log",
+    "price_weight_year": 2019,
+    "main_cost_start_year": 2024,
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600,
+    "combined_pdf": "report_figures_all_scenarios.pdf"
+  },
+  "versions": {
+    "python": "3.11.15",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.9"
+  }
+}

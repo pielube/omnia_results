@@ -1,0 +1,97 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+baseline_highce_eu,a,Selected emitters,Selected emitter coverage,2019,88.90187582893093,%,context
+baseline_highce_eu,a,Selected emitters,Selected emitter coverage,2024,87.37482580979811,%,context
+baseline_highce_eu,a,Selected emitters,Selected emitter coverage,2030,87.4179766675996,%,context
+baseline_highce_eu,a,Selected emitters,Selected emitter coverage,2035,87.07642832321105,%,context
+baseline_highce_eu,a,Selected emitters,Selected emitter coverage,2040,87.1577445715322,%,context
+baseline_highce_eu,a,Selected emitters,Selected emitter coverage,2050,87.64986281724121,%,context
+baseline_highce_eu,a,Emitter regions,China region,2019,1338.35642777995,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,China region,2050,394.102595854474,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,India,2019,221.211638938921,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,India,2050,333.295166147628,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Indonesia group,2019,155.938212179255,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Indonesia group,2050,145.6346537417,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Gulf & Iran,2019,114.463449497334,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Gulf & Iran,2050,130.83237767563702,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other South Asia,2019,36.784444693104994,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other South Asia,2050,94.98496844885553,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other Asia–Pacific,2019,68.0403455578622,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other Asia–Pacific,2050,74.7748981261997,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Northern Africa,2019,61.5021282532414,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Northern Africa,2050,68.5689169602461,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Europe,2019,132.0190975660518,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Europe,2050,55.45534574356401,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,United States,2019,60.7377852133949,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,United States,2050,48.7355512174657,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other Latin America,2019,40.6167384127257,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other Latin America,2050,46.480570641749104,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Eastern Africa,2019,18.3945550519248,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Eastern Africa,2050,44.1544676751539,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,West & Central Africa,2019,12.4951264349183,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,West & Central Africa,2050,36.3192387008082,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other model regions,2019,282.19848886929304,MtCO2e/yr,plotted
+baseline_highce_eu,a,Emitter regions,Other model regions,2050,207.59799394830057,MtCO2e/yr,plotted
+baseline_highce_eu,b,Selected emitters,Selected emitter coverage,2019,87.75862354339993,%,context
+baseline_highce_eu,b,Selected emitters,Selected emitter coverage,2024,89.8492630821681,%,context
+baseline_highce_eu,b,Selected emitters,Selected emitter coverage,2030,92.64957059642465,%,context
+baseline_highce_eu,b,Selected emitters,Selected emitter coverage,2035,96.19160401001133,%,context
+baseline_highce_eu,b,Selected emitters,Selected emitter coverage,2040,97.08755659128042,%,context
+baseline_highce_eu,b,Selected emitters,Selected emitter coverage,2050,99.36912442250807,%,context
+baseline_highce_eu,b,Emitter regions,India,2019,271.672177058831,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,India,2050,618.566602712653,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,China region,2019,1585.38682152395,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,China region,2050,73.6615795632692,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Europe,2019,207.79156372438777,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Europe,2050,11.319396555759337,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Brazil,2019,52.5063057077343,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Brazil,2050,8.658882674606529,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Indonesia group,2019,28.6517242265395,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Indonesia group,2050,5.78913121637025,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Eastern Africa,2019,0.0184619638539668,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Eastern Africa,2050,5.199153478055631,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Other Latin America,2019,8.06215981872513,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Other Latin America,2050,4.7699540231373305,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Russia,2019,189.408294016028,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Russia,2050,4.19356218889702,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Turkey & Levant,2019,22.3022013177956,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Turkey & Levant,2050,4.1748145161476105,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Mexico,2019,15.233726069800198,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Mexico,2050,2.95233339884493,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Northern Africa,2019,6.21367470921723,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Northern Africa,2050,2.46628255682206,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Gulf & Iran,2019,22.302832746629903,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Gulf & Iran,2050,1.84290600041719,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Other model regions,2019,336.10609135441814,MtCO2e/yr,plotted
+baseline_highce_eu,b,Emitter regions,Other model regions,2050,4.720939977259177,MtCO2e/yr,plotted
+baseline_highce_eu,c,Selected emitters,Selected emitter coverage,2019,84.92866296934486,%,context
+baseline_highce_eu,c,Selected emitters,Selected emitter coverage,2024,84.96054271952977,%,context
+baseline_highce_eu,c,Selected emitters,Selected emitter coverage,2030,84.50022999093385,%,context
+baseline_highce_eu,c,Selected emitters,Selected emitter coverage,2035,88.12215866624854,%,context
+baseline_highce_eu,c,Selected emitters,Selected emitter coverage,2040,93.67116219806427,%,context
+baseline_highce_eu,c,Selected emitters,Selected emitter coverage,2050,99.97642299695165,%,context
+baseline_highce_eu,c,Emitter regions,China region,2019,126.730538538385,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,China region,2050,46.9506904094369,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Gulf & Iran,2019,16.8855200107169,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Gulf & Iran,2050,3.83317101403976,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Russia,2019,7.8262507805648704,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Russia,2050,2.16034254846531,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Southern Africa,2019,4.38043695969361,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Southern Africa,2050,1.15830044163265,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Other Asia–Pacific,2019,2.571133970798,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Other Asia–Pacific,2050,0.830322148091293,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Indonesia group,2019,0.804472116479327,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Indonesia group,2050,0.688645488831586,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Northern Africa,2019,0.828690869819345,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Northern Africa,2050,0.3867965261471,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Central Asia group,2019,1.36360794289003,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Central Asia group,2050,0.385972413467526,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,India,2019,12.3024955965168,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,India,2050,0.363775062809312,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Mexico,2019,0.0016013373463235,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Mexico,2050,0.265744264940454,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,West & Central Africa,2019,0.383592114677086,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,West & Central Africa,2050,0.156983685993662,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Other Latin America,2019,1.36133094479526,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Other Latin America,2050,0.0714099641713553,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Other model regions,2019,31.133310245281084,MtCO2e/yr,plotted
+baseline_highce_eu,c,Emitter regions,Other model regions,2050,0.0135015253413304,MtCO2e/yr,plotted

@@ -1,0 +1,25 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_noce,a,Global,System,2019,3.8222701716013847,trillion USD_2010/yr,plotted
+ndc_noce,a,Global,System,2024,8.265567631201645,trillion USD_2010/yr,plotted
+ndc_noce,a,Global,System,2030,15.186478039655222,trillion USD_2010/yr,plotted
+ndc_noce,a,Global,System,2035,19.87476405107026,trillion USD_2010/yr,plotted
+ndc_noce,a,Global,System,2040,23.775294041943,trillion USD_2010/yr,plotted
+ndc_noce,a,Global,System,2050,26.582431134289504,trillion USD_2010/yr,plotted
+ndc_noce,b,Global,Cement,2019,104.60506988172908,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Cement,2030,336.6139129480516,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Cement,2035,413.81635511015634,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Cement,2040,544.3146726880135,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Cement,2050,730.6647060288142,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Iron and steel,2019,4959.455128965229,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Iron and steel,2030,313.00843114290876,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Iron and steel,2035,309.02433164007226,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Iron and steel,2040,378.692134370259,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Iron and steel,2050,525.3842355289025,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Aluminium,2019,25.017308460003065,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Aluminium,2030,189.05012343896013,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Aluminium,2035,143.8336374745029,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Aluminium,2040,164.1239053628405,billion USD_2010/yr,plotted
+ndc_noce,b,Global,Aluminium,2050,151.4426773772102,billion USD_2010/yr,plotted

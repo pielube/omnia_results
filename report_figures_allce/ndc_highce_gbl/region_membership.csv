@@ -1,0 +1,57 @@
+GroupType,Group,Region
+macroregion,Europe,ENE
+macroregion,Europe,ENW
+macroregion,Europe,EUE
+macroregion,Europe,EUM
+macroregion,Europe,EUW
+macroregion,China region,CHN
+macroregion,India,IND
+macroregion,North America,USA
+macroregion,North America,CAN
+macroregion,North America,MEX
+macroregion,Latin America & Caribbean,BRA
+macroregion,Latin America & Caribbean,CHL
+macroregion,Latin America & Caribbean,LAM
+macroregion,Other Asia–Pacific,ANZ
+macroregion,Other Asia–Pacific,ASE
+macroregion,Other Asia–Pacific,ASO
+macroregion,Other Asia–Pacific,IDN
+macroregion,Other Asia–Pacific,JPN
+macroregion,Other Asia–Pacific,SKT
+macroregion,Russia & Central Asia,RUS
+macroregion,Russia & Central Asia,ASC
+macroregion,Middle East,MDA
+macroregion,Middle East,MEA
+macroregion,Africa,AFE
+macroregion,Africa,AFN
+macroregion,Africa,AFW
+macroregion,Africa,AFZ
+macroregion,Africa,NIG
+producer,Europe,ENE
+producer,Europe,ENW
+producer,Europe,EUE
+producer,Europe,EUM
+producer,Europe,EUW
+producer,China region,CHN
+producer,India,IND
+producer,United States,USA
+producer,Canada,CAN
+producer,Mexico,MEX
+producer,Brazil,BRA
+producer,Chile,CHL
+producer,Other Latin America,LAM
+producer,Australia & NZ,ANZ
+producer,Japan,JPN
+producer,South Korea,SKT
+producer,Indonesia group,IDN
+producer,Other Asia–Pacific,ASE
+producer,Other South Asia,ASO
+producer,Russia,RUS
+producer,Central Asia group,ASC
+producer,Eastern Africa,AFE
+producer,Northern Africa,AFN
+producer,West & Central Africa,AFW
+producer,Southern Africa,AFZ
+producer,Nigeria,NIG
+producer,Turkey & Levant,MDA
+producer,Gulf & Iran,MEA

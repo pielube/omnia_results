@@ -1,0 +1,519 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role,Figure
+baseline_highce_gbl,a,Global,Cement,2019,4201.409299940433,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Cement,2024,3949.47131787373,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Cement,2030,3262.2077913446155,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Cement,2035,3122.783664532689,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Cement,2040,3061.456570771007,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Cement,2050,2947.2179553016663,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Clinker,2019,3030.4398866528886,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Clinker,2024,2864.3071106476964,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Clinker,2030,2328.5259292038736,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Clinker,2035,2188.261800831647,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Clinker,2040,2093.9483092386677,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Global,Clinker,2050,1884.2030146186078,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Total,2019,1754.711551232852,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Total,2024,1725.0794351254624,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Total,2030,1607.4088468868038,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Total,2035,1553.2901356034192,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Total,2040,1630.3643949392072,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Total,2050,2095.1975670216607,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Primary,2019,1409.4021422034127,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Primary,2024,1300.4264955551444,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Primary,2030,824.3276909262331,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Primary,2035,743.9909052675509,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Primary,2040,724.5187772057038,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Primary,2050,781.125238175271,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Secondary,2019,345.30940902943917,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Secondary,2024,424.652939570318,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Secondary,2030,783.0811559605706,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Secondary,2035,809.2992303358683,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Secondary,2040,905.8456177335032,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,b,Global,Secondary,2050,1314.0723288463896,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Total,2019,94.49997372278058,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Total,2024,121.01332192264523,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Total,2030,124.19350187301268,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Total,2035,122.26022685657335,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Total,2040,121.95643481354315,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Total,2050,114.65899376867615,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Primary,2019,62.749973727086626,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Primary,2024,78.04114761610496,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Primary,2030,64.33317655921597,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Primary,2035,57.76851638214364,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Primary,2040,53.258887593752114,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Primary,2050,42.08962112744827,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Secondary,2019,31.74999999569395,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Secondary,2024,42.97217430654027,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Secondary,2030,59.860325313796714,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Secondary,2035,64.49171047442971,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Secondary,2040,68.69754721979103,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,c,Global,Secondary,2050,72.56937264122789,Mt/yr,plotted,fig01_production
+baseline_highce_gbl,a,Selected producers,Selected producer coverage,2019,89.01986919051176,%,context,fig02_leading_producers
+baseline_highce_gbl,a,Selected producers,Selected producer coverage,2024,87.88501608092587,%,context,fig02_leading_producers
+baseline_highce_gbl,a,Selected producers,Selected producer coverage,2030,87.13186288235144,%,context,fig02_leading_producers
+baseline_highce_gbl,a,Selected producers,Selected producer coverage,2035,86.42233609153973,%,context,fig02_leading_producers
+baseline_highce_gbl,a,Selected producers,Selected producer coverage,2040,86.09280850982745,%,context,fig02_leading_producers
+baseline_highce_gbl,a,Selected producers,Selected producer coverage,2050,85.41331363717394,%,context,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,China region,2019,2357.17696299718,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,China region,2050,669.438257502634,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,India,2019,338.922999997768,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,India,2050,482.965275002021,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Gulf & Iran,2019,161.832199997759,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Gulf & Iran,2050,218.635302201777,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other South Asia,2019,88.6989999980088,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other South Asia,2050,202.499817003472,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Indonesia group,2019,205.1329999978,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Indonesia group,2050,181.542705002555,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Europe,2019,206.0375999892213,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Europe,2050,141.40760950656738,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Northern Africa,2019,99.4559999978603,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Northern Africa,2050,135.359616002569,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other Asia–Pacific,2019,85.081199997775,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other Asia–Pacific,2050,128.812936801612,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Turkey & Levant,2019,70.8392999978275,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Turkey & Levant,2050,104.629646101651,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other Latin America,2019,66.1435999978778,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other Latin America,2050,97.0326612022959,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Eastern Africa,2019,26.2281999978476,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Eastern Africa,2050,78.2124924030272,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,West & Central Africa,2019,34.5389999980445,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,West & Central Africa,2050,76.7801970027355,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other model regions,2019,461.3202369754632,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Producer regions,Other model regions,2050,429.90143956874965,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Selected producers,Selected producer coverage,2019,96.29338094449439,%,context,fig02_leading_producers
+baseline_highce_gbl,b,Selected producers,Selected producer coverage,2024,96.09481509253153,%,context,fig02_leading_producers
+baseline_highce_gbl,b,Selected producers,Selected producer coverage,2030,95.61240600774718,%,context,fig02_leading_producers
+baseline_highce_gbl,b,Selected producers,Selected producer coverage,2035,95.02283050879167,%,context,fig02_leading_producers
+baseline_highce_gbl,b,Selected producers,Selected producer coverage,2040,94.76659124010244,%,context,fig02_leading_producers
+baseline_highce_gbl,b,Selected producers,Selected producer coverage,2050,94.94123876807188,%,context,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,China region,2019,948.2701578582521,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,China region,2050,760.5126665465847,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,India,2019,104.7509878412537,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,India,2050,715.868250184634,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Europe,2019,202.59573381823873,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Europe,2050,93.5498829832502,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Brazil,2019,31.608432953420397,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Brazil,2050,69.380510348957,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Japan,2019,102.44869842908881,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Japan,2050,65.9769617583002,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Russia,2019,75.7816577158891,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Russia,2050,61.2315793948141,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,United States,2019,86.7126257604092,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,United States,2050,48.5590703632752,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,South Korea,2019,69.3145074752365,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,South Korea,2050,41.58870446744374,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Turkey & Levant,2019,20.38263213914522,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Turkey & Levant,2050,39.032740519340805,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Indonesia group,2019,18.99695005129331,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Indonesia group,2050,32.5227784372286,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Gulf & Iran,2019,18.76949401900283,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Gulf & Iran,2050,30.875817656215858,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Other Latin America,2019,10.039200444466541,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Other Latin America,2050,30.10756210882344,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Other model regions,2019,65.04047272715546,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,b,Producer regions,Other model regions,2050,105.99104225279265,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Selected producers,Selected producer coverage,2019,93.2084637488492,%,context,fig02_leading_producers
+baseline_highce_gbl,c,Selected producers,Selected producer coverage,2024,94.14394918869276,%,context,fig02_leading_producers
+baseline_highce_gbl,c,Selected producers,Selected producer coverage,2030,94.57597792151539,%,context,fig02_leading_producers
+baseline_highce_gbl,c,Selected producers,Selected producer coverage,2035,94.6240195092625,%,context,fig02_leading_producers
+baseline_highce_gbl,c,Selected producers,Selected producer coverage,2040,94.46882165093008,%,context,fig02_leading_producers
+baseline_highce_gbl,c,Selected producers,Selected producer coverage,2050,93.7248944125732,%,context,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,China region,2019,45.6540000439702,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,China region,2050,45.38007597940544,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,India,2019,5.02999999512509,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,India,2050,11.66959999289064,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Europe,2019,11.327999971290446,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Europe,2050,10.402948946445104,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Gulf & Iran,2019,6.602999999837697,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Gulf & Iran,2050,9.1781699919072,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,United States,2019,4.96000001439774,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,United States,2050,7.06800000019875,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Other Asia–Pacific,2019,1.0499999961879931,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Other Asia–Pacific,2050,6.833399994105299,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Russia,2019,3.956999993172909,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Russia,2050,4.69300198339668,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Southern Africa,2019,1.331999992097333,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Southern Africa,2050,3.651011979179095,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Indonesia group,2019,0.28000001126525353,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Indonesia group,2050,2.52279998831056,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Brazil,2019,1.323973740353655,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Brazil,2050,2.2713599980193666,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,South Korea,2019,1.99999999824504,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,South Korea,2050,1.99999999611623,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Canada,2019,4.56399999412659,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Canada,2050,1.79365199423626,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Other model regions,2019,6.417999972710631,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,c,Producer regions,Other model regions,2050,7.1949729244655245,Mt/yr,plotted,fig02_leading_producers
+baseline_highce_gbl,a,Macroregions,Europe,2019,1.1657752632772076e-05,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Europe,2024,138.15737429463502,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Europe,2030,466.3209008286132,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Europe,2035,347.3387401904472,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Europe,2040,530.3689091790375,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Europe,2050,2218.019989942163,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,China region,2019,7.570391565583399e-07,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,China region,2024,1.95255393005672e-08,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,China region,2030,5.63968626816968e-10,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,China region,2035,1.6846929149668e-08,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,China region,2040,62.93365751762909,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,China region,2050,218.795692704643,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,India,2019,2.81024775948614e-06,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,India,2024,4.75410557843413e-07,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,India,2030,187.37166699656,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,India,2035,262.685812415455,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,India,2040,427.010898621768,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,India,2050,619.072961537525,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,North America,2019,4.966120021215895e-06,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,North America,2024,113.83952230507377,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,North America,2030,999.8375463262365,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,North America,2035,560.3709805440242,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,North America,2040,612.7588496333002,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,North America,2050,3255.653855679579,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Latin America & Caribbean,2019,1.8232195226013582e-05,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Latin America & Caribbean,2024,605.7414711527204,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Latin America & Caribbean,2030,110.57800922600794,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Latin America & Caribbean,2035,138.21767887017904,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Latin America & Caribbean,2040,304.69009362369945,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Latin America & Caribbean,2050,1190.9328040153378,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Other Asia–Pacific,2019,9.43230994604147e-06,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Other Asia–Pacific,2024,66.27227266838179,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Other Asia–Pacific,2030,91.5928086866544,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Other Asia–Pacific,2035,299.0150119496057,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Other Asia–Pacific,2040,449.34365711225024,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Other Asia–Pacific,2050,1254.9178280842348,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Russia & Central Asia,2019,5.2787140565506325e-06,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Russia & Central Asia,2024,4.5250527605064705e-07,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Russia & Central Asia,2030,2.0872496263442827e-08,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Russia & Central Asia,2035,562.7504877846661,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Russia & Central Asia,2040,759.2242119602679,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Russia & Central Asia,2050,323.14171185683927,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Middle East,2019,4.801786060806121e-06,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Middle East,2024,2.323387196594293,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Middle East,2030,412.14966997223087,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Middle East,2035,138.60444177461113,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Middle East,2040,310.02438161657096,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Middle East,2050,451.7654566331846,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Africa,2019,2.297222674507949e-05,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Africa,2024,11.973750185586056,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Africa,2030,63.43414703074857,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Africa,2035,90.16010118303787,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Africa,2040,196.7107291351718,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Macroregions,Africa,2050,231.2474190358506,USD_2010/tCO2e,plotted,fig03_carbon_prices
+baseline_highce_gbl,a,Global,Cement,2019,12.207643906759426,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,a,Global,Cement,2024,11.408035618838122,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,a,Global,Cement,2030,9.281616026357426,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,a,Global,Cement,2035,8.693202718055533,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,a,Global,Cement,2040,8.386163045721784,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,a,Global,Cement,2050,7.530598578321007,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,d,Global,Cement,2019,2.905606913121391,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,d,Global,Cement,2024,2.888496890003963,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,d,Global,Cement,2030,2.845194610528391,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,d,Global,Cement,2035,2.7837992163176097,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,d,Global,Cement,2040,2.7392722554969264,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,d,Global,Cement,2050,2.5551549605533683,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,b,Global,Iron and steel,2019,30.242503133675367,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,b,Global,Iron and steel,2024,27.031373511905564,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,b,Global,Iron and steel,2030,16.802686977469122,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,b,Global,Iron and steel,2035,13.94093974033566,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,b,Global,Iron and steel,2040,11.55428954919689,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,b,Global,Iron and steel,2050,9.901565563520498,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,e,Global,Iron and steel,2019,17.2350282372206,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,e,Global,Iron and steel,2024,15.669639879475818,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,e,Global,Iron and steel,2030,10.453275163946136,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,e,Global,Iron and steel,2035,8.97510350499967,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,e,Global,Iron and steel,2040,7.086936874395938,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,e,Global,Iron and steel,2050,4.725838612725982,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,c,Global,Aluminium,2019,4.680947868457299,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,c,Global,Aluminium,2024,5.8607336627268936,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,c,Global,Aluminium,2030,4.902985265142253,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,c,Global,Aluminium,2035,4.43437703149083,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,c,Global,Aluminium,2040,4.114137911077503,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,c,Global,Aluminium,2050,3.2823399216526434,EJ/yr,plotted,fig04_energy
+baseline_highce_gbl,f,Global,Aluminium,2019,49.53385365152635,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,f,Global,Aluminium,2024,48.430483269215785,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,f,Global,Aluminium,2030,39.47859744027135,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,f,Global,Aluminium,2035,36.26998857684856,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,f,Global,Aluminium,2040,33.73448819955691,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,f,Global,Aluminium,2050,28.626973024678247,GJ/t,plotted,fig04_energy
+baseline_highce_gbl,a,Global,Cement,2019,2.542758438447978,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Cement,2024,2.36069368367247,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Cement,2030,1.7863844117338623,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Cement,2035,1.6730904231189598,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Cement,2040,1.518951186846485,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Cement,2050,1.2091659559654229,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Iron and steel,2019,2.74565603423791,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Iron and steel,2024,2.6405834046078245,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Iron and steel,2030,1.7034398538521274,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Iron and steel,2035,1.3597760777404047,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Iron and steel,2040,0.9792005709804597,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Iron and steel,2050,0.4777545428520358,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Aluminium,2019,0.20657298142796365,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Aluminium,2024,0.24798624821972323,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Aluminium,2030,0.19375457978085128,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Aluminium,2035,0.15837398167331754,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Aluminium,2040,0.11900481116890142,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,Aluminium,2050,0.04255228564423357,GtCO2e/yr,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Cement,2019,27.356840966058222,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Cement,2024,24.127643958029335,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Cement,2030,19.49102945450407,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Cement,2035,19.022015974772483,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Cement,2040,18.601256728885787,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Cement,2050,29.402771271714872,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Iron and steel,2019,29.539760576703067,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Iron and steel,2024,26.98827750017311,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Iron and steel,2030,18.586031174097794,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Iron and steel,2035,15.459823280007114,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Iron and steel,2040,11.991406549208577,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Iron and steel,2050,11.617352835811072,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Aluminium,2019,2.2224620771521697,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Aluminium,2024,2.5345617455225558,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Aluminium,2030,2.1140333495119275,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Aluminium,2035,1.8006154166862802,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Aluminium,2040,1.4573470587432609,%,plotted,fig05_emissions
+baseline_highce_gbl,b,Global,Aluminium,2050,1.0347257262028422,%,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Cement,2019,0.6052155971768874,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Cement,2024,0.5977239720640364,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Cement,2030,0.5475998237983336,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Cement,2035,0.5357689173672973,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Cement,2040,0.4961531061222754,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Cement,2050,0.41027367989201097,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Iron and steel,2019,1.5647335496873123,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Iron and steel,2024,1.5307025003261827,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Iron and steel,2030,1.0597427388503642,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Iron and steel,2035,0.8754166697982417,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Iron and steel,2040,0.6006022788647639,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Iron and steel,2050,0.228023624297716,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Aluminium,2019,2.1859580832684005,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Aluminium,2024,2.0492475066360236,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Aluminium,2030,1.5601023955260116,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Aluminium,2035,1.295384326900605,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Aluminium,2040,0.975797721135794,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,c,Global,Aluminium,2050,0.3711203477860843,tCO2e/t,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Cement,2019,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Cement,2024,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Cement,2030,97.33621971102485,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Cement,2035,59.35621319886637,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Cement,2040,110.16678364744476,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Cement,2050,142.6964441330222,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Iron and steel,2019,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Iron and steel,2024,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Iron and steel,2030,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Iron and steel,2035,18.155243640526958,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Iron and steel,2040,30.93525992283816,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Iron and steel,2050,33.439415821592554,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Aluminium,2019,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Aluminium,2024,0.0,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Aluminium,2030,3.23471669964404e-08,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Aluminium,2035,2.9614922689917e-08,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Aluminium,2040,3.25570990513997e-08,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,d,Global,Aluminium,2050,1.6663602025969198e-08,MtCO2/yr,plotted,fig05_emissions
+baseline_highce_gbl,a,Global,System,2024,8.26556757917677,trillion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,a,Global,System,2030,14.960800680532936,trillion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,a,Global,System,2035,19.335615437936994,trillion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,a,Global,System,2040,23.837029471603305,trillion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,a,Global,System,2050,29.097998662690667,trillion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Cement,2030,275.68272082592733,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Cement,2035,337.8962195239679,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Cement,2040,439.11078476823195,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Cement,2050,588.9188230620892,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Iron and steel,2030,228.84845413300687,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Iron and steel,2035,243.6024890420823,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Iron and steel,2040,364.4541620230349,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Iron and steel,2050,489.77126058518047,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Aluminium,2030,151.64946885014012,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Aluminium,2035,122.41454519647064,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Aluminium,2040,154.159427061714,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,b,Global,Aluminium,2050,112.12700634549218,billion USD_2010/yr,plotted,fig06_costs
+baseline_highce_gbl,a,Selected emitters,Selected emitter coverage,2019,87.40984132026158,%,context,fig07_leading_emitters
+baseline_highce_gbl,a,Selected emitters,Selected emitter coverage,2024,85.9674682383043,%,context,fig07_leading_emitters
+baseline_highce_gbl,a,Selected emitters,Selected emitter coverage,2030,86.37221869336344,%,context,fig07_leading_emitters
+baseline_highce_gbl,a,Selected emitters,Selected emitter coverage,2035,86.72793378741255,%,context,fig07_leading_emitters
+baseline_highce_gbl,a,Selected emitters,Selected emitter coverage,2040,87.13484611928408,%,context,fig07_leading_emitters
+baseline_highce_gbl,a,Selected emitters,Selected emitter coverage,2050,88.10165024541237,%,context,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,China region,2019,1338.35642777995,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,China region,2050,230.170235361413,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,India,2019,221.211638938921,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,India,2050,188.576710963651,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Gulf & Iran,2019,114.463449497334,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Gulf & Iran,2050,130.832377680065,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other South Asia,2019,36.784444693104994,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other South Asia,2050,94.9849686863853,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other Asia–Pacific,2019,68.0403455578622,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other Asia–Pacific,2050,74.77489814322661,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Indonesia group,2019,155.938212179255,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Indonesia group,2050,73.5465736949943,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Northern Africa,2019,61.5021282532414,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Northern Africa,2050,68.5689169648892,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other Latin America,2019,40.6167384127257,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other Latin America,2050,46.480570649251206,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Europe,2019,132.0190975660518,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Europe,2050,44.34534035602259,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Eastern Africa,2019,18.3945550519248,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Eastern Africa,2050,43.9027454135168,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,West & Central Africa,2019,12.4951264349183,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,West & Central Africa,2050,36.160985011818,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Central Asia group,2019,22.798951839649305,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Central Asia group,2050,32.9508384860208,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other model regions,2019,320.1373222430386,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Emitter regions,Other model regions,2050,143.87079455416898,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Selected emitters,Selected emitter coverage,2019,91.41689792079075,%,context,fig07_leading_emitters
+baseline_highce_gbl,b,Selected emitters,Selected emitter coverage,2024,91.98805595228377,%,context,fig07_leading_emitters
+baseline_highce_gbl,b,Selected emitters,Selected emitter coverage,2030,92.84391614522742,%,context,fig07_leading_emitters
+baseline_highce_gbl,b,Selected emitters,Selected emitter coverage,2035,93.85039137562975,%,context,fig07_leading_emitters
+baseline_highce_gbl,b,Selected emitters,Selected emitter coverage,2040,94.54837836417332,%,context,fig07_leading_emitters
+baseline_highce_gbl,b,Selected emitters,Selected emitter coverage,2050,98.49793721851083,%,context,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,India,2019,271.672177058831,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,India,2050,293.73069507603105,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,China region,2019,1585.38682152395,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,China region,2050,121.57148979565,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Russia,2019,189.408294016028,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Russia,2050,9.65040648897692,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Brazil,2019,52.5063057077343,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Brazil,2050,8.06717280960635,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Eastern Africa,2019,0.0184619638539668,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Eastern Africa,2050,7.6888905937885,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Japan,2019,127.820723377896,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Japan,2050,6.4668451012476496,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Indonesia group,2019,28.6517242265395,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Indonesia group,2050,5.8541001044646,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Mexico,2019,15.233726069800198,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Mexico,2050,4.72761684917836,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Turkey & Levant,2019,22.3022013177956,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Turkey & Levant,2050,4.09352960109958,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Other Latin America,2019,8.06215981872513,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Other Latin America,2050,4.01510210689511,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Europe,2019,207.79156372438777,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Europe,2050,2.5421439104698145,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Other South Asia,2019,1.13941526976031,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Other South Asia,2050,2.17037723957376,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Other model regions,2019,235.6624601626089,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,b,Emitter regions,Other model regions,2050,7.176173175054134,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Selected emitters,Selected emitter coverage,2019,84.92866296934486,%,context,fig07_leading_emitters
+baseline_highce_gbl,c,Selected emitters,Selected emitter coverage,2024,84.96054271952977,%,context,fig07_leading_emitters
+baseline_highce_gbl,c,Selected emitters,Selected emitter coverage,2030,87.88049537354262,%,context,fig07_leading_emitters
+baseline_highce_gbl,c,Selected emitters,Selected emitter coverage,2035,91.53411250660893,%,context,fig07_leading_emitters
+baseline_highce_gbl,c,Selected emitters,Selected emitter coverage,2040,96.18687218495175,%,context,fig07_leading_emitters
+baseline_highce_gbl,c,Selected emitters,Selected emitter coverage,2050,99.95619869621576,%,context,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,China region,2019,126.730538538385,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,China region,2050,31.3079588386744,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Gulf & Iran,2019,16.8855200107169,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Gulf & Iran,2050,4.06474020341326,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Russia,2019,7.8262507805648704,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Russia,2050,2.16034267546477,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Southern Africa,2019,4.38043695969361,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Southern Africa,2050,1.4937352308577798,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,India,2019,12.3024955965168,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,India,2050,1.26722594926242,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Other Asia–Pacific,2019,2.571133970798,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Other Asia–Pacific,2050,0.83032214285664,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Indonesia group,2019,0.804472116479327,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Indonesia group,2050,0.403985392600291,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Northern Africa,2019,0.828690869819345,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Northern Africa,2050,0.386796529936696,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Mexico,2019,0.0016013373463235,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Mexico,2050,0.22220549970572,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Central Asia group,2019,1.36360794289003,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Central Asia group,2050,0.165988214149769,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,West & Central Africa,2019,0.383592114677086,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,West & Central Africa,2050,0.158937300910223,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Other Latin America,2019,1.36133094479526,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Other Latin America,2050,0.0714092104994325,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Other model regions,2019,31.133310245281084,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,c,Emitter regions,Other model regions,2050,0.018638455902176592,MtCO2e/yr,plotted,fig07_leading_emitters
+baseline_highce_gbl,a,Producer regions,China region,2019,4.921160903425299,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,China region,2050,3.5052764763065,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,India,2019,5.2537242241844,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,India,2050,3.2361806228472,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Gulf & Iran,2019,7.0656322791770005,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Gulf & Iran,2050,5.783907567986699,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Other South Asia,2019,3.7894057563637,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Other South Asia,2050,3.9790778827291997,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Indonesia group,2019,6.605606719039701,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Indonesia group,2050,3.7801207270895,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Europe,2019,5.908451963513378,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Europe,2050,3.448884133593337,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Northern Africa,2019,5.791324574545399,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Northern Africa,2050,4.777104308163301,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Other Asia–Pacific,2019,6.9302625979186,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Other Asia–Pacific,2050,4.9322896491096,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Turkey & Levant,2019,6.2123875201905,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Turkey & Levant,2050,5.3831263361112,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Other Latin America,2019,5.926083025400899,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Other Latin America,2050,4.0899565979925,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Eastern Africa,2019,6.3101779025049,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,Eastern Africa,2050,4.6601154122322,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,West & Central Africa,2019,3.5217197323745,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Producer regions,West & Central Africa,2050,4.3118934513406,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,China region,2019,32.310306031848796,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,China region,2050,2.6405667714679,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,India,2019,38.0080718359443,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,India,2050,8.496336090140499,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Europe,2019,25.798979935025635,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Europe,2050,8.368798344999613,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Brazil,2019,32.913533498273004,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Brazil,2050,3.8099719731495,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Japan,2019,34.4166110035666,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Japan,2050,4.8609583454992,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Russia,2019,58.0262709430273,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Russia,2050,3.2072990693969,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,United States,2019,19.439364545372502,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,United States,2050,6.929999999999899,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,South Korea,2019,28.0601719854614,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,South Korea,2050,6.930000105287601,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Turkey & Levant,2019,27.533931671734802,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Turkey & Levant,2050,6.5943716021303,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Indonesia group,2019,30.480034078354,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Indonesia group,2050,2.1000000298638,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Gulf & Iran,2019,22.131494799170902,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Gulf & Iran,2050,12.698315779338099,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Other Latin America,2019,21.3902271695577,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,b,Producer regions,Other Latin America,2050,3.5916279962429,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,China region,2019,72.5385084731966,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,China region,2050,23.698790299064502,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,India,2019,69.4504014409989,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,India,2050,19.8083486034595,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Europe,2019,43.0498848413537,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Europe,2050,21.661550174084933,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Gulf & Iran,2019,90.2290621801593,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Gulf & Iran,2050,64.68187549200171,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,United States,2019,22.7752563221569,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,United States,2050,58.418203307773396,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Other Asia–Pacific,2019,69.4636558658931,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Other Asia–Pacific,2050,21.9342999465705,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Russia,2019,71.2823172872854,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Russia,2050,75.7683569471615,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Southern Africa,2019,93.828423341574,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Southern Africa,2050,26.3118813743391,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Indonesia group,2019,81.1309417288549,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Indonesia group,2050,6.1269411512031,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Brazil,2019,16.1636981128483,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Brazil,2050,70.9999980518632,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,South Korea,2019,6.1269412134548,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,South Korea,2050,3.3,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Canada,2019,51.923757469650795,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,c,Producer regions,Canada,2050,71.5089058489057,GJ/t,plotted,figS1_producer_intensity
+baseline_highce_gbl,a,Global,System,2019,3.8222701716013847,trillion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,a,Global,System,2024,8.26556757917677,trillion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,a,Global,System,2030,14.960800680532936,trillion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,a,Global,System,2035,19.335615437936994,trillion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,a,Global,System,2040,23.837029471603305,trillion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,a,Global,System,2050,29.097998662690667,trillion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Cement,2019,104.60506988172908,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Cement,2030,275.68272082592733,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Cement,2035,337.8962195239679,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Cement,2040,439.11078476823195,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Cement,2050,588.9188230620892,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Iron and steel,2019,4959.455128965229,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Iron and steel,2030,228.84845413300687,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Iron and steel,2035,243.6024890420823,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Iron and steel,2040,364.4541620230349,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Iron and steel,2050,489.77126058518047,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Aluminium,2019,25.017308460003065,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Aluminium,2030,151.64946885014012,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Aluminium,2035,122.41454519647064,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Aluminium,2040,154.159427061714,billion USD_2010/yr,plotted,figS2_costs_full_period
+baseline_highce_gbl,b,Global,Aluminium,2050,112.12700634549218,billion USD_2010/yr,plotted,figS2_costs_full_period

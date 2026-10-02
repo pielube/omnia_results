@@ -1,0 +1,73 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_medce_gbl,a,Producer regions,China region,2019,4.921160903425299,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,China region,2050,4.2851566993048,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,India,2019,5.2537242241844,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,India,2050,3.4371783659753,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Gulf & Iran,2019,7.0656322791770005,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Gulf & Iran,2050,5.7839075682290995,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Indonesia group,2019,6.605606719039701,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Indonesia group,2050,4.2032686535735,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Other South Asia,2019,3.7894057563637,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Other South Asia,2050,4.121678001790101,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Europe,2019,5.908451963513378,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Europe,2050,3.9743263456071816,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Northern Africa,2019,5.791324574545399,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Northern Africa,2050,4.7771043085401,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Other Asia–Pacific,2019,6.9302625979186,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Other Asia–Pacific,2050,5.1342657889116,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Turkey & Levant,2019,6.2123875201905,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Turkey & Levant,2050,5.2377295707405995,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Other Latin America,2019,5.926083025400899,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Other Latin America,2050,4.7254548525333,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,United States,2019,6.9585138811343,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,United States,2050,4.2234800787211,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Eastern Africa,2019,6.3101779025049,GJ/t,plotted
+ndc_medce_gbl,a,Producer regions,Eastern Africa,2050,5.0028874681783,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,China region,2019,32.310306031848796,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,China region,2050,15.1525925210887,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,India,2019,38.0080718359443,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,India,2050,12.301032053623699,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Europe,2019,25.798979935025635,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Europe,2050,4.87351832781381,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Brazil,2019,32.913533498273004,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Brazil,2050,5.9056988699093,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Japan,2019,34.4166110035666,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Japan,2050,4.1584535440533,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Russia,2019,58.0262709430273,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Russia,2050,3.5635977279403,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,United States,2019,19.439364545372502,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,United States,2050,6.9299999999998985,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,South Korea,2019,28.0601719854614,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,South Korea,2050,3.4243919369796,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Turkey & Levant,2019,27.533931671734802,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Turkey & Levant,2050,24.363709553618598,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Indonesia group,2019,30.480034078354,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Indonesia group,2050,23.1394765786899,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Gulf & Iran,2019,22.131494799170902,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Gulf & Iran,2050,22.5372019966096,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Other Latin America,2019,21.3902271695577,GJ/t,plotted
+ndc_medce_gbl,b,Producer regions,Other Latin America,2050,7.5349228852826,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,China region,2019,72.5385084731966,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,China region,2050,39.4950791733984,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,India,2019,69.4504014409989,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,India,2050,30.2213499693718,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Europe,2019,43.0498848413537,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Europe,2050,14.106850955839308,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Gulf & Iran,2019,90.2290621801593,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Gulf & Iran,2050,66.9036443518324,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,United States,2019,22.7752563221569,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,United States,2050,67.27189555359631,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Other Asia–Pacific,2019,69.4636558658931,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Other Asia–Pacific,2050,23.6103759513581,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Russia,2019,71.2823172872854,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Russia,2050,47.1277432449205,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Southern Africa,2019,93.828423341574,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Southern Africa,2050,15.4697350029398,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Indonesia group,2019,81.1309417288549,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Indonesia group,2050,88.1258650716402,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Brazil,2019,16.1636981128483,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Brazil,2050,9.5384710563775,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,South Korea,2019,6.1269412134548,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,South Korea,2050,6.1269410955583,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Canada,2019,51.923757469650795,GJ/t,plotted
+ndc_medce_gbl,c,Producer regions,Canada,2050,82.5655357608289,GJ/t,plotted

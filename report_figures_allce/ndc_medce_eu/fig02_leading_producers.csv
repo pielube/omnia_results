@@ -1,0 +1,97 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_medce_eu,a,Selected producers,Selected producer coverage,2019,90.2947033277263,%,context
+ndc_medce_eu,a,Selected producers,Selected producer coverage,2024,89.0648927414148,%,context
+ndc_medce_eu,a,Selected producers,Selected producer coverage,2030,88.12237579609769,%,context
+ndc_medce_eu,a,Selected producers,Selected producer coverage,2035,87.27924811941764,%,context
+ndc_medce_eu,a,Selected producers,Selected producer coverage,2040,86.71422120835294,%,context
+ndc_medce_eu,a,Selected producers,Selected producer coverage,2050,85.60101655993,%,context
+ndc_medce_eu,a,Producer regions,China region,2019,2357.17696299718,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,China region,2050,940.513608209674,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,India,2019,338.922999997768,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,India,2050,678.862769036458,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Indonesia group,2019,205.1329999978,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Indonesia group,2050,255.185452002857,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Gulf & Iran,2019,161.832199997759,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Gulf & Iran,2050,218.635302203572,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other South Asia,2019,88.6989999980088,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other South Asia,2050,202.499817002102,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Europe,2019,206.0375999892213,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Europe,2050,166.0848150116804,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Northern Africa,2019,99.4559999978603,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Northern Africa,2050,135.359616002694,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other Asia–Pacific,2019,85.081199997775,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other Asia–Pacific,2050,128.812936802753,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Turkey & Levant,2019,70.8392999978275,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Turkey & Levant,2050,104.629646102679,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,United States,2019,88.0999999977914,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,United States,2050,99.3767999991338,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other Latin America,2019,66.1435999978778,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other Latin America,2050,97.0326612027947,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Eastern Africa,2019,26.2281999978476,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Eastern Africa,2050,78.2124924024658,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other model regions,2019,407.7592369757163,Mt/yr,plotted
+ndc_medce_eu,a,Producer regions,Other model regions,2050,522.3280091642827,Mt/yr,plotted
+ndc_medce_eu,b,Selected producers,Selected producer coverage,2019,96.29338094449439,%,context
+ndc_medce_eu,b,Selected producers,Selected producer coverage,2024,96.09481509253153,%,context
+ndc_medce_eu,b,Selected producers,Selected producer coverage,2030,95.65298831802072,%,context
+ndc_medce_eu,b,Selected producers,Selected producer coverage,2035,95.08735226816196,%,context
+ndc_medce_eu,b,Selected producers,Selected producer coverage,2040,94.84961432343471,%,context
+ndc_medce_eu,b,Selected producers,Selected producer coverage,2050,95.0586885795947,%,context
+ndc_medce_eu,b,Producer regions,China region,2019,948.2701578582521,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,China region,2050,796.546932575091,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,India,2019,104.7509878412537,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,India,2050,749.912321192421,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Europe,2019,202.59573381823873,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Europe,2050,95.55721772852509,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Brazil,2019,31.608432953420397,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Brazil,2050,72.66778735918129,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Japan,2019,102.44869842908881,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Japan,2050,69.0504226940791,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Russia,2019,75.7816577158891,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Russia,2050,64.1870640486877,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,United States,2019,86.7126257604092,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,United States,2050,50.9003112487355,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,South Korea,2019,69.3145074752365,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,South Korea,2050,43.5988251877095,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Turkey & Levant,2019,20.38263213914522,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Turkey & Levant,2050,39.0327405346291,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Indonesia group,2019,18.99695005129331,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Indonesia group,2050,34.06153141220352,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Gulf & Iran,2019,18.76949401900283,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Gulf & Iran,2050,30.8758176647016,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Other Latin America,2019,10.039200444466541,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Other Latin America,2050,30.107562123769696,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Other model regions,2019,65.04047272715546,Mt/yr,plotted
+ndc_medce_eu,b,Producer regions,Other model regions,2050,107.93990610106002,Mt/yr,plotted
+ndc_medce_eu,c,Selected producers,Selected producer coverage,2019,93.2084637488492,%,context
+ndc_medce_eu,c,Selected producers,Selected producer coverage,2024,94.14394918869276,%,context
+ndc_medce_eu,c,Selected producers,Selected producer coverage,2030,94.57755622452069,%,context
+ndc_medce_eu,c,Selected producers,Selected producer coverage,2035,94.68069119668978,%,context
+ndc_medce_eu,c,Selected producers,Selected producer coverage,2040,94.58330389913209,%,context
+ndc_medce_eu,c,Selected producers,Selected producer coverage,2050,93.95781164226217,%,context
+ndc_medce_eu,c,Producer regions,China region,2019,45.6540000439702,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,China region,2050,54.465221969480794,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,India,2019,5.02999999512509,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,India,2050,14.00855000106922,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Europe,2019,11.327999971290446,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Europe,2050,11.258602948368951,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Gulf & Iran,2019,6.602999999837697,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Gulf & Iran,2050,9.17816996181232,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,United States,2019,4.96000001439774,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,United States,2050,8.481600001526488,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Other Asia–Pacific,2019,1.0499999961879931,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Other Asia–Pacific,2050,6.8333999865728705,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Russia,2019,3.956999993172909,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Russia,2050,5.6347679963853,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Southern Africa,2019,1.331999992097333,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Southern Africa,2050,3.6510119864340154,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Indonesia group,2019,0.28000001126525353,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Indonesia group,2050,3.028480002916267,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Brazil,2019,1.323973740353655,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Brazil,2050,2.72635999453403,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,South Korea,2019,1.99999999824504,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,South Korea,2050,2.39999999492631,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Canada,2019,4.56399999412659,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Canada,2050,2.15420797039623,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Other model regions,2019,6.417999972710631,Mt/yr,plotted
+ndc_medce_eu,c,Producer regions,Other model regions,2050,7.962573861538804,Mt/yr,plotted

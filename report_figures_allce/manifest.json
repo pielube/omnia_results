@@ -1,0 +1,177 @@
+{
+  "source": "results_allCE_261002.csv",
+  "combined_pdf": "report_figures_all_scenarios.pdf",
+  "page_count": 90,
+  "reports": [
+    {
+      "scenario": "baseline_noce",
+      "label": "Baseline · no CE",
+      "first_page": 1,
+      "last_page": 9,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "baseline_medce_eu",
+      "label": "Baseline · medium CE · EU",
+      "first_page": 10,
+      "last_page": 18,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "baseline_highce_eu",
+      "label": "Baseline · high CE · EU",
+      "first_page": 19,
+      "last_page": 27,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "baseline_medce_gbl",
+      "label": "Baseline · medium CE · global",
+      "first_page": 28,
+      "last_page": 36,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "baseline_highce_gbl",
+      "label": "Baseline · high CE · global",
+      "first_page": 37,
+      "last_page": 45,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "ndc_noce",
+      "label": "NDC · no CE",
+      "first_page": 46,
+      "last_page": 54,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "ndc_medce_eu",
+      "label": "NDC · medium CE · EU",
+      "first_page": 55,
+      "last_page": 63,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "ndc_highce_eu",
+      "label": "NDC · high CE · EU",
+      "first_page": 64,
+      "last_page": 72,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "ndc_medce_gbl",
+      "label": "NDC · medium CE · global",
+      "first_page": 73,
+      "last_page": 81,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    },
+    {
+      "scenario": "ndc_highce_gbl",
+      "label": "NDC · high CE · global",
+      "first_page": 82,
+      "last_page": 90,
+      "figures": [
+        "fig01_production",
+        "fig02_leading_producers",
+        "fig03_carbon_prices",
+        "fig04_energy",
+        "fig05_emissions",
+        "fig06_costs",
+        "fig07_leading_emitters",
+        "figS1_producer_intensity",
+        "figS2_costs_full_period"
+      ]
+    }
+  ]
+}

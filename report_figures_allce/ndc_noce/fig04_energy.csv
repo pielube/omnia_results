@@ -1,0 +1,37 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_noce,a,Global,Cement,2019,12.207643906759428,EJ/yr,plotted
+ndc_noce,a,Global,Cement,2024,11.408035618838122,EJ/yr,plotted
+ndc_noce,a,Global,Cement,2030,10.841622929671104,EJ/yr,plotted
+ndc_noce,a,Global,Cement,2035,10.571914922389587,EJ/yr,plotted
+ndc_noce,a,Global,Cement,2040,10.412080476061908,EJ/yr,plotted
+ndc_noce,a,Global,Cement,2050,10.179741647355927,EJ/yr,plotted
+ndc_noce,d,Global,Cement,2019,2.9056069131213915,GJ/t,plotted
+ndc_noce,d,Global,Cement,2024,2.888496890003963,GJ/t,plotted
+ndc_noce,d,Global,Cement,2030,2.887513676264069,GJ/t,plotted
+ndc_noce,d,Global,Cement,2035,2.886109512301341,GJ/t,plotted
+ndc_noce,d,Global,Cement,2040,2.844506829927915,GJ/t,plotted
+ndc_noce,d,Global,Cement,2050,2.7812468544053615,GJ/t,plotted
+ndc_noce,b,Global,Iron and steel,2019,30.242503133675367,EJ/yr,plotted
+ndc_noce,b,Global,Iron and steel,2024,27.031373511905567,EJ/yr,plotted
+ndc_noce,b,Global,Iron and steel,2030,22.309703851877636,EJ/yr,plotted
+ndc_noce,b,Global,Iron and steel,2035,18.921314716239195,EJ/yr,plotted
+ndc_noce,b,Global,Iron and steel,2040,18.192661559306416,EJ/yr,plotted
+ndc_noce,b,Global,Iron and steel,2050,20.610274696201518,EJ/yr,plotted
+ndc_noce,e,Global,Iron and steel,2019,17.2350282372206,GJ/t,plotted
+ndc_noce,e,Global,Iron and steel,2024,15.66963987947582,GJ/t,plotted
+ndc_noce,e,Global,Iron and steel,2030,13.586998299711315,GJ/t,plotted
+ndc_noce,e,Global,Iron and steel,2035,11.8581439678704,GJ/t,plotted
+ndc_noce,e,Global,Iron and steel,2040,10.806704271064598,GJ/t,plotted
+ndc_noce,e,Global,Iron and steel,2050,9.42429654114034,GJ/t,plotted
+ndc_noce,c,Global,Aluminium,2019,4.680947868457299,EJ/yr,plotted
+ndc_noce,c,Global,Aluminium,2024,5.860733662726895,EJ/yr,plotted
+ndc_noce,c,Global,Aluminium,2030,5.655919360460341,EJ/yr,plotted
+ndc_noce,c,Global,Aluminium,2035,5.41495260550056,EJ/yr,plotted
+ndc_noce,c,Global,Aluminium,2040,5.489405813907431,EJ/yr,plotted
+ndc_noce,c,Global,Aluminium,2050,5.1888336658195175,EJ/yr,plotted
+ndc_noce,f,Global,Aluminium,2019,49.53385365152635,GJ/t,plotted
+ndc_noce,f,Global,Aluminium,2024,48.4304832692158,GJ/t,plotted
+ndc_noce,f,Global,Aluminium,2030,45.47356509571614,GJ/t,plotted
+ndc_noce,f,Global,Aluminium,2035,42.628256093496624,GJ/t,plotted
+ndc_noce,f,Global,Aluminium,2040,41.75683884246919,GJ/t,plotted
+ndc_noce,f,Global,Aluminium,2050,39.009647640418095,GJ/t,plotted

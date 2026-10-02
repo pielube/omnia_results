@@ -1,0 +1,21 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+baseline_highce_eu,a,Global,System,2024,8.26556757917677,trillion USD_2010/yr,plotted
+baseline_highce_eu,a,Global,System,2030,15.148756005863024,trillion USD_2010/yr,plotted
+baseline_highce_eu,a,Global,System,2035,19.63911775650526,trillion USD_2010/yr,plotted
+baseline_highce_eu,a,Global,System,2040,24.330231672251657,trillion USD_2010/yr,plotted
+baseline_highce_eu,a,Global,System,2050,29.99516528266019,trillion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Cement,2030,328.9763641095136,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Cement,2035,417.61259743103386,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Cement,2040,575.3900003887774,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Cement,2050,764.7530904851652,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Iron and steel,2024,201.9380972113388,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Iron and steel,2030,292.91606998650724,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Iron and steel,2035,320.0047595464579,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Iron and steel,2040,508.3420391672646,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Iron and steel,2050,699.9223168729015,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Aluminium,2030,184.4920134886742,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Aluminium,2035,159.1908280062632,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Aluminium,2040,224.2747318931461,billion USD_2010/yr,plotted
+baseline_highce_eu,b,Global,Aluminium,2050,176.77008292737304,billion USD_2010/yr,plotted

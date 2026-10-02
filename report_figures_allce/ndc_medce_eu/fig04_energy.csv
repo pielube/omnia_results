@@ -1,0 +1,37 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_medce_eu,a,Global,Cement,2019,12.207643906759428,EJ/yr,plotted
+ndc_medce_eu,a,Global,Cement,2024,11.408035618838122,EJ/yr,plotted
+ndc_medce_eu,a,Global,Cement,2030,10.746317008034774,EJ/yr,plotted
+ndc_medce_eu,a,Global,Cement,2035,10.468866792322164,EJ/yr,plotted
+ndc_medce_eu,a,Global,Cement,2040,10.292953847411475,EJ/yr,plotted
+ndc_medce_eu,a,Global,Cement,2050,10.030592091435116,EJ/yr,plotted
+ndc_medce_eu,d,Global,Cement,2019,2.9056069131213915,GJ/t,plotted
+ndc_medce_eu,d,Global,Cement,2024,2.888496890003963,GJ/t,plotted
+ndc_medce_eu,d,Global,Cement,2030,2.8755491993363753,GJ/t,plotted
+ndc_medce_eu,d,Global,Cement,2035,2.8751141026710596,GJ/t,plotted
+ndc_medce_eu,d,Global,Cement,2040,2.831688525554918,GJ/t,plotted
+ndc_medce_eu,d,Global,Cement,2050,2.7651270252529194,GJ/t,plotted
+ndc_medce_eu,b,Global,Iron and steel,2019,30.242503133675367,EJ/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2024,27.031373511905567,EJ/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2030,22.09134770675369,EJ/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2035,18.638221332924992,EJ/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2040,17.847446297635575,EJ/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2050,20.465168788425725,EJ/yr,plotted
+ndc_medce_eu,e,Global,Iron and steel,2019,17.2350282372206,GJ/t,plotted
+ndc_medce_eu,e,Global,Iron and steel,2024,15.66963987947582,GJ/t,plotted
+ndc_medce_eu,e,Global,Iron and steel,2030,13.468137206842224,GJ/t,plotted
+ndc_medce_eu,e,Global,Iron and steel,2035,11.69501646046196,GJ/t,plotted
+ndc_medce_eu,e,Global,Iron and steel,2040,10.615810600204059,GJ/t,plotted
+ndc_medce_eu,e,Global,Iron and steel,2050,9.368617771456266,GJ/t,plotted
+ndc_medce_eu,c,Global,Aluminium,2019,4.680947868457299,EJ/yr,plotted
+ndc_medce_eu,c,Global,Aluminium,2024,5.860733662726894,EJ/yr,plotted
+ndc_medce_eu,c,Global,Aluminium,2030,5.4298797068991345,EJ/yr,plotted
+ndc_medce_eu,c,Global,Aluminium,2035,5.3736077055707465,EJ/yr,plotted
+ndc_medce_eu,c,Global,Aluminium,2040,5.417761615408247,EJ/yr,plotted
+ndc_medce_eu,c,Global,Aluminium,2050,5.084382483308164,EJ/yr,plotted
+ndc_medce_eu,f,Global,Aluminium,2019,49.53385365152635,GJ/t,plotted
+ndc_medce_eu,f,Global,Aluminium,2024,48.43048326921579,GJ/t,plotted
+ndc_medce_eu,f,Global,Aluminium,2030,43.659657994040884,GJ/t,plotted
+ndc_medce_eu,f,Global,Aluminium,2035,42.41233020002688,GJ/t,plotted
+ndc_medce_eu,f,Global,Aluminium,2040,41.418030655203154,GJ/t,plotted
+ndc_medce_eu,f,Global,Aluminium,2050,38.581490333571374,GJ/t,plotted

@@ -1,0 +1,97 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_highce_gbl,a,Selected producers,Selected producer coverage,2019,89.01986919051176,%,context
+ndc_highce_gbl,a,Selected producers,Selected producer coverage,2024,87.88501608092587,%,context
+ndc_highce_gbl,a,Selected producers,Selected producer coverage,2030,87.13186288251526,%,context
+ndc_highce_gbl,a,Selected producers,Selected producer coverage,2035,86.42233609118311,%,context
+ndc_highce_gbl,a,Selected producers,Selected producer coverage,2040,86.09280850936464,%,context
+ndc_highce_gbl,a,Selected producers,Selected producer coverage,2050,85.41331363748145,%,context
+ndc_highce_gbl,a,Producer regions,China region,2019,2357.17696299718,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,China region,2050,669.438257530127,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,India,2019,338.922999997768,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,India,2050,482.965275085503,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Gulf & Iran,2019,161.832199997759,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Gulf & Iran,2050,218.635302224754,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other South Asia,2019,88.6989999980088,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other South Asia,2050,202.499817004333,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Indonesia group,2019,205.1329999978,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Indonesia group,2050,181.54270500638,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Europe,2019,206.0375999892213,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Europe,2050,141.4076095170237,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Northern Africa,2019,99.4559999978603,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Northern Africa,2050,135.359615996106,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other Asia–Pacific,2019,85.081199997775,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other Asia–Pacific,2050,128.812936807441,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Turkey & Levant,2019,70.8392999978275,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Turkey & Levant,2050,104.629646106524,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other Latin America,2019,66.1435999978778,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other Latin America,2050,97.0326611935734,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Eastern Africa,2019,26.2281999978476,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Eastern Africa,2050,78.2124924031931,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,West & Central Africa,2019,34.5389999980445,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,West & Central Africa,2050,76.7801970051445,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other model regions,2019,461.3202369754632,Mt/yr,plotted
+ndc_highce_gbl,a,Producer regions,Other model regions,2050,429.9014395832746,Mt/yr,plotted
+ndc_highce_gbl,b,Selected producers,Selected producer coverage,2019,96.29338094449439,%,context
+ndc_highce_gbl,b,Selected producers,Selected producer coverage,2024,96.09481509253153,%,context
+ndc_highce_gbl,b,Selected producers,Selected producer coverage,2030,95.61240600769267,%,context
+ndc_highce_gbl,b,Selected producers,Selected producer coverage,2035,95.02283050938975,%,context
+ndc_highce_gbl,b,Selected producers,Selected producer coverage,2040,94.76659124403304,%,context
+ndc_highce_gbl,b,Selected producers,Selected producer coverage,2050,94.9412387658536,%,context
+ndc_highce_gbl,b,Producer regions,China region,2019,948.2701578582521,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,China region,2050,760.512666595277,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,India,2019,104.7509878412537,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,India,2050,715.868250188611,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Europe,2019,202.59573381823873,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Europe,2050,93.5498829473344,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Brazil,2019,31.608432953420397,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Brazil,2050,69.3805103368127,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Japan,2019,102.44869842908881,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Japan,2050,65.97696172587395,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Russia,2019,75.7816577158891,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Russia,2050,61.23157939141015,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,United States,2019,86.7126257604092,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,United States,2050,48.55907034357755,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,South Korea,2019,69.3145074752365,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,South Korea,2050,41.588704463337734,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Turkey & Levant,2019,20.38263213914522,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Turkey & Levant,2050,39.03274053451442,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Indonesia group,2019,18.99695005129331,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Indonesia group,2050,32.5227784640129,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Gulf & Iran,2019,18.76949401900283,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Gulf & Iran,2050,30.87581766515478,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Other Latin America,2019,10.039200444466541,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Other Latin America,2050,30.10756212369516,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Other model regions,2019,65.04047272715546,Mt/yr,plotted
+ndc_highce_gbl,b,Producer regions,Other model regions,2050,105.991042302319,Mt/yr,plotted
+ndc_highce_gbl,c,Selected producers,Selected producer coverage,2019,93.2084637488492,%,context
+ndc_highce_gbl,c,Selected producers,Selected producer coverage,2024,94.14394918869276,%,context
+ndc_highce_gbl,c,Selected producers,Selected producer coverage,2030,94.5759779247902,%,context
+ndc_highce_gbl,c,Selected producers,Selected producer coverage,2035,94.6240195076688,%,context
+ndc_highce_gbl,c,Selected producers,Selected producer coverage,2040,94.46882165675333,%,context
+ndc_highce_gbl,c,Selected producers,Selected producer coverage,2050,93.72489441740967,%,context
+ndc_highce_gbl,c,Producer regions,China region,2019,45.6540000439702,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,China region,2050,45.3800759848205,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,India,2019,5.02999999512509,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,India,2050,11.66959999276894,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Europe,2019,11.327999971290446,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Europe,2050,10.40294893641608,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Gulf & Iran,2019,6.602999999837697,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Gulf & Iran,2050,9.17816998408918,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,United States,2019,4.96000001439774,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,United States,2050,7.06799999773114,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Other Asia–Pacific,2019,1.0499999961879931,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Other Asia–Pacific,2050,6.83339997864345,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Russia,2019,3.956999993172909,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Russia,2050,4.6930019934911495,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Southern Africa,2019,1.331999992097333,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Southern Africa,2050,3.651011980204285,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Indonesia group,2019,0.28000001126525353,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Indonesia group,2050,2.5228000026449378,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Brazil,2019,1.323973740353655,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Brazil,2050,2.2713599855228908,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,South Korea,2019,1.99999999824504,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,South Korea,2050,1.99999998647414,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Canada,2019,4.56399999412659,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Canada,2050,1.79365195617114,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Other model regions,2019,6.417999972710631,Mt/yr,plotted
+ndc_highce_gbl,c,Producer regions,Other model regions,2050,7.194972914181363,Mt/yr,plotted

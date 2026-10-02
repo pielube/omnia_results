@@ -1,0 +1,55 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_highce_eu,a,Macroregions,Europe,2019,1.1657752632772076e-05,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Europe,2024,138.15737429463502,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Europe,2030,540.460480593597,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Europe,2035,298.87728427515725,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Europe,2040,237.1078718670998,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Europe,2050,331.00854413998564,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,China region,2019,7.570391565583399e-07,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,China region,2024,1.95255393005672e-08,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,China region,2030,9.843019819869412e-09,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,China region,2035,1.42343044155906,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,China region,2040,18.8921765451216,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,China region,2050,25.539998026975702,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,India,2019,2.81024775948614e-06,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,India,2024,4.75410557843413e-07,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,India,2030,426.538451716104,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,India,2035,396.67380485732,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,India,2040,524.8472569860651,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,India,2050,883.395373266629,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,North America,2019,4.966120021215895e-06,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,North America,2024,113.83952230507377,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,North America,2030,1176.1427851106946,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,North America,2035,1258.3486590491314,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,North America,2040,1927.4466146294383,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,North America,2050,2209.3333931034813,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Latin America & Caribbean,2019,1.8232195226013582e-05,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Latin America & Caribbean,2024,605.7414711527204,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Latin America & Caribbean,2030,122.28467124922649,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Latin America & Caribbean,2035,99.34173069030409,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Latin America & Caribbean,2040,108.26196593540708,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Latin America & Caribbean,2050,159.11570470565366,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Other Asia–Pacific,2019,9.43230994604147e-06,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Other Asia–Pacific,2024,66.27227266838179,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Other Asia–Pacific,2030,251.65262825613453,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Other Asia–Pacific,2035,191.68240574929652,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Other Asia–Pacific,2040,192.59994206313922,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Other Asia–Pacific,2050,197.1488325996454,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Russia & Central Asia,2019,5.2787140565506325e-06,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Russia & Central Asia,2024,4.5250527605064705e-07,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Russia & Central Asia,2030,47.30368926697712,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Russia & Central Asia,2035,406.64910499375065,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Russia & Central Asia,2040,482.43117377449045,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Russia & Central Asia,2050,565.8636666252944,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Middle East,2019,4.801786060806121e-06,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Middle East,2024,2.323387196594293,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Middle East,2030,322.8591689851547,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Middle East,2035,89.46048937308521,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Middle East,2040,42.9091043469407,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Middle East,2050,51.27700974136186,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Africa,2019,2.297222674507949e-05,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Africa,2024,11.973750185586056,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Africa,2030,54.10176732537445,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Africa,2035,33.52599125946365,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Africa,2040,45.31404483119727,USD_2010/tCO2e,plotted
+ndc_highce_eu,a,Macroregions,Africa,2050,55.65598868735376,USD_2010/tCO2e,plotted

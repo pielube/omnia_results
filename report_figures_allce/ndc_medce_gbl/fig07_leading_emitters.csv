@@ -1,0 +1,97 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_medce_gbl,a,Selected emitters,Selected emitter coverage,2019,88.54369934567484,%,context
+ndc_medce_gbl,a,Selected emitters,Selected emitter coverage,2024,87.69178540545745,%,context
+ndc_medce_gbl,a,Selected emitters,Selected emitter coverage,2030,88.05208185342404,%,context
+ndc_medce_gbl,a,Selected emitters,Selected emitter coverage,2035,87.64685518580188,%,context
+ndc_medce_gbl,a,Selected emitters,Selected emitter coverage,2040,87.72331534380737,%,context
+ndc_medce_gbl,a,Selected emitters,Selected emitter coverage,2050,87.32702549315694,%,context
+ndc_medce_gbl,a,Emitter regions,China region,2019,1338.35642777995,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,China region,2050,325.873769942492,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,India,2019,221.211638938921,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,India,2050,226.402570288766,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Gulf & Iran,2019,114.463449497334,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Gulf & Iran,2050,130.832377691877,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other South Asia,2019,36.784444693104994,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other South Asia,2050,96.7521614906104,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Indonesia group,2019,155.938212179255,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Indonesia group,2050,93.3641077428727,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other Asia–Pacific,2019,68.0403455578622,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other Asia–Pacific,2050,77.5955080473184,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Northern Africa,2019,61.5021282532414,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Northern Africa,2050,68.5689170303276,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Turkey & Levant,2019,51.6302224608648,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Turkey & Levant,2050,52.2511912323457,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Europe,2019,132.0190975660518,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Europe,2050,50.26113640181218,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other Latin America,2019,40.6167384127257,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other Latin America,2050,49.5166318583725,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Eastern Africa,2019,18.3945550519248,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Eastern Africa,2050,46.2814325686425,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,West & Central Africa,2019,12.4951264349183,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,West & Central Africa,2050,36.8584122561004,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other model regions,2019,291.30605162182314,MtCO2e/yr,plotted
+ndc_medce_gbl,a,Emitter regions,Other model regions,2050,182.06258836737706,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Selected emitters,Selected emitter coverage,2019,85.882770387951,%,context
+ndc_medce_gbl,b,Selected emitters,Selected emitter coverage,2024,86.8574883864627,%,context
+ndc_medce_gbl,b,Selected emitters,Selected emitter coverage,2030,92.95057508382061,%,context
+ndc_medce_gbl,b,Selected emitters,Selected emitter coverage,2035,96.25957477135069,%,context
+ndc_medce_gbl,b,Selected emitters,Selected emitter coverage,2040,97.67633204992187,%,context
+ndc_medce_gbl,b,Selected emitters,Selected emitter coverage,2050,98.42471185955425,%,context
+ndc_medce_gbl,b,Emitter regions,China region,2019,1585.38682152395,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,China region,2050,864.556710852086,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,India,2019,271.672177058831,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,India,2050,442.429005985908,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Turkey & Levant,2019,22.3022013177956,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Turkey & Levant,2050,65.1694892343996,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Indonesia group,2019,28.6517242265395,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Indonesia group,2050,55.2755480161783,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Europe,2019,207.79156372438777,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Europe,2050,30.602642538609103,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Southern Africa,2019,12.2485378520494,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Southern Africa,2050,24.990346082065,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Gulf & Iran,2019,22.302832746629903,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Gulf & Iran,2050,23.6627270533789,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Central Asia group,2019,13.0867454637104,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Central Asia group,2050,21.969124028288302,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Northern Africa,2019,6.21367470921723,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Northern Africa,2050,18.8017484732712,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Other Latin America,2019,8.06215981872513,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Other Latin America,2050,13.0091692652277,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Japan,2019,127.820723377896,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Japan,2050,11.0756720956145,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Brazil,2019,52.5063057077343,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Brazil,2050,8.11256695537649,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Other model regions,2019,387.6105667104445,MtCO2e/yr,plotted
+ndc_medce_gbl,b,Emitter regions,Other model regions,2050,25.282384348138663,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Selected emitters,Selected emitter coverage,2019,90.69586440397867,%,context
+ndc_medce_gbl,c,Selected emitters,Selected emitter coverage,2024,91.65698866164405,%,context
+ndc_medce_gbl,c,Selected emitters,Selected emitter coverage,2030,92.71946786902593,%,context
+ndc_medce_gbl,c,Selected emitters,Selected emitter coverage,2035,93.74467759418975,%,context
+ndc_medce_gbl,c,Selected emitters,Selected emitter coverage,2040,96.81253988314431,%,context
+ndc_medce_gbl,c,Selected emitters,Selected emitter coverage,2050,98.62753233982761,%,context
+ndc_medce_gbl,c,Emitter regions,China region,2019,126.730538538385,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,China region,2050,47.7767101022723,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Indonesia group,2019,0.804472116479327,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Indonesia group,2050,5.40835414054201,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Gulf & Iran,2019,16.8855200107169,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Gulf & Iran,2050,4.03765093680956,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Canada,2019,6.56480064898889,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Canada,2050,2.53374871532903,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Other Asia–Pacific,2019,2.571133970798,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Other Asia–Pacific,2050,2.18541786436297,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Central Asia group,2019,1.36360794289003,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Central Asia group,2050,2.08618813338368,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Europe,2019,13.946707394012899,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Europe,2050,1.6695533970921115,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Southern Africa,2019,4.38043695969361,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Southern Africa,2050,1.6130482019519,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,India,2019,12.3024955965168,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,India,2050,0.631041708704582,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Northern Africa,2019,0.828690869819345,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Northern Africa,2050,0.443289939957364,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Brazil,2019,0.654479599894761,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Brazil,2050,0.371101327942343,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,South Korea,2019,0.3202674829663779,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,South Korea,2050,0.344928063369816,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Other model regions,2019,19.219830296801707,MtCO2e/yr,plotted
+ndc_medce_gbl,c,Emitter regions,Other model regions,2050,0.9615867920889485,MtCO2e/yr,plotted

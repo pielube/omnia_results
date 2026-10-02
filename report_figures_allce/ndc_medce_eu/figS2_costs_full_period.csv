@@ -1,0 +1,25 @@
+Scenario,Panel,Scope,Series,Year,Value,Unit,Role
+ndc_medce_eu,a,Global,System,2019,3.8222701716013847,trillion USD_2010/yr,plotted
+ndc_medce_eu,a,Global,System,2024,8.26556757917677,trillion USD_2010/yr,plotted
+ndc_medce_eu,a,Global,System,2030,15.173604509119517,trillion USD_2010/yr,plotted
+ndc_medce_eu,a,Global,System,2035,19.862279957447587,trillion USD_2010/yr,plotted
+ndc_medce_eu,a,Global,System,2040,23.761554293135582,trillion USD_2010/yr,plotted
+ndc_medce_eu,a,Global,System,2050,26.56069427035263,trillion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Cement,2019,104.60506988172908,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Cement,2024,178.88634915972986,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Cement,2030,336.2850425227532,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Cement,2035,409.97228752157594,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Cement,2040,538.6421975530446,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Cement,2050,721.1018439391806,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2019,4959.455128965229,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2024,201.93809721133877,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2030,314.4548291334578,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2035,306.686917791739,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2040,378.54950382455786,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Iron and steel,2050,522.1035792611625,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Aluminium,2019,25.017308460003065,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Aluminium,2024,98.17701756529351,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Aluminium,2030,187.44019988571227,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Aluminium,2035,142.52859509903732,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Aluminium,2040,162.43359075234537,billion USD_2010/yr,plotted
+ndc_medce_eu,b,Global,Aluminium,2050,149.0005818445797,billion USD_2010/yr,plotted
