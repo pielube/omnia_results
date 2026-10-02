@@ -1,0 +1,51 @@
+Scenario,Climate,Policy,Panel,Scope,Metric,Component,Year,Value,Unit,ReferenceScenario,Role,Figure
+baseline_noce,Baseline,No CE,a,Global,GHG emissions change,Three sectors,2050,0.0,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_noce,Baseline,No CE,a,Global,Annualised system-cost change,Total system,2050,0.0,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2050,2510.0818182824432,MtCO2e/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_noce,Baseline,No CE,a,Global,Annualised system cost,Total system,2050,30076.132041723973,billion USD_2010/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions change,Three sectors,2050,-0.610080489835441,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Annualised system-cost change,Total system,2050,-0.1922943644233325,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2050,2494.7682988301954,MtCO2e/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Annualised system cost,Total system,2050,30018.297334771218,billion USD_2010/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions change,Three sectors,2050,-0.9387693609596283,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Annualised system-cost change,Total system,2050,-0.26920602340573657,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2050,2486.5179392373893,MtCO2e/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Annualised system cost,Total system,2050,29995.16528266019,billion USD_2010/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions change,Three sectors,2050,-18.90284162610043,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Annualised system-cost change,Total system,2050,-2.1933135766092584,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2050,2035.605027486971,MtCO2e/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Annualised system cost,Total system,2050,29416.468154333914,billion USD_2010/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions change,Three sectors,2050,-31.098947776725982,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Annualised system-cost change,Total system,2050,-3.2521913977381294,%,baseline_noce,plotted,fig05_costs_and_carbon_prices
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2050,1729.4727844616923,MtCO2e/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Annualised system cost,Total system,2050,29097.998662690665,billion USD_2010/yr,baseline_noce,context,fig05_costs_and_carbon_prices
+ndc_noce,NDC,No CE,b,Global,GHG emissions change,Three sectors,2050,0.0,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_noce,NDC,No CE,b,Global,Annualised system-cost change,Total system,2050,0.0,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2050,3763.136734980516,MtCO2e/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_noce,NDC,No CE,b,Global,Annualised system cost,Total system,2050,26582.4311342895,billion USD_2010/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions change,Three sectors,2050,-0.8516800287245663,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,Annualised system-cost change,Total system,2050,-0.08177154236592643,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2050,3731.086850955089,MtCO2e/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,Annualised system cost,Total system,2050,26560.694270352633,billion USD_2010/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions change,Three sectors,2050,-1.0429400610132236,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_highce_eu,NDC,"High CE, EU",b,Global,Annualised system-cost change,Total system,2050,-0.12623595851718766,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2050,3723.889474420699,MtCO2e/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_highce_eu,NDC,"High CE, EU",b,Global,Annualised system cost,Total system,2050,26548.87454754996,billion USD_2010/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions change,Three sectors,2050,-17.313114608699586,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,Annualised system-cost change,Total system,2050,-1.6734503707439945,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2050,3111.6205591712637,MtCO2e/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,Annualised system cost,Total system,2050,26137.587341919967,billion USD_2010/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions change,Three sectors,2050,-31.136174481718175,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,Annualised system-cost change,Total system,2050,-2.56225645963159,%,ndc_noce,plotted,fig05_costs_and_carbon_prices
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2050,2591.43991519135,MtCO2e/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,Annualised system cost,Total system,2050,25901.32107542405,billion USD_2010/yr,ndc_noce,context,fig05_costs_and_carbon_prices
+baseline_noce,Baseline,No CE,c,EU,Emissions-weighted carbon price,Carbon-price index,2050,2725.3980270870825,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+baseline_medce_eu,Baseline,"Medium CE, EU",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,2665.1170484271406,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+baseline_highce_eu,Baseline,"High CE, EU",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,2651.8241792625454,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,2502.1975345176643,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,2505.368929977644,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+ndc_noce,NDC,No CE,c,EU,Emissions-weighted carbon price,Carbon-price index,2050,439.66313619344663,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+ndc_medce_eu,NDC,"Medium CE, EU",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,368.66211629099774,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+ndc_highce_eu,NDC,"High CE, EU",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,361.9106449804785,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,363.4564241863639,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices
+ndc_highce_gbl,NDC,"High CE, EU + partners",c,EU,Emissions-weighted carbon price,Carbon-price index,2050,346.05183038255905,USD_2010/t CO2e,,plotted,fig05_costs_and_carbon_prices

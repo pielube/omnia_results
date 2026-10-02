@@ -1,0 +1,29 @@
+Group,Region,Description
+Rest,AFE,Eastern Africa
+Rest,AFN,Northern Africa
+Rest,AFW,Western Africa
+Rest,AFZ,Southern Africa
+Partners,ANZ,Australia and New Zealand
+Rest,ASC,Central Asia
+Rest,ASE,Southeast Asia
+Rest,ASO,South Asia
+Partners,BRA,Brazil
+Partners,CAN,Canada
+Partners,CHL,Chile
+Partners,CHN,China
+Partners,ENE,Non-EU Eastern Europe
+Partners,ENW,Non-EU Western Europe
+EU,EUE,Eastern Europe Union
+EU,EUM,Mediterranean- Europe Union
+EU,EUW,Western Europe Union
+Partners,IDN,Indonesia - Philippines - Vietnam
+Partners,IND,India
+Partners,JPN,Japan
+Rest,LAM,Latin America
+Rest,MDA,Mediterranean Asia
+Rest,MEA,Middle East (Gulf States)
+Partners,MEX,Mexico
+Rest,NIG,Nigeria
+Partners,RUS,Russian Federation
+Partners,SKT,South Korea – Taiwan
+Partners,USA,United States

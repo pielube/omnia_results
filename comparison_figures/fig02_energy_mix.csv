@@ -1,0 +1,201 @@
+Scenario,Climate,Policy,Panel,Scope,Metric,Component,Year,Value,Unit,ReferenceScenario,Role,Figure
+baseline_noce,Baseline,No CE,a,Global,Final energy,Electricity,2050,2.1890857994097614,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Final energy,Electricity,2050,2.1644014952962136,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Final energy,Electricity,2050,2.1554720324820713,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Final energy,Electricity,2050,1.8388900861618929,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Final energy,Electricity,2050,1.697563457276036,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,a,Global,Final energy,Gases,2050,1.4045064239806693,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Final energy,Gases,2050,1.3960198735720426,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Final energy,Gases,2050,1.3939122479962733,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Final energy,Gases,2050,1.1581564985085198,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Final energy,Gases,2050,1.0723090769139605,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,a,Global,Final energy,Liquids,2050,0.8942463104980527,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Final energy,Liquids,2050,0.880711896353694,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Final energy,Liquids,2050,0.8764967440132029,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Final energy,Liquids,2050,0.7200628350157595,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Final energy,Liquids,2050,0.6522650037607827,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,a,Global,Final energy,Solids,2050,5.706391063400986,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Final energy,Solids,2050,5.606602300710158,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Final energy,Solids,2050,5.574988707576083,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Final energy,Solids,2050,4.563857937377675,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Final energy,Solids,2050,4.108461040370228,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,a,Global,Final energy,Total,2050,10.19422959728947,EJ/yr,,context,fig02_energy_mix
+baseline_noce,Baseline,No CE,a,Global,Final energy change from no CE,Total,2050,0.0,%,baseline_noce,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Final energy,Total,2050,10.047735565932108,EJ/yr,,context,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Final energy change from no CE,Total,2050,-1.4370289579931805,%,baseline_noce,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Final energy,Total,2050,10.000869732067631,EJ/yr,,context,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Final energy change from no CE,Total,2050,-1.8967579980075255,%,baseline_noce,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Final energy,Total,2050,8.280967357063847,EJ/yr,,context,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Final energy change from no CE,Total,2050,-18.76809053559415,%,baseline_noce,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Final energy,Total,2050,7.530598578321007,EJ/yr,,context,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Final energy change from no CE,Total,2050,-26.128811339276602,%,baseline_noce,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy,Electricity,2050,8.53883974932105,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy,Electricity,2050,8.461038329949918,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy,Electricity,2050,8.406047620247772,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy,Electricity,2050,7.22962128802176,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy,Electricity,2050,6.570553455858996,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy,Gases,2050,4.092643563447301,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy,Gases,2050,4.086783562518538,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy,Gases,2050,4.095824353112199,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy,Gases,2050,1.277833603409817,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy,Gases,2050,0.7067715245219012,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy,Hydrogen,2050,1.4592124417736076,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy,Hydrogen,2050,1.459212664467064,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy,Hydrogen,2050,1.4592126664132048,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy,Hydrogen,2050,1.525220692045747,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy,Hydrogen,2050,1.3726675110357751,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy,Solids,2050,0.6229008840848573,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy,Solids,2050,0.6489664040640051,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy,Solids,2050,0.6490017088049739,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy,Solids,2050,2.320756850393367,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy,Solids,2050,1.2515730721038245,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy,Total,2050,14.713596638626818,EJ/yr,,context,fig02_energy_mix
+baseline_noce,Baseline,No CE,b,Global,Final energy change from no CE,Total,2050,0.0,%,baseline_noce,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy,Total,2050,14.656000960999524,EJ/yr,,context,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Final energy change from no CE,Total,2050,-0.39144526686351044,%,baseline_noce,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy,Total,2050,14.61008634857815,EJ/yr,,context,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Final energy change from no CE,Total,2050,-0.7035009358413946,%,baseline_noce,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy,Total,2050,12.353432433870692,EJ/yr,,context,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Final energy change from no CE,Total,2050,-16.040702098357873,%,baseline_noce,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy,Total,2050,9.901565563520496,EJ/yr,,context,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Final energy change from no CE,Total,2050,-32.7046553829915,%,baseline_noce,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy,Electricity,2050,4.386633712430457,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy,Electricity,2050,4.229843687200438,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy,Electricity,2050,4.143827483336505,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy,Electricity,2050,3.4588441633494345,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy,Electricity,2050,2.65827077120332,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy,Gases,2050,0.4626941687174066,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy,Gases,2050,0.5061775180620496,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy,Gases,2050,0.5067915131260353,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy,Gases,2050,0.4431522372688502,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy,Gases,2050,0.41145587962062485,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy,Hydrogen,2050,0.29749364827974933,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy,Hydrogen,2050,0.31018675355765635,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy,Hydrogen,2050,0.3030801362141852,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy,Hydrogen,2050,0.23569624905047815,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy,Hydrogen,2050,0.21261327082869882,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy,Total,2050,5.146821529427612,EJ/yr,,context,fig02_energy_mix
+baseline_noce,Baseline,No CE,c,Global,Final energy change from no CE,Total,2050,0.0,%,baseline_noce,plotted,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy,Total,2050,5.046207958820143,EJ/yr,,context,fig02_energy_mix
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Final energy change from no CE,Total,2050,-1.9548680682280883,%,baseline_noce,plotted,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy,Total,2050,4.953699132676726,EJ/yr,,context,fig02_energy_mix
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Final energy change from no CE,Total,2050,-3.752265269869648,%,baseline_noce,plotted,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy,Total,2050,4.137692649668763,EJ/yr,,context,fig02_energy_mix
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Final energy change from no CE,Total,2050,-19.60683645214868,%,baseline_noce,plotted,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy,Total,2050,3.2823399216526434,EJ/yr,,context,fig02_energy_mix
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Final energy change from no CE,Total,2050,-36.225884210566775,%,baseline_noce,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,d,Global,Final energy,Electricity,2050,2.171451779546254,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,Final energy,Electricity,2050,2.144461677000089,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",d,Global,Final energy,Electricity,2050,2.1340041652172674,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,Final energy,Electricity,2050,1.822912661334108,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,Final energy,Electricity,2050,1.6805961837842012,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,d,Global,Final energy,Gases,2050,1.2247294921766279,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,Final energy,Gases,2050,1.1917325792532967,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",d,Global,Final energy,Gases,2050,1.1868619408853491,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,Final energy,Gases,2050,1.0873213328255327,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,Final energy,Gases,2050,1.026452955729294,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,d,Global,Final energy,Liquids,2050,0.8927975146341738,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,Final energy,Liquids,2050,0.8789975489036136,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",d,Global,Final energy,Liquids,2050,0.8744170537147912,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,Final energy,Liquids,2050,0.7183913905463608,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,Final energy,Liquids,2050,0.6506903839276821,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,d,Global,Final energy,Solids,2050,5.890762860998873,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,Final energy,Solids,2050,5.815400286278116,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",d,Global,Final energy,Solids,2050,5.784789669241587,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,Final energy,Solids,2050,4.635627527672413,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,Final energy,Solids,2050,4.157112856604117,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,d,Global,Final energy,Total,2050,10.179741647355929,EJ/yr,,context,fig02_energy_mix
+ndc_noce,NDC,No CE,d,Global,Final energy change from no CE,Total,2050,0.0,%,ndc_noce,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,Final energy,Total,2050,10.030592091435114,EJ/yr,,context,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,Final energy change from no CE,Total,2050,-1.4651605226106534,%,ndc_noce,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",d,Global,Final energy,Total,2050,9.980072829058996,EJ/yr,,context,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",d,Global,Final energy change from no CE,Total,2050,-1.961433061995188,%,ndc_noce,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,Final energy,Total,2050,8.264252912378414,EJ/yr,,context,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,Final energy change from no CE,Total,2050,-18.816673362973223,%,ndc_noce,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,Final energy,Total,2050,7.514852380045294,EJ/yr,,context,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,Final energy change from no CE,Total,2050,-26.1783585441268,%,ndc_noce,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy,Electricity,2050,5.871106287870795,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy,Electricity,2050,5.823907427121482,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy,Electricity,2050,5.792453808324815,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy,Electricity,2050,5.305096543536928,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy,Electricity,2050,5.08250889196994,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy,Gases,2050,4.372101926577202,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy,Gases,2050,4.390047563426594,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy,Gases,2050,4.355426741212873,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy,Gases,2050,2.0849130933341895,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy,Gases,2050,1.056547892715559,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy,Hydrogen,2050,1.3893356332507933,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy,Hydrogen,2050,1.4018684797807022,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy,Hydrogen,2050,1.3893282268132605,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy,Hydrogen,2050,1.3102835969949937,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy,Hydrogen,2050,1.210198370093101,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy,Solids,2050,8.977730848502727,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy,Solids,2050,8.849345318096942,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy,Solids,2050,8.850233060787561,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy,Solids,2050,7.8251764767629926,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy,Solids,2050,5.8176014788866715,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy,Total,2050,20.610274696201515,EJ/yr,,context,fig02_energy_mix
+ndc_noce,NDC,No CE,e,Global,Final energy change from no CE,Total,2050,0.0,%,ndc_noce,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy,Total,2050,20.46516878842572,EJ/yr,,context,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",e,Global,Final energy change from no CE,Total,2050,-0.704046452144258,%,ndc_noce,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy,Total,2050,20.38744183713851,EJ/yr,,context,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",e,Global,Final energy change from no CE,Total,2050,-1.0811736492967405,%,ndc_noce,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy,Total,2050,16.525469710629103,EJ/yr,,context,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",e,Global,Final energy change from no CE,Total,2050,-19.819265127627062,%,ndc_noce,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy,Total,2050,13.166856633665272,EJ/yr,,context,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",e,Global,Final energy change from no CE,Total,2050,-36.11508421044029,%,ndc_noce,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy,Electricity,2050,4.082934146674068,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy,Electricity,2050,3.9471702481694857,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy,Electricity,2050,3.8600526516515385,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy,Electricity,2050,3.205310882763179,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy,Electricity,2050,2.41153237711825,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy,Gases,2050,0.6855848820820668,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy,Gases,2050,0.7077680224727686,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy,Gases,2050,0.7012880385610358,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy,Gases,2050,0.6154730576884752,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy,Gases,2050,0.6129294258512094,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy,Hydrogen,2050,0.4203146370633831,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy,Hydrogen,2050,0.4294442126659103,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy,Hydrogen,2050,0.43025386929865067,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy,Hydrogen,2050,0.35219443032727793,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy,Hydrogen,2050,0.2936926846873479,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy,Liquids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy,Solids,2050,0.0,EJ/yr,,plotted,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy,Total,2050,5.1888336658195175,EJ/yr,,context,fig02_energy_mix
+ndc_noce,NDC,No CE,f,Global,Final energy change from no CE,Total,2050,0.0,%,ndc_noce,plotted,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy,Total,2050,5.084382483308164,EJ/yr,,context,fig02_energy_mix
+ndc_medce_eu,NDC,"Medium CE, EU",f,Global,Final energy change from no CE,Total,2050,-2.0129992448863154,%,ndc_noce,plotted,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy,Total,2050,4.991594559511225,EJ/yr,,context,fig02_energy_mix
+ndc_highce_eu,NDC,"High CE, EU",f,Global,Final energy change from no CE,Total,2050,-3.8012223750313767,%,ndc_noce,plotted,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy,Total,2050,4.172978370778932,EJ/yr,,context,fig02_energy_mix
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",f,Global,Final energy change from no CE,Total,2050,-19.577719396409734,%,ndc_noce,plotted,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy,Total,2050,3.318154487656807,EJ/yr,,context,fig02_energy_mix
+ndc_highce_gbl,NDC,"High CE, EU + partners",f,Global,Final energy change from no CE,Total,2050,-36.052016669670174,%,ndc_noce,plotted,fig02_energy_mix

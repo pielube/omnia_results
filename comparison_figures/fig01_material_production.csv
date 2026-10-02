@@ -1,0 +1,106 @@
+Scenario,Climate,Policy,Panel,Scope,Metric,Component,Year,Value,Unit,ReferenceScenario,Role,Figure
+baseline_noce,Baseline,No CE,a,Global,Material production,Cement,2050,3660.135942423824,Mt/yr,,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,a,Global,Material production,Clinker,2050,2599.115827280662,Mt/yr,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Material production,Cement,2050,3627.5339251320734,Mt/yr,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Material production,Clinker,2050,2559.3808613365522,Mt/yr,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Material production,Cement,2050,3613.749391624557,Mt/yr,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Material production,Clinker,2050,2546.3916428762786,Mt/yr,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Material production,Cement,2050,3158.8859851059724,Mt/yr,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Material production,Clinker,2050,2083.6904822764113,Mt/yr,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Material production,Cement,2050,2947.2179553016663,Mt/yr,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Material production,Clinker,2050,1884.2030146186078,Mt/yr,,plotted,fig01_material_production
+ndc_noce,NDC,No CE,a,Global,Material production,Cement,2050,3660.1359678777544,Mt/yr,,plotted,fig01_material_production
+ndc_noce,NDC,No CE,a,Global,Material production,Clinker,2050,2599.115854230405,Mt/yr,,plotted,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",a,Global,Material production,Cement,2050,3627.5339251431465,Mt/yr,,plotted,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",a,Global,Material production,Clinker,2050,2559.380861506334,Mt/yr,,plotted,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",a,Global,Material production,Cement,2050,3613.74939155288,Mt/yr,,plotted,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",a,Global,Material production,Clinker,2050,2546.3916431920925,Mt/yr,,plotted,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",a,Global,Material production,Cement,2050,3158.8859851310053,Mt/yr,,plotted,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",a,Global,Material production,Clinker,2050,2083.6904824590947,Mt/yr,,plotted,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",a,Global,Material production,Cement,2050,2947.217955463377,Mt/yr,,plotted,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",a,Global,Material production,Clinker,2050,1884.203014792611,Mt/yr,,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,a,Global,Production change from no CE,Cement,2050,0.0,%,baseline_noce,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,Production change from no CE,Cement,2050,-0.8907324155332019,%,baseline_noce,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,Production change from no CE,Cement,2050,-1.267345025675426,%,baseline_noce,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,Production change from no CE,Cement,2050,-13.694845361014451,%,baseline_noce,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,Production change from no CE,Cement,2050,-19.477910065002867,%,baseline_noce,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,b,Global,Material production,Total,2050,2186.929691103253,Mt/yr,,context,fig01_material_production
+baseline_noce,Baseline,No CE,b,Global,Material production,Primary,2050,1399.6350022548183,Mt/yr,,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,b,Global,Material production,Secondary,2050,787.2946888484346,Mt/yr,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Material production,Total,2050,2184.438439804528,Mt/yr,,context,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Material production,Primary,2050,1385.8837930535244,Mt/yr,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Material production,Secondary,2050,798.5546467510037,Mt/yr,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Material production,Total,2050,2183.3546196545976,Mt/yr,,context,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Material production,Primary,2050,1375.6270491499063,Mt/yr,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Material production,Secondary,2050,807.7275705046911,Mt/yr,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Material production,Total,2050,2124.1524894719405,Mt/yr,,context,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Material production,Primary,2050,1045.9689685715605,Mt/yr,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Material production,Secondary,2050,1078.1835209003798,Mt/yr,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Material production,Total,2050,2095.1975670216607,Mt/yr,,context,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Material production,Primary,2050,781.125238175271,Mt/yr,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Material production,Secondary,2050,1314.0723288463896,Mt/yr,,plotted,fig01_material_production
+ndc_noce,NDC,No CE,b,Global,Material production,Total,2050,2186.9297730849707,Mt/yr,,plotted,fig01_material_production
+ndc_noce,NDC,No CE,b,Global,Material production,Primary,2050,1399.6350714434163,Mt/yr,,context,fig01_material_production
+ndc_noce,NDC,No CE,b,Global,Material production,Secondary,2050,787.2947016415544,Mt/yr,,context,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,Material production,Total,2050,2184.4384398707944,Mt/yr,,plotted,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,Material production,Primary,2050,1385.8837931026792,Mt/yr,,context,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,Material production,Secondary,2050,798.5546467681152,Mt/yr,,context,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",b,Global,Material production,Total,2050,2183.3546198156414,Mt/yr,,plotted,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",b,Global,Material production,Primary,2050,1375.6270494325845,Mt/yr,,context,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",b,Global,Material production,Secondary,2050,807.7275703830568,Mt/yr,,context,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,Material production,Total,2050,2124.152489639885,Mt/yr,,plotted,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,Material production,Primary,2050,1045.9689686843165,Mt/yr,,context,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,Material production,Secondary,2050,1078.1835209555684,Mt/yr,,context,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,Material production,Total,2050,2095.1975670819306,Mt/yr,,plotted,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,Material production,Primary,2050,781.125238259651,Mt/yr,,context,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,Material production,Secondary,2050,1314.0723288222796,Mt/yr,,context,fig01_material_production
+baseline_noce,Baseline,No CE,b,Global,Secondary production share,Secondary,2050,36.00000000234409,%,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Secondary production share,Secondary,2050,36.55651870063509,%,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Secondary production share,Secondary,2050,36.994795221697515,%,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Secondary production share,Secondary,2050,50.75829189496719,%,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Secondary production share,Secondary,2050,62.71830158309861,%,,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,b,Global,Production change from no CE,Total,2050,0.0,%,baseline_noce,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",b,Global,Production change from no CE,Total,2050,-0.11391547285949377,%,baseline_noce,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",b,Global,Production change from no CE,Total,2050,-0.16347445750996004,%,baseline_noce,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",b,Global,Production change from no CE,Total,2050,-2.870563323855324,%,baseline_noce,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",b,Global,Production change from no CE,Total,2050,-4.194562104797961,%,baseline_noce,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,c,Global,Material production,Total,2050,133.01408676120656,Mt/yr,,context,fig01_material_production
+baseline_noce,Baseline,No CE,c,Global,Material production,Primary,2050,68.45857888402483,Mt/yr,,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,c,Global,Material production,Secondary,2050,64.55550787718173,Mt/yr,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Material production,Total,2050,131.7829467643458,Mt/yr,,context,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Material production,Primary,2050,66.91987726060664,Mt/yr,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Material production,Secondary,2050,64.86306950373917,Mt/yr,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Material production,Total,2050,131.0235267868248,Mt/yr,,context,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Material production,Primary,2050,65.60035267542978,Mt/yr,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Material production,Secondary,2050,65.423174111395,Mt/yr,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Material production,Total,2050,121.67389276978787,Mt/yr,,context,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Material production,Primary,2050,54.269379130792395,Mt/yr,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Material production,Secondary,2050,67.40451363899548,Mt/yr,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Material production,Total,2050,114.65899376867615,Mt/yr,,context,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Material production,Primary,2050,42.08962112744827,Mt/yr,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Material production,Secondary,2050,72.56937264122789,Mt/yr,,plotted,fig01_material_production
+ndc_noce,NDC,No CE,c,Global,Material production,Total,2050,133.0141126535924,Mt/yr,,plotted,fig01_material_production
+ndc_noce,NDC,No CE,c,Global,Material production,Primary,2050,68.45860254240496,Mt/yr,,context,fig01_material_production
+ndc_noce,NDC,No CE,c,Global,Material production,Secondary,2050,64.55551011118743,Mt/yr,,context,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",c,Global,Material production,Total,2050,131.7829466759616,Mt/yr,,plotted,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",c,Global,Material production,Primary,2050,66.91987715242247,Mt/yr,,context,fig01_material_production
+ndc_medce_eu,NDC,"Medium CE, EU",c,Global,Material production,Secondary,2050,64.86306952353912,Mt/yr,,context,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",c,Global,Material production,Total,2050,131.0235267484698,Mt/yr,,plotted,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",c,Global,Material production,Primary,2050,65.6003526424434,Mt/yr,,context,fig01_material_production
+ndc_highce_eu,NDC,"High CE, EU",c,Global,Material production,Secondary,2050,65.4231741060264,Mt/yr,,context,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",c,Global,Material production,Total,2050,121.67389275652519,Mt/yr,,plotted,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",c,Global,Material production,Primary,2050,54.269379063176316,Mt/yr,,context,fig01_material_production
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",c,Global,Material production,Secondary,2050,67.40451369334887,Mt/yr,,context,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",c,Global,Material production,Total,2050,114.6589936931592,Mt/yr,,plotted,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",c,Global,Material production,Primary,2050,42.089621022059724,Mt/yr,,context,fig01_material_production
+ndc_highce_gbl,NDC,"High CE, EU + partners",c,Global,Material production,Secondary,2050,72.56937267109947,Mt/yr,,context,fig01_material_production
+baseline_noce,Baseline,No CE,c,Global,Secondary production share,Secondary,2050,48.53283546807712,%,,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Secondary production share,Secondary,2050,49.219622945393134,%,,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Secondary production share,Secondary,2050,49.932386736802215,%,,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Secondary production share,Secondary,2050,55.39767990042668,%,,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Secondary production share,Secondary,2050,63.29147871961633,%,,plotted,fig01_material_production
+baseline_noce,Baseline,No CE,c,Global,Production change from no CE,Total,2050,0.0,%,baseline_noce,plotted,fig01_material_production
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,Production change from no CE,Total,2050,-0.9255711382441412,%,baseline_noce,plotted,fig01_material_production
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,Production change from no CE,Total,2050,-1.4965031319993383,%,baseline_noce,plotted,fig01_material_production
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,Production change from no CE,Total,2050,-8.525558658893894,%,baseline_noce,plotted,fig01_material_production
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,Production change from no CE,Total,2050,-13.79936023278675,%,baseline_noce,plotted,fig01_material_production

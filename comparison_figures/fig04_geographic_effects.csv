@@ -1,0 +1,49 @@
+Scenario,Climate,Policy,Panel,Scope,Metric,Component,Year,Value,Unit,ReferenceScenario,Role,Figure
+baseline_medce_eu,Baseline,"Medium CE, EU",a,EU,GHG emissions change,Three sectors,2050,-18.894354481052602,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Partners,GHG emissions change,Three sectors,2050,2.7538977810977485,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Rest,GHG emissions change,Three sectors,2050,0.8269372477070647,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions change,Three sectors,2050,-15.313519452247874,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2050,2494.7682988301954,MtCO2e/yr,baseline_noce,context,fig04_geographic_effects
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2050,2510.0818182824432,MtCO2e/yr,,reference,fig04_geographic_effects
+baseline_highce_eu,Baseline,"High CE, EU",a,EU,GHG emissions change,Three sectors,2050,-25.74452542465245,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_eu,Baseline,"High CE, EU",a,Partners,GHG emissions change,Three sectors,2050,1.4119682537177596,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_eu,Baseline,"High CE, EU",a,Rest,GHG emissions change,Three sectors,2050,0.7686781258810242,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions change,Three sectors,2050,-23.56387904505391,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2050,2486.5179392373893,MtCO2e/yr,baseline_noce,context,fig04_geographic_effects
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2050,2510.0818182824432,MtCO2e/yr,,reference,fig04_geographic_effects
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,EU,GHG emissions change,Three sectors,2050,-26.006087307109034,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Partners,GHG emissions change,Three sectors,2050,-450.1331787942729,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Rest,GHG emissions change,Three sectors,2050,1.6624753059098794,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions change,Three sectors,2050,-474.4767907954722,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2050,2035.605027486971,MtCO2e/yr,baseline_noce,context,fig04_geographic_effects
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2050,2510.0818182824432,MtCO2e/yr,,reference,fig04_geographic_effects
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,EU,GHG emissions change,Three sectors,2050,-34.507384581441606,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Partners,GHG emissions change,Three sectors,2050,-748.0351888543194,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Rest,GHG emissions change,Three sectors,2050,1.9335396150102042,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions change,Three sectors,2050,-780.6090338207509,MtCO2e/yr,baseline_noce,plotted,fig04_geographic_effects
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2050,1729.4727844616923,MtCO2e/yr,baseline_noce,context,fig04_geographic_effects
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2050,2510.0818182824432,MtCO2e/yr,,reference,fig04_geographic_effects
+ndc_medce_eu,NDC,"Medium CE, EU",b,EU,GHG emissions change,Three sectors,2050,-20.298665776200323,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_eu,NDC,"Medium CE, EU",b,Partners,GHG emissions change,Three sectors,2050,-11.09785065239248,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_eu,NDC,"Medium CE, EU",b,Rest,GHG emissions change,Three sectors,2050,-0.6533675968346415,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions change,Three sectors,2050,-32.04988402542676,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2050,3731.086850955089,MtCO2e/yr,ndc_noce,context,fig04_geographic_effects
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2050,3763.136734980516,MtCO2e/yr,,reference,fig04_geographic_effects
+ndc_highce_eu,NDC,"High CE, EU",b,EU,GHG emissions change,Three sectors,2050,-27.072595114832716,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_eu,NDC,"High CE, EU",b,Partners,GHG emissions change,Three sectors,2050,-11.455863132594914,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_eu,NDC,"High CE, EU",b,Rest,GHG emissions change,Three sectors,2050,-0.7188023123890162,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions change,Three sectors,2050,-39.24726055981682,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2050,3723.889474420699,MtCO2e/yr,ndc_noce,context,fig04_geographic_effects
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2050,3763.136734980516,MtCO2e/yr,,reference,fig04_geographic_effects
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,EU,GHG emissions change,Three sectors,2050,-20.233756107251153,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Partners,GHG emissions change,Three sectors,2050,-665.1624302605956,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Rest,GHG emissions change,Three sectors,2050,33.880010558593995,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions change,Three sectors,2050,-651.5161758092522,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2050,3111.6205591712637,MtCO2e/yr,ndc_noce,context,fig04_geographic_effects
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2050,3763.136734980516,MtCO2e/yr,,reference,fig04_geographic_effects
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,EU,GHG emissions change,Three sectors,2050,-24.737635822153607,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Partners,GHG emissions change,Three sectors,2050,-1183.6139472602192,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Rest,GHG emissions change,Three sectors,2050,36.654763293207,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions change,Three sectors,2050,-1171.696819789166,MtCO2e/yr,ndc_noce,plotted,fig04_geographic_effects
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2050,2591.43991519135,MtCO2e/yr,ndc_noce,context,fig04_geographic_effects
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2050,3763.136734980516,MtCO2e/yr,,reference,fig04_geographic_effects

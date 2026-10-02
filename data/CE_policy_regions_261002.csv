@@ -1,0 +1,29 @@
+Region,Description,EU,EU_plus_partners
+AFE,Eastern Africa,False,False
+AFN,Northern Africa,False,False
+AFW,Western Africa,False,False
+AFZ,Southern Africa,False,False
+ANZ,Australia and New Zealand,False,True
+ASC,Central Asia,False,False
+ASE,Southeast Asia,False,False
+ASO,South Asia,False,False
+BRA,Brazil,False,True
+CAN,Canada,False,True
+CHL,Chile,False,True
+CHN,China,False,True
+ENE,Non-EU Eastern Europe,False,True
+ENW,Non-EU Western Europe,False,True
+EUE,Eastern Europe Union,True,True
+EUM,Mediterranean- Europe Union,True,True
+EUW,Western Europe Union,True,True
+IDN,Indonesia - Philippines - Vietnam,False,True
+IND,India,False,True
+JPN,Japan,False,True
+LAM,Latin America,False,False
+MDA,Mediterranean Asia,False,False
+MEA,Middle East (Gulf States),False,False
+MEX,Mexico,False,True
+NIG,Nigeria,False,False
+RUS,Russian Federation,False,True
+SKT,South Korea – Taiwan,False,True
+USA,United States,False,True

@@ -1,0 +1,165 @@
+Scenario,Climate,Policy,Panel,Scope,Metric,Component,Year,Value,Unit,ReferenceScenario,Role,Figure
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2030,4575.787104995871,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2035,3942.2639179483585,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2040,3440.3085939806842,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_noce,Baseline,No CE,a,Global,GHG emissions,Three sectors,2050,2510.0818182824432,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2030,4506.54275186187,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2035,3852.33233097722,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2040,3330.4352839204107,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",a,Global,GHG emissions,Three sectors,2050,2494.7682988301954,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2030,4490.987171007719,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2035,3835.8942194106994,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2040,3321.669241924263,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",a,Global,GHG emissions,Three sectors,2050,2486.5179392373893,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2030,4012.650040667248,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2035,3530.57808015595,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2040,2975.6870383443284,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",a,Global,GHG emissions,Three sectors,2050,2035.605027486971,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2030,3683.5788453668406,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2035,3191.240482532682,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2040,2617.156568995846,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",a,Global,GHG emissions,Three sectors,2050,1729.4727844616923,MtCO2e/yr,,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions change,Cement,2050,-27.143285292451992,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions,Cement,2050,1690.9801755509495,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Cement,2050,1718.1234608434015,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions change,Iron and steel,2050,5.799093627152047,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions,Iron and steel,2050,746.605490292253,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Iron and steel,2050,740.8063966651009,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions change,Aluminium,2050,6.030672213051766,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions,Aluminium,2050,57.1826329869927,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Aluminium,2050,51.151960773940935,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions change,Other industry,2050,-4.020976872384836,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions,Other industry,2050,1938.3807223386762,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Other industry,2050,1942.401699211061,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_eu,Baseline,"Medium CE, EU",c,Global,GHG emissions change,Total industry,2050,-19.33449632463271,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions change,Cement,2050,-37.18671596161994,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions,Cement,2050,1680.9367448817816,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Cement,2050,1718.1234608434015,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions change,Iron and steel,2050,7.509142197138317,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions,Iron and steel,2050,748.3155388622392,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Iron and steel,2050,740.8063966651009,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions change,Aluminium,2050,6.113694719427301,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions,Aluminium,2050,57.265655493368236,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Aluminium,2050,51.151960773940935,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions change,Other industry,2050,-10.918596688721664,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions,Other industry,2050,1931.4831025223393,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Other industry,2050,1942.401699211061,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_eu,Baseline,"High CE, EU",c,Global,GHG emissions change,Total industry,2050,-34.48247573377557,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions change,Cement,2050,-367.88296540482725,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions,Cement,2050,1350.2404954385743,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Cement,2050,1718.1234608434015,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions change,Iron and steel,2050,-102.35384721350647,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions,Iron and steel,2050,638.4525494515945,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Iron and steel,2050,740.8063966651009,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions change,Aluminium,2050,-4.239978177138681,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions,Aluminium,2050,46.911982596802254,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Aluminium,2050,51.151960773940935,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions change,Other industry,2050,143.9159728049044,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions,Other industry,2050,2086.3176720159654,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Other industry,2050,1942.401699211061,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_medce_gbl,Baseline,"Medium CE, EU + partners",c,Global,GHG emissions change,Total industry,2050,-330.56081799056756,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions change,Cement,2050,-508.95750487797864,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions,Cement,2050,1209.1659559654229,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Cement,2050,1718.1234608434015,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions change,Iron and steel,2050,-263.0518538130651,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions,Iron and steel,2050,477.7545428520358,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Iron and steel,2050,740.8063966651009,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions change,Aluminium,2050,-8.599675129707364,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions,Aluminium,2050,42.55228564423357,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Aluminium,2050,51.151960773940935,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions change,Other industry,2050,440.54724961000875,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions,Other industry,2050,2382.9489488210697,MtCO2e/yr,baseline_noce,context,fig03_emissions_response
+baseline_noce,Baseline,No CE,c,Global,GHG emissions,Other industry,2050,1942.401699211061,MtCO2e/yr,,reference,fig03_emissions_response
+baseline_highce_gbl,Baseline,"High CE, EU + partners",c,Global,GHG emissions change,Total industry,2050,-340.0617842107422,MtCO2e/yr,baseline_noce,plotted,fig03_emissions_response
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2030,4562.335724756673,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2035,4083.993990806989,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2040,3972.5267539941024,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_noce,NDC,No CE,b,Global,GHG emissions,Three sectors,2050,3763.136734980516,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2030,4495.381107794648,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2035,4012.548194486156,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2040,3894.8066683996794,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",b,Global,GHG emissions,Three sectors,2050,3731.086850955089,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2030,4478.66849958107,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2035,3998.083517487633,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2040,3890.268509197988,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",b,Global,GHG emissions,Three sectors,2050,3723.889474420699,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2030,4017.1754945418224,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2035,3584.8403910376633,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2040,3432.8385235974247,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",b,Global,GHG emissions,Three sectors,2050,3111.6205591712637,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2019,5494.987454113852,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2024,5249.263336500017,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2030,3688.012033642236,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2035,3250.783351993523,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2040,3080.022488192454,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",b,Global,GHG emissions,Three sectors,2050,2591.43991519135,MtCO2e/yr,,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions change,Cement,2050,-23.548168254601478,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions,Cement,2050,1783.129348025203,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Cement,2050,1806.6775162798044,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions change,Iron and steel,2050,-11.29084677178048,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions,Iron and steel,2050,1865.0829296806437,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Iron and steel,2050,1876.3737764524242,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions change,Aluminium,2050,2.789131000955095,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions,Aluminium,2050,82.87457324924235,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Aluminium,2050,80.08544224828725,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions change,Other industry,2050,15.477135140291466,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions,Other industry,2050,7087.107915530225,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Other industry,2050,7071.6307803899335,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_eu,NDC,"Medium CE, EU",d,Global,GHG emissions change,Total industry,2050,-16.572748885135297,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions change,Cement,2050,-30.576994940509394,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions,Cement,2050,1776.100521339295,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Cement,2050,1806.6775162798044,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions change,Iron and steel,2050,-10.539121096823237,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions,Iron and steel,2050,1865.834655355601,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Iron and steel,2050,1876.3737764524242,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions change,Aluminium,2050,1.868855477516206,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions,Aluminium,2050,81.95429772580346,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Aluminium,2050,80.08544224828725,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions change,Other industry,2050,18.606128023987367,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions,Other industry,2050,7090.236908413921,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Other industry,2050,7071.6307803899335,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_eu,NDC,"High CE, EU",d,Global,GHG emissions change,Total industry,2050,-20.641132535829456,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions change,Cement,2050,-370.0567113608895,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions,Cement,2050,1436.620804918915,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Cement,2050,1806.6775162798044,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions change,Iron and steel,2050,-271.43664152388214,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions,Iron and steel,2050,1604.937134928542,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Iron and steel,2050,1876.3737764524242,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions change,Aluminium,2050,-10.022822924480636,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions,Aluminium,2050,70.06261932380662,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Aluminium,2050,80.08544224828725,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions change,Other industry,2050,31.78852416213249,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions,Other industry,2050,7103.419304552066,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Other industry,2050,7071.6307803899335,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_medce_gbl,NDC,"Medium CE, EU + partners",d,Global,GHG emissions change,Total industry,2050,-619.7276516471193,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions change,Cement,2050,-511.8102184962029,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions,Cement,2050,1294.8672977836015,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Cement,2050,1806.6775162798044,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions change,Iron and steel,2050,-649.0691501665231,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions,Iron and steel,2050,1227.3046262859011,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Iron and steel,2050,1876.3737764524242,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions change,Aluminium,2050,-10.817451126440346,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions,Aluminium,2050,69.2679911218469,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Aluminium,2050,80.08544224828725,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions change,Other industry,2050,70.5147513231559,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions,Other industry,2050,7142.145531713089,MtCO2e/yr,ndc_noce,context,fig03_emissions_response
+ndc_noce,NDC,No CE,d,Global,GHG emissions,Other industry,2050,7071.6307803899335,MtCO2e/yr,,reference,fig03_emissions_response
+ndc_highce_gbl,NDC,"High CE, EU + partners",d,Global,GHG emissions change,Total industry,2050,-1101.1820684660106,MtCO2e/yr,ndc_noce,plotted,fig03_emissions_response

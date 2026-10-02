@@ -23,7 +23,7 @@ def load_config(path: Path) -> dict:
         raise ValueError("At least one region and scenario must be configured")
     if len(set(config["scenarios"])) != len(config["scenarios"]):
         raise ValueError("Scenario selections must be unique")
-    if config.get("suite") == "report":
+    if config.get("suite") in {"report", "comparison"}:
         if not config["formats"] or not set(config["formats"]) <= {"pdf", "svg", "png"}:
             raise ValueError("Formats must be chosen from pdf, svg and png")
         if config["dpi"] < 300:
@@ -96,6 +96,9 @@ PDF/SVG preserve vector lines and editable text. PNG exports use __DPI__ dpi. Cu
 
 
 def generate(config: dict, base: Path):
+    if config.get("suite") == "comparison":
+        from .comparison import generate_comparison
+        return generate_comparison(config, base)
     if config.get("suite") == "report":
         from .report import generate_report
         return generate_report(config, base)
