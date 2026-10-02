@@ -423,7 +423,8 @@ def generate_report(config: dict, base: Path):
             raise ValueError("combined_pdf must name a file within the configured output directory")
         output.mkdir(parents=True, exist_ok=True)
         combined_context = PdfPages(combined_path, metadata={"Title": "OMNIA report figures for all selected scenarios"})
-    with combined_context as combined_book:
+    # Matplotlib embeds fonts when the PDF closes, using the active settings.
+    with plt.rc_context(STYLE), combined_context as combined_book:
         _generate_scenarios(config, base, source, mapping_path, mapping, combined_book)
     if combined_name is not None:
         write_collection_gallery(output, config)
