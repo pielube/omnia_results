@@ -1,0 +1,234 @@
+{
+  "generated_utc": "2026-10-07T11:36:08.589656+00:00",
+  "source": "results_allCE_261002.csv",
+  "source_sha256": "f0871ccd7ae50a21667443212cdc025891156b011df70e18a40a0c0bd1abe182",
+  "scenario_interpretation": {
+    "baseline": "NDC+LTT",
+    "ndc": "NDC"
+  },
+  "scenario_labels": {
+    "baseline_noce": "NDC+LTT",
+    "baseline_medce_eu": "NDC+LTT",
+    "baseline_highce_eu": "NDC+LTT",
+    "baseline_medce_gbl": "NDC+LTT",
+    "baseline_highce_gbl": "NDC+LTT",
+    "ndc_noce": "NDC",
+    "ndc_medce_eu": "NDC",
+    "ndc_highce_eu": "NDC",
+    "ndc_medce_gbl": "NDC",
+    "ndc_highce_gbl": "NDC"
+  },
+  "source_rows_selected": {
+    "baseline_noce": 2445,
+    "baseline_medce_eu": 2449,
+    "baseline_highce_eu": 2445,
+    "baseline_medce_gbl": 2447,
+    "baseline_highce_gbl": 2441,
+    "ndc_noce": 2513,
+    "ndc_medce_eu": 2447,
+    "ndc_highce_eu": 2452,
+    "ndc_medce_gbl": 2451,
+    "ndc_highce_gbl": 2447
+  },
+  "region_count": 28,
+  "figure_count": 8,
+  "missing_input_count": 7100,
+  "config": {
+    "suite": "consolidation",
+    "input": "results_allCE_261002.csv",
+    "output": "report_figures_consolidation",
+    "figures": [
+      "production",
+      "leading_producers",
+      "energy",
+      "emissions",
+      "material_production",
+      "energy_mix",
+      "emissions_response",
+      "sector_costs"
+    ],
+    "preserve_individual_figures": [
+      "fig01_production",
+      "fig02_leading_producers",
+      "fig03_energy",
+      "fig04_emissions",
+      "fig05_material_production",
+      "fig06_energy_mix",
+      "fig07_emissions_response"
+    ],
+    "main_cost_start_year": 2024,
+    "policy_regions_csv": "data/CE_policy_regions_261002.csv",
+    "partner_top_n": 3,
+    "scenarios": [
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu",
+      "baseline_medce_gbl",
+      "baseline_highce_gbl",
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "ndc_medce_gbl",
+      "ndc_highce_gbl"
+    ],
+    "historical_year": 2019,
+    "comparison_year": 2050,
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "regions": [
+      "AFE",
+      "AFN",
+      "AFW",
+      "AFZ",
+      "ANZ",
+      "ASC",
+      "ASE",
+      "ASO",
+      "BRA",
+      "CAN",
+      "CHL",
+      "CHN",
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW",
+      "IDN",
+      "IND",
+      "JPN",
+      "LAM",
+      "MDA",
+      "MEA",
+      "MEX",
+      "NIG",
+      "RUS",
+      "SKT",
+      "USA"
+    ],
+    "producer_groups": {
+      "Europe": [
+        "ENE",
+        "ENW",
+        "EUE",
+        "EUM",
+        "EUW"
+      ],
+      "China region": [
+        "CHN"
+      ],
+      "India": [
+        "IND"
+      ],
+      "United States": [
+        "USA"
+      ],
+      "Canada": [
+        "CAN"
+      ],
+      "Mexico": [
+        "MEX"
+      ],
+      "Brazil": [
+        "BRA"
+      ],
+      "Chile": [
+        "CHL"
+      ],
+      "Other Latin America": [
+        "LAM"
+      ],
+      "Australia & NZ": [
+        "ANZ"
+      ],
+      "Japan": [
+        "JPN"
+      ],
+      "South Korea": [
+        "SKT"
+      ],
+      "Indonesia group": [
+        "IDN"
+      ],
+      "Other Asia–Pacific": [
+        "ASE"
+      ],
+      "Other South Asia": [
+        "ASO"
+      ],
+      "Russia": [
+        "RUS"
+      ],
+      "Central Asia group": [
+        "ASC"
+      ],
+      "Eastern Africa": [
+        "AFE"
+      ],
+      "Northern Africa": [
+        "AFN"
+      ],
+      "West & Central Africa": [
+        "AFW"
+      ],
+      "Southern Africa": [
+        "AFZ"
+      ],
+      "Nigeria": [
+        "NIG"
+      ],
+      "Turkey & Levant": [
+        "MDA"
+      ],
+      "Gulf & Iran": [
+        "MEA"
+      ]
+    },
+    "ranking_year": 2050,
+    "top_n": 12,
+    "producer_axis_scale": "log",
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  "versions": {
+    "python": "3.11.15",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "notes": [
+    "All figures calculate directly from the configured raw results CSV. Earlier exported data and artwork are used only to verify preservation of reviewed individual figures.",
+    "Every baseline_* scenario in this source is interpreted as NDC+LTT. Source scenario identifiers remain unchanged.",
+    "Previously generated report and comparison collections are preserved.",
+    "Figure 2 keeps one cohort ranked by baseline_noce production in the configured ranking year, with the same producer groups and order for NDC.",
+    "Figure 3 sums exact parent energy carriers; global energy intensity is global final energy divided by global production, multiplied by 1000 to convert EJ/Mt to GJ/t.",
+    "Figure 4 uses reported sector GHG emissions without subtracting capture again. Shares use each pathway's total industrial GHG, intensities use global production, and capture retains its separate CO2 unit.",
+    "Figure 5 puts NDC above NDC+LTT and compares each pathway's no-CE historical production with all five future CE settings. Cement and clinker remain separate; metals show primary and secondary stacks. Future percentage changes use the same pathway's future no-CE total, not the historical bar.",
+    "Figure 6 keeps the same historical/future bars and climate row order as Figure 5. It stacks exact final-energy carrier parents, excludes nested subcategories, and compares future totals with each pathway's future no-CE energy. Cement has no hydrogen parent in this source.",
+    "Figure 7 has NDC on the left and NDC+LTT on the right. Top trajectories and bottom geographic changes cover three sectors; the middle net change covers all industry, with Other industry calculated as a residual. Partner regions are ranked once by mean absolute comparison-year three-sector change across all eight CE cases; the same three regions and order apply throughout.",
+    "Figure 8 puts NDC above NDC+LTT and compares all five CE settings using 100 * (sector cost - no-CE sector cost) / no-CE sector cost. Every reference matches the sector, climate and year. Exact annualised-cost parents use Millions USD_2010/yr and preserve missingness regardless of the additive-activity policy. Main plots start in the configured main cost year; earlier costs are retained as context."
+  ],
+  "policy_regions_source": "data/CE_policy_regions_261002.csv",
+  "policy_regions_sha256": "661879e020b1a967afd86997115d9c00d738872de0660c55c33b4f3f52b4795f",
+  "partner_ranking": {
+    "metric": "Mean absolute three-sector GHG change across eight climate-matched CE cases",
+    "year": 2050,
+    "tie_break": "Region code ascending",
+    "selected_regions": [
+      "IND",
+      "CHN",
+      "IDN"
+    ],
+    "complete_cases_required": 8
+  }
+}

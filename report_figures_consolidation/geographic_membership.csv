@@ -1,0 +1,29 @@
+Region,Description,PolicyGroup,Group
+AFE,Eastern Africa,Rest,Rest of world
+AFN,Northern Africa,Rest,Rest of world
+AFW,Western Africa,Rest,Rest of world
+AFZ,Southern Africa,Rest,Rest of world
+ANZ,Australia and New Zealand,Partners,Other partners
+ASC,Central Asia,Rest,Rest of world
+ASE,Southeast Asia,Rest,Rest of world
+ASO,South Asia,Rest,Rest of world
+BRA,Brazil,Partners,Other partners
+CAN,Canada,Partners,Other partners
+CHL,Chile,Partners,Other partners
+CHN,China,Partners,China
+ENE,Non-EU Eastern Europe,Partners,Other partners
+ENW,Non-EU Western Europe,Partners,Other partners
+EUE,Eastern Europe Union,EU,EU
+EUM,Mediterranean- Europe Union,EU,EU
+EUW,Western Europe Union,EU,EU
+IDN,Indonesia - Philippines - Vietnam,Partners,Indonesia group
+IND,India,Partners,India
+JPN,Japan,Partners,Other partners
+LAM,Latin America,Rest,Rest of world
+MDA,Mediterranean Asia,Rest,Rest of world
+MEA,Middle East (Gulf States),Rest,Rest of world
+MEX,Mexico,Partners,Other partners
+NIG,Nigeria,Rest,Rest of world
+RUS,Russian Federation,Partners,Other partners
+SKT,South Korea – Taiwan,Partners,Other partners
+USA,United States,Partners,Other partners

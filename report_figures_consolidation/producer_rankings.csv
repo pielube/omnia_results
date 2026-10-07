@@ -1,0 +1,73 @@
+Scenario,ClimatePathway,Sector,Rank,Group,RankingScenario,RankingYear,Production_Mt_yr,GlobalShare_percent
+ndc_noce,NDC,Cement,1,China region,baseline_noce,2050,940.513609464344,25.696138551095387
+ndc_noce,NDC,Cement,2,India,baseline_noce,2050,678.862769413349,18.54747406575095
+ndc_noce,NDC,Cement,3,Indonesia group,baseline_noce,2050,255.185453256374,6.972021135169397
+ndc_noce,NDC,Cement,4,Gulf & Iran,baseline_noce,2050,218.635303202511,5.973420253272221
+ndc_noce,NDC,Cement,5,Other South Asia,baseline_noce,2050,202.499818183405,5.532576384063128
+ndc_noce,NDC,Cement,6,Europe,baseline_noce,2050,198.6868363746056,5.428400423326612
+ndc_noce,NDC,Cement,7,Northern Africa,baseline_noce,2050,135.359617195832,3.6982128091355344
+ndc_noce,NDC,Cement,8,Other Asia–Pacific,baseline_noce,2050,128.812937605491,3.5193484268339956
+ndc_noce,NDC,Cement,9,Turkey & Levant,baseline_noce,2050,104.629647292629,2.8586273354565046
+ndc_noce,NDC,Cement,10,United States,baseline_noce,2050,99.3768001612069,2.715112253570958
+ndc_noce,NDC,Cement,11,Other Latin America,baseline_noce,2050,97.0326623605222,2.6510671519338214
+ndc_noce,NDC,Cement,12,Eastern Africa,baseline_noce,2050,78.2124932951709,2.13687398450721
+baseline_noce,NDC+LTT,Cement,1,China region,baseline_noce,2050,940.513607988705,25.69613868947927
+baseline_noce,NDC+LTT,Cement,2,India,baseline_noce,2050,678.862769001465,18.547474183483658
+baseline_noce,NDC+LTT,Cement,3,Indonesia group,baseline_noce,2050,255.185452031926,6.972021150201773
+baseline_noce,NDC+LTT,Cement,4,Gulf & Iran,baseline_noce,2050,218.635302203846,5.973420267528665
+baseline_noce,NDC+LTT,Cement,5,Other South Asia,baseline_noce,2050,202.499816997962,5.532576390150747
+baseline_noce,NDC+LTT,Cement,6,Europe,baseline_noce,2050,198.6868325113928,5.428400355529361
+baseline_noce,NDC+LTT,Cement,7,Northern Africa,baseline_noce,2050,135.359616001031,3.6982128022106417
+baseline_noce,NDC+LTT,Cement,8,Other Asia–Pacific,baseline_noce,2050,128.812936813576,3.5193484296726196
+baseline_noce,NDC+LTT,Cement,9,Turkey & Levant,baseline_noce,2050,104.629646096887,2.858627322667117
+baseline_noce,NDC+LTT,Cement,10,United States,baseline_noce,2050,99.3768000124692,2.715112268389126
+baseline_noce,NDC+LTT,Cement,11,Other Latin America,baseline_noce,2050,97.0326612008168,2.651067138685554
+baseline_noce,NDC+LTT,Cement,12,Eastern Africa,baseline_noce,2050,78.212492403725,2.136873975012276
+ndc_noce,NDC,Iron and steel,1,China region,baseline_noce,2050,796.5469360049549,36.423068806700364
+ndc_noce,NDC,Iron and steel,2,India,baseline_noce,2050,749.912325125238,34.290645010853815
+ndc_noce,NDC,Iron and steel,3,Europe,baseline_noce,2050,98.0484818755622,4.483385021424401
+ndc_noce,NDC,Iron and steel,4,Brazil,baseline_noce,2050,72.6677916330759,3.3228223661964145
+ndc_noce,NDC,Iron and steel,5,Japan,baseline_noce,2050,69.05042508945729,3.1574139206149274
+ndc_noce,NDC,Iron and steel,6,Russia,baseline_noce,2050,64.1870667408406,2.9350309978310722
+ndc_noce,NDC,Iron and steel,7,United States,baseline_noce,2050,50.90031435103735,2.327478228952699
+ndc_noce,NDC,Iron and steel,8,South Korea,baseline_noce,2050,43.5988279575382,1.9936089623964446
+ndc_noce,NDC,Iron and steel,9,Turkey & Levant,baseline_noce,2050,39.0327438840528,1.7848192641774525
+ndc_noce,NDC,Iron and steel,10,Indonesia group,baseline_noce,2050,34.06153542476862,1.5575047650807763
+ndc_noce,NDC,Iron and steel,11,Gulf & Iran,baseline_noce,2050,30.8758200079798,1.4118340875859556
+ndc_noce,NDC,Iron and steel,12,Other Latin America,baseline_noce,2050,30.107564269954743,1.376704667909103
+baseline_noce,NDC+LTT,Iron and steel,1,China region,baseline_noce,2050,796.546932491431,36.42307001143655
+baseline_noce,NDC+LTT,Iron and steel,2,India,baseline_noce,2050,749.912321099726,34.29064611224028
+baseline_noce,NDC+LTT,Iron and steel,3,Europe,baseline_noce,2050,98.04846925110728,4.483384612225197
+baseline_noce,NDC+LTT,Iron and steel,4,Brazil,baseline_noce,2050,72.6677873800857,3.3228222962863776
+baseline_noce,NDC+LTT,Iron and steel,5,Japan,baseline_noce,2050,69.05042271244578,3.157413930285592
+baseline_noce,NDC+LTT,Iron and steel,6,Russia,baseline_noce,2050,64.1870640538941,2.9350309849930882
+baseline_noce,NDC+LTT,Iron and steel,7,United States,baseline_noce,2050,50.9003112543322,2.327478174602597
+baseline_noce,NDC+LTT,Iron and steel,8,South Korea,baseline_noce,2050,43.598825182875,1.9936089102562986
+baseline_noce,NDC+LTT,Iron and steel,9,Turkey & Levant,baseline_noce,2050,39.0327405277318,1.7848191776133746
+baseline_noce,NDC+LTT,Iron and steel,10,Indonesia group,baseline_noce,2050,34.06153139572441,1.5575046392342495
+baseline_noce,NDC+LTT,Iron and steel,11,Gulf & Iran,baseline_noce,2050,30.875817655842198,1.4118340329572323
+baseline_noce,NDC+LTT,Iron and steel,12,Other Latin America,baseline_noce,2050,30.10756211754141,1.376704621096112
+ndc_noce,NDC,Aluminium,1,China region,baseline_noce,2050,54.4652230638117,40.94695064850378
+ndc_noce,NDC,Aluminium,2,India,baseline_noce,2050,14.008551444663969,10.531627934207497
+ndc_noce,NDC,Aluminium,3,Europe,baseline_noce,2050,12.48974739680704,9.389791163990237
+ndc_noce,NDC,Aluminium,4,Gulf & Iran,baseline_noce,2050,9.178171038294693,6.900148303960295
+ndc_noce,NDC,Aluminium,5,United States,baseline_noce,2050,8.481601713784704,6.37646753760127
+ndc_noce,NDC,Aluminium,6,Other Asia–Pacific,baseline_noce,2050,6.83340107373396,5.137350418996616
+ndc_noce,NDC,Aluminium,7,Russia,baseline_noce,2050,5.63476903048384,4.236218938029849
+ndc_noce,NDC,Aluminium,8,Southern Africa,baseline_noce,2050,3.651012939609944,2.744831256453402
+ndc_noce,NDC,Aluminium,9,Indonesia group,baseline_noce,2050,3.028481136256394,2.276811892993222
+ndc_noce,NDC,Aluminium,10,Brazil,baseline_noce,2050,2.726361591645917,2.049678441825311
+ndc_noce,NDC,Aluminium,11,South Korea,baseline_noce,2050,2.400001187831463,1.804320714510773
+ndc_noce,NDC,Aluminium,12,Canada,baseline_noce,2050,2.154209613095677,1.6195346269052429
+baseline_noce,NDC+LTT,Aluminium,1,China region,baseline_noce,2050,54.465221990221096,40.94695781206975
+baseline_noce,NDC+LTT,Aluminium,2,India,baseline_noce,2050,14.00855000128593,10.531628899151688
+baseline_noce,NDC+LTT,Aluminium,3,Europe,baseline_noce,2050,12.489742933518158,9.389789636296463
+baseline_noce,NDC+LTT,Aluminium,4,Gulf & Iran,baseline_noce,2050,9.1781699907469,6.900148859589589
+baseline_noce,NDC+LTT,Aluminium,5,United States,baseline_noce,2050,8.48159999992278,6.376467490356391
+baseline_noce,NDC+LTT,Aluminium,6,Other Asia–Pacific,baseline_noce,2050,6.83339999373108,5.137350607081741
+baseline_noce,NDC+LTT,Aluminium,7,Russia,baseline_noce,2050,5.63476798484544,4.236218976536863
+baseline_noce,NDC+LTT,Aluminium,8,Southern Africa,baseline_noce,2050,3.6510119850575,2.7448310731268464
+baseline_noce,NDC+LTT,Aluminium,9,Indonesia group,baseline_noce,2050,3.0284799887125153,2.276811473471522
+baseline_noce,NDC+LTT,Aluminium,10,Brazil,baseline_noce,2050,2.72635999216373,2.0496776383227933
+baseline_noce,NDC+LTT,Aluminium,11,South Korea,baseline_noce,2050,2.39999999679711,1.8043201703182823
+baseline_noce,NDC+LTT,Aluminium,12,Canada,baseline_noce,2050,2.15420799591033,1.6195337263621337
