@@ -2,6 +2,7 @@
 
 from datetime import datetime, timezone
 import hashlib
+from html import escape
 from io import BytesIO
 import json
 from pathlib import Path
@@ -110,11 +111,11 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
             "clinker (a,d), iron and steel (b,e), and aluminium (c,f). Cement and clinker are "
             "distinct products and are not added. Steel and aluminium totals equal primary "
             "plus secondary production. Each global value sums the 28 model regions once, "
-            "using exact variable and Mt/yr unit selections from results_allCE_261002.csv. "
+            f"using exact variable and Mt/yr unit selections from {self.config['input']}. "
             "Vertical scales match within each sector across the two pathways; sectors have "
             "different scales. Markers denote supplied model years, joined by straight line "
             "segments, with no smoothing or extrapolation. The global production trajectories "
-            "are nearly identical across these two pathways. " + assumption +
+            "are extracted independently for the two pathways. " + assumption +
             " No uncertainty estimates were supplied."
         )
         return ReportFigure("fig01_production", "1", title,
@@ -209,7 +210,7 @@ def generate_consolidation(config: dict, base: Path):
     (directory / "manifest.json").write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (directory / "captions.md").write_text("# Consolidated report figure captions\n\n" + "\n".join(captions), encoding="utf-8")
     _write_methods(directory, config)
-    _write_gallery(directory, records)
+    _write_gallery(directory, records, config)
     print(f"Saved consolidated figures to {directory}", flush=True)
 
 
@@ -217,6 +218,10 @@ def _write_methods(directory, config):
     assumption = ("Missing additive production, energy, emissions and capture values and absent regional rows are provisionally treated as zero, following the existing report convention."
                   if config["missing_activity"] == "zero"
                   else "Missing inputs are retained. Global sums require all 28 regions, and an incomplete route also makes the metal total missing.")
+    preserved = ", ".join(f"`{slug}`" for slug in config.get("preserve_individual_figures", []))
+    preservation_note = (f"Configured preserved individual figures: {preserved}."
+                         if preserved else
+                         "No individual figures are reused in this configuration; all are exported from fresh raw-source calculations.")
     text = f"""# Consolidated report methods
 
 All consolidated figures use direct extraction from `{config['input']}` through the unit-aware `Results` calculations. Existing exported figures and their CSVs are not calculation inputs. Future figure builders should use the same `ConsolidationData` source interface.
@@ -263,7 +268,7 @@ Panel d sums the exact `Carbon Capture|Industry|...` series in `MtCO2/yr`. Captu
 
 ## Figure 5: material production across CE scenarios
 
-The 2 × 3 layout places **NDC above NDC+LTT**, with cement/clinker, iron and steel, and aluminium columns. Each panel starts with a **{config.get('historical_year', 2019)} no-CE bar**, extracted from that row's own no-CE scenario. This historical observation is not averaged across scenarios. The five remaining categories show **{config.get('comparison_year', 2050)} production** in this fixed order: no CE, medium CE in the EU, high CE in the EU, medium CE in the EU plus partners, and high CE in the EU plus partners. The supplied source has identical historical regional component values and missingness across all ten scenarios, including both climate pathways.
+The 2 × 3 layout places **NDC above NDC+LTT**, with cement/clinker, iron and steel, and aluminium columns. Each panel starts with a **{config.get('historical_year', 2019)} no-CE bar**, extracted from that row's own no-CE scenario. This historical observation is not averaged across scenarios. The five remaining categories show **{config.get('comparison_year', 2050)} production** in this fixed order: no CE, medium CE in the EU, high CE in the EU, medium CE in the EU plus partners, and high CE in the EU plus partners.
 
 Cement and clinker use distinct, side-by-side bars and are never added. Metal bars stack exact primary and secondary production parents. Every component is a sum of all 28 model regions in `Mt/yr`, using the same variable and unit rules as Figure 1. Bar height shows production directly for each climate pathway; there are no NDC output diamonds. Vertical limits match across rows within each sector. Figure 5 is 180 × 175 mm.
 
@@ -273,7 +278,7 @@ Labels above the five future categories give **100 × future production / same-p
 
 ## Figure 6: final-energy mix across CE scenarios
 
-The 2 × 3 layout places **NDC above NDC+LTT**, with cement, iron and steel, and aluminium columns. Each panel starts with **{config.get('historical_year', 2019)} final energy from its own no-CE scenario**, followed by the same five **{config.get('comparison_year', 2050)} CE settings** as Figure 5. The historical bar is extracted separately for each pathway and is not averaged across scenarios. Historical carrier quantities and missing-cell patterns agree across all ten scenarios to numerical precision (maximum global carrier discrepancy approximately 1.6 × 10⁻¹⁵ EJ/yr).
+The 2 × 3 layout places **NDC above NDC+LTT**, with cement, iron and steel, and aluminium columns. Each panel starts with **{config.get('historical_year', 2019)} final energy from its own no-CE scenario**, followed by the same five **{config.get('comparison_year', 2050)} CE settings** as Figure 5. The historical bar is extracted separately for each pathway and is not averaged across scenarios.
 
 Stacks retain the original carrier colours and order: electricity, gases, hydrogen, liquids and solids. Cement has four exact parents and excludes hydrogen; steel and aluminium include all five. Every carrier value selects its exact `Final Energy|Industry|sector|carrier` parent and `EJ/yr` unit, summing the 28 configured regions once. Nested fuel categories are excluded, and no additional aggregate final-energy variable is added. Total final energy sums all required carrier totals; a missing carrier under preserved missingness leaves the total undefined. The provisional zero policy follows the same documented activity convention as preceding figures.
 
@@ -287,7 +292,7 @@ Sector data select exact `Emissions|GHG|Industry|sector` parents and the `MtCO2e
 
 Policy geography comes from `{config.get('policy_regions_csv', 'data/CE_policy_regions_261002.csv')}`. EU consists of EUE, EUM and EUW. Partners comprise the 14 additional participating regions, including ENE and ENW; the other 11 model regions are Rest of world. These memberships differ from the five-region Europe producer group in Figure 2.
 
-The three main partner regions are selected **once for the whole figure**, by their **mean absolute {config.get('comparison_year', 2050)} change in three-sector GHG across the eight CE cases** (four CE settings under each of two climate pathways). Each case uses its own climate-matched no-CE reference. Ranking requires all eight changes to be available under preserved missingness; ties use region code ascending. The supplied source selects **India (IND), China (CHN), and Indonesia group (IDN)** in that order. IDN combines Indonesia, the Philippines and Viet Nam. Keeping the same cohort, ordering and colours supports comparisons between columns and CE levels. Remaining partner regions form **Other partners**. The six disjoint groups comprise EU (3 regions), three individual partner regions, Other partners (11), and Rest of world (11), covering all 28 source regions exactly once. Aggregating the four partner categories reconstructs the original Partners quantity.
+The three main partner regions are selected **once for the whole figure**, by their **mean absolute {config.get('comparison_year', 2050)} change in three-sector GHG across the eight CE cases** (four CE settings under each of two climate pathways). Each case uses its own climate-matched no-CE reference. Ranking requires all eight changes to be available under preserved missingness; ties use region code ascending. The selected regions and their order are recalculated from the configured results CSV and recorded in `partner_rankings.csv`. IDN combines Indonesia, the Philippines and Viet Nam. Keeping the same cohort, ordering and colours supports comparisons between columns and CE levels. Remaining partner regions form **Other partners**. The six disjoint groups comprise EU (3 regions), three individual partner regions, Other partners (11), and Rest of world (11), covering all 28 source regions exactly once. Aggregating the four partner categories reconstructs the original Partners quantity.
 
 `partner_rankings.csv` records every partner's mean absolute score, rank, selection, ranking scenarios, signed case contributions and source parents. `geographic_membership.csv` records the policy group and final plotted group for every model region. The figure CSV records `ScenarioValue`, `ReferenceValue`, reference scenario/year, source regions, variables and their arithmetic coefficients. Absolute changes preserve the meaning of near-zero or negative regional reference emissions; no regional percentage changes are introduced. Missingness follows the same explicit activity policy as previous figures.
 
@@ -299,7 +304,7 @@ Global annualised sector costs select the exact `Total Annualised Cost|Industry|
 
 Every plotted percentage is **100 × (CE scenario cost − no-CE cost) / no-CE cost**, where the reference matches the sector, climate pathway **and model year**. This is a ratio of global sums, not an average of regional percentage changes. Finite negative scenario costs are retained; a missing, nonfinite or nonpositive no-CE denominator leaves the change undefined. No CE equals zero wherever its reference is valid. No additional inflation or currency conversion enters this dimensionless ratio.
 
-As in the original main cost figure, plotted years start at **{config.get('main_cost_start_year', 2024)}**. All earlier supplied costs, including the anomalous 2019 steel costs, remain in the figure CSV with `Role=context`. Main-period records have `Role=plotted`. Markers show supplied model years joined by straight segments; no interpolation to extra years, smoothing or extrapolation is added. `ScenarioCost`, `ReferenceCost`, numerator and denominator retain raw millions of 2010 USD per year, while `ConversionFactor=100` and `Offset=-100` reproduce the percentage. Reference scenario and year are explicit for every observation.
+As in the original main cost figure, plotted years start at **{config.get('main_cost_start_year', 2024)}**. All earlier supplied costs remain in the figure CSV with `Role=context`. Main-period records have `Role=plotted`. Markers show supplied model years joined by straight segments; no interpolation to extra years, smoothing or extrapolation is added. `ScenarioCost`, `ReferenceCost`, numerator and denominator retain raw millions of 2010 USD per year, while `ConversionFactor=100` and `Offset=-100` reproduce the percentage. Reference scenario and year are explicit for every observation.
 
 ## Exports and reproducibility
 
@@ -307,18 +312,18 @@ Individual figure CSVs contain the observations, original scenario identifiers, 
 
 Figures use embedded TrueType fonts in PDF, editable SVG text and {config['dpi']} dpi PNGs. Figure 1 is 180 × 150 mm. The PDF font context remains active through finalisation, including the combined `report_figures.pdf`. Label bounds are checked before saving. This workflow writes into `{config['output']}` without deleting unrelated files.
 
-`preserve_individual_figures` retains reviewed individual exports when newly calculated source data and a fresh PNG match them exactly. If they differ, regeneration stops rather than overwriting the reviewed version. The combined PDF always renders every configured figure directly from the raw source. The current configuration preserves Figures 5–8 while revising Figures 1–4 to present NDC first; add those four slugs after review to preserve their revised exports, or remove an entry when intentionally revising a preserved figure. The previous complete collection is retained under `archive/before_ndc_first_*`.
+`preserve_individual_figures` retains reviewed individual exports when newly calculated source data and a fresh PNG match them exactly. If they differ, regeneration stops rather than overwriting the reviewed version. The combined PDF always renders every configured figure directly from the raw source. {preservation_note} Remove an entry when intentionally revising a preserved figure. Earlier collections remain in their original output directories.
 
 Regenerate from the repository root:
 
 ```powershell
-python -m omnia_results --config figures.consolidation.json
+python -m omnia_results --config {config.get('config_file', 'figures.consolidation.json')}
 ```
 """
     (directory / "methods.md").write_text(text, encoding="utf-8")
 
 
-def _write_gallery(directory, records):
+def _write_gallery(directory, records, config):
     cards = "".join(_figure_card(record) for record in records)
     geography_links = ('<a href="partner_rankings.csv">Partner rankings</a>'
                        '<a href="geographic_membership.csv">Geographic membership</a>'
@@ -328,7 +333,7 @@ def _write_gallery(directory, records):
 body{{margin:0;background:#f5f6f4;color:#233139;font-family:Arial,Helvetica,sans-serif;line-height:1.6}}main{{max-width:1120px;margin:auto;padding:40px 24px}}a{{color:#006887}}h1{{line-height:1.2;font-size:32px}}h3{{font-size:23px;margin:4px 0}}.intro,.purpose{{color:#52616a}}.links,.downloads{{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0}}.figure-card{{background:white;border:1px solid #dce2e2;border-radius:5px;margin:30px 0;padding:24px}}.figure-number{{text-transform:uppercase;font-size:12px;color:#62747e}}figure{{margin:0}}.artwork img{{width:100%;height:auto;display:block}}figcaption{{font-size:13px;color:#52616a;border-top:1px solid #e5e9e9;padding-top:16px}}.downloads{{font-size:12px;font-weight:bold}}
 @media(max-width:650px){{main{{padding:24px 12px}}.figure-card{{padding:14px}}h1{{font-size:27px}}h3{{font-size:20px}}}}
 </style></head><body><main><h1>Consolidated OMNIA report figures</h1>
-<p class="intro">Refined report figures calculated directly from results_allCE_261002.csv. Source scenarios labelled baseline are interpreted as NDC+LTT.</p>
+<p class="intro">Refined report figures calculated directly from {escape(str(config['input']))}. Source scenarios labelled baseline are interpreted as NDC+LTT.</p>
 <div class="links"><a href="report_figures.pdf">Complete PDF</a><a href="captions.md">Captions</a><a href="methods.md">Methods</a><a href="source_data.csv">Source data</a><a href="audit.json">Audit</a><a href="missing_inputs.csv">Missing inputs</a>{geography_links}</div>
 {cards}</main></body></html>'''
     (directory / "index.html").write_text(page, encoding="utf-8")

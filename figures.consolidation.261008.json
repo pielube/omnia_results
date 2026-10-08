@@ -1,0 +1,160 @@
+{
+  "suite": "consolidation",
+  "input": "results_allCE_261008.csv",
+  "output": "report_figures_consolidation_261008",
+  "figures": [
+    "production",
+    "leading_producers",
+    "energy",
+    "emissions",
+    "material_production",
+    "energy_mix",
+    "emissions_response",
+    "sector_costs"
+  ],
+  "preserve_individual_figures": [],
+  "main_cost_start_year": 2024,
+  "policy_regions_csv": "data/CE_policy_regions_261002.csv",
+  "partner_top_n": 3,
+  "scenarios": [
+    "baseline_noce",
+    "baseline_medce_eu",
+    "baseline_highce_eu",
+    "baseline_medce_gbl",
+    "baseline_highce_gbl",
+    "ndc_noce",
+    "ndc_medce_eu",
+    "ndc_highce_eu",
+    "ndc_medce_gbl",
+    "ndc_highce_gbl"
+  ],
+  "historical_year": 2019,
+  "comparison_year": 2050,
+  "years": [
+    2019,
+    2024,
+    2030,
+    2035,
+    2040,
+    2050
+  ],
+  "regions": [
+    "AFE",
+    "AFN",
+    "AFW",
+    "AFZ",
+    "ANZ",
+    "ASC",
+    "ASE",
+    "ASO",
+    "BRA",
+    "CAN",
+    "CHL",
+    "CHN",
+    "ENE",
+    "ENW",
+    "EUE",
+    "EUM",
+    "EUW",
+    "IDN",
+    "IND",
+    "JPN",
+    "LAM",
+    "MDA",
+    "MEA",
+    "MEX",
+    "NIG",
+    "RUS",
+    "SKT",
+    "USA"
+  ],
+  "producer_groups": {
+    "Europe": [
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW"
+    ],
+    "China region": [
+      "CHN"
+    ],
+    "India": [
+      "IND"
+    ],
+    "United States": [
+      "USA"
+    ],
+    "Canada": [
+      "CAN"
+    ],
+    "Mexico": [
+      "MEX"
+    ],
+    "Brazil": [
+      "BRA"
+    ],
+    "Chile": [
+      "CHL"
+    ],
+    "Other Latin America": [
+      "LAM"
+    ],
+    "Australia & NZ": [
+      "ANZ"
+    ],
+    "Japan": [
+      "JPN"
+    ],
+    "South Korea": [
+      "SKT"
+    ],
+    "Indonesia group": [
+      "IDN"
+    ],
+    "Other Asia–Pacific": [
+      "ASE"
+    ],
+    "Other South Asia": [
+      "ASO"
+    ],
+    "Russia": [
+      "RUS"
+    ],
+    "Central Asia group": [
+      "ASC"
+    ],
+    "Eastern Africa": [
+      "AFE"
+    ],
+    "Northern Africa": [
+      "AFN"
+    ],
+    "West & Central Africa": [
+      "AFW"
+    ],
+    "Southern Africa": [
+      "AFZ"
+    ],
+    "Nigeria": [
+      "NIG"
+    ],
+    "Turkey & Levant": [
+      "MDA"
+    ],
+    "Gulf & Iran": [
+      "MEA"
+    ]
+  },
+  "ranking_year": 2050,
+  "top_n": 12,
+  "producer_axis_scale": "log",
+  "missing_activity": "zero",
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "dpi": 600,
+  "config_file": "figures.consolidation.261008.json"
+}
