@@ -61,6 +61,22 @@ class ConsolidationData:
         }
         self._producer_reports = None
         self._emissions_response = None
+        self._policy_coverage = None
+
+    def _policy_coverage_data(self):
+        if self._policy_coverage is None:
+            from .consolidation_coverage_data import PolicyCoverageData
+            self._policy_coverage = PolicyCoverageData(self.results, self.config, self.base)
+        return self._policy_coverage
+
+    def material_policy_coverage(self) -> pd.DataFrame:
+        return self._policy_coverage_data().figure_data("material")
+
+    def energy_policy_coverage(self) -> pd.DataFrame:
+        return self._policy_coverage_data().figure_data("energy")
+
+    def policy_coverage_membership(self) -> pd.DataFrame:
+        return self._policy_coverage_data().membership()
 
     def _emissions_response_data(self):
         if self._emissions_response is None:

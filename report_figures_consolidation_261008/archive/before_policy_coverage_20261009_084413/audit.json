@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-09T08:47:56.376851+00:00",
+  "generated_utc": "2026-10-09T08:11:26.048673+00:00",
   "source": "results_allCE_261008.csv",
   "source_sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46",
   "scenario_interpretation": {
@@ -31,7 +31,7 @@
     "ndc_highce_gbl": 2443
   },
   "region_count": 28,
-  "figure_count": 10,
+  "figure_count": 8,
   "missing_input_count": 7101,
   "config": {
     "suite": "consolidation",
@@ -45,20 +45,9 @@
       "material_production",
       "energy_mix",
       "emissions_response",
-      "sector_costs",
-      "material_policy_coverage",
-      "energy_policy_coverage"
+      "sector_costs"
     ],
-    "preserve_individual_figures": [
-      "fig01_production",
-      "fig02_leading_producers",
-      "fig03_energy",
-      "fig04_emissions",
-      "fig05_material_production",
-      "fig06_energy_mix",
-      "fig07_emissions_response",
-      "fig08_sector_costs"
-    ],
+    "preserve_individual_figures": [],
     "main_cost_start_year": 2024,
     "policy_regions_csv": "data/CE_policy_regions_261002.csv",
     "partner_top_n": 3,
@@ -221,26 +210,8 @@
     "Figure 5 puts NDC above NDC+LTT and compares each pathway's no-CE historical production with all five future CE settings. Cement and clinker remain separate; metals show primary and secondary stacks. Future percentage changes use the same pathway's future no-CE total, not the historical bar.",
     "Figure 6 keeps the same historical/future bars and climate row order as Figure 5. It stacks exact final-energy carrier parents, excludes nested subcategories, and compares future totals with each pathway's future no-CE energy. Cement has no hydrogen parent in this source.",
     "Figure 7 has NDC on the left and NDC+LTT on the right. Top trajectories and bottom geographic changes cover three sectors; the middle net change covers all industry, with Other industry calculated as a residual. Partner regions are ranked once by mean absolute comparison-year three-sector change across all eight CE cases; the same three regions and order apply throughout.",
-    "Figure 8 puts NDC above NDC+LTT and compares all five CE settings using 100 * (sector cost - no-CE sector cost) / no-CE sector cost. Every reference matches the sector, climate and year. Exact annualised-cost parents use Millions USD_2010/yr and preserve missingness regardless of the additive-activity policy. Main plots start in the configured main cost year; earlier costs are retained as context.",
-    "Figures 9–10 put NDC above NDC+LTT and compare four CE cases inside and outside each scenario's policy area. Each percentage is 100 * (group scenario total - group no-CE total) / group no-CE total, matching climate, sector, group and comparison year. EU-only adoption uses EU and its complement; EU+ adoption uses EU plus partners and its complement.",
-    "Figure 9 measures material production, not consumption or trade-adjusted demand: the raw export has no material consumption or trade variables. Cement excludes clinker; metals sum exact primary and secondary parents. Figure 10 measures final-energy demand by summing exact carrier parents, excluding nested children.",
-    "Inside/outside percentages have different denominators and are not additive. Context absolute changes sum to the global sector change. Signed effects outside the adoption area do not establish a specific leakage or rebound mechanism. Each group's completeness is evaluated independently under preserved missingness."
+    "Figure 8 puts NDC above NDC+LTT and compares all five CE settings using 100 * (sector cost - no-CE sector cost) / no-CE sector cost. Every reference matches the sector, climate and year. Exact annualised-cost parents use Millions USD_2010/yr and preserve missingness regardless of the additive-activity policy. Main plots start in the configured main cost year; earlier costs are retained as context."
   ],
-  "policy_coverage": {
-    "year": 2050,
-    "group_region_counts": {
-      "EU": {
-        "Inside policy area": 3,
-        "Outside policy area": 25
-      },
-      "EU + partners": {
-        "Inside policy area": 17,
-        "Outside policy area": 11
-      }
-    },
-    "membership_file": "policy_coverage_membership.csv",
-    "material_measure": "Production, not consumption"
-  },
   "policy_regions_source": "data/CE_policy_regions_261002.csv",
   "policy_regions_sha256": "661879e020b1a967afd86997115d9c00d738872de0660c55c33b4f3f52b4795f",
   "partner_ranking": {
@@ -253,5 +224,6 @@
       "IDN"
     ],
     "complete_cases_required": 8
-  }
+  },
+  "combined_pdf": "report_figures.pdf"
 }

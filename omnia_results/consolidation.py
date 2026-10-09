@@ -23,6 +23,7 @@ from .consolidation_materials import MaterialComparisonFigures
 from .consolidation_energy_mix import EnergyMixFigures
 from .consolidation_impacts import EmissionsResponseFigures
 from .consolidation_costs import SectorCostFigures
+from .consolidation_policy_coverage import PolicyCoverageFigures
 from .metrics import SECTORS
 from .plots import STYLE
 from .report import ReportFigure, check_figure_bounds
@@ -34,7 +35,7 @@ CONSOLIDATION_STYLE = {**STYLE, "font.sans-serif": ["Arial", "DejaVu Sans", "san
 
 class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
                            MaterialComparisonFigures, EnergyMixFigures, EmissionsResponseFigures,
-                           SectorCostFigures):
+                           SectorCostFigures, PolicyCoverageFigures):
     def __init__(self, data: ConsolidationData, config: dict):
         self.data, self.config = data, config
 
@@ -42,12 +43,15 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
         builders = {"production": self.production, "leading_producers": self.leading_producers,
                     "energy": self.energy, "emissions": self.emissions,
                     "material_production": self.material_production, "energy_mix": self.energy_mix,
-                    "emissions_response": self.emissions_response, "sector_costs": self.sector_costs}
+                    "emissions_response": self.emissions_response, "sector_costs": self.sector_costs,
+                    "material_policy_coverage": self.material_policy_coverage,
+                    "energy_policy_coverage": self.energy_policy_coverage}
         requested = self.config.get("figures", ["production"])
         if not requested or len(set(requested)) != len(requested) or set(requested) - builders.keys():
             raise ValueError("Select unique supported consolidation figures: "
                              "production, leading_producers, energy, emissions, material_production, "
-                             "energy_mix, emissions_response, sector_costs")
+                             "energy_mix, emissions_response, sector_costs, "
+                             "material_policy_coverage, energy_policy_coverage")
         for name in requested:
             yield builders[name]()
 
@@ -199,6 +203,9 @@ def generate_consolidation(config: dict, base: Path):
     if "emissions_response" in config.get("figures", []):
         data.geographic_membership().to_csv(directory / "geographic_membership.csv", index=False)
         data.partner_rankings().to_csv(directory / "partner_rankings.csv", index=False)
+    coverage_figures = {"material_policy_coverage", "energy_policy_coverage"} & set(config.get("figures", []))
+    if coverage_figures:
+        data.policy_coverage_membership().to_csv(directory / "policy_coverage_membership.csv", index=False)
     missing = [record for results in data.results.values() for record in results.coverage]
     pd.DataFrame(missing, columns=["Scenario", "Region", "Variable", "Unit", "Year", "Issue", "Treatment"]).drop_duplicates().to_csv(directory / "missing_inputs.csv", index=False)
     production_note = (
@@ -226,10 +233,27 @@ def generate_consolidation(config: dict, base: Path):
                        "Figure 6 keeps the same historical/future bars and climate row order as Figure 5. It stacks exact final-energy carrier parents, excludes nested subcategories, and compares future totals with each pathway's future no-CE energy. Cement has no hydrogen parent in this source.",
                        "Figure 7 has NDC on the left and NDC+LTT on the right. Top trajectories and bottom geographic changes cover three sectors; the middle net change covers all industry, with Other industry calculated as a residual. Partner regions are ranked once by mean absolute comparison-year three-sector change across all eight CE cases; the same three regions and order apply throughout.",
                        "Figure 8 puts NDC above NDC+LTT and compares all five CE settings using 100 * (sector cost - no-CE sector cost) / no-CE sector cost. Every reference matches the sector, climate and year. Exact annualised-cost parents use Millions USD_2010/yr and preserve missingness regardless of the additive-activity policy. Main plots start in the configured main cost year; earlier costs are retained as context."]}
-    if "emissions_response" in config.get("figures", []):
+    if coverage_figures:
+        audit["notes"].extend([
+            "Figures 9–10 put NDC above NDC+LTT and compare four CE cases inside and outside each scenario's policy area. Each percentage is 100 * (group scenario total - group no-CE total) / group no-CE total, matching climate, sector, group and comparison year. EU-only adoption uses EU and its complement; EU+ adoption uses EU plus partners and its complement.",
+            "Figure 9 measures material production, not consumption or trade-adjusted demand: the raw export has no material consumption or trade variables. Cement excludes clinker; metals sum exact primary and secondary parents. Figure 10 measures final-energy demand by summing exact carrier parents, excluding nested children.",
+            "Inside/outside percentages have different denominators and are not additive. Context absolute changes sum to the global sector change. Signed effects outside the adoption area do not establish a specific leakage or rebound mechanism. Each group's completeness is evaluated independently under preserved missingness.",
+        ])
+        membership = data.policy_coverage_membership()
+        audit["policy_coverage"] = {
+            "year": config.get("comparison_year", 2050),
+            "group_region_counts": {
+                area: group.groupby("Scope").size().to_dict()
+                for area, group in membership.groupby("PolicyArea", sort=False)
+            },
+            "membership_file": "policy_coverage_membership.csv",
+            "material_measure": "Production, not consumption",
+        }
+    if "emissions_response" in config.get("figures", []) or coverage_figures:
         policy_source = (base / config["policy_regions_csv"]).resolve()
         audit["policy_regions_source"] = config["policy_regions_csv"]
         audit["policy_regions_sha256"] = hashlib.sha256(policy_source.read_bytes()).hexdigest()
+    if "emissions_response" in config.get("figures", []):
         audit["partner_ranking"] = {
             "metric": "Mean absolute three-sector GHG change across eight climate-matched CE cases",
             "year": config.get("comparison_year", 2050), "tie_break": "Region code ascending",
@@ -287,6 +311,21 @@ def _write_methods(directory, config):
         if simplified else
         "Coverage is calculated separately for each pathway as the common cohort's output divided by "
         "that pathway's global output, with displayed shares in NDC / NDC+LTT order.")
+    coverage_methods = ""
+    if {"material_policy_coverage", "energy_policy_coverage"} & set(config.get("figures", [])):
+        coverage_methods = f"""## Figures 9–10: responses inside and outside CE policy areas
+
+Both figures use a **2 × 3** layout with **NDC above NDC+LTT** and cement, iron and steel, and aluminium columns. Each panel compares medium/high CE in the EU, followed by medium/high CE in the EU plus international partners, in **{config.get('comparison_year', 2050)}**. Paired blue/orange bars show inside/outside the adoption area. Vertical limits match across climate rows within each sector, preserve both increases and decreases, and include zero. Each figure is 180 × 175 mm.
+
+Geography comes directly from `{config['policy_regions_csv']}`. **EU-only cases:** inside is EUE, EUM and EUW (3 model regions); outside is their complement (25). **EU+ cases:** inside is the EU plus the 14 international partner regions (17); outside is the remaining 11. EU+ is not worldwide adoption. For each adoption scope the two groups are disjoint and exhaust all configured regions. `policy_coverage_membership.csv` records both complete partitions, their region descriptions and the inside flag. The five-region Europe producer group is not used here.
+
+Every plotted percentage is **100 × (scenario group total − no-CE group total) / no-CE group total**. The reference matches climate pathway, sector, geographic group **and comparison year**. These are ratios of group sums, not averages of regional percentage changes. Inside and outside have different reference denominators, so their percentages cannot be added and are not shares of the global change. Missing/nonfinite quantities or nonpositive reference totals produce undefined percentages, retained as gaps. Under preserved missingness, each group requires all its constituent regions and each required route/carrier; incompleteness outside does not invalidate the inside group, or vice versa.
+
+**Figure 9 measures material production, not consumption-based material demand.** The raw export contains no consumption or trade variables. Cement selects only `Production|Non-Metallic Minerals|Cement`, excluding clinker. Steel and aluminium sum their exact primary and secondary parents in `Mt/yr`. **Figure 10 measures final-energy demand** in `EJ/yr`, summing exact carrier parents: electricity, gases, liquids and solids for cement, plus hydrogen for steel/aluminium. Nested fuel subcategories and other units are excluded. All additive quantities follow the documented provisional missing-activity policy.
+
+Each figure CSV retains 48 plotted percentage records (`Role=plotted`) and 48 signed absolute-change records (`Role=context`). Absolute changes equal the numerator, in `Mt/yr` or `EJ/yr`, and inside plus outside reconstruct the global sector change when complete. Raw scenario/reference group totals, their source regions/variables/coefficients, reference scenario/year, region counts, numerator units and denominator units are explicit. Percentage records use `ConversionFactor=100`, `Offset=0` and `Denominator=ReferenceValue`; absolute records use factor 1 and an empty denominator. Responses outside the adoption area describe model results and do not by themselves identify leakage, trade displacement or a rebound mechanism.
+
+"""
     text = f"""# Consolidated report methods
 
 All consolidated figures use direct extraction from `{config['input']}` through the unit-aware `Results` calculations. Existing exported figures and their CSVs are not calculation inputs. Future figure builders should use the same `ConsolidationData` source interface.
@@ -371,9 +410,9 @@ Every plotted percentage is **100 × (CE scenario cost − no-CE cost) / no-CE c
 
 As in the original main cost figure, plotted years start at **{config.get('main_cost_start_year', 2024)}**. All earlier supplied costs remain in the figure CSV with `Role=context`. Main-period records have `Role=plotted`. Markers show supplied model years joined by straight segments; no interpolation to extra years, smoothing or extrapolation is added. `ScenarioCost`, `ReferenceCost`, numerator and denominator retain raw millions of 2010 USD per year, while `ConversionFactor=100` and `Offset=-100` reproduce the percentage. Reference scenario and year are explicit for every observation.
 
-## Exports and reproducibility
+{coverage_methods}## Exports and reproducibility
 
-Individual figure CSVs contain the observations, original scenario identifiers, displayed climate labels, panel/sector/series identifiers, source variables, values and units. Figure 2 also identifies groups, constituent regions, display order and the ranking scenario/year. Figures 3–6 identify metrics, all constituent source regions, numerators/denominators and conversion factors. Figures 5 and 6 also record bar categories and calculation offsets. Figure 7 records absolute scenario/reference quantities, source coefficients and the policy/geographic breakdown. Figure 8 records raw sector costs, year-specific no-CE references and the percentage calculation. `source_data.csv` combines these tables and adds the figure identifier. `audit.json` records the source SHA-256 hash, configuration, software versions and scenario interpretation, plus Figure 7's policy-table hash and partner-selection rule. `manifest.json` records captions, figure dimensions, panels and formats.
+Individual figure CSVs contain the observations, original scenario identifiers, displayed climate labels, panel/sector/series identifiers, source variables, values and units. Figure 2 also identifies groups, constituent regions, display order and the ranking scenario/year. Figures 3–6 identify metrics, all constituent source regions, numerators/denominators and conversion factors. Figures 5 and 6 also record bar categories and calculation offsets. Figure 7 records absolute scenario/reference quantities, source coefficients and the policy/geographic breakdown. Figure 8 records raw sector costs, year-specific no-CE references and the percentage calculation. Figures 9–10 record matched inside/outside quantities, percentages and absolute changes. `source_data.csv` combines these tables and adds the figure identifier. `audit.json` records the source SHA-256 hash, configuration, software versions and scenario interpretation, plus policy-table hashes, coverage counts and Figure 7's partner-selection rule where applicable. `manifest.json` records captions, figure dimensions, panels and formats.
 
 Figures use embedded TrueType fonts in PDF, editable SVG text and {config['dpi']} dpi PNGs. Figure 1 is 180 × {100 if simplified else 150} mm. The PDF font context remains active through finalisation, including the combined `{config.get('combined_pdf', 'report_figures.pdf')}`. Label bounds are checked before saving. This workflow writes into `{config['output']}` without deleting unrelated files.
 
@@ -393,6 +432,9 @@ def _write_gallery(directory, records, config):
     geography_links = ('<a href="partner_rankings.csv">Partner rankings</a>'
                        '<a href="geographic_membership.csv">Geographic membership</a>'
                        if any(record["slug"] == "fig07_emissions_response" for record in records) else "")
+    if any(record["slug"] in {"fig09_material_policy_coverage", "fig10_energy_policy_coverage"}
+           for record in records):
+        geography_links += '<a href="policy_coverage_membership.csv">Policy coverage membership</a>'
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Consolidated OMNIA report figures</title><style>
 body{{margin:0;background:#f5f6f4;color:#233139;font-family:Arial,Helvetica,sans-serif;line-height:1.6}}main{{max-width:1120px;margin:auto;padding:40px 24px}}a{{color:#006887}}h1{{line-height:1.2;font-size:32px}}h3{{font-size:23px;margin:4px 0}}.intro,.purpose{{color:#52616a}}.links,.downloads{{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0}}.figure-card{{background:white;border:1px solid #dce2e2;border-radius:5px;margin:30px 0;padding:24px}}.figure-number{{text-transform:uppercase;font-size:12px;color:#62747e}}figure{{margin:0}}.artwork img{{width:100%;height:auto;display:block}}figcaption{{font-size:13px;color:#52616a;border-top:1px solid #e5e9e9;padding-top:16px}}.downloads{{font-size:12px;font-weight:bold}}

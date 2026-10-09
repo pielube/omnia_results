@@ -10,20 +10,9 @@
     "material_production",
     "energy_mix",
     "emissions_response",
-    "sector_costs",
-    "material_policy_coverage",
-    "energy_policy_coverage"
+    "sector_costs"
   ],
-  "preserve_individual_figures": [
-    "fig01_production",
-    "fig02_leading_producers",
-    "fig03_energy",
-    "fig04_emissions",
-    "fig05_material_production",
-    "fig06_energy_mix",
-    "fig07_emissions_response",
-    "fig08_sector_costs"
-  ],
+  "preserve_individual_figures": [],
   "main_cost_start_year": 2024,
   "policy_regions_csv": "data/CE_policy_regions_261002.csv",
   "partner_top_n": 3,

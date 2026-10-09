@@ -14,7 +14,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "2",
@@ -31,7 +31,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "3",
@@ -48,7 +48,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "4",
@@ -65,7 +65,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "5",
@@ -82,7 +82,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "6",
@@ -99,7 +99,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "7",
@@ -116,7 +116,7 @@
       "svg",
       "png"
     ],
-    "individual_artifacts_preserved": true
+    "individual_artifacts_preserved": false
   },
   {
     "number": "8",
@@ -127,40 +127,6 @@
     "section": "Main report",
     "width_mm": 180.0,
     "height_mm": 150.0,
-    "panel_count": 6,
-    "formats": [
-      "pdf",
-      "svg",
-      "png"
-    ],
-    "individual_artifacts_preserved": true
-  },
-  {
-    "number": "9",
-    "slug": "fig09_material_policy_coverage",
-    "title": "Material production inside and outside CE policy areas",
-    "question": "How does material production change within and outside the CE policy area?",
-    "caption": "Percentage changes in material production in 2050, with NDC in the upper row and NDC+LTT in the lower row. Columns show cement, iron and steel, and aluminium. Each panel compares medium CE in the EU, high CE in the EU, medium CE in the EU plus international partners, and high CE in the EU plus partners. Blue bars show regions inside the respective policy area; orange bars show its geographic complement. The EU-only policy area contains 3 model regions and its complement contains 25; the EU-plus-partners policy area contains 17 and its complement contains 11. These groups are defined by CE adoption scope, with membership changing between EU-only and EU-plus-partners cases. Each bar gives 100 × (scenario value − no-CE value) / no-CE value, using the same climate pathway, sector, geographic group and 2050 reference year. Inside and outside percentages use their own group denominators and cannot be added. The no-CE reference is shown by the zero line. Signed changes are shown at their model-derived values. Material production is output. Cement uses cement output alone, excluding clinker; steel and aluminium sum primary and secondary production. These quantities do not measure consumption or trade. Values are extracted directly from results_allCE_261008.csv using exact parent-variable and Mt/yr selections, summing each constituent model region once. Both the percentages plotted here and the corresponding absolute changes in Mt/yr are retained in the source data, together with scenario and reference values, reference scenario and year, exact source variables and regions, numerators, denominators, conversion factors and offsets. Missing values or nonpositive no-CE group totals yield undefined percentages and gaps. Vertical limits match within each sector across climate rows and include all finite changes and zero; each sector has its own scale. Draft assumption: missing additive activity = zero. Undefined percentages appear as gaps.",
-    "section": "Main report",
-    "width_mm": 180.0,
-    "height_mm": 175.0,
-    "panel_count": 6,
-    "formats": [
-      "pdf",
-      "svg",
-      "png"
-    ],
-    "individual_artifacts_preserved": false
-  },
-  {
-    "number": "10",
-    "slug": "fig10_energy_policy_coverage",
-    "title": "Final energy demand inside and outside CE policy areas",
-    "question": "How does final energy demand change within and outside the CE policy area?",
-    "caption": "Percentage changes in final energy demand in 2050, with NDC in the upper row and NDC+LTT in the lower row. Columns show cement, iron and steel, and aluminium. Each panel compares medium CE in the EU, high CE in the EU, medium CE in the EU plus international partners, and high CE in the EU plus partners. Blue bars show regions inside the respective policy area; orange bars show its geographic complement. The EU-only policy area contains 3 model regions and its complement contains 25; the EU-plus-partners policy area contains 17 and its complement contains 11. These groups are defined by CE adoption scope, with membership changing between EU-only and EU-plus-partners cases. Each bar gives 100 × (scenario value − no-CE value) / no-CE value, using the same climate pathway, sector, geographic group and 2050 reference year. Inside and outside percentages use their own group denominators and cannot be added. The no-CE reference is shown by the zero line. Signed changes are shown at their model-derived values. Final energy demand sums the exact carrier parents Electricity, Gases, Liquids and Solids for cement, with Hydrogen additionally included for steel and aluminium. Nested carrier subcategories are excluded to avoid double counting. Values are extracted directly from results_allCE_261008.csv using exact parent-variable and EJ/yr selections, summing each constituent model region once. Both the percentages plotted here and the corresponding absolute changes in EJ/yr are retained in the source data, together with scenario and reference values, reference scenario and year, exact source variables and regions, numerators, denominators, conversion factors and offsets. Missing values or nonpositive no-CE group totals yield undefined percentages and gaps. Vertical limits match within each sector across climate rows and include all finite changes and zero; each sector has its own scale. Draft assumption: missing additive activity = zero. Undefined percentages appear as gaps.",
-    "section": "Main report",
-    "width_mm": 180.0,
-    "height_mm": 175.0,
     "panel_count": 6,
     "formats": [
       "pdf",
