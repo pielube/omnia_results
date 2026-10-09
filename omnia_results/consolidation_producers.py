@@ -1,4 +1,4 @@
-"""Paired producer endpoints for the two consolidated no-CE pathways."""
+"""Producer endpoints with an optional single-scenario presentation."""
 
 from __future__ import annotations
 
@@ -18,6 +18,10 @@ class ProducerFigures:
     def leading_producers(self) -> ReportFigure:
         data = self.data.leading_producers()
         plotted = data.loc[data.Role == "plotted"]
+        simplified_scenario = self.config.get("simplified_production_scenario")
+        simplified = simplified_scenario is not None
+        scenarios = (simplified_scenario,) if simplified else PRODUCTION_SCENARIOS
+        ranking_scenario = simplified_scenario if simplified else "baseline_noce"
         first, last = min(self.config["years"]), self.config["ranking_year"]
         top_n = self.config["top_n"]
         scale = self.config.get("producer_axis_scale", "log")
@@ -29,13 +33,14 @@ class ProducerFigures:
         fig.subplots_adjust(left=.178, right=.985, bottom=.185, top=.73, wspace=1.09)
         fig.text(.035, .977, title, fontsize=8, weight="bold", va="top")
         fig.text(.035, .936,
-                 f"No circular economy | {first}–{last} | fixed {last} ranking: NDC+LTT",
+                 (f"No circular economy | {first}–{last}" if simplified else
+                  f"No circular economy | {first}–{last} | fixed {last} ranking: NDC+LTT"),
                  fontsize=6.7, color="#52616A", va="top")
 
         for column, sector in enumerate(SECTORS):
             ax, panel = axes[0, column], chr(97 + column)
-            selected = plotted.loc[plotted.Sector == sector.label]
-            ordered = (selected.loc[selected.Scenario == "baseline_noce", ["Group", "DisplayOrder"]]
+            selected = plotted.loc[(plotted.Sector == sector.label) & plotted.Scenario.isin(scenarios)]
+            ordered = (selected.loc[selected.Scenario == ranking_scenario, ["Group", "DisplayOrder"]]
                        .drop_duplicates().sort_values("DisplayOrder"))
             labels = ordered.Group.tolist()
             if not labels:
@@ -87,25 +92,26 @@ class ProducerFigures:
                           ("\nLogarithmic scale" if scale == "log" else ""),
                           fontsize=6.5, labelpad=4)
 
-            for pathway, scenario in enumerate(PRODUCTION_SCENARIOS):
+            for pathway, scenario in enumerate(scenarios):
                 values = (selected.loc[selected.Scenario == scenario]
                           .pivot(index="Group", columns="Year", values="Value")
                           .reindex(index=labels, columns=[first, last]))
-                y = positions + (-.145 if pathway == 0 else .145)
+                y = positions if simplified else positions + (-.145 if pathway == 0 else .145)
                 earlier = values[first].to_numpy(dtype=float)
                 later = values[last].to_numpy(dtype=float)
                 for position, a, b in zip(y, earlier, later):
                     if np.isfinite(a) and np.isfinite(b):
-                        ax.plot([a, b], [position, position], color="#A7B3BA",
+                        ax.plot([a, b], [position, position], color="#ABB5BB" if simplified else "#A7B3BA",
                                 linestyle="-" if pathway == 0 else (0, (3, 2)),
                                 linewidth=.8, zorder=2)
                 early_present = np.isfinite(earlier)
                 late_present = np.isfinite(later)
                 ax.scatter(earlier[early_present], y[early_present], facecolors="white",
-                           edgecolors="#53626A", marker="o", s=11.5, linewidths=.65,
+                           edgecolors="#56636B" if simplified else "#53626A", marker="o",
+                           s=13 if simplified else 11.5, linewidths=.7 if simplified else .65,
                            zorder=3)
                 ax.scatter(later[late_present], y[late_present], facecolors=sector.color,
-                           edgecolors="white", marker="D", s=13, linewidths=.35,
+                           edgecolors="white", marker="D", s=15 if simplified else 13, linewidths=.35,
                            zorder=4)
 
             # The unranked remainder follows the fixed producer cohort.
@@ -116,27 +122,33 @@ class ProducerFigures:
             coverage = data.loc[(data.Sector == sector.label) & (data.Role == "context") &
                                 (data.Series == "Selected producer coverage") & (data.Year == last)]
             shares = []
-            for scenario in PRODUCTION_SCENARIOS:
+            for scenario in scenarios:
                 observation = coverage.loc[coverage.Scenario == scenario, "Value"]
                 value = float(observation.iloc[0]) if len(observation) else float("nan")
                 shares.append(f"{value:.1f}%" if np.isfinite(value) else "n/a")
-            ax.text(0, 1.022, f"Top {top_n} share: {' / '.join(shares)}",
+            coverage_text = (f"Top {top_n}: {shares[0]} of {last} output" if simplified else
+                             f"Top {top_n} share: {' / '.join(shares)}")
+            ax.text(0, 1.022, coverage_text,
                     transform=ax.transAxes, fontsize=5.5, color="#52616A", va="bottom")
 
         handles = [
             Line2D([], [], color="#53626A", marker="o", markerfacecolor="white",
-                   markeredgewidth=.65, markersize=3.4, linestyle="none", label=str(first)),
+                   markeredgewidth=.65, markersize=4 if simplified else 3.4, linestyle="none", label=str(first)),
             Line2D([], [], color="#53626A", marker="D", markeredgecolor="white",
-                   markeredgewidth=.35, markersize=3.6, linestyle="none",
+                   markeredgewidth=.35, markersize=4 if simplified else 3.6, linestyle="none",
                    label=f"{last} (sector colour)"),
-            Line2D([], [], color="#A7B3BA", linewidth=.9, linestyle="-", label="Upper: NDC"),
-            Line2D([], [], color="#A7B3BA", linewidth=.9, linestyle=(0, (3, 2)), label="Lower: NDC+LTT"),
         ]
-        fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(.035, .879), ncol=4,
+        if not simplified:
+            handles.extend([
+                Line2D([], [], color="#A7B3BA", linewidth=.9, linestyle="-", label="Upper: NDC"),
+                Line2D([], [], color="#A7B3BA", linewidth=.9, linestyle=(0, (3, 2)), label="Lower: NDC+LTT"),
+            ])
+        fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(.035, .879), ncol=2 if simplified else 4,
                    fontsize=6, columnspacing=1.5, handlelength=2.1, handletextpad=.5,
                    frameon=False)
-        fig.text(.035, .088, f"Selected producer shares in {last}: NDC / NDC+LTT. Fixed regions in both pathways.",
-                 fontsize=5.7, color="#52616A")
+        if not simplified:
+            fig.text(.035, .088, f"Selected producer shares in {last}: NDC / NDC+LTT. Fixed regions in both pathways.",
+                     fontsize=5.7, color="#52616A")
         fig.text(.035, .054,
                  "Europe combines five model regions. Indonesia group = Indonesia, Philippines and Viet Nam.",
                  fontsize=5.5, color="#52616A")
@@ -163,6 +175,29 @@ class ProducerFigures:
             "each sector, and sectors have different ranges. " +
             ("Logarithmic axes compare production magnitudes. " if scale == "log" else
              "Linear axes retain zero and negative source values. ") + assumption)
-        return ReportFigure("fig02_leading_producers", "2", title,
-                            "How does production change in the same leading producer regions under NDC and NDC+LTT?",
+        question = "How does production change in the same leading producer regions under NDC and NDC+LTT?"
+        if simplified:
+            question = f"Where is production concentrated, and how does it change between {first} and {last}?"
+            caption = (
+                f"Production in {first} and {last} in the {top_n} largest producer groups, "
+                f"selected and ordered separately for each sector by {last} production in "
+                f"the raw source scenario {simplified_scenario}. Both endpoints use that "
+                "same scenario and the same selected producer cohort. Each group has one "
+                f"horizontal connector joining an open {first} circle to a filled "
+                f"sector-coloured {last} diamond. Connectors indicate endpoint changes, "
+                "rather than intervening trajectories. Panels show cement output (a), "
+                "total primary-plus-secondary steel output (b), and total primary-plus-secondary "
+                "aluminium output (c). Other model regions is the unranked sum of all groups "
+                "outside the selected cohort, retaining complete global accounting. "
+                f"Panel annotations give the selected groups' share of global {last} sector "
+                "production. Europe combines ENE, ENW, EUE, EUM and EUW. China region denotes "
+                "CHN; Indonesia group includes Indonesia, Philippines and Viet Nam. Exact "
+                "model-region memberships are retained in the source data. "
+                f"Values are extracted directly from {self.config['input']} using exact "
+                "production variable and Mt/yr selections; the original scenario identifier, "
+                "source variables, source regions and ranking reference are recorded with "
+                "every observation. Sectors have different horizontal ranges. " +
+                ("Logarithmic axes compare production magnitudes. " if scale == "log" else
+                 "Linear axes retain zero and negative source values. ") + assumption)
+        return ReportFigure("fig02_leading_producers", "2", title, question,
                             caption, fig, data, 3)

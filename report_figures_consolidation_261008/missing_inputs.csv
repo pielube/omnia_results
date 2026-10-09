@@ -1,88 +1,4 @@
 Scenario,Region,Variable,Unit,Year,Issue,Treatment
-baseline_noce,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-baseline_noce,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-baseline_noce,ANZ,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,CAN,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,ENW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,EUE,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,EUM,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,EUW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,SKT,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,USA,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
-baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
-baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
-baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
-baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
-baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,blank cell,zero
-baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
-baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
-baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
-baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
-baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
-baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
-baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
-baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
-baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,blank cell,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
-baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
-baseline_noce,AFN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,blank cell,zero
-baseline_noce,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
-baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
-baseline_noce,BRA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,CAN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,blank cell,zero
-baseline_noce,CAN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
-baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
-baseline_noce,ENW,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,EUM,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,LAM,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,MDA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
-baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
-baseline_noce,RUS,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_noce,USA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 baseline_noce,AFW,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 baseline_noce,ASO,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 baseline_noce,CHN,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
@@ -272,6 +188,16 @@ baseline_noce,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank c
 baseline_noce,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_noce,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_noce,USA,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
+baseline_noce,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+baseline_noce,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+baseline_noce,ANZ,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,CAN,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,ENW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,EUE,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,EUM,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,EUW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,SKT,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,USA,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_noce,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2019,absent row,zero
 baseline_noce,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2024,absent row,zero
 baseline_noce,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,absent row,zero
@@ -654,6 +580,80 @@ baseline_noce,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr
 baseline_noce,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
 baseline_noce,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
 baseline_noce,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
+baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
+baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
+baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
+baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
+baseline_noce,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,blank cell,zero
+baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
+baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
+baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
+baseline_noce,MEX,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
+baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
+baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
+baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
+baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
+baseline_noce,SKT,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,blank cell,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
+baseline_noce,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
+baseline_noce,AFN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,blank cell,zero
+baseline_noce,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
+baseline_noce,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
+baseline_noce,BRA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,CAN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,blank cell,zero
+baseline_noce,CAN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
+baseline_noce,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
+baseline_noce,ENW,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,EUM,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,LAM,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,MDA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
+baseline_noce,NIG,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
+baseline_noce,RUS,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+baseline_noce,USA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 baseline_noce,AFE,Carbon Capture|Industry|Non-Metallic Minerals|Cement,MtCO2/yr,2019,absent row,zero
 baseline_noce,AFE,Carbon Capture|Industry|Non-Metallic Minerals|Cement,MtCO2/yr,2024,absent row,zero
 baseline_noce,AFE,Carbon Capture|Industry|Non-Metallic Minerals|Cement,MtCO2/yr,2030,absent row,zero
@@ -1027,14 +1027,12 @@ baseline_noce,USA,Carbon Capture|Industry|Non-Ferrous Metals|Aluminum,MtCO2/yr,2
 baseline_noce,USA,Carbon Capture|Industry|Non-Ferrous Metals|Aluminum,MtCO2/yr,2040,absent row,zero
 baseline_noce,USA,Carbon Capture|Industry|Non-Ferrous Metals|Aluminum,MtCO2/yr,2050,absent row,zero
 baseline_medce_eu,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+baseline_medce_eu,ASO,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
 baseline_medce_eu,ASO,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
 baseline_medce_eu,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
 baseline_medce_eu,ANZ,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_eu,CAN,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_eu,ENW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_medce_eu,EUE,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_medce_eu,EUM,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_medce_eu,EUW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_eu,SKT,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_eu,USA,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
@@ -1119,10 +1117,12 @@ baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blan
 baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,BRA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,USA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -1136,6 +1136,7 @@ baseline_medce_eu,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,b
 baseline_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -1157,11 +1158,11 @@ baseline_medce_eu,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,b
 baseline_medce_eu,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
@@ -1169,30 +1170,23 @@ baseline_medce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,b
 baseline_medce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
 baseline_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
 baseline_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
 baseline_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
 baseline_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
 baseline_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
+baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -1258,6 +1252,7 @@ baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,ab
 baseline_medce_eu,BRA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,BRA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,CHL,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
@@ -1294,11 +1289,14 @@ baseline_medce_eu,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,bla
 baseline_medce_eu,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,BRA,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
+baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
+baseline_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_medce_eu,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 baseline_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
@@ -1727,14 +1725,12 @@ baseline_medce_eu,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/
 baseline_medce_eu,SKT,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 baseline_medce_eu,USA,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 baseline_highce_eu,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+baseline_highce_eu,ASO,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
 baseline_highce_eu,ASO,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
 baseline_highce_eu,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
 baseline_highce_eu,ANZ,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_eu,CAN,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_eu,ENW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_highce_eu,EUE,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_highce_eu,EUM,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
-baseline_highce_eu,EUW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_eu,SKT,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_eu,USA,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
@@ -1827,7 +1823,6 @@ baseline_highce_eu,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,bla
 baseline_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 baseline_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
-baseline_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,USA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
@@ -1840,12 +1835,12 @@ baseline_highce_eu,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,
 baseline_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
+baseline_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
+baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
+baseline_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_eu,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
@@ -1863,7 +1858,6 @@ baseline_highce_eu,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,
 baseline_highce_eu,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
@@ -1876,30 +1870,23 @@ baseline_highce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,
 baseline_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 baseline_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
 baseline_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
 baseline_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
 baseline_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
 baseline_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
 baseline_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
+baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -1998,11 +1985,11 @@ baseline_highce_eu,RUS,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,b
 baseline_highce_eu,SKT,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,USA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,AFE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_highce_eu,AFN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_highce_eu,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
+baseline_highce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_highce_eu,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_highce_eu,BRA,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
@@ -2129,6 +2116,7 @@ baseline_highce_eu,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydroge
 baseline_highce_eu,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -2438,12 +2426,9 @@ baseline_highce_eu,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e
 baseline_highce_eu,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,absent row,zero
 baseline_highce_eu,SKT,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 baseline_highce_eu,USA,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
-baseline_medce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-baseline_medce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-baseline_medce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
 baseline_medce_gbl,CAN,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
 baseline_medce_gbl,MEX,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-baseline_medce_gbl,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+baseline_medce_gbl,AFZ,Production|Iron and Steel|Secondary,Mt/yr,2035,blank cell,zero
 baseline_medce_gbl,ANZ,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_gbl,CAN,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_gbl,ENW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
@@ -2506,7 +2491,6 @@ baseline_medce_gbl,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,20
 baseline_medce_gbl,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
 baseline_medce_gbl,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
 baseline_medce_gbl,BRA,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-baseline_medce_gbl,CAN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,blank cell,zero
 baseline_medce_gbl,CAN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 baseline_medce_gbl,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
 baseline_medce_gbl,CHL,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
@@ -2528,29 +2512,21 @@ baseline_medce_gbl,ASO,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,
 baseline_medce_gbl,CHN,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,IND,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,MEA,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2019,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,BRA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,USA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -2560,14 +2536,8 @@ baseline_medce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,
 baseline_medce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
@@ -2580,7 +2550,6 @@ baseline_medce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,
 baseline_medce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -2605,12 +2574,11 @@ baseline_medce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,
 baseline_medce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
 baseline_medce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
 baseline_medce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
-baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
-baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
-baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
-baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
-baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
+baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+baseline_medce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -2621,9 +2589,6 @@ baseline_medce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,
 baseline_medce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,MEA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -2635,9 +2600,6 @@ baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,
 baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_medce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -2655,7 +2617,6 @@ baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,a
 baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,absent row,zero
 baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,absent row,zero
 baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,absent row,zero
-baseline_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2019,absent row,zero
 baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2024,absent row,zero
@@ -2668,7 +2629,6 @@ baseline_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,b
 baseline_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,ASC,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
-baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
@@ -2698,6 +2658,7 @@ baseline_medce_gbl,IND,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,b
 baseline_medce_gbl,IND,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,JPN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+baseline_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,MEA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
@@ -2716,12 +2677,8 @@ baseline_medce_gbl,SKT,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,b
 baseline_medce_gbl,USA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
-baseline_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,BRA,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
@@ -2729,7 +2686,6 @@ baseline_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,bl
 baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
@@ -2780,7 +2736,6 @@ baseline_medce_gbl,CHL,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,E
 baseline_medce_gbl,CHL,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2035,absent row,zero
 baseline_medce_gbl,CHL,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2040,absent row,zero
 baseline_medce_gbl,CHL,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,absent row,zero
-baseline_medce_gbl,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2040,blank cell,zero
 baseline_medce_gbl,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
 baseline_medce_gbl,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
@@ -3142,7 +3097,6 @@ baseline_medce_gbl,CHL,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e
 baseline_medce_gbl,CHL,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2035,absent row,zero
 baseline_medce_gbl,CHL,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,absent row,zero
 baseline_medce_gbl,CHL,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,absent row,zero
-baseline_medce_gbl,ENW,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,blank cell,zero
 baseline_medce_gbl,ENW,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 baseline_medce_gbl,EUE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 baseline_medce_gbl,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
@@ -3156,14 +3110,12 @@ baseline_medce_gbl,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e
 baseline_medce_gbl,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,absent row,zero
 baseline_medce_gbl,SKT,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 baseline_medce_gbl,USA,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
-baseline_highce_gbl,AFW,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-baseline_highce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-baseline_highce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
 baseline_highce_gbl,CAN,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
 baseline_highce_gbl,MEX,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-baseline_highce_gbl,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+baseline_highce_gbl,AFZ,Production|Iron and Steel|Secondary,Mt/yr,2035,blank cell,zero
 baseline_highce_gbl,ANZ,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_gbl,CAN,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+baseline_highce_gbl,CHL,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_gbl,ENW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_gbl,EUE,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 baseline_highce_gbl,EUM,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
@@ -3248,47 +3200,36 @@ baseline_highce_gbl,ASO,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases
 baseline_highce_gbl,CHN,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,IND,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,MEA,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2019,blank cell,zero
-baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,BRA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
+baseline_highce_gbl,IND,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
-baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
-baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
+baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
+baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
+baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
+baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
+baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
 baseline_highce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
@@ -3300,6 +3241,7 @@ baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050
 baseline_highce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+baseline_highce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 baseline_highce_gbl,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
@@ -3342,9 +3284,6 @@ baseline_highce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040
 baseline_highce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_gbl,MEA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -3356,9 +3295,6 @@ baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035
 baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 baseline_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -3378,7 +3314,6 @@ baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,
 baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,absent row,zero
 baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,absent row,zero
 baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,absent row,zero
-baseline_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2019,absent row,zero
 baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2024,absent row,zero
@@ -3391,7 +3326,6 @@ baseline_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,
 baseline_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,ASC,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
-baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
@@ -3419,6 +3353,7 @@ baseline_highce_gbl,IND,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,
 baseline_highce_gbl,IND,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,JPN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+baseline_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,MEA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
@@ -3437,20 +3372,17 @@ baseline_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,
 baseline_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
-baseline_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,BRA,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
+baseline_highce_gbl,IDN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,IND,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 baseline_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
@@ -4630,7 +4562,6 @@ ndc_medce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,abs
 ndc_medce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
 ndc_medce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
 ndc_medce_eu,AFN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
-ndc_medce_eu,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 ndc_medce_eu,ASC,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 ndc_medce_eu,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
 ndc_medce_eu,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
@@ -4714,19 +4645,13 @@ ndc_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank 
 ndc_medce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -4747,7 +4672,6 @@ ndc_medce_eu,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank 
 ndc_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_medce_eu,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_eu,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_eu,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -4770,7 +4694,6 @@ ndc_medce_eu,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,absent 
 ndc_medce_eu,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,absent row,zero
 ndc_medce_eu,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,absent row,zero
 ndc_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
-ndc_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 ndc_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_medce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_medce_eu,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
@@ -5248,6 +5171,7 @@ ndc_highce_eu,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,abse
 ndc_highce_eu,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,absent row,zero
 ndc_highce_eu,CHL,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,absent row,zero
 ndc_highce_eu,EUE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
+ndc_highce_eu,EUE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,blank cell,zero
 ndc_highce_eu,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,blank cell,zero
 ndc_highce_eu,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2030,blank cell,zero
 ndc_highce_eu,JPN,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2035,blank cell,zero
@@ -5273,6 +5197,9 @@ ndc_highce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,ab
 ndc_highce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
 ndc_highce_eu,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
 ndc_highce_eu,AFN,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+ndc_highce_eu,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,blank cell,zero
+ndc_highce_eu,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+ndc_highce_eu,ASC,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,blank cell,zero
 ndc_highce_eu,ASC,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 ndc_highce_eu,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
 ndc_highce_eu,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
@@ -5308,6 +5235,7 @@ ndc_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank ce
 ndc_highce_eu,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 ndc_highce_eu,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
+ndc_highce_eu,USA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -5320,9 +5248,11 @@ ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank
 ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
+ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_eu,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -5345,32 +5275,32 @@ ndc_highce_eu,CHL,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank
 ndc_highce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_eu,CHN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_eu,ENE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
-ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
+ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
+ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
+ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
+ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
+ndc_highce_eu,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
 ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_eu,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_eu,IND,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,IND,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -5388,6 +5318,7 @@ ndc_highce_eu,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_eu,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -5410,6 +5341,7 @@ ndc_highce_eu,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,absent
 ndc_highce_eu,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,absent row,zero
 ndc_highce_eu,AFW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,absent row,zero
 ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
+ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_highce_eu,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
@@ -5429,6 +5361,7 @@ ndc_highce_eu,BRA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank 
 ndc_highce_eu,BRA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
 ndc_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
+ndc_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_highce_eu,CAN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,CHL,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,CHN,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
@@ -5473,6 +5406,7 @@ ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank c
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_highce_eu,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
+ndc_highce_eu,USA,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2019,absent row,zero
 ndc_highce_eu,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2024,absent row,zero
 ndc_highce_eu,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,absent row,zero
@@ -5571,6 +5505,7 @@ ndc_highce_eu,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/
 ndc_highce_eu,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -5837,6 +5772,7 @@ ndc_highce_eu,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr
 ndc_highce_eu,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
 ndc_highce_eu,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
 ndc_highce_eu,USA,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+ndc_highce_eu,USA,Emissions|GHG|Industry|Iron and Steel,MtCO2e/yr,2050,blank cell,zero
 ndc_highce_eu,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2019,absent row,zero
 ndc_highce_eu,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2024,absent row,zero
 ndc_highce_eu,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2030,absent row,zero
@@ -5864,13 +5800,10 @@ ndc_highce_eu,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2
 ndc_highce_eu,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,absent row,zero
 ndc_highce_eu,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,absent row,zero
 ndc_highce_eu,USA,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
-ndc_medce_gbl,AFW,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-ndc_medce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-ndc_medce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-ndc_medce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
 ndc_medce_gbl,CAN,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
 ndc_medce_gbl,MEX,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-ndc_medce_gbl,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+ndc_medce_gbl,MEX,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
+ndc_medce_gbl,AFZ,Production|Iron and Steel|Secondary,Mt/yr,2040,blank cell,zero
 ndc_medce_gbl,USA,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 ndc_medce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
 ndc_medce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
@@ -5944,27 +5877,20 @@ ndc_medce_gbl,ASO,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr
 ndc_medce_gbl,CHN,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,IND,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,MEA,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2019,blank cell,zero
-ndc_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
-ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
-ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -5972,14 +5898,8 @@ ndc_medce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank
 ndc_medce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -6024,10 +5944,8 @@ ndc_medce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank
 ndc_medce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,MEA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,MEA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -6037,7 +5955,6 @@ ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_medce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -6068,7 +5985,6 @@ ndc_medce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank 
 ndc_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_medce_gbl,ASC,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
-ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
@@ -6115,17 +6031,13 @@ ndc_medce_gbl,SKT,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank 
 ndc_medce_gbl,USA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_medce_gbl,AFE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 ndc_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-ndc_medce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
-ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_medce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
@@ -6159,6 +6071,7 @@ ndc_medce_gbl,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,
 ndc_medce_gbl,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2035,absent row,zero
 ndc_medce_gbl,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2040,absent row,zero
 ndc_medce_gbl,AFE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,absent row,zero
+ndc_medce_gbl,ANZ,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2019,absent row,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2024,absent row,zero
 ndc_medce_gbl,ASO,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2030,absent row,zero
@@ -6505,6 +6418,7 @@ ndc_medce_gbl,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2
 ndc_medce_gbl,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2035,absent row,zero
 ndc_medce_gbl,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,absent row,zero
 ndc_medce_gbl,AFE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,absent row,zero
+ndc_medce_gbl,ANZ,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
 ndc_medce_gbl,ASO,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2019,absent row,zero
 ndc_medce_gbl,ASO,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2024,absent row,zero
 ndc_medce_gbl,ASO,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2030,absent row,zero
@@ -6525,13 +6439,10 @@ ndc_medce_gbl,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2
 ndc_medce_gbl,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,absent row,zero
 ndc_medce_gbl,NIG,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,absent row,zero
 ndc_medce_gbl,USA,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
-ndc_highce_gbl,AFW,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-ndc_highce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
-ndc_highce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-ndc_highce_gbl,ASO,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
 ndc_highce_gbl,CAN,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
 ndc_highce_gbl,MEX,Production|Iron and Steel|Primary,Mt/yr,2035,blank cell,zero
-ndc_highce_gbl,NIG,Production|Iron and Steel|Primary,Mt/yr,2030,blank cell,zero
+ndc_highce_gbl,MEX,Production|Iron and Steel|Primary,Mt/yr,2040,blank cell,zero
+ndc_highce_gbl,AFZ,Production|Iron and Steel|Secondary,Mt/yr,2040,blank cell,zero
 ndc_highce_gbl,USA,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
 ndc_highce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2019,absent row,zero
 ndc_highce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2024,absent row,zero
@@ -6584,6 +6495,7 @@ ndc_highce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,a
 ndc_highce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2035,absent row,zero
 ndc_highce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,absent row,zero
 ndc_highce_gbl,AFE,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,absent row,zero
+ndc_highce_gbl,ANZ,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
 ndc_highce_gbl,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2019,absent row,zero
 ndc_highce_gbl,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2024,absent row,zero
 ndc_highce_gbl,ASO,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2030,absent row,zero
@@ -6609,28 +6521,21 @@ ndc_highce_gbl,ASO,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/y
 ndc_highce_gbl,CHN,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,IND,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,MEA,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2019,blank cell,zero
-ndc_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
-ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,AFN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
@@ -6639,14 +6544,8 @@ ndc_highce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blan
 ndc_highce_gbl,ASC,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,BRA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
@@ -6670,11 +6569,12 @@ ndc_highce_gbl,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,abse
 ndc_highce_gbl,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
 ndc_highce_gbl,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
 ndc_highce_gbl,ENW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
-ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
-ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
+ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
+ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
+ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
+ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
+ndc_highce_gbl,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
 ndc_highce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
 ndc_highce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
 ndc_highce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
@@ -6684,35 +6584,38 @@ ndc_highce_gbl,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,abse
 ndc_highce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_gbl,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_gbl,IDN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,IND,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,IND,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+ndc_highce_gbl,JPN,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,LAM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,MDA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,MEA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,MEA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
-ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
-ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
+ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
+ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
+ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
+ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
+ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
 ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
-ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
-ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+ndc_highce_gbl,RUS,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+ndc_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
+ndc_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
 ndc_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
 ndc_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
@@ -6739,7 +6642,6 @@ ndc_highce_gbl,AFZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank
 ndc_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,ANZ,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,ASC,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
-ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,ASE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
@@ -6786,9 +6688,7 @@ ndc_highce_gbl,SKT,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank
 ndc_highce_gbl,USA,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,AFE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-ndc_highce_gbl,AFW,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,ASO,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,CAN,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
@@ -6796,7 +6696,6 @@ ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank 
 ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,MEX,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2019,blank cell,zero
-ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,blank cell,zero
 ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,blank cell,zero
 ndc_highce_gbl,NIG,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,blank cell,zero
@@ -6900,6 +6799,7 @@ ndc_highce_gbl,ENE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ
 ndc_highce_gbl,ENE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero
 ndc_highce_gbl,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+ndc_highce_gbl,ENW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2050,blank cell,zero
 ndc_highce_gbl,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
 ndc_highce_gbl,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
 ndc_highce_gbl,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero

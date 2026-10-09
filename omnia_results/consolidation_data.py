@@ -77,9 +77,23 @@ class ConsolidationData:
     def geographic_membership(self) -> pd.DataFrame:
         return self._emissions_response_data().membership()
 
+    def production_scenarios(self):
+        """Select one raw no-CE pathway for simplified Figures 1–2, or both."""
+        scenario = self.config.get("simplified_production_scenario")
+        if scenario is None:
+            return PRODUCTION_SCENARIOS
+        if scenario not in PRODUCTION_SCENARIOS:
+            raise ValueError("simplified_production_scenario must be ndc_noce or baseline_noce")
+        return (scenario,)
+
+    def producer_ranking_scenario(self):
+        return (self.production_scenarios()[0]
+                if self.config.get("simplified_production_scenario") is not None else "baseline_noce")
+
     def _producer_data(self):
-        if not set(PRODUCTION_SCENARIOS) <= self.results.keys():
-            raise ValueError("Producer comparison requires baseline_noce and ndc_noce")
+        scenarios = self.production_scenarios()
+        if not set(scenarios) <= self.results.keys():
+            raise ValueError(f"Producer figure requires configured scenarios: {', '.join(scenarios)}")
         if self._producer_reports is None:
             if not self.config.get("producer_groups"):
                 raise ValueError("Producer comparison requires a producer_groups partition")
@@ -88,7 +102,7 @@ class ConsolidationData:
             settings = {**self.config, "macroregions": self.config["producer_groups"]}
             self._producer_reports = {
                 scenario: ReportData(self.results[scenario], settings)
-                for scenario in PRODUCTION_SCENARIOS
+                for scenario in scenarios
             }
         return self._producer_reports
 
@@ -98,9 +112,10 @@ class ConsolidationData:
         return [parent] if sector.key == "cement" else [parent + "|Primary", parent + "|Secondary"]
 
     def leading_producers(self) -> pd.DataFrame:
-        """Two climate pathways for one fixed NDC+LTT-ranked producer cohort."""
+        """One or two no-CE pathways for a shared, explicitly ranked cohort."""
         reports = self._producer_data()
-        ranking = reports["baseline_noce"]
+        ranking_scenario = self.producer_ranking_scenario()
+        ranking = reports[ranking_scenario]
         first, last = min(self.config["years"]), ranking.ranking_year
         if first == last:
             raise ValueError("Producer endpoints require a ranking year after the first year")
@@ -117,7 +132,7 @@ class ConsolidationData:
                 groups = report.production_groups(sector)
                 common = {"Scenario": scenario, "ClimatePathway": climate_label(scenario),
                           "CE": policy_label(scenario), "Panel": chr(97 + column),
-                          "Sector": sector.label, "RankingScenario": "baseline_noce",
+                          "Sector": sector.label, "RankingScenario": ranking_scenario,
                           "RankingYear": last,
                           "SourceVariables": json.dumps(self._production_variables(sector))}
                 plotted = groups.loc[cohort, [first, last]].copy()
@@ -145,13 +160,14 @@ class ConsolidationData:
         return pd.DataFrame(rows)
 
     def producer_membership(self) -> pd.DataFrame:
-        groups = self._producer_data()["baseline_noce"].producer_groups
+        groups = self._producer_data()[self.producer_ranking_scenario()].producer_groups
         return pd.DataFrame([{"Group": label, "Region": region}
                              for label, members in groups.items() for region in members])
 
     def producer_rankings(self) -> pd.DataFrame:
         reports = self._producer_data()
-        ranking = reports["baseline_noce"]
+        ranking_scenario = self.producer_ranking_scenario()
+        ranking = reports[ranking_scenario]
         rows = []
         for sector in SECTORS:
             cohort = ranking.ranked_producers(sector)
@@ -161,7 +177,7 @@ class ConsolidationData:
                 shares = ratio(groups, pd.Series(global_output.loc[ranking.ranking_year], index=groups.index), 100)
                 rows.extend({"Scenario": scenario, "ClimatePathway": climate_label(scenario),
                              "Sector": sector.label, "Rank": rank, "Group": label,
-                             "RankingScenario": "baseline_noce", "RankingYear": ranking.ranking_year,
+                             "RankingScenario": ranking_scenario, "RankingYear": ranking.ranking_year,
                              "Production_Mt_yr": groups.loc[label], "GlobalShare_percent": shares.loc[label]}
                             for rank, label in enumerate(cohort, start=1))
         return pd.DataFrame(rows)
@@ -405,11 +421,12 @@ class ConsolidationData:
         return pd.DataFrame(rows)
 
     def production(self) -> pd.DataFrame:
-        """Global production for NDC+LTT and NDC without CE, in panel order."""
-        if not set(PRODUCTION_SCENARIOS) <= self.results.keys():
-            raise ValueError("Production figure requires baseline_noce and ndc_noce")
+        """Global production for the selected no-CE pathways, in panel order."""
+        scenarios = self.production_scenarios()
+        if not set(scenarios) <= self.results.keys():
+            raise ValueError(f"Production figure requires configured scenarios: {', '.join(scenarios)}")
         rows = []
-        for row, scenario in enumerate(PRODUCTION_SCENARIOS):
+        for row, scenario in enumerate(scenarios):
             for column, sector in enumerate(SECTORS):
                 for series, values in self.results[scenario].production(sector).items():
                     if sector.key == "cement":

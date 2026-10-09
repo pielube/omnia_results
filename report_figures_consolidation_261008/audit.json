@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-08T15:22:09.743060+00:00",
+  "generated_utc": "2026-10-09T08:11:26.048673+00:00",
   "source": "results_allCE_261008.csv",
-  "source_sha256": "0293795dcec83b57033b37d45ce42a4db3c3a6741d455d2c443a673c63b74354",
+  "source_sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46",
   "scenario_interpretation": {
     "baseline": "NDC+LTT",
     "ndc": "NDC"
@@ -20,19 +20,19 @@
   },
   "source_rows_selected": {
     "baseline_noce": 2445,
-    "baseline_medce_eu": 2446,
-    "baseline_highce_eu": 2440,
-    "baseline_medce_gbl": 2444,
-    "baseline_highce_gbl": 2444,
+    "baseline_medce_eu": 2448,
+    "baseline_highce_eu": 2446,
+    "baseline_medce_gbl": 2447,
+    "baseline_highce_gbl": 2441,
     "ndc_noce": 2513,
-    "ndc_medce_eu": 2454,
-    "ndc_highce_eu": 2454,
-    "ndc_medce_gbl": 2453,
-    "ndc_highce_gbl": 2447
+    "ndc_medce_eu": 2455,
+    "ndc_highce_eu": 2446,
+    "ndc_medce_gbl": 2451,
+    "ndc_highce_gbl": 2443
   },
   "region_count": 28,
   "figure_count": 8,
-  "missing_input_count": 7201,
+  "missing_input_count": 7101,
   "config": {
     "suite": "consolidation",
     "input": "results_allCE_261008.csv",
@@ -191,7 +191,8 @@
       "png"
     ],
     "dpi": 600,
-    "config_file": "figures.consolidation.261008.json"
+    "config_file": "figures.consolidation.261008.json",
+    "simplified_production_scenario": "ndc_noce"
   },
   "versions": {
     "python": "3.11.15",
@@ -203,7 +204,7 @@
     "All figures calculate directly from the configured raw results CSV. Earlier exported data and artwork are used only to verify preservation of reviewed individual figures.",
     "Every baseline_* scenario in this source is interpreted as NDC+LTT. Source scenario identifiers remain unchanged.",
     "Previously generated report and comparison collections are preserved.",
-    "Figures 1–4 present NDC before NDC+LTT: top/bottom rows in Figure 1, upper/lower producer pairs in Figure 2, and first/second legend entries and curve styles in Figures 3–4. Figure 2 keeps one cohort ranked by baseline_noce production in the configured ranking year, with the same producer groups and order for NDC.",
+    "Figures 1–2 select ndc_noce once without averaging climate pathways. Figure 1 has one row; Figure 2 has one endpoint pair per producer group, ranked by that same source scenario. Figures 3–4 retain both pathways with NDC first.",
     "Figure 3 sums exact parent energy carriers; global energy intensity is global final energy divided by global production, multiplied by 1000 to convert EJ/Mt to GJ/t.",
     "Figure 4 uses reported sector GHG emissions without subtracting capture again. Shares use each pathway's total industrial GHG, intensities use global production, and capture retains its separate CO2 unit.",
     "Figure 5 puts NDC above NDC+LTT and compares each pathway's no-CE historical production with all five future CE settings. Cement and clinker remain separate; metals show primary and secondary stacks. Future percentage changes use the same pathway's future no-CE total, not the historical bar.",
@@ -223,5 +224,6 @@
       "IDN"
     ],
     "complete_cases_required": 8
-  }
+  },
+  "combined_pdf": "report_figures.pdf"
 }

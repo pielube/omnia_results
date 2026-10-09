@@ -81,12 +81,14 @@ class ConsolidationSourceTests(unittest.TestCase):
         self.assertIn("reviewed_example", reviewed_text)
 
     def test_export_attributes_current_source_bytes_and_config_without_writing_old_collections(self):
+        config = {**self.config, "combined_pdf": "report_figures_regenerated.pdf"}
         source_bytes = self.source.to_csv(index=False).encode("utf-8")
         written = {}
+        pdf_paths = []
 
         class InMemoryPdf:
-            def __init__(self, *args, **kwargs):
-                pass
+            def __init__(self, path, **kwargs):
+                pdf_paths.append(Path(path))
 
             def __enter__(self):
                 return self
@@ -110,19 +112,24 @@ class ConsolidationSourceTests(unittest.TestCase):
                 patch("omnia_results.consolidation.PdfPages", InMemoryPdf), \
                 patch("omnia_results.consolidation.check_figure_bounds"), \
                 redirect_stdout(StringIO()):
-            generate_consolidation(self.config, Path("."))
+            generate_consolidation(config, Path("."))
+        self.assertEqual(pdf_paths, [(Path(config["output"]) / config["combined_pdf"]).resolve()])
         audit = json.loads(written["audit.json"])
         self.assertEqual(audit["source"], self.config["input"])
         self.assertEqual(audit["source_sha256"], hashlib.sha256(source_bytes).hexdigest())
         self.assertEqual(audit["config"]["config_file"], self.config["config_file"])
         self.assertEqual(audit["config"]["preserve_individual_figures"], [])
+        self.assertEqual(audit["config"]["combined_pdf"], config["combined_pdf"])
         self.assertEqual(audit["scenario_labels"], {"baseline_noce": "NDC+LTT", "ndc_noce": "NDC"})
         manifest = json.loads(written["manifest.json"])
         self.assertFalse(manifest[0]["individual_artifacts_preserved"])
         self.assertIn(self.config["input"], manifest[0]["caption"])
         self.assertIn(self.config["input"], written["captions.md"])
         self.assertIn(self.config["input"], written["index.html"])
+        self.assertIn(f'href="{config["combined_pdf"]}"', written["index.html"])
+        self.assertNotIn('href="report_figures.pdf"', written["index.html"])
         self.assertIn(f"--config {self.config['config_file']}", written["methods.md"])
+        self.assertIn(f'`{config["combined_pdf"]}`', written["methods.md"])
         # Individual artwork goes to the configured output, and SVG metadata
         # carries the same source attribution as its caption and manifest.
         for call in save.call_args_list:

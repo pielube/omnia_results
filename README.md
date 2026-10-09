@@ -62,7 +62,7 @@ Each CE effect is measured against no CE within the same climate pathway. These 
 
 ## Consolidated report figures
 
-The refreshed collection based on [results_allCE_261008.csv](results_allCE_261008.csv) is saved separately in [report_figures_consolidation_261008/](report_figures_consolidation_261008/index.html), with a [combined eight-page PDF](report_figures_consolidation_261008/report_figures.pdf), individual PDF/SVG/600 dpi PNG figures, source CSVs, captions, methods and audit metadata. It retains the current Figures 1–8 designs and presents NDC before NDC+LTT. Producer and partner rankings are recalculated from the new CSV using the same selection rules. The earlier collection and its archive are retained unchanged.
+The current collection based on the updated [results_allCE_261008.csv](results_allCE_261008.csv) is saved in [report_figures_consolidation_261008/](report_figures_consolidation_261008/index.html), with a [combined eight-page PDF](report_figures_consolidation_261008/report_figures.pdf), individual PDF/SVG/600 dpi PNG figures, source CSVs, captions, methods and audit metadata. Figure 1 now has one row of three sector-only production panels. Figure 2 restores one 2019–2050 connector per producer group, with a year-only legend. Both select `ndc_noce` once, without averaging climate pathways; this choice is recorded in `simplified_production_scenario`. Producer rankings use that same scenario's 2050 output. Figures 3–8 retain their layouts and present NDC before NDC+LTT. All values and partner rankings are recalculated from the updated raw CSV. The preceding complete collection and its configuration are retained under `report_figures_consolidation_261008/archive/before_simplification_*`; the earlier collections remain unchanged.
 
 Regenerate the refreshed collection:
 
@@ -70,7 +70,7 @@ Regenerate the refreshed collection:
 python -m omnia_results --config figures.consolidation.261008.json
 ```
 
-The original refinement workflow writes to [report_figures_consolidation/](report_figures_consolidation/index.html) using [results_allCE_261002.csv](results_allCE_261002.csv). Both collections calculate directly from their configured raw results CSV; previous figure CSVs and artwork are not calculation inputs. Every source scenario beginning `baseline_` is interpreted as **NDC+LTT**, and `ndc_` as **NDC**, across all CE settings. The descriptions below refer to the original collection; the same layouts and definitions apply to the refreshed figures.
+The original refinement workflow writes to [report_figures_consolidation/](report_figures_consolidation/index.html) using [results_allCE_261002.csv](results_allCE_261002.csv). Both collections calculate directly from their configured raw results CSV; previous figure CSVs and artwork are not calculation inputs. Every source scenario beginning `baseline_` is interpreted as **NDC+LTT**, and `ndc_` as **NDC**, across all CE settings. The descriptions below refer to the original collection; Figures 3–8 retain those layouts and definitions in the current collection, while Figures 1–2 use the simplifications described above.
 
 ```powershell
 python -m omnia_results --config figures.consolidation.json

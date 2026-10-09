@@ -156,5 +156,6 @@
     "png"
   ],
   "dpi": 600,
-  "config_file": "figures.consolidation.261008.json"
+  "config_file": "figures.consolidation.261008.json",
+  "simplified_production_scenario": "ndc_noce"
 }

@@ -15,7 +15,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 import numpy as np
 import pandas as pd
 
-from .consolidation_data import CLIMATE_LABELS, PRODUCTION_SCENARIOS, ConsolidationData, climate_label
+from .consolidation_data import CLIMATE_LABELS, ConsolidationData, climate_label
 from .consolidation_producers import ProducerFigures
 from .consolidation_energy import EnergyFigures
 from .consolidation_emissions import EmissionsFigures
@@ -53,9 +53,14 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
 
     def production(self) -> ReportFigure:
         data = self.data.production()
+        scenarios = self.data.production_scenarios()
+        simplified = len(scenarios) == 1
         title = "Global material production and production routes"
-        fig, axes = plt.subplots(2, 3, figsize=(180 / 25.4, 150 / 25.4), squeeze=False)
-        fig.subplots_adjust(left=.09, right=.985, bottom=.14, top=.78, wspace=.51, hspace=.63)
+        fig, axes = plt.subplots(len(scenarios), 3,
+                                 figsize=(180 / 25.4, (100 if simplified else 150) / 25.4),
+                                 squeeze=False)
+        fig.subplots_adjust(left=.09, right=.985, bottom=.20 if simplified else .14,
+                            top=.68 if simplified else .78, wspace=.51, hspace=.63)
         fig.text(.035, .977, title, fontsize=8, weight="bold", va="top")
         fig.text(.035, .936,
                  f"No circular economy | {min(self.config['years'])}–{max(self.config['years'])}",
@@ -70,7 +75,7 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
             high = max(float(finite.max()), 1.) if finite.size else 1.
             locator = ticker.MaxNLocator(4, min_n_ticks=3)
             limits = locator.tick_values(low, high * 1.05)
-            for row, scenario in enumerate(PRODUCTION_SCENARIOS):
+            for row, scenario in enumerate(scenarios):
                 ax, panel = axes[row, column], chr(97 + row * 3 + column)
                 ax.spines[["top", "right"]].set_visible(False)
                 ax.set_axisbelow(True)
@@ -82,9 +87,9 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
                 ax.yaxis.set_major_locator(ticker.MaxNLocator(4, min_n_ticks=3))
                 ax.yaxis.set_major_formatter(ticker.StrMethodFormatter("{x:,.0f}"))
                 ax.set_ylabel("Production (Mt yr$^{-1}$)", fontsize=6.8, labelpad=3)
-                if row == 1:
+                if row == len(scenarios) - 1:
                     ax.set_xlabel("Year", fontsize=6.8, labelpad=4)
-                ax.set_title(f"{sector.label} | {climate_label(scenario)}", loc="left",
+                ax.set_title(sector.label if simplified else f"{sector.label} | {climate_label(scenario)}", loc="left",
                              fontsize=7, pad=9)
                 ax.text(-.14, 1.04, panel, transform=ax.transAxes, va="bottom",
                         ha="left", fontsize=8, weight="bold")
@@ -99,7 +104,10 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
                     ax.legend(loc="lower left", bbox_to_anchor=(0, 1.16), borderaxespad=0,
                               ncol=selected.Series.nunique(), fontsize=5.8,
                               columnspacing=.8, handlelength=1.7, handletextpad=.35)
-        fig.text(.035, .060, "Top row: NDC. Bottom row: NDC+LTT. Matching sector scales across rows.",
+        figure_note = ("Metals: total = primary + secondary. Cement and clinker are distinct products."
+                       if simplified else
+                       "Top row: NDC. Bottom row: NDC+LTT. Matching sector scales across rows.")
+        fig.text(.035, .060, figure_note,
                  fontsize=5.8, color="#52616A")
         assumption = ("Draft assumption: missing additive activity = zero."
                       if self.config["missing_activity"] == "zero"
@@ -118,9 +126,25 @@ class ConsolidationBuilder(ProducerFigures, EnergyFigures, EmissionsFigures,
             "are extracted independently for the two pathways. " + assumption +
             " No uncertainty estimates were supplied."
         )
+        if simplified:
+            caption = (
+                "Global material production without circular-economy measures, shown in one "
+                "row with cement and clinker (a), iron and steel (b), and aluminium (c). "
+                "Cement and clinker are distinct products and are not added. Steel and "
+                "aluminium totals equal primary plus secondary production. "
+                f"The figure selects {scenarios[0]} once from {self.config['input']}, with "
+                "no averaging or duplication of climate pathways. The selected scenario "
+                "remains explicit in the source CSV. Each global value sums the "
+                f"{len(self.config['regions'])} configured model regions once, using exact "
+                "production parents and Mt/yr units. Each sector has its own vertical "
+                "scale. Markers show supplied model years joined by straight segments "
+                "without smoothing or extrapolation. " + assumption +
+                " No uncertainty estimates were supplied."
+            )
         return ReportFigure("fig01_production", "1", title,
-                            "How do material output and production routes evolve under NDC and NDC+LTT?",
-                            caption, fig, data, 6)
+                            ("How do global material output and production routes evolve?" if simplified else
+                             "How do material output and production routes evolve under NDC and NDC+LTT?"),
+                            caption, fig, data, 3 if simplified else 6)
 
 
 def _save_individual_figure(spec, directory, config):
@@ -152,7 +176,7 @@ def generate_consolidation(config: dict, base: Path):
     directory.mkdir(parents=True, exist_ok=True)
     records, all_data, captions = [], [], []
     # PDF font embedding occurs on close, inside the same style context as saving.
-    with plt.rc_context(CONSOLIDATION_STYLE), PdfPages(directory / "report_figures.pdf",
+    with plt.rc_context(CONSOLIDATION_STYLE), PdfPages(directory / config.get("combined_pdf", "report_figures.pdf"),
             metadata={"Title": "Consolidated OMNIA report figures: NDC and NDC+LTT"}) as book:
         for spec in builder.figures():
             check_figure_bounds(spec.figure, spec.slug)
@@ -177,6 +201,12 @@ def generate_consolidation(config: dict, base: Path):
         data.partner_rankings().to_csv(directory / "partner_rankings.csv", index=False)
     missing = [record for results in data.results.values() for record in results.coverage]
     pd.DataFrame(missing, columns=["Scenario", "Region", "Variable", "Unit", "Year", "Issue", "Treatment"]).drop_duplicates().to_csv(directory / "missing_inputs.csv", index=False)
+    production_note = (
+        f"Figures 1–2 select {config['simplified_production_scenario']} once without averaging climate pathways. "
+        "Figure 1 has one row; Figure 2 has one endpoint pair per producer group, ranked by that same source scenario. "
+        "Figures 3–4 retain both pathways with NDC first."
+        if config.get("simplified_production_scenario") is not None else
+        "Figures 1–4 present NDC before NDC+LTT: top/bottom rows in Figure 1, upper/lower producer pairs in Figure 2, and first/second legend entries and curve styles in Figures 3–4. Figure 2 keeps one cohort ranked by baseline_noce production in the configured ranking year, with the same producer groups and order for NDC.")
     audit = {"generated_utc": datetime.now(timezone.utc).isoformat(), "source": config["input"],
              "source_sha256": hashlib.sha256(data.source.read_bytes()).hexdigest(),
              "scenario_interpretation": CLIMATE_LABELS,
@@ -189,7 +219,7 @@ def generate_consolidation(config: dict, base: Path):
              "notes": ["All figures calculate directly from the configured raw results CSV. Earlier exported data and artwork are used only to verify preservation of reviewed individual figures.",
                        "Every baseline_* scenario in this source is interpreted as NDC+LTT. Source scenario identifiers remain unchanged.",
                        "Previously generated report and comparison collections are preserved.",
-                       "Figures 1–4 present NDC before NDC+LTT: top/bottom rows in Figure 1, upper/lower producer pairs in Figure 2, and first/second legend entries and curve styles in Figures 3–4. Figure 2 keeps one cohort ranked by baseline_noce production in the configured ranking year, with the same producer groups and order for NDC.",
+                       production_note,
                        "Figure 3 sums exact parent energy carriers; global energy intensity is global final energy divided by global production, multiplied by 1000 to convert EJ/Mt to GJ/t.",
                        "Figure 4 uses reported sector GHG emissions without subtracting capture again. Shares use each pathway's total industrial GHG, intensities use global production, and capture retains its separate CO2 unit.",
                        "Figure 5 puts NDC above NDC+LTT and compares each pathway's no-CE historical production with all five future CE settings. Cement and clinker remain separate; metals show primary and secondary stacks. Future percentage changes use the same pathway's future no-CE total, not the historical bar.",
@@ -222,6 +252,41 @@ def _write_methods(directory, config):
     preservation_note = (f"Configured preserved individual figures: {preserved}."
                          if preserved else
                          "No individual figures are reused in this configuration; all are exported from fresh raw-source calculations.")
+    scenario = config.get("simplified_production_scenario")
+    simplified = scenario is not None
+    production_layout = (
+        f"One row contains cement/clinker, iron and steel, and aluminium panels. It selects `{scenario}` "
+        "once, retaining its source identifier in the figure CSV. The duplicate climate row and "
+        "climate names in panel titles are omitted; quantities are not averaged between pathways."
+        if simplified else
+        "The top row uses `ndc_noce` (NDC, no CE), and the bottom row uses `baseline_noce` (NDC+LTT, no CE). Columns show cement/clinker, iron and steel, and aluminium.")
+    production_scales = (
+        "Panels a–c show the three sectors, with separate vertical scales."
+        if simplified else
+        "Panels a–c and d–f represent NDC and NDC+LTT respectively. Each sector has identical vertical limits in both rows, with different scales across sectors.")
+    producer_ranking = (
+        f"For each sector, the top {config.get('top_n', 12)} groups are selected and ordered by positive, available "
+        f"**`{scenario}` output in {config.get('ranking_year', 2050)}**, with alphabetical tie breaking. "
+        "Only this selected raw scenario is plotted, with one endpoint pair per group. Its ranking "
+        "scenario, output and global shares are recorded in `producer_rankings.csv`."
+        if simplified else
+        f"For each sector, the top {config.get('top_n', 12)} groups are selected and ordered by positive, available "
+        f"**NDC+LTT (`baseline_noce`) output in {config.get('ranking_year', 2050)}**, with alphabetical tie breaking. "
+        "This one cohort and order applies to both pathways. Under preserved missingness it denotes the "
+        "largest groups with available ranking-year totals. NDC is not ranked independently. "
+        "`producer_rankings.csv` records both pathways' output and global shares for the common cohort.")
+    producer_pairs = (
+        f"Each producer group has one horizontal connector joining {min(config['years'])} and "
+        f"{config.get('ranking_year', 2050)}, at its central row position. The legend distinguishes "
+        "years only, with no duplicate climate pair."
+        if simplified else
+        f"Each producer group has two endpoint pairs, joining {min(config['years'])} and "
+        f"{config.get('ranking_year', 2050)}: upper solid line for NDC and lower dashed line for NDC+LTT.")
+    producer_coverage = (
+        "The coverage annotation reports the selected cohort's share of global output for the chosen raw scenario."
+        if simplified else
+        "Coverage is calculated separately for each pathway as the common cohort's output divided by "
+        "that pathway's global output, with displayed shares in NDC / NDC+LTT order.")
     text = f"""# Consolidated report methods
 
 All consolidated figures use direct extraction from `{config['input']}` through the unit-aware `Results` calculations. Existing exported figures and their CSVs are not calculation inputs. Future figure builders should use the same `ConsolidationData` source interface.
@@ -230,23 +295,23 @@ Every `baseline_*` scenario in this source denotes **NDC+LTT**; `ndc_*` denotes 
 
 ## Figure 1: production
 
-The top row uses `ndc_noce` (NDC, no CE), and the bottom row uses `baseline_noce` (NDC+LTT, no CE). Columns show cement/clinker, iron and steel, and aluminium. All 28 configured model regions enter each global sum exactly once. The `Mt/yr` unit must match exactly; detailed child variables and other units do not enter these sums.
+{production_layout} All 28 configured model regions enter each global sum exactly once. The `Mt/yr` unit must match exactly; detailed child variables and other units do not enter these sums.
 
 Cement and clinker use `Production|Non-Metallic Minerals|Cement` and `Production|Non-Metallic Minerals|Cement Clinker`. These products are shown separately. Steel and aluminium use their exact primary and secondary production parents; total output is the sum of these two routes. The figure CSV records the original variable names for every plotted observation in `SourceVariables`.
 
 {assumption} An entirely absent variable/unit is an error under either policy. `missing_inputs.csv` identifies every affected regional observation. Prices, costs and reported intensities retain missingness in the shared source-calculation module.
 
-Panels a–c and d–f represent NDC and NDC+LTT respectively. Each sector has identical vertical limits in both rows, with different scales across sectors. Markers show the supplied model years; straight lines connect those observations. No smoothing, extrapolation or uncertainty estimates are added.
+{production_scales} Markers show the supplied model years; straight lines connect those observations. No smoothing, extrapolation or uncertainty estimates are added.
 
-## Figure 2: paired leading producers
+## Figure 2: leading producers
 
 Producer groups use the same partition as the original leading-producer report. **Europe combines ENE, ENW, EUE, EUM and EUW**; this statistical producer group differs from the three-region EU policy group used in the CE comparisons. Remaining groups preserve individual model regions, with readable model-group labels. Indonesia group includes Indonesia, Philippines and Viet Nam. `producer_membership.csv` records exact model-region membership, which partitions all 28 regions once.
 
-For each sector, the top {config.get('top_n', 12)} groups are selected and ordered by positive, available **NDC+LTT (`baseline_noce`) output in {config.get('ranking_year', 2050)}**, with alphabetical tie breaking. This one cohort and order applies to both pathways. Under preserved missingness it denotes the largest groups with available ranking-year totals. NDC is not ranked independently. `producer_rankings.csv` records both pathways' output and global shares for the common cohort.
+{producer_ranking}
 
-Each producer group has two endpoint pairs, joining {min(config['years'])} and {config.get('ranking_year', 2050)}: upper solid line for NDC and lower dashed line for NDC+LTT. Open circles denote the earlier year and filled sector-coloured diamonds the later year. Endpoints use regional cement production (excluding clinker), or primary plus secondary steel/aluminium output. Thin connectors describe two endpoint observations. The Other model regions row sums the groups outside the fixed cohort and is unranked; it completes global production for each pathway and endpoint. Coverage is calculated separately for each pathway as the common cohort's output divided by that pathway's global output, with displayed shares in NDC / NDC+LTT order; the exported context data retain every supplied model year.
+{producer_pairs} Open circles denote the earlier year and filled sector-coloured diamonds the later year. Endpoints use regional cement production (excluding clinker), or primary plus secondary steel/aluminium output. Thin connectors describe two endpoint observations. The Other model regions row sums the groups outside the selected cohort and is unranked; it completes global production for every plotted scenario and endpoint. {producer_coverage} The exported context data retain every supplied model year.
 
-Logarithmic production axes retain the original figure convention. Zero or negative observed endpoints require `producer_axis_scale` set to `linear`; missing endpoints remain gaps. Axis ranges include both pathways within each sector. Figure 2 is 180 × 165 mm.
+Logarithmic production axes retain the original figure convention. Zero or negative observed endpoints require `producer_axis_scale` set to `linear`; missing endpoints remain gaps. Axis ranges include every plotted endpoint within each sector. Figure 2 is 180 × 165 mm.
 
 ## Figure 3: final energy and derived intensity
 
@@ -310,7 +375,7 @@ As in the original main cost figure, plotted years start at **{config.get('main_
 
 Individual figure CSVs contain the observations, original scenario identifiers, displayed climate labels, panel/sector/series identifiers, source variables, values and units. Figure 2 also identifies groups, constituent regions, display order and the ranking scenario/year. Figures 3–6 identify metrics, all constituent source regions, numerators/denominators and conversion factors. Figures 5 and 6 also record bar categories and calculation offsets. Figure 7 records absolute scenario/reference quantities, source coefficients and the policy/geographic breakdown. Figure 8 records raw sector costs, year-specific no-CE references and the percentage calculation. `source_data.csv` combines these tables and adds the figure identifier. `audit.json` records the source SHA-256 hash, configuration, software versions and scenario interpretation, plus Figure 7's policy-table hash and partner-selection rule. `manifest.json` records captions, figure dimensions, panels and formats.
 
-Figures use embedded TrueType fonts in PDF, editable SVG text and {config['dpi']} dpi PNGs. Figure 1 is 180 × 150 mm. The PDF font context remains active through finalisation, including the combined `report_figures.pdf`. Label bounds are checked before saving. This workflow writes into `{config['output']}` without deleting unrelated files.
+Figures use embedded TrueType fonts in PDF, editable SVG text and {config['dpi']} dpi PNGs. Figure 1 is 180 × {100 if simplified else 150} mm. The PDF font context remains active through finalisation, including the combined `{config.get('combined_pdf', 'report_figures.pdf')}`. Label bounds are checked before saving. This workflow writes into `{config['output']}` without deleting unrelated files.
 
 `preserve_individual_figures` retains reviewed individual exports when newly calculated source data and a fresh PNG match them exactly. If they differ, regeneration stops rather than overwriting the reviewed version. The combined PDF always renders every configured figure directly from the raw source. {preservation_note} Remove an entry when intentionally revising a preserved figure. Earlier collections remain in their original output directories.
 
@@ -334,6 +399,6 @@ body{{margin:0;background:#f5f6f4;color:#233139;font-family:Arial,Helvetica,sans
 @media(max-width:650px){{main{{padding:24px 12px}}.figure-card{{padding:14px}}h1{{font-size:27px}}h3{{font-size:20px}}}}
 </style></head><body><main><h1>Consolidated OMNIA report figures</h1>
 <p class="intro">Refined report figures calculated directly from {escape(str(config['input']))}. Source scenarios labelled baseline are interpreted as NDC+LTT.</p>
-<div class="links"><a href="report_figures.pdf">Complete PDF</a><a href="captions.md">Captions</a><a href="methods.md">Methods</a><a href="source_data.csv">Source data</a><a href="audit.json">Audit</a><a href="missing_inputs.csv">Missing inputs</a>{geography_links}</div>
+<div class="links"><a href="{escape(str(config.get('combined_pdf', 'report_figures.pdf')))}">Complete PDF</a><a href="captions.md">Captions</a><a href="methods.md">Methods</a><a href="source_data.csv">Source data</a><a href="audit.json">Audit</a><a href="missing_inputs.csv">Missing inputs</a>{geography_links}</div>
 {cards}</main></body></html>'''
     (directory / "index.html").write_text(page, encoding="utf-8")
