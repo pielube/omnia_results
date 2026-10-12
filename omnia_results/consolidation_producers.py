@@ -149,6 +149,10 @@ class ProducerFigures:
         if not simplified:
             fig.text(.035, .088, f"Selected producer shares in {last}: NDC / NDC+LTT. Fixed regions in both pathways.",
                      fontsize=5.7, color="#52616A")
+        geography_note = self.config.get("producer_geography_note", "")
+        if geography_note:
+            fig.text(.035, .088 if simplified else .112, geography_note,
+                     fontsize=5.5, color="#52616A")
         fig.text(.035, .054,
                  "Europe combines five model regions. Indonesia group = Indonesia, Philippines and Viet Nam.",
                  fontsize=5.5, color="#52616A")
@@ -199,5 +203,7 @@ class ProducerFigures:
                 "every observation. Sectors have different horizontal ranges. " +
                 ("Logarithmic axes compare production magnitudes. " if scale == "log" else
                  "Linear axes retain zero and negative source values. ") + assumption)
+        if geography_note:
+            caption += " " + geography_note
         return ReportFigure("fig02_leading_producers", "2", title, question,
                             caption, fig, data, 3)

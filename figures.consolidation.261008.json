@@ -18,11 +18,10 @@
     "fig01_production",
     "fig02_leading_producers",
     "fig03_energy",
-    "fig04_emissions",
     "fig05_material_production",
     "fig06_energy_mix",
-    "fig07_emissions_response",
-    "fig08_sector_costs"
+    "fig09_material_policy_coverage",
+    "fig10_energy_policy_coverage"
   ],
   "main_cost_start_year": 2024,
   "policy_regions_csv": "data/CE_policy_regions_261002.csv",
@@ -150,7 +149,7 @@
     "Nigeria": [
       "NIG"
     ],
-    "Turkey & Levant": [
+    "Turkiye": [
       "MDA"
     ],
     "Gulf & Iran": [
@@ -168,5 +167,7 @@
   ],
   "dpi": 600,
   "config_file": "figures.consolidation.261008.json",
-  "simplified_production_scenario": "ndc_noce"
+  "simplified_production_scenario": "ndc_noce",
+  "producer_geography_note": "Turkiye denotes MDA: Turkiye, Israel, Syria, Jordan, Lebanon and Palestine.",
+  "capture_as_emissions_share": true
 }

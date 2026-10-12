@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-09T08:47:56.376851+00:00",
+  "generated_utc": "2026-10-12T10:49:51.704572+00:00",
   "source": "results_allCE_261008.csv",
   "source_sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46",
   "scenario_interpretation": {
@@ -53,11 +53,10 @@
       "fig01_production",
       "fig02_leading_producers",
       "fig03_energy",
-      "fig04_emissions",
       "fig05_material_production",
       "fig06_energy_mix",
-      "fig07_emissions_response",
-      "fig08_sector_costs"
+      "fig09_material_policy_coverage",
+      "fig10_energy_policy_coverage"
     ],
     "main_cost_start_year": 2024,
     "policy_regions_csv": "data/CE_policy_regions_261002.csv",
@@ -185,7 +184,7 @@
       "Nigeria": [
         "NIG"
       ],
-      "Turkey & Levant": [
+      "Turkiye": [
         "MDA"
       ],
       "Gulf & Iran": [
@@ -203,7 +202,9 @@
     ],
     "dpi": 600,
     "config_file": "figures.consolidation.261008.json",
-    "simplified_production_scenario": "ndc_noce"
+    "simplified_production_scenario": "ndc_noce",
+    "producer_geography_note": "Turkiye denotes MDA: Turkiye, Israel, Syria, Jordan, Lebanon and Palestine.",
+    "capture_as_emissions_share": true
   },
   "versions": {
     "python": "3.11.15",
@@ -217,7 +218,7 @@
     "Previously generated report and comparison collections are preserved.",
     "Figures 1–2 select ndc_noce once without averaging climate pathways. Figure 1 has one row; Figure 2 has one endpoint pair per producer group, ranked by that same source scenario. Figures 3–4 retain both pathways with NDC first.",
     "Figure 3 sums exact parent energy carriers; global energy intensity is global final energy divided by global production, multiplied by 1000 to convert EJ/Mt to GJ/t.",
-    "Figure 4 uses reported sector GHG emissions without subtracting capture again. Shares use each pathway's total industrial GHG, intensities use global production, and capture retains its separate CO2 unit.",
+    "Figure 4 panel d gives 100 * captured CO2 (MtCO2/yr) / reported sector GHG (MtCO2e/yr), matching sector, pathway and year. Raw quantities and units remain explicit. This is relative to reported GHG, not CO2-only capture efficiency or a reconstructed pre-capture denominator; nonfinite or nonpositive references give gaps. Other panels retain reported emissions, industrial shares and production-based intensities.",
     "Figure 5 puts NDC above NDC+LTT and compares each pathway's no-CE historical production with all five future CE settings. Cement and clinker remain separate; metals show primary and secondary stacks. Future percentage changes use the same pathway's future no-CE total, not the historical bar.",
     "Figure 6 keeps the same historical/future bars and climate row order as Figure 5. It stacks exact final-energy carrier parents, excludes nested subcategories, and compares future totals with each pathway's future no-CE energy. Cement has no hydrogen parent in this source.",
     "Figure 7 has NDC on the left and NDC+LTT on the right. Top trajectories and bottom geographic changes cover three sectors; the middle net change covers all industry, with Other industry calculated as a residual. Partner regions are ranked once by mean absolute comparison-year three-sector change across all eight CE cases; the same three regions and order apply throughout.",

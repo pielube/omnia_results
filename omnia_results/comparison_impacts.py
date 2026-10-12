@@ -305,7 +305,7 @@ class ImpactFigures(ComparisonBuilderBase):
             "(a,b) 2050 percent changes in global GHG emissions from cement, iron and steel, "
             "and aluminium (horizontal axis), and in reported global annualised total system "
             "costs (vertical axis), relative to no CE under the same climate pathway. The grey "
-            "square at the origin is no CE. Colour distinguishes medium and high CE; open circles "
+            "square at the origin is no CE. Each CE setting has a distinct colour; open circles "
             "denote EU-only implementation and filled diamonds denote EU plus partners. Annualised "
             "system costs are sums of the source Total Annualised Cost series in constant 2010 "
             "USD; they are neither cumulative expenditures nor a measure of welfare or investment. "

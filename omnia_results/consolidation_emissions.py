@@ -17,6 +17,7 @@ class EmissionsFigures:
 
     def emissions(self) -> ReportFigure:
         data = self.data.emissions()
+        capture_share = self.config.get("capture_as_emissions_share", False)
         title = "Industrial emissions and carbon capture"
         fig, axes = plt.subplots(2, 2, figsize=(180 / 25.4, 150 / 25.4), squeeze=False)
         fig.subplots_adjust(left=.095, right=.985, bottom=.14, top=.78,
@@ -31,7 +32,9 @@ class EmissionsFigures:
             ("Sector greenhouse-gas emissions", "GHG emissions (Gt CO$_2$e yr$^{-1}$)"),
             ("Share of total industry emissions", "Share of industry emissions (%)"),
             ("Emissions per tonne of product", "GHG intensity (t CO$_2$e t$^{-1}$)"),
-            ("Carbon capture", "CO$_2$ captured (Mt CO$_2$ yr$^{-1}$)"),
+            (("Capture relative to sector GHG emissions", "Captured CO$_2$ / sector GHG (%)")
+             if capture_share else
+             ("Carbon capture", "CO$_2$ captured (Mt CO$_2$ yr$^{-1}$)")),
         )
         for index, (ax, (panel_title, ylabel)) in enumerate(zip(axes.flat, specifications)):
             panel = chr(97 + index)
@@ -91,7 +94,9 @@ class EmissionsFigures:
                    ncol=2, fontsize=6, columnspacing=1.5, handlelength=2.5,
                    handletextpad=.5, frameon=False)
         fig.text(.035, .060,
-                 "GHG emissions are the reported model values. CO2 capture is shown separately.",
+                 ("Panel d: 100 × captured CO2 / reported sector GHG; same sector, pathway and year."
+                  if capture_share else
+                  "GHG emissions are the reported model values. CO2 capture is shown separately."),
                  fontsize=5.8, color="#52616A")
         assumption = ("Draft assumption: missing additive activity = zero."
                       if self.config["missing_activity"] == "zero" else
@@ -99,7 +104,9 @@ class EmissionsFigures:
         fig.text(.035, .025, assumption, fontsize=5.5, color="#63717A", va="bottom")
         caption = (
             "Global sector greenhouse-gas emissions (a), shares of all-industry greenhouse-gas "
-            "emissions (b), derived emissions per tonne of material (c), and carbon capture (d) "
+            "emissions (b), derived emissions per tonne of material (c), and "
+            + ("CO2 capture relative to reported sector GHG emissions (d) " if capture_share else
+               "carbon capture (d) ") +
             "without circular-economy measures. Each panel contains cement, iron and steel, and "
             "aluminium under NDC (ndc_noce; solid lines with open circles) and NDC+LTT "
             "(baseline_noce; dashed lines with filled squares). Colours identify sectors; line and "
@@ -114,8 +121,20 @@ class EmissionsFigures:
             "giving tCO2e/t. It is a ratio of global totals rather than an average of regional "
             "intensities. Cement uses cement output excluding clinker; steel and aluminium use "
             "primary plus secondary output. A nonpositive denominator yields an undefined "
-            "ratio. Panel d uses Carbon Capture|Industry|sector in MtCO2/yr, a distinct CO2 "
-            "quantity from the CO2-equivalent GHG measure. Source data includes original "
+            "ratio. " +
+            ("Panel d shows 100 × global Carbon Capture|Industry|sector (MtCO2/yr) / global "
+             "Emissions|GHG|Industry|sector (MtCO2e/yr), matching sector, climate pathway and "
+             "model year. The denominator is the reported sector GHG series shown in panel a, "
+             "retained in its original MtCO2e/yr unit, rather than total industry or the other "
+             "pathway. Capture is not added to or subtracted from that denominator. This "
+             "indicator compares captured CO2 with reported GHG emissions; it is not a CO2-only "
+             "capture efficiency or a fraction of reconstructed pre-capture emissions. It is "
+             "a ratio of global sums, not an average of regional ratios. Nonfinite quantities "
+             "or nonpositive sector GHG totals yield gaps; finite ratios above 100% are "
+             "retained. " if capture_share else
+             "Panel d uses Carbon Capture|Industry|sector in MtCO2/yr, a distinct CO2 "
+             "quantity from the CO2-equivalent GHG measure. ") +
+            "Source data includes original "
             "variables, constituent regions, numerators, denominators and conversion factors "
             "for audit. Each panel's vertical scale spans both pathways and all three sectors. "
             "Markers show supplied years joined by straight lines, without smoothing or "

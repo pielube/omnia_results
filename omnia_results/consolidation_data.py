@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 from .metrics import Results, SECTORS, ratio
@@ -257,6 +258,13 @@ class ConsolidationData:
                     ("d", "Carbon capture", capture, "MtCO2/yr",
                      [capture_variable], capture, "MtCO2/yr", None, "", 1),
                 ]
+                if self.config.get("capture_as_emissions_share", False):
+                    capture_share = ratio(capture, ghg, 100).where(
+                        np.isfinite(capture) & np.isfinite(ghg))
+                    specifications[-1] = (
+                        "d", "Carbon capture relative to sector GHG emissions", capture_share, "%",
+                        [capture_variable, emissions_variable], capture, "MtCO2/yr",
+                        ghg, "MtCO2e/yr", 100)
                 common = {"Scenario": scenario, "ClimatePathway": climate_label(scenario),
                           "CE": policy_label(scenario), "Scope": "Global", "Sector": sector.label,
                           "Series": sector.label, "Role": "plotted",

@@ -1,0 +1,57 @@
+PolicyArea,Scope,Region,Description,InsidePolicyArea
+EU,Inside policy area,EUE,Eastern Europe Union,True
+EU,Inside policy area,EUM,Mediterranean- Europe Union,True
+EU,Inside policy area,EUW,Western Europe Union,True
+EU,Outside policy area,AFE,Eastern Africa,False
+EU,Outside policy area,AFN,Northern Africa,False
+EU,Outside policy area,AFW,Western Africa,False
+EU,Outside policy area,AFZ,Southern Africa,False
+EU,Outside policy area,ANZ,Australia and New Zealand,False
+EU,Outside policy area,ASC,Central Asia,False
+EU,Outside policy area,ASE,Southeast Asia,False
+EU,Outside policy area,ASO,South Asia,False
+EU,Outside policy area,BRA,Brazil,False
+EU,Outside policy area,CAN,Canada,False
+EU,Outside policy area,CHL,Chile,False
+EU,Outside policy area,CHN,China,False
+EU,Outside policy area,ENE,Non-EU Eastern Europe,False
+EU,Outside policy area,ENW,Non-EU Western Europe,False
+EU,Outside policy area,IDN,Indonesia - Philippines - Vietnam,False
+EU,Outside policy area,IND,India,False
+EU,Outside policy area,JPN,Japan,False
+EU,Outside policy area,LAM,Latin America,False
+EU,Outside policy area,MDA,Mediterranean Asia,False
+EU,Outside policy area,MEA,Middle East (Gulf States),False
+EU,Outside policy area,MEX,Mexico,False
+EU,Outside policy area,NIG,Nigeria,False
+EU,Outside policy area,RUS,Russian Federation,False
+EU,Outside policy area,SKT,South Korea – Taiwan,False
+EU,Outside policy area,USA,United States,False
+EU + partners,Inside policy area,ANZ,Australia and New Zealand,True
+EU + partners,Inside policy area,BRA,Brazil,True
+EU + partners,Inside policy area,CAN,Canada,True
+EU + partners,Inside policy area,CHL,Chile,True
+EU + partners,Inside policy area,CHN,China,True
+EU + partners,Inside policy area,ENE,Non-EU Eastern Europe,True
+EU + partners,Inside policy area,ENW,Non-EU Western Europe,True
+EU + partners,Inside policy area,EUE,Eastern Europe Union,True
+EU + partners,Inside policy area,EUM,Mediterranean- Europe Union,True
+EU + partners,Inside policy area,EUW,Western Europe Union,True
+EU + partners,Inside policy area,IDN,Indonesia - Philippines - Vietnam,True
+EU + partners,Inside policy area,IND,India,True
+EU + partners,Inside policy area,JPN,Japan,True
+EU + partners,Inside policy area,MEX,Mexico,True
+EU + partners,Inside policy area,RUS,Russian Federation,True
+EU + partners,Inside policy area,SKT,South Korea – Taiwan,True
+EU + partners,Inside policy area,USA,United States,True
+EU + partners,Outside policy area,AFE,Eastern Africa,False
+EU + partners,Outside policy area,AFN,Northern Africa,False
+EU + partners,Outside policy area,AFW,Western Africa,False
+EU + partners,Outside policy area,AFZ,Southern Africa,False
+EU + partners,Outside policy area,ASC,Central Asia,False
+EU + partners,Outside policy area,ASE,Southeast Asia,False
+EU + partners,Outside policy area,ASO,South Asia,False
+EU + partners,Outside policy area,LAM,Latin America,False
+EU + partners,Outside policy area,MDA,Mediterranean Asia,False
+EU + partners,Outside policy area,MEA,Middle East (Gulf States),False
+EU + partners,Outside policy area,NIG,Nigeria,False

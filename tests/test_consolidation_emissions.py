@@ -17,6 +17,7 @@ EMISSIONS = "Sector GHG emissions"
 SHARE = "Share of industrial GHG emissions"
 INTENSITY = "Derived emissions intensity"
 CAPTURE = "Carbon capture"
+CAPTURE_SHARE = "Carbon capture relative to sector GHG emissions"
 
 
 class ConsolidationEmissionsTests(unittest.TestCase):
@@ -278,6 +279,102 @@ class ConsolidationEmissionsTests(unittest.TestCase):
                     np.testing.assert_array_equal(line.get_xdata(), self.config["years"])
             self.assertEqual([label.get_text() for label in spec.figure.legends[1].get_texts()],
                              ["NDC", "NDC+LTT"])
+        finally:
+            plt.close(spec.figure)
+
+    def test_capture_share_matches_sector_pathway_year_and_uses_global_sums_and_raw_units(self):
+        original = self.data().emissions()
+        revised = self.data(config={**self.config, "capture_as_emissions_share": True}).emissions()
+        self.assertEqual(len(revised), len(original))
+        pd.testing.assert_frame_equal(original[original.Panel != "d"], revised[revised.Panel != "d"])
+        for scenario in self.config["scenarios"]:
+            for sector in SECTORS:
+                capture = self.metric(original, scenario, sector.label, CAPTURE)
+                ghg = self.metric(original, scenario, sector.label, EMISSIONS).Numerator
+                shares = self.metric(revised, scenario, sector.label, CAPTURE_SHARE)
+                expected = (capture.Value.to_numpy() / ghg.to_numpy() * 100)
+                expected[ghg.to_numpy() <= 0] = np.nan
+                np.testing.assert_allclose(shares.Value, expected, equal_nan=True)
+                np.testing.assert_allclose(shares.Numerator, capture.Value)
+                np.testing.assert_allclose(shares.Denominator, ghg)
+                self.assertEqual(shares.Unit.unique().tolist(), ["%"])
+                self.assertEqual(shares.NumeratorUnit.unique().tolist(), ["MtCO2/yr"])
+                self.assertEqual(shares.DenominatorUnit.unique().tolist(), ["MtCO2e/yr"])
+                self.assertEqual(shares.ConversionFactor.tolist(), [100, 100])
+                expected_variables = [f"Carbon Capture|Industry|{sector.path}",
+                                      f"Emissions|GHG|Industry|{sector.path}"]
+                self.assertTrue(all(json.loads(v) == expected_variables for v in shares.SourceVariables))
+        cement = self.metric(revised, "baseline_noce", "Cement", CAPTURE_SHARE).Value.iloc[0]
+        self.assertEqual(cement, 20)
+        self.assertNotAlmostEqual(cement, 50 * (1 / 4 + 3 / 16))
+        self.assertNotAlmostEqual(cement, 100 * 4 / 200)
+        self.assertNotAlmostEqual(cement, 100 * 4 / 30)
+        self.assertNotAlmostEqual(cement, 100 * 4 / (20 + 4))
+
+    def test_capture_share_nonpositive_or_nonfinite_emissions_and_nonfinite_capture_are_gaps(self):
+        config = {**self.config, "capture_as_emissions_share": True}
+        for variable, unit, values in (
+                ("Emissions|GHG|Industry|Non-Metallic Minerals|Cement", "MtCO2e/yr", (0, -2, np.inf, np.nan)),
+                ("Carbon Capture|Industry|Non-Metallic Minerals|Cement", "MtCO2/yr", (np.inf, np.nan))):
+            for value in values:
+                source = self.source.astype({"2050": float}).copy()
+                selected = ((source.Scenario == "baseline_noce") & (source.Variable == variable)
+                            & (source.Unit == unit))
+                source.loc[selected, "2050"] = value
+                with self.subTest(variable=variable, value=value):
+                    if np.isinf(value):
+                        with self.assertRaisesRegex(ValueError, "Infinite values in input"):
+                            self.data(source=source, config=config)
+                        continue
+                    frame = self.data(source=source, config=config).emissions()
+                    self.assertTrue(np.isnan(self.metric(frame, "baseline_noce", "Cement", CAPTURE_SHARE).Value.iloc[1]))
+                    self.assertTrue(np.isfinite(self.metric(frame, "ndc_noce", "Cement", CAPTURE_SHARE).Value.iloc[1]))
+
+    def test_capture_share_missingness_follows_activity_policy_and_percentages_are_not_capped(self):
+        for variable, unit, zero_value in (
+                ("Emissions|GHG|Industry|Non-Metallic Minerals|Cement", "MtCO2e/yr", 100 * 6 / 14),
+                ("Carbon Capture|Industry|Non-Metallic Minerals|Cement", "MtCO2/yr", 100 * 4 / 20)):
+            source = self.source.copy()
+            selected = ((source.Scenario == "baseline_noce") & (source.Region == "EUE")
+                        & (source.Variable == variable) & (source.Unit == unit))
+            source.loc[selected, "2050"] = np.nan
+            for policy in ("preserve", "zero"):
+                config = {**self.config, "missing_activity": policy, "capture_as_emissions_share": True}
+                frame = self.data(source=source, config=config).emissions()
+                share = self.metric(frame, "baseline_noce", "Cement", CAPTURE_SHARE).Value.iloc[1]
+                if policy == "preserve":
+                    self.assertTrue(np.isnan(share))
+                else:
+                    self.assertAlmostEqual(share, zero_value)
+        source = self.source.copy()
+        selected = (source.Variable.str.startswith("Carbon Capture|") & (source.Unit == "MtCO2/yr"))
+        source.loc[selected, "2050"] = 100
+        revised = self.data(source=source, config={**self.config, "capture_as_emissions_share": True}).emissions()
+        self.assertEqual(self.metric(revised, "baseline_noce", "Cement", CAPTURE_SHARE).Value.iloc[1], 1000)
+
+    def test_capture_share_rendering_has_percentage_label_and_unaltered_other_panels(self):
+        from omnia_results.consolidation_emissions import EmissionsFigures
+
+        class Builder(EmissionsFigures):
+            def __init__(self, data, config):
+                self.data, self.config = data, config
+
+        config = {**self.config, "capture_as_emissions_share": True}
+        spec = Builder(self.data(config=config), config).emissions()
+        try:
+            panel = spec.figure.axes[3]
+            self.assertIn("sector GHG", panel.get_title(loc="left"))
+            self.assertIn("%", panel.get_ylabel())
+            for line in panel.lines:
+                if line.get_label().startswith("_"):
+                    continue
+                sector, climate = line.get_label().split(" | ")
+                scenario = "ndc_noce" if climate == "NDC" else "baseline_noce"
+                expected = self.metric(spec.data, scenario, sector, CAPTURE_SHARE).Value
+                np.testing.assert_allclose(line.get_ydata(), expected, equal_nan=True)
+            self.assertIn("not a CO2-only", spec.caption)
+            self.assertIn("100 × captured CO2 / reported sector GHG",
+                          " ".join(t.get_text() for t in spec.figure.texts))
         finally:
             plt.close(spec.figure)
 

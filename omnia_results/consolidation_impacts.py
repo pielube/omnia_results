@@ -15,7 +15,8 @@ from .report import ReportFigure
 
 INDUSTRY_COLORS = {"Cement": "#0072B2", "Iron and steel": "#D55E00",
                    "Aluminium": "#009E73", "Other industry": "#ADB8BE"}
-REGIONAL_PALETTE = ("#0072B2", "#E69F00", "#D55E00", "#009E73", "#CC79A7", "#ADB8BE")
+# Geography has its own palette so its bars cannot be mistaken for sectors.
+REGIONAL_PALETTE = ("#6A3D9A", "#C7A600", "#A61B57", "#E78AC3", "#B8A3D1", "#8C7656")
 NET_COLOR = "#1D262C"
 
 
@@ -96,8 +97,8 @@ class EmissionsResponseFigures:
                           if label not in {"EU", "Other partners", "Rest of world"}]
         title = "CE emissions savings, industrial responses and international cooperation"
         fig, axes = plt.subplots(3, 2, figsize=(180 / 25.4, 235 / 25.4), squeeze=False)
-        # Two header-legend rows and a two-row geographic legend have reserved
-        # bands, keeping the six plotting areas at the same physical height.
+        # Each row has its own legend band, keeping the six plotting areas at
+        # the same physical height and identifying what each colour encodes.
         bottoms = (.650, .375, .100)
         for row in range(3):
             for column in range(2):
@@ -146,13 +147,13 @@ class EmissionsResponseFigures:
                     if row == 1:
                         component_colors = INDUSTRY_COLORS
                         labels = list(INDUSTRY_COLORS)
-                        ax.set_title(f"{climate_name} | industrial change, {future}",
+                        ax.set_title(f"{climate_name} | change by sector, {future}",
                                      loc="left", fontsize=7, pad=9)
                         ax.set_ylabel("Industry GHG change\n(Mt CO$_2$e yr$^{-1}$)", fontsize=6.5, labelpad=3)
                     else:
                         component_colors = geography_colors
                         labels = geographic_labels
-                        ax.set_title(f"{climate_name} | regional change, {future}",
+                        ax.set_title(f"{climate_name} | change by region, {future}",
                                      loc="left", fontsize=7, pad=9)
                         ax.set_ylabel("Three-sector GHG change\n(Mt CO$_2$e yr$^{-1}$)", fontsize=6.5, labelpad=3)
                     components = {}
@@ -191,10 +192,12 @@ class EmissionsResponseFigures:
                             for label, color in INDUSTRY_COLORS.items()]
         industry_handles.append(Line2D([], [], color=NET_COLOR, marker="D", linestyle="none",
                                        markersize=3.5, label="Total industry net"))
-        # Matplotlib fills legend columns before rows: interleave the two bands
-        # so their visual row order is policies, then industrial components/net.
-        header_handles = [handle for pair in zip(policy_handles, industry_handles) for handle in pair]
-        fig.legend(handles=header_handles, loc="upper center", bbox_to_anchor=(.535, .905),
+        fig.legend(handles=policy_handles, loc="upper center", bbox_to_anchor=(.535, .905),
+                   title="CE settings (a, b)", title_fontsize=6,
+                   ncol=5, fontsize=6, columnspacing=1.3, handlelength=2,
+                   handletextpad=.45, labelspacing=.85, frameon=False)
+        fig.legend(handles=industry_handles, loc="upper center", bbox_to_anchor=(.535, .607),
+                   title="Sectors (c, d)", title_fontsize=6,
                    ncol=5, fontsize=6, columnspacing=1.3, handlelength=2,
                    handletextpad=.45, labelspacing=.85, frameon=False)
         geography_handles = [Patch(facecolor=geography_colors[label], label=label)
@@ -206,6 +209,7 @@ class EmissionsResponseFigures:
         geography_handles = [geography_handles[index] for column in range(4)
                              for index in range(column, len(geography_handles), 4)]
         fig.legend(handles=geography_handles, loc="upper center", bbox_to_anchor=(.535, .354),
+                   title="Geographies (e, f)", title_fontsize=6,
                    ncol=4, fontsize=5.8, columnspacing=1.4, handlelength=1.4,
                    handletextpad=.45, labelspacing=.75, frameon=False)
         fig.text(.035, .057,
@@ -233,7 +237,13 @@ class EmissionsResponseFigures:
             "regional groups; diamonds and signed labels show the global three-sector net, "
             "rather than the all-industry net used in the middle row. Increases and decreases "
             "stack independently from zero in both decomposition rows. The same vertical "
-            "limits are used within each row across pathways. EU comprises EUE, EUM and EUW. "
+            "limits are used within each row across pathways. Separate legends identify CE "
+            "settings (a,b), sectors (c,d) and geographies (e,f); geographic colours are distinct "
+            "from sector colours. CE trajectories use charcoal for no CE, cyan for M-EU, "
+            "lime for H-EU, indigo for M-EU+ and fuchsia for H-EU+, matching the "
+            "sector-cost figure. Dashed lines with open "
+            "circles denote EU-only CE; solid lines with filled diamonds denote EU plus "
+            "partners. EU comprises EUE, EUM and EUW. "
             f"The fixed leading partner groups are {partner_list}, selected once by mean "
             f"absolute {future} three-sector emissions change across the eight CE cases "
             "(four CE variants and two climate pathways), each relative to its own no-CE "

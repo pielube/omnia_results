@@ -11,8 +11,9 @@ from .plots import STYLE
 CLIMATE_LABELS = {"baseline": "Baseline", "ndc": "NDC"}
 POLICY_SHORT = {"noce": "No CE", "medce_eu": "M–EU", "highce_eu": "H–EU",
                 "medce_gbl": "M–EU+", "highce_gbl": "H–EU+"}
-POLICY_COLORS = {"noce": "#66717A", "medce_eu": "#0072B2", "medce_gbl": "#0072B2",
-                 "highce_eu": "#D55E00", "highce_gbl": "#D55E00"}
+# Each CE setting has its own colour; line style and markers reinforce scope.
+POLICY_COLORS = {"noce": "#4D4D4D", "medce_eu": "#00A6C8", "medce_gbl": "#303F9F",
+                 "highce_eu": "#899F00", "highce_gbl": "#D000A8"}
 POLICY_MARKERS = {"noce": "s", "medce_eu": "o", "highce_eu": "o",
                   "medce_gbl": "D", "highce_gbl": "D"}
 POLICY_STYLES = {"noce": "-", "medce_eu": "--", "highce_eu": "--",

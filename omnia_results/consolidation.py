@@ -228,7 +228,9 @@ def generate_consolidation(config: dict, base: Path):
                        "Previously generated report and comparison collections are preserved.",
                        production_note,
                        "Figure 3 sums exact parent energy carriers; global energy intensity is global final energy divided by global production, multiplied by 1000 to convert EJ/Mt to GJ/t.",
-                       "Figure 4 uses reported sector GHG emissions without subtracting capture again. Shares use each pathway's total industrial GHG, intensities use global production, and capture retains its separate CO2 unit.",
+                       ("Figure 4 panel d gives 100 * captured CO2 (MtCO2/yr) / reported sector GHG (MtCO2e/yr), matching sector, pathway and year. Raw quantities and units remain explicit. This is relative to reported GHG, not CO2-only capture efficiency or a reconstructed pre-capture denominator; nonfinite or nonpositive references give gaps. Other panels retain reported emissions, industrial shares and production-based intensities."
+                        if config.get("capture_as_emissions_share", False) else
+                        "Figure 4 uses reported sector GHG emissions without subtracting capture again. Shares use each pathway's total industrial GHG, intensities use global production, and capture retains its separate CO2 unit."),
                        "Figure 5 puts NDC above NDC+LTT and compares each pathway's no-CE historical production with all five future CE settings. Cement and clinker remain separate; metals show primary and secondary stacks. Future percentage changes use the same pathway's future no-CE total, not the historical bar.",
                        "Figure 6 keeps the same historical/future bars and climate row order as Figure 5. It stacks exact final-energy carrier parents, excludes nested subcategories, and compares future totals with each pathway's future no-CE energy. Cement has no hydrogen parent in this source.",
                        "Figure 7 has NDC on the left and NDC+LTT on the right. Top trajectories and bottom geographic changes cover three sectors; the middle net change covers all industry, with Other industry calculated as a residual. Partner regions are ranked once by mean absolute comparison-year three-sector change across all eight CE cases; the same three regions and order apply throughout.",
@@ -312,6 +314,22 @@ def _write_methods(directory, config):
         "Coverage is calculated separately for each pathway as the common cohort's output divided by "
         "that pathway's global output, with displayed shares in NDC / NDC+LTT order.")
     coverage_methods = ""
+    capture_methods = (
+        "Panel d shows **100 × global captured CO₂ (MtCO2/yr) / global reported sector GHG "
+        "emissions (MtCO2e/yr)**, matching sector, climate pathway and model year. It uses the "
+        "same sector GHG denominator as panel a, in its original MtCO2e/yr unit. This ratio "
+        "compares captured CO₂ with reported GHG emissions; it does not measure CO₂-only "
+        "capture efficiency or the fraction captured from reconstructed pre-capture emissions. "
+        "Capture is not added to or subtracted from the denominator. Global sums precede "
+        "division; regional ratios are not averaged. Nonfinite quantities or nonpositive "
+        "GHG denominators give gaps. Values above 100% remain valid ratios and are not capped. "
+        "Raw capture amounts, reported GHG, original units, both exact source parents and "
+        "factor 100 are retained in the CSV. The configuration enables this presentation "
+        "with `capture_as_emissions_share=true`; older configurations retain absolute capture."
+        if config.get("capture_as_emissions_share", False) else
+        "Panel d sums the exact `Carbon Capture|Industry|...` series in `MtCO2/yr`. Capture "
+        "is shown separately and is **not subtracted again** from the reported GHG series. "
+        "GHG emissions include CO₂-equivalent units, while capture refers to CO₂.")
     if {"material_policy_coverage", "energy_policy_coverage"} & set(config.get("figures", [])):
         coverage_methods = f"""## Figures 9–10: responses inside and outside CE policy areas
 
@@ -344,7 +362,7 @@ Cement and clinker use `Production|Non-Metallic Minerals|Cement` and `Production
 
 ## Figure 2: leading producers
 
-Producer groups use the same partition as the original leading-producer report. **Europe combines ENE, ENW, EUE, EUM and EUW**; this statistical producer group differs from the three-region EU policy group used in the CE comparisons. Remaining groups preserve individual model regions, with readable model-group labels. Indonesia group includes Indonesia, Philippines and Viet Nam. `producer_membership.csv` records exact model-region membership, which partitions all 28 regions once.
+Producer groups use the same partition as the original leading-producer report. **Europe combines ENE, ENW, EUE, EUM and EUW**; this statistical producer group differs from the three-region EU policy group used in the CE comparisons. Remaining groups preserve individual model regions, with readable model-group labels. Indonesia group includes Indonesia, Philippines and Viet Nam. `producer_membership.csv` records exact model-region membership, which partitions all 28 regions once. {config.get('producer_geography_note', '')}
 
 {producer_ranking}
 
@@ -368,7 +386,7 @@ Panel a sums each sector's exact `Emissions|GHG|Industry|...` series in `MtCO2e/
 
 Panel c divides global sector GHG (`MtCO2e/yr`) by global material production (`Mt/yr`), giving `tCO2e/t` with a numerical conversion factor of one. Cement uses cement output excluding clinker, and metals use primary plus secondary output. These are ratios of global sums, not averages of regional intensities. Missing or nonpositive denominators make shares or intensities undefined.
 
-Panel d sums the exact `Carbon Capture|Industry|...` series in `MtCO2/yr`. Capture is shown separately and is **not subtracted again** from the reported GHG series. GHG emissions include CO₂-equivalent units, while capture refers to CO₂. Small aluminium capture values retain their full source precision even when visually close to zero on the shared scale. All four metrics use exact variable/unit selections and the same explicit missing-activity policy. The source CSV retains raw numerators, denominators, their units and conversion factors for audit.
+{capture_methods} Small aluminium capture values retain their full source precision even when visually close to zero on the shared scale. All four metrics use exact variable/unit selections and the same explicit missing-activity policy. The source CSV retains raw numerators, denominators, their units and conversion factors for audit.
 
 ## Figure 5: material production across CE scenarios
 
@@ -391,6 +409,10 @@ Labels above future bars give **100 × scenario final energy / same-pathway futu
 ## Figure 7: emissions response and geographic contributions
 
 The **3 × 2** layout puts **NDC on the left and NDC+LTT on the right**. Panels a,b show global cement, steel and aluminium GHG trajectories for all five CE settings. Panels c,d decompose **{config.get('comparison_year', 2050)} total industrial GHG changes** into those three sectors and other industry. Panels e,f decompose **the three sectors' changes** geographically. Every change subtracts no CE under the same climate pathway in the same year. Row pairs use common vertical limits. Model-year markers retain their actual coordinates.
+
+Each row has a separate legend labelled with its panel letters: **CE settings (a,b)**, **Sectors (c,d)** and **Geographies (e,f)**. Geographic bars and their legend use a distinct purple, gold, wine, pink, lilac and brown palette; sector colours retain the blue, orange, green and grey used elsewhere in the report.
+
+The shared CE-setting palette in Figures 7 and 8 gives every setting a distinct colour: **charcoal for no CE**, **cyan for M–EU**, **lime for H–EU**, **indigo for M–EU+** and **fuchsia for H–EU+**. EU-only settings also use dashed lines with open circles; EU-plus-partners settings use solid lines with filled diamonds. No CE uses a solid line with square markers.
 
 Sector data select exact `Emissions|GHG|Industry|sector` parents and the `MtCO2e/yr` unit. Total industry selects `Emissions|GHG|Industry`. Negative source values remain signed, and separately reported CO₂ capture is not subtracted again. **Other industry = reported total industry − cement − steel − aluminium**; its change is an accounting residual and does not establish a particular rebound mechanism. Signed stack components accumulate increases and decreases independently from zero. Black diamonds and signed labels give the net change: **all industry** in the middle row, **three sectors** in the last row.
 
