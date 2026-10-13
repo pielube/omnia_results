@@ -40,6 +40,16 @@ python -m omnia_results --config figures.allce.json
 
 The optional `combined_pdf` configuration field names a PDF file in the output directory. When present, the report workflow also exports the combined PDF and collection gallery.
 
+## Regional carbon-price scenario comparisons
+
+The [regional carbon-price gallery](report_figures_carbon_prices_261008/index.html) and [combined nine-page PDF](report_figures_carbon_prices_261008/report_figures.pdf) use [results_allCE_261008.csv](results_allCE_261008.csv). Each of the nine region groups in the original Figure 3 has a separate one-axis figure with all ten scenarios. The current CE colours identify the five settings, while solid lines denote NDC and dashed lines NDC+LTT. Each figure has a PDF, editable SVG, 600 dpi PNG and source CSV.
+
+All prices use fixed **baseline_noce 2019 industrial-GHG-emissions weights**, normalized within each of the original groups. The 2019 emissions are identical across all ten scenarios, so these common weights reproduce the reference definition. Europe retains ENE, ENW, EUE, EUM and EUW. [Weights](report_figures_carbon_prices_261008/carbon_price_weights.csv), [raw regional prices and contributions](report_figures_carbon_prices_261008/regional_prices.csv), [methods](report_figures_carbon_prices_261008/methods.md) and [audit metadata](report_figures_carbon_prices_261008/audit.json) accompany the plots.
+
+```powershell
+python -m omnia_results --config figures.carbon_prices.261008.json
+```
+
 ## Cross-scenario CE comparisons
 
 Open the [five-figure comparison gallery](comparison_figures/index.html) or the [combined five-page PDF](comparison_figures/report_figures.pdf). Each figure has a vector PDF, editable SVG, 600 dpi PNG and full-precision source CSV. [Captions](comparison_figures/captions.md), [methods](comparison_figures/methods.md), [2050 comparison data](comparison_figures/comparison_summary.csv) and [audit metadata](comparison_figures/audit.json) accompany the collection.

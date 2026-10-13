@@ -1,0 +1,114 @@
+{
+  "suite": "carbon_prices",
+  "input": "results_allCE_261008.csv",
+  "output": "report_figures_carbon_prices_261008",
+  "scenarios": [
+    "ndc_noce",
+    "ndc_medce_eu",
+    "ndc_highce_eu",
+    "ndc_medce_gbl",
+    "ndc_highce_gbl",
+    "baseline_noce",
+    "baseline_medce_eu",
+    "baseline_highce_eu",
+    "baseline_medce_gbl",
+    "baseline_highce_gbl"
+  ],
+  "years": [
+    2019,
+    2024,
+    2030,
+    2035,
+    2040,
+    2050
+  ],
+  "regions": [
+    "AFE",
+    "AFN",
+    "AFW",
+    "AFZ",
+    "ANZ",
+    "ASC",
+    "ASE",
+    "ASO",
+    "BRA",
+    "CAN",
+    "CHL",
+    "CHN",
+    "ENE",
+    "ENW",
+    "EUE",
+    "EUM",
+    "EUW",
+    "IDN",
+    "IND",
+    "JPN",
+    "LAM",
+    "MDA",
+    "MEA",
+    "MEX",
+    "NIG",
+    "RUS",
+    "SKT",
+    "USA"
+  ],
+  "macroregions": {
+    "Europe": [
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW"
+    ],
+    "China region": [
+      "CHN"
+    ],
+    "India": [
+      "IND"
+    ],
+    "North America": [
+      "USA",
+      "CAN",
+      "MEX"
+    ],
+    "Latin America & Caribbean": [
+      "BRA",
+      "CHL",
+      "LAM"
+    ],
+    "Other Asia–Pacific": [
+      "ANZ",
+      "ASE",
+      "ASO",
+      "IDN",
+      "JPN",
+      "SKT"
+    ],
+    "Russia & Central Asia": [
+      "RUS",
+      "ASC"
+    ],
+    "Middle East": [
+      "MDA",
+      "MEA"
+    ],
+    "Africa": [
+      "AFE",
+      "AFN",
+      "AFW",
+      "AFZ",
+      "NIG"
+    ]
+  },
+  "price_weight_scenario": "baseline_noce",
+  "price_weight_year": 2019,
+  "missing_activity": "preserve",
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "dpi": 600,
+  "config_file": "figures.carbon_prices.261008.json",
+  "reference_figure": "report_figures_allce/baseline_noce/fig03_carbon_prices.pdf"
+}

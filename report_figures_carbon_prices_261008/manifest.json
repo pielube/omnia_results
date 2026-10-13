@@ -1,0 +1,164 @@
+[
+  {
+    "number": "1",
+    "slug": "fig01_carbon_prices_europe",
+    "title": "Carbon-price index | Europe",
+    "question": "How do carbon prices in Europe differ across climate and CE settings?",
+    "caption": "Carbon-price indices for Europe, comprising ENE, ENW, EUE, EUM, EUW, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "Europe",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "2",
+    "slug": "fig02_carbon_prices_china_region",
+    "title": "Carbon-price index | China region",
+    "question": "How do carbon prices in China region differ across climate and CE settings?",
+    "caption": "Carbon-price indices for China region, comprising CHN, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "China region",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "3",
+    "slug": "fig03_carbon_prices_india",
+    "title": "Carbon-price index | India",
+    "question": "How do carbon prices in India differ across climate and CE settings?",
+    "caption": "Carbon-price indices for India, comprising IND, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "India",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "4",
+    "slug": "fig04_carbon_prices_north_america",
+    "title": "Carbon-price index | North America",
+    "question": "How do carbon prices in North America differ across climate and CE settings?",
+    "caption": "Carbon-price indices for North America, comprising USA, CAN, MEX, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "North America",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "5",
+    "slug": "fig05_carbon_prices_latin_america_caribbean",
+    "title": "Carbon-price index | Latin America & Caribbean",
+    "question": "How do carbon prices in Latin America & Caribbean differ across climate and CE settings?",
+    "caption": "Carbon-price indices for Latin America & Caribbean, comprising BRA, CHL, LAM, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "Latin America & Caribbean",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "6",
+    "slug": "fig06_carbon_prices_other_asia_pacific",
+    "title": "Carbon-price index | Other Asia–Pacific",
+    "question": "How do carbon prices in Other Asia–Pacific differ across climate and CE settings?",
+    "caption": "Carbon-price indices for Other Asia–Pacific, comprising ANZ, ASE, ASO, IDN, JPN, SKT, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "Other Asia–Pacific",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "7",
+    "slug": "fig07_carbon_prices_russia_central_asia",
+    "title": "Carbon-price index | Russia & Central Asia",
+    "question": "How do carbon prices in Russia & Central Asia differ across climate and CE settings?",
+    "caption": "Carbon-price indices for Russia & Central Asia, comprising RUS, ASC, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "Russia & Central Asia",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "8",
+    "slug": "fig08_carbon_prices_middle_east",
+    "title": "Carbon-price index | Middle East",
+    "question": "How do carbon prices in Middle East differ across climate and CE settings?",
+    "caption": "Carbon-price indices for Middle East, comprising MDA, MEA, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "Middle East",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  },
+  {
+    "number": "9",
+    "slug": "fig09_carbon_prices_africa",
+    "title": "Carbon-price index | Africa",
+    "question": "How do carbon prices in Africa differ across climate and CE settings?",
+    "caption": "Carbon-price indices for Africa, comprising AFE, AFN, AFW, AFZ, NIG, in all ten climate/CE scenarios from results_allCE_261008.csv. Each curve is the weighted mean of exact Price|Carbon [USD_2010/t CO2e] source prices. Weights use baseline_noce reported industrial GHG emissions in 2019, normalized within this group and held fixed across every scenario and year. Colours identify the five CE settings using the shared report palette; solid lines denote NDC (ndc_*) and dashed lines NDC+LTT (baseline_*). Squares denote no CE, open circles EU-only CE and filled diamonds EU-plus-partners CE. EU+ covers 17 participating model regions, rather than worldwide adoption. Prices are in constant 2010 USD per tonne CO2-equivalent. Source-year coordinates and signs are preserved; straight segments connect the supplied observations. Missing prices with positive weights yield gaps; zero-weight prices do not invalidate an index. Coincident curves are not displaced. Each region has its own linear price scale, including zero. Weights and raw regional contributions are exported alongside the figure data.",
+    "section": "Main report",
+    "group": "Africa",
+    "panel_count": 1,
+    "scenario_count": 10,
+    "width_mm": 183.0,
+    "height_mm": 108.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ]
+  }
+]
