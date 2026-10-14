@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>European industrial model comparison</title>
+<style>
+*{box-sizing:border-box}body{font-family:Arial,Helvetica,sans-serif;background:#f4f5f3;color:#233139;margin:0;line-height:1.6}
+main{max-width:1080px;margin:auto;padding:42px 26px}h1{font-size:32px;line-height:1.2}a{color:#006887;text-underline-offset:3px}
+.intro{max-width:880px;color:#52616a}.download{display:inline-block;background:#173f4b;color:white;padding:10px 16px;border-radius:4px}
+.scope{padding:12px 16px;background:#edf1f0;border-left:3px solid #667d83}.figure-card{margin:32px 0;background:white;border:1px solid #d7e0df;border-radius:5px}
+.figure-heading{padding:20px 26px 0}.figure-number{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#607780}h3{margin:5px 0;font-size:22px}
+.purpose{color:#607780}figure{margin:0;padding:16px 26px}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;line-height:1.65;margin-top:20px}
+.figure-links,.downloads{padding:0 26px 20px;font-size:13px}.downloads{display:flex;flex-wrap:wrap;gap:14px}footer{color:#607780;font-size:12px;margin-top:30px}
+@media(max-width:600px){main{padding:24px 12px}.figure-heading,figure{padding-left:12px;padding-right:12px}h1{font-size:25px}}
+</style></head><body><main>
+<p>OMNIA-ENGAGE / GCAM · European industry</p><h1>Comparing EU-only circular-economy scenarios</h1>
+<p class="intro">Three figures compare material production, final-energy mixes and reported industrial GHG under NDC and NDC+LTT, with no, medium and high CE in the EU.</p>
+<p><a class="download" href="report_figures.pdf">Download all three figures · PDF</a></p>
+<p class="scope">OMNIA sums its EU model regions (EUE, EUM, EUW); GCAM uses its EU-27 aggregate. The boundaries differ slightly. Historical references use 2019 / 2021. GCAM reports no production-route split or matching sector GHG; Figure 3 compares source-defined industrial totals with explicit scope notes.</p>
+<p><a href="source_data.csv">All source data</a> · <a href="captions.md">Captions</a> · <a href="methods.md">Methods</a> · <a href="audit.json">Audit</a><br>
+<a href="scenario_mapping.csv">Scenario mapping</a> · <a href="geography_membership.csv">Geography</a> · <a href="variable_mapping.csv">Variables</a> · <a href="gcam_aggregation_checks.csv">GCAM aggregate checks</a> · <a href="missing_inputs.csv">Missing inputs</a></p>
+<article class="figure-card" id="figure1" aria-labelledby="title1">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 1</p>
+    <h3 id="title1">European material production: OMNIA-ENGAGE and GCAM</h3>
+    <p class="purpose">How do EU-only CE settings change material output in the two models?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig01_material_production.svg" alt="Figure 1: European material production: OMNIA-ENGAGE and GCAM" decoding="async"></div>
+    <figcaption>European production in a 2 × 3 layout: NDC above NDC+LTT, with cement, steel and aluminium columns. Each category pairs OMNIA-ENGAGE on the left with hatched GCAM on the right. Historical bars use the model&#x27;s own no-CE scenario at 2019 (OMNIA) or 2021 (GCAM); future categories show no, medium and high CE in the EU in 2050. EU+ scenarios are excluded. OMNIA metal output stacks primary and secondary routes; GCAM reports total metal production only. GCAM&#x27;s grey hatched total is not assigned to a production route. Cement excludes clinker; clinker is omitted because GCAM provides no corresponding series. OMNIA secondary shares are shown within sufficiently large segments. Future annotations use each model&#x27;s own no-CE total under the same climate pathway in 2050: 100 × (scenario/reference − 1). Sector scales match across pathways and models. OMNIA totals sum EUE, EUM and EUW; GCAM selects its supplied EU-27 aggregate once, without adding country rows. These aggregates are checked against available-country sums. OMNIA regional boundaries include some small non-EU territories; membership is exported explicitly, so the two boundaries are not assumed identical. Source scenario names are retained: OMNIA baseline_* and GCAM LTT_* are displayed as NDC+LTT; ndc_* and NDC_* are displayed as NDC. Matching labels do not establish identical policy assumptions. OMNIA missing activity = zero (provisional); GCAM missing values remain gaps. Exact source variables, units, region memberships, conversion factors and calculation references accompany the source CSVs.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 1"><a href="fig01_material_production.pdf">PDF</a><a href="fig01_material_production.svg">SVG</a><a href="fig01_material_production.png">PNG</a><a href="fig01_material_production.csv">Source CSV</a></nav>
+</article>
+<article class="figure-card" id="figure2" aria-labelledby="title2">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 2</p>
+    <h3 id="title2">European final-energy mix: OMNIA-ENGAGE and GCAM</h3>
+    <p class="purpose">How do EU-only CE settings change final-energy demand and carrier mixes?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig02_energy_mix.svg" alt="Figure 2: European final-energy mix: OMNIA-ENGAGE and GCAM" decoding="async"></div>
+    <figcaption>European final energy in a 2 × 3 layout with NDC above NDC+LTT and cement, steel and aluminium columns. Solid OMNIA-ENGAGE bars are paired with hatched GCAM bars in each category. Colours identify electricity, gases, hydrogen, liquids, solids and unallocated energy. Exact carrier parents enter each stack once. GCAM&#x27;s reported sector total is retained; Unallocated is this total minus the sum of its supplied carrier parents (nonzero for aluminium). Missing fuel variables are not assigned to a carrier or silently imputed as zero. OMNIA totals sum the documented carrier parents. Historical references use 2019 (OMNIA) and 2021 (GCAM), with no interpolation. Future bars compare no, medium and high EU-only CE in 2050. Each future percentage uses the same model, pathway and year&#x27;s no-CE final energy. Sector scales match across pathways and models. OMNIA totals sum EUE, EUM and EUW; GCAM selects its supplied EU-27 aggregate once, without adding country rows. These aggregates are checked against available-country sums. OMNIA regional boundaries include some small non-EU territories; membership is exported explicitly, so the two boundaries are not assumed identical. Source scenario names are retained: OMNIA baseline_* and GCAM LTT_* are displayed as NDC+LTT; ndc_* and NDC_* are displayed as NDC. Matching labels do not establish identical policy assumptions. OMNIA missing activity = zero (provisional); GCAM missing values remain gaps. Exact source variables, units, region memberships, conversion factors and calculation references accompany the source CSVs.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 2"><a href="fig02_energy_mix.pdf">PDF</a><a href="fig02_energy_mix.svg">SVG</a><a href="fig02_energy_mix.png">PNG</a><a href="fig02_energy_mix.csv">Source CSV</a></nav>
+</article>
+<article class="figure-card" id="figure3" aria-labelledby="title3">
+  <header class="figure-heading">
+    <p class="figure-number">Figure 3</p>
+    <h3 id="title3">European industrial GHG response: OMNIA-ENGAGE and GCAM</h3>
+    <p class="purpose">How does EU-only CE change each model&#x27;s reported industrial GHG?</p>
+  </header>
+  <figure>
+    <div class="artwork"><img src="fig03_emissions_response.svg" alt="Figure 3: European industrial GHG response: OMNIA-ENGAGE and GCAM" decoding="async"></div>
+    <figcaption>Reported European industrial GHG under NDC (left) and NDC+LTT (right). Panels a,b compare no, medium and high EU-only CE trajectories, with solid/open-circle OMNIA and dashed/filled-diamond GCAM lines at each model&#x27;s supplied years from its historical reference onward. No interpolation, extrapolation or year displacement is used. OMNIA selects Emissions|GHG|Industry; GCAM sums Emissions|Kyoto Gases|Energy|Demand|Industry and Emissions|Kyoto Gases|Industrial Processes, both in Mt CO2-equiv/yr. These are source-defined industrial totals with different accounting scopes and potentially different gas coverage/GWP conventions, rather than harmonised sector totals. Panels c,d show signed 2050 CE-minus-no-CE changes, separately decomposed into OMNIA&#x27;s cement, steel, aluminium and Other industry accounting residual, and GCAM&#x27;s industrial energy demand and industrial processes. The component legends are model-specific; they do not imply a mapping between those categories. Positive and negative components stack independently from zero; black diamonds and signed labels give each model&#x27;s net industrial change. Panels e,f show 100 × (CE − no CE) / no CE using each model&#x27;s own source-defined industrial total in the same climate pathway and year. Both decomposition and percentage bars place OMNIA on the left and hatched GCAM on the right. Scales match across pathways within each row. Regional/partner decomposition from the reference Figure 7 is replaced because only EU-only data and unmatched sector emissions are available. Carbon capture is not subtracted again. OMNIA totals sum EUE, EUM and EUW; GCAM selects its supplied EU-27 aggregate once, without adding country rows. These aggregates are checked against available-country sums. OMNIA regional boundaries include some small non-EU territories; membership is exported explicitly, so the two boundaries are not assumed identical. Source scenario names are retained: OMNIA baseline_* and GCAM LTT_* are displayed as NDC+LTT; ndc_* and NDC_* are displayed as NDC. Matching labels do not establish identical policy assumptions. OMNIA missing activity = zero (provisional); GCAM missing values remain gaps. Exact source variables, units, region memberships, conversion factors and calculation references accompany the source CSVs.</figcaption>
+  </figure>
+  <nav class="downloads" aria-label="Download figure 3"><a href="fig03_emissions_response.pdf">PDF</a><a href="fig03_emissions_response.svg">SVG</a><a href="fig03_emissions_response.png">PNG</a><a href="fig03_emissions_response.csv">Source CSV</a></nav>
+</article>
+<footer>Calculated directly from results_allCE_261008.csv and DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx. Vector PDF, editable SVG, 600 dpi PNG and full-precision CSV accompany each figure.</footer>
+</main></body></html>

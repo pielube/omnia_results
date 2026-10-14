@@ -1,0 +1,13 @@
+Model,Scenario,Climate,ClimatePathway,Policy,CE,SourceClimateLabel
+OMNIA-ENGAGE,ndc_noce,ndc,NDC,noce,No CE,ndc
+OMNIA-ENGAGE,ndc_medce_eu,ndc,NDC,medce_eu,"Medium CE, EU",ndc
+OMNIA-ENGAGE,ndc_highce_eu,ndc,NDC,highce_eu,"High CE, EU",ndc
+OMNIA-ENGAGE,baseline_noce,baseline,NDC+LTT,noce,No CE,baseline
+OMNIA-ENGAGE,baseline_medce_eu,baseline,NDC+LTT,medce_eu,"Medium CE, EU",baseline
+OMNIA-ENGAGE,baseline_highce_eu,baseline,NDC+LTT,highce_eu,"High CE, EU",baseline
+GCAM,NDC_NoCE,ndc,NDC,noce,No CE,NDC
+GCAM,NDC_MedCE_EU,ndc,NDC,medce_eu,"Medium CE, EU",NDC
+GCAM,NDC_HighCE_EU,ndc,NDC,highce_eu,"High CE, EU",NDC
+GCAM,LTT_NoCE,baseline,NDC+LTT,noce,No CE,LTT
+GCAM,LTT_MedCE_EU,baseline,NDC+LTT,medce_eu,"Medium CE, EU",LTT
+GCAM,LTT_HighCE_EU,baseline,NDC+LTT,highce_eu,"High CE, EU",LTT

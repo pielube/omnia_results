@@ -1,0 +1,114 @@
+{
+  "generated_utc": "2026-10-14T09:08:50.318243+00:00",
+  "sources": {
+    "OMNIA-ENGAGE": {
+      "file": "results_allCE_261008.csv",
+      "sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46"
+    },
+    "GCAM": {
+      "file": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+      "sha256": "0a19286a48537a20bf1e57780fe0aff5a8547f3481f71d6e119174a1659f78d4"
+    }
+  },
+  "region_mapping_sha256": "53728d27a37fcaac1c5ea9b5a3723a3eadcd1167bbe579f2bb4b084c8b362585",
+  "config": {
+    "suite": "europe_comparison",
+    "input": "results_allCE_261008.csv",
+    "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+    "gcam_sheet": "Sheet1",
+    "output": "report_figures_europe_comparison_261014",
+    "combined_pdf": "report_figures.pdf",
+    "config_file": "figures.europe_comparison.261014.json",
+    "region_mapping": "data/OMNIA_region_mapping_241120.csv",
+    "regions": [
+      "EUE",
+      "EUM",
+      "EUW"
+    ],
+    "scenarios": [
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu"
+    ],
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "gcam_years": [
+      2021,
+      2025,
+      2030,
+      2035,
+      2040,
+      2045,
+      2050
+    ],
+    "historical_year": 2019,
+    "gcam_historical_year": 2021,
+    "comparison_year": 2050,
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  "figure_count": 3,
+  "source_row_counts": {
+    "OMNIA-ENGAGE": 24535,
+    "GCAM": 128322
+  },
+  "historical_years": {
+    "OMNIA-ENGAGE": 2019,
+    "GCAM": 2021
+  },
+  "source_years": {
+    "OMNIA-ENGAGE": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "GCAM": [
+      2021,
+      2025,
+      2030,
+      2035,
+      2040,
+      2045,
+      2050
+    ]
+  },
+  "missing_input_count": 364,
+  "gcam_aggregate_check_count": 882,
+  "max_gcam_aggregate_country_difference": 2.2737367544323206e-13,
+  "versions": {
+    "python": "3.11.15",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "openpyxl": "3.1.5"
+  },
+  "notes": [
+    "OMNIA-ENGAGE aggregates EUE, EUM and EUW; GCAM selects its EU-27 aggregate once, without adding the country rows.",
+    "The OMNIA EU regions include Greenland, Faroe Islands, Andorra, Monaco and San Marino in the supplied country mapping; these cannot be removed from regional data.",
+    "GCAM source LTT scenarios are paired with OMNIA baseline (NDC+LTT); the scenario names alone do not establish identical policy assumptions.",
+    "Historical bars use OMNIA 2019 and GCAM 2021 observations separately; no interpolation or historical alignment is imposed.",
+    "GCAM reports total cement, steel and aluminium production, without clinker or primary/secondary route splits.",
+    "GCAM aluminium energy includes an Unallocated residual between the reported sector total and its reported carrier parents; the residual is not assigned to an unreported carrier.",
+    "Industrial GHG boundaries differ: OMNIA reports Emissions|GHG|Industry; GCAM combines industry energy-demand Kyoto gases with industrial-process Kyoto gases. GCAM has no comparable cement/steel/aluminium GHG decomposition.",
+    "Emissions gas coverage and GWP/accounting conventions are not documented as harmonised between the models.",
+    "All source data are calculated from the raw CSV and workbook; existing figures are visual references only.",
+    "The GCAM aggregate is used directly; available-country sums verify its accounting without imputing absent country rows."
+  ]
+}

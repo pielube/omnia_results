@@ -116,6 +116,20 @@ The collection includes PDF/SVG/600 dpi PNG figures, individual source CSVs, a [
 
 The configuration currently preserves the reviewed individual files for Figures 5–8 while revising Figures 1–4 to present NDC first. Regeneration verifies freshly calculated source data and PNGs against those files before retaining them; the combined PDF includes all eight figures calculated directly from the raw CSV. Add the four revised slugs after review to preserve their updated exports, or remove a slug when intentionally revising a preserved figure. The previous complete collection is retained in `report_figures_consolidation/archive/before_ndc_first_*`.
 
+## European OMNIA-ENGAGE / GCAM comparison
+
+The [European comparison gallery](report_figures_europe_comparison_261014/index.html) and [three-page PDF](report_figures_europe_comparison_261014/report_figures.pdf) compare [results_allCE_261008.csv](results_allCE_261008.csv) with [the standardized GCAM workbook](DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx). The three figures adapt the consolidated material-production, energy-mix and emissions-response designs. Both climate pathways retain only no, medium and high **EU-only CE**; EU+ scenarios are excluded.
+
+```powershell
+python -m omnia_results --config figures.europe_comparison.261014.json
+```
+
+OMNIA sums **EUE, EUM and EUW**, while GCAM selects its supplied **EU-27 aggregate once**, checked against available country sums. The OMNIA regions include some additional small countries/territories, documented in [geography membership](report_figures_europe_comparison_261014/geography_membership.csv). Historical bars use **2019 for OMNIA and 2021 for GCAM**, without interpolation; all future bars use 2050. Each CE percentage references the same model, pathway and year's no-CE result.
+
+GCAM production has no primary/secondary or clinker breakdown, so metal bars show its reported totals alongside OMNIA's route stacks, and clinker is omitted. The energy figure retains GCAM's reported totals and displays the aluminium carrier-accounting residual as **Unallocated**. The emissions figure compares **source-defined industrial GHG totals**, with an explicit scope note: OMNIA reported industry GHG versus GCAM industrial energy-demand plus industrial-process Kyoto gases. Its decomposition preserves each model's own reported components; no comparable GCAM sector GHG breakdown is available. Gas coverage and accounting conventions are not assumed harmonised.
+
+Each figure includes PDF/SVG/600 dpi PNG artwork and a source CSV. [Methods](report_figures_europe_comparison_261014/methods.md), [captions](report_figures_europe_comparison_261014/captions.md), scenario and variable mappings, aggregate checks, missing-input records and source hashes document the comparison. `europe_comparison_data.py` performs exact source extraction; `europe_comparison.py` renders and exports the collection. Excel input adds `openpyxl` to the project dependencies.
+
 ## Report structure
 
 | Figure | Contents | Purpose |

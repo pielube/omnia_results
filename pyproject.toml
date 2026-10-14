@@ -7,7 +7,7 @@ name = "omnia-results"
 version = "0.1.0"
 description = "Reproducible publication figures for OMNIA scenario results"
 requires-python = ">=3.11"
-dependencies = ["matplotlib>=3.8,<4", "numpy>=1.26,<3", "pandas>=2.1,<4"]
+dependencies = ["matplotlib>=3.8,<4", "numpy>=1.26,<3", "pandas>=2.1,<4", "openpyxl>=3.1,<4"]
 
 [project.scripts]
 omnia-figures = "omnia_results.pipeline:main"
