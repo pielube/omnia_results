@@ -1,0 +1,883 @@
+Model,Scenario,Variable,Unit,Year,Aggregate,SumReportedCountries,CountryRowCount,Difference
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2021,174.238706,174.23870600000004,26,-2.842170943040401e-14
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2025,128.561845,128.561845,26,0.0
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2030,141.36466631747,141.36466631747,26,0.0
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2035,138.9959031917,138.9959031917,26,0.0
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2040,138.58632352265,138.58632352265,26,0.0
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2045,137.00434850684,137.00434850684,26,0.0
+GCAM,NDC_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2050,133.91283933832,133.91283933832,26,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2021,174.238706,174.23870600000004,26,-2.842170943040401e-14
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2025,126.789224,126.789224,26,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2030,133.95011516575,133.95011516575,26,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2035,129.20047781403,129.20047781403,26,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2040,126.76521842699,126.76521842699,26,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2045,123.37115473991,123.37115473991001,26,-1.4210854715202004e-14
+GCAM,NDC_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2050,118.81998321504,118.81998321504,26,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2021,174.238706,174.23870600000004,26,-2.842170943040401e-14
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2025,126.047123,126.047123,26,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2030,130.226186327,130.226186327,26,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2035,124.2800870971,124.2800870971,26,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2040,120.9235294718,120.92352947180001,26,-1.4210854715202004e-14
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2045,116.6542871989,116.6542871989,26,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2050,111.4151055438,111.41510554380001,26,-1.4210854715202004e-14
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2021,153.8369903,153.83699030000002,24,-2.842170943040401e-14
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2025,119.482327781,119.482327781,24,0.0
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2030,123.0025941489,123.00259414889999,24,1.4210854715202004e-14
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2035,127.2199438074,127.2199438074,24,0.0
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2040,139.99741227409,139.99741227409,24,0.0
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2045,140.80594684826,140.80594684826,24,0.0
+GCAM,NDC_NoCE,Production|Iron and Steel|Steel,Mt/yr,2050,139.2748622568,139.2748622568,24,0.0
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2021,153.8369903,153.83699030000002,24,-2.842170943040401e-14
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2025,118.958945817,118.958945817,24,0.0
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2030,120.3916917425,120.3916917425,24,0.0
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2035,124.0936846268,124.09368462680001,24,-1.4210854715202004e-14
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2040,135.82960485673,135.82960485673001,24,-2.842170943040401e-14
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2045,134.27489412538,134.27489412538,24,0.0
+GCAM,NDC_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2050,132.2322588896,132.2322588896,24,0.0
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2021,153.8369903,153.83699030000002,24,-2.842170943040401e-14
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2025,118.717418471,118.717418471,24,0.0
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2030,119.6749992426,119.67499924260001,24,-1.4210854715202004e-14
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2035,123.2684098432,123.26840984319999,24,1.4210854715202004e-14
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2040,140.80498948357,140.80498948357,24,0.0
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2045,130.56831817129,130.56831817129,24,0.0
+GCAM,NDC_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2050,128.7963693748,128.7963693748,24,0.0
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2021,4.2796336,4.2796336,14,0.0
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2025,4.11422297,4.114222969999999,14,8.881784197001252e-16
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2030,4.036657975,4.036657975,14,0.0
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2035,3.93392344,3.9339234399999996,14,4.440892098500626e-16
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2040,3.853348709,3.853348709,14,0.0
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2045,3.75451517,3.7545151700000003,14,-4.440892098500626e-16
+GCAM,NDC_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2050,3.642647908,3.6426479080000003,14,-4.440892098500626e-16
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2021,4.2796336,4.2796336,14,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2025,4.11422351,4.1142235099999995,14,8.881784197001252e-16
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2030,4.03665775,4.03665775,14,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2035,3.933924184,3.9339241839999994,14,4.440892098500626e-16
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2040,3.853348795,3.853348795,14,0.0
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2045,3.754513495,3.7545134950000003,14,-4.440892098500626e-16
+GCAM,NDC_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2050,3.642648363,3.6426483630000006,14,-4.440892098500626e-16
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2021,4.2796336,4.2796336,14,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2025,4.11422241,4.11422241,14,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2030,4.036658463,4.036658463,14,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2035,3.93392322,3.933923219999999,14,8.881784197001252e-16
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2040,3.853349066,3.8533490660000003,14,-4.440892098500626e-16
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2045,3.754515048,3.754515048,14,0.0
+GCAM,NDC_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2050,3.642646125,3.6426461249999997,14,4.440892098500626e-16
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2021,174.238706,174.23870600000004,26,-2.842170943040401e-14
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2025,128.561845,128.561845,26,0.0
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2030,141.36466631747,141.36466631747,26,0.0
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2035,138.9959031917,138.9959031917,26,0.0
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2040,137.78953790303,137.78953790303,26,0.0
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2045,134.6952026756,134.6952026756,26,0.0
+GCAM,LTT_NoCE,Production|Non-Metallic Minerals|Cement,Mt/yr,2050,127.68066968887,127.68066968887,26,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2021,174.238706,174.23870600000004,26,-2.842170943040401e-14
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2025,126.789224,126.789224,26,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2030,133.95011516575,133.95011516575,26,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2035,129.20047781403,129.20047781403,26,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2040,125.90013448252,125.90013448252,26,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2045,121.13167202411,121.13167202411002,26,-1.4210854715202004e-14
+GCAM,LTT_MedCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2050,113.05337511237,113.05337511237,26,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2021,174.238706,174.23870600000004,26,-2.842170943040401e-14
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2025,126.047123,126.047123,26,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2030,130.226186327,130.226186327,26,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2035,124.2800870971,124.2800870971,26,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2040,119.9706116026,119.97061160260002,26,-1.4210854715202004e-14
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2045,114.3337969618,114.33379696179999,26,1.4210854715202004e-14
+GCAM,LTT_HighCE_EU,Production|Non-Metallic Minerals|Cement,Mt/yr,2050,105.6325404623,105.63254046230001,26,-1.4210854715202004e-14
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2021,153.8369903,153.83699030000002,24,-2.842170943040401e-14
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2025,119.482327781,119.482327781,24,0.0
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2030,123.0025941489,123.00259414889999,24,1.4210854715202004e-14
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2035,127.2199438074,127.2199438074,24,0.0
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2040,138.6454221571,138.6454221571,24,0.0
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2045,138.86336218765,138.86336218764998,24,2.842170943040401e-14
+GCAM,LTT_NoCE,Production|Iron and Steel|Steel,Mt/yr,2050,135.1708638434,135.1708638434,24,0.0
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2021,153.8369903,153.83699030000002,24,-2.842170943040401e-14
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2025,118.958945817,118.958945817,24,0.0
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2030,120.3916917425,120.3916917425,24,0.0
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2035,124.0936846268,124.09368462680001,24,-1.4210854715202004e-14
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2040,134.57570609353,134.57570609353002,24,-2.842170943040401e-14
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2045,132.53774309521,132.53774309521,24,0.0
+GCAM,LTT_MedCE_EU,Production|Iron and Steel|Steel,Mt/yr,2050,128.2982499636,128.29824996360003,24,-2.842170943040401e-14
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2021,153.8369903,153.83699030000002,24,-2.842170943040401e-14
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2025,118.717418471,118.717418471,24,0.0
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2030,119.6749992426,119.67499924260001,24,-1.4210854715202004e-14
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2035,123.2684098432,123.26840984319999,24,1.4210854715202004e-14
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2040,139.69119150726,139.69119150726,24,0.0
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2045,128.91173631209,128.91173631209,24,0.0
+GCAM,LTT_HighCE_EU,Production|Iron and Steel|Steel,Mt/yr,2050,126.5380134212,126.5380134212,24,0.0
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2021,4.2796336,4.2796336,14,0.0
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2025,4.11422297,4.114222969999999,14,8.881784197001252e-16
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2030,4.036657975,4.036657975,14,0.0
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2035,3.93392344,3.9339234399999996,14,4.440892098500626e-16
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2040,3.852120198,3.8521201979999997,14,4.440892098500626e-16
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2045,3.753808682,3.7538086820000003,14,-4.440892098500626e-16
+GCAM,LTT_NoCE,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2050,3.639126924,3.639126924,14,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2021,4.2796336,4.2796336,14,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2025,4.11422351,4.1142235099999995,14,8.881784197001252e-16
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2030,4.03665775,4.03665775,14,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2035,3.933924184,3.9339241839999994,14,4.440892098500626e-16
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2040,3.853348795,3.853348795,14,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2045,3.754514495,3.754514495,14,0.0
+GCAM,LTT_MedCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2050,3.642647081,3.642647081,14,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2021,4.2796336,4.2796336,14,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2025,4.11422241,4.11422241,14,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2030,4.036658463,4.036658463,14,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2035,3.93392322,3.933923219999999,14,8.881784197001252e-16
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2040,3.853348866,3.8533488659999997,14,4.440892098500626e-16
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2045,3.754515129,3.754515129,14,0.0
+GCAM,LTT_HighCE_EU,Production|Non-Ferrous Metals|Aluminum,Mt/yr,2050,3.642184792,3.642184792,14,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2021,0.5698767002,0.5698767002,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2025,0.421808065765,0.421808065765,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2030,0.46769655220194,0.46769655220194006,27,-5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2035,0.4593383804125,0.45933838041249997,27,5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2040,0.49033180393537,0.49033180393536996,27,5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2045,0.53283774579427,0.5328377457942701,27,-1.1102230246251565e-16
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2050,0.54223903394176,0.54223903394176,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2021,0.072678603,0.072678603,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2025,0.053582004,0.053582004,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2030,0.05946272624994,0.05946272624994,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2035,0.0584147571666,0.058414757166599995,27,6.938893903907228e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2040,0.06123592708037,0.06123592708037,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2045,0.06524315246927,0.06524315246927,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2050,0.06606894241526,0.06606894241526,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2021,0.211048011,0.211048011,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2025,0.16195924588,0.16195924588,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2030,0.17956410562,0.17956410562000003,27,-2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2035,0.16616934288,0.16616934288000004,27,-5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2040,0.15770032966,0.15770032966,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2045,0.15626787762,0.15626787762,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2050,0.170938721421,0.170938721421,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2030,0.00066878585,0.0006687858499999999,27,1.0842021724855044e-19
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2035,0.000450724487,0.000450724487,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2040,0.005708984161,0.005708984160999999,27,8.673617379884035e-19
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2045,0.018004458294,0.018004458294,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2050,0.02434351423,0.024343514230000002,27,-3.469446951953614e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2021,0.0993173538,0.09931735380000001,27,-1.3877787807814457e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2025,0.06303749112,0.06303749112,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2030,0.05682550241,0.056825502410000006,27,-6.938893903907228e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2035,0.070667910777,0.07066791077699999,27,1.3877787807814457e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2040,0.077924294174,0.07792429417400001,27,-1.3877787807814457e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2045,0.08357915044,0.08357915044,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2050,0.085264935495,0.085264935495,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2021,0.1868327324,0.18683273239999998,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2025,0.143229324765,0.14322932476499997,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2030,0.171175432072,0.17117543207199998,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2035,0.1636356451019,0.16363564510189998,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2040,0.18776226886,0.18776226886,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2045,0.209743106971,0.209743106971,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2050,0.1956229203805,0.1956229203805,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2021,0.072678603,0.072678603,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2025,0.052838236,0.05283823599999999,27,6.938893903907228e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2030,0.05615211913727,0.05615211913727,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2035,0.05411379341496,0.05411379341495999,27,6.938893903907228e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2040,0.05532120907015,0.05532120907015,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2045,0.05842208859585,0.05842208859585,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2050,0.05852142366647,0.05852142366647,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2021,0.211048011,0.211048011,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2025,0.159814762412,0.159814762412,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2030,0.173007324256,0.173007324256,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2035,0.156685888758,0.156685888758,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2040,0.147299110628,0.147299110628,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2045,0.14203580154,0.14203580153999998,27,2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2050,0.1515554459618,0.1515554459618,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2030,0.00048418444,0.00048418444000000006,27,-5.421010862427522e-20
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2035,0.000307884159,0.000307884159,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2040,0.003811013288,0.0038110132880000004,27,-4.336808689942018e-19
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2045,0.015648106124,0.015648106124,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2050,0.021219597369,0.021219597368999997,27,3.469446951953614e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2021,0.0993173538,0.09931735380000001,27,-1.3877787807814457e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2025,0.062141098371,0.062141098371,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2030,0.054142004097,0.054142004097,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2035,0.06620774480200001,0.06620774480200001,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2040,0.070142658497,0.070142658497,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2045,0.073840785627,0.073840785627,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2050,0.073784738546,0.07378473854599998,27,1.3877787807814457e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2021,0.1868327324,0.18683273239999998,27,2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2025,0.1411466394572,0.14114663945720002,27,-2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2030,0.1573828177822,0.1573828177822,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2035,0.1476501139537,0.1476501139537,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2040,0.162545702937,0.162545702937,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2045,0.1802240002041,0.1802240002041,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2050,0.1662567603984,0.16625676039839998,27,2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2021,0.5698767002,0.5698767002,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2025,0.4159407362402,0.41594073624019995,27,5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2030,0.44116844971247,0.44116844971247,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2035,0.42496542508766,0.42496542508766,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2040,0.43911969442015,0.43911969442015003,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2045,0.47017078209095,0.47017078209095,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2050,0.47133796594167,0.47133796594167005,27,-5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2021,0.072678603,0.072678603,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2025,0.052528216,0.052528215999999996,27,6.938893903907228e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2030,0.0545819601175,0.054581960117499995,27,6.938893903907228e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2035,0.0520381072456,0.0520381072456,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2040,0.0524165895214,0.05241658952139999,27,6.938893903907228e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2045,0.055063216833,0.055063216833,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2050,0.0548192420079,0.0548192420079,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2021,0.211048011,0.211048011,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2025,0.158963503,0.15896350299999998,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2030,0.1703963877,0.17039638769999998,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2035,0.151641046,0.15164104600000003,27,-2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2040,0.141629846695,0.141629846695,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2045,0.134007725194,0.13400772519399998,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2050,0.141014685572,0.141014685572,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2030,0.00047249141,0.0004724914100000001,27,-1.0842021724855044e-19
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2035,0.00029690751,0.00029690751000000003,27,-5.421010862427522e-20
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2040,0.002953398959,0.0029533989589999995,27,4.336808689942018e-19
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2045,0.014334798956,0.014334798956,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2050,0.019623573821,0.019623573821,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2021,0.0993173538,0.09931735380000001,27,-1.3877787807814457e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2025,0.0618129028,0.0618129028,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2030,0.05096344368,0.05096344368,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2035,0.06364401485,0.06364401485,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2040,0.065764973291,0.065764973291,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2045,0.06836381144,0.06836381143999999,27,1.3877787807814457e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2050,0.067449830865,0.067449830865,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2021,0.1868327324,0.18683273239999998,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2025,0.140210084,0.14021008399999998,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2030,0.1524022127086,0.1524022127086,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2035,0.1410939848455,0.1410939848455,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2040,0.1511560659165,0.15115606591650002,27,-2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2045,0.1653646311337,0.16536463113370004,27,-2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2050,0.1499070007019,0.14990700070189994,27,5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2021,0.5698767002,0.5698767002,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2025,0.4135147058,0.41351470579999994,27,5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2030,0.4288164956161,0.4288164956161,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2035,0.4087140604511,0.4087140604511,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2040,0.4139208743829,0.4139208743829,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2045,0.4371341835567,0.4371341835567,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2050,0.4328143329678,0.4328143329678,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2021,1.95413989231872,1.95413989231872,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2025,1.390658942972194,1.3906589429721938,27,2.220446049250313e-16
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2030,1.471779644167616,1.471779644167616,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2035,1.509103153018989,1.509103153018989,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2040,1.694249542841755,1.694249542841755,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2045,1.734787045711478,1.7347870457114778,27,2.220446049250313e-16
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2050,1.769967347206773,1.7699673472067732,27,-2.220446049250313e-16
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2021,0.39309558378,0.39309558378000004,27,-5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2025,0.306875520934,0.306875520934,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2030,0.3442221903263,0.3442221903263,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2035,0.3909230918413,0.3909230918413,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2040,0.4601585565273,0.4601585565273,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2045,0.46679994076304,0.46679994076304004,27,-5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2050,0.4675841905928,0.4675841905928,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2021,0.2329966556422,0.2329966556422,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2025,0.1705738357227,0.1705738357227,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,0.214179974627983,0.214179974627983,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,0.319219266617552,0.319219266617552,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,0.439295024899064,0.439295024899064,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2045,0.479005634230759,0.47900563423075904,27,-5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,0.552489092608381,0.5524890926083811,27,-1.1102230246251565e-16
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,0.008334307398799999,0.008334307398799999,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,0.0219956453348,0.0219956453348,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,0.0348816792772,0.0348816792772,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2045,0.0337177760793,0.033717776079299995,27,6.938893903907228e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,0.0303571090821,0.030357109082099997,27,3.469446951953614e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2021,0.03091539011652,0.03091539011652,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2025,0.026177367720494,0.026177367720493998,27,3.469446951953614e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,0.029987389237533,0.029987389237533,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,0.039623774067337,0.039623774067337005,27,-6.938893903907228e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,0.052637574569391,0.052637574569391,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2045,0.056240700050379,0.05624070005037899,27,6.938893903907228e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,0.061411057862492,0.061411057862492006,27,-6.938893903907228e-18
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2021,1.29713226278,1.29713226278,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2025,0.887032218595,0.887032218595,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,0.875055782577,0.875055782577,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,0.737341375158,0.737341375158,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,0.7072767075688,0.7072767075688,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2045,0.699022994588,0.699022994588,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,0.658125897061,0.658125897061,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2021,0.39309558378,0.39309558378000004,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2025,0.305469697481,0.305469697481,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2030,0.3356201074734,0.3356201074734,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2035,0.380388347787,0.38038834778700004,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2040,0.4583328017424,0.45833280174239993,27,5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2045,0.46221338831715,0.46221338831715003,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2050,0.4644205436012,0.4644205436012,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2021,0.2329966556422,0.2329966556422,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2025,0.16985566250769,0.16985566250769002,27,-2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,0.206711299096126,0.206711299096126,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,0.309649146109827,0.30964914610982697,27,5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,0.396977458373441,0.396977458373441,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2045,0.403211672724132,0.403211672724132,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,0.437702987640627,0.437702987640627,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,0.0076342795761,0.007634279576099999,27,8.673617379884035e-19
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,0.0210694245833,0.021069424583300002,27,-3.469446951953614e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,0.027656869904,0.027656869904000004,27,-3.469446951953614e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2045,0.0253007799059,0.025300779905900003,27,-3.469446951953614e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,0.0216360857577,0.0216360857577,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2021,0.03091539011652,0.03091539011652,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2025,0.026058259634846,0.026058259634845996,27,3.469446951953614e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,0.029167926549242,0.029167926549242,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,0.038566715217448,0.03856671521744799,27,6.938893903907228e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,0.049392308484132,0.049392308484131994,27,6.938893903907228e-18
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2045,0.051408465414561,0.051408465414561,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,0.054151419844829,0.054151419844829,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2021,1.29713226278,1.29713226278,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2025,0.883743351577,0.883743351577,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,0.861003468174,0.861003468174,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,0.721855347645,0.721855347645,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,0.5427015296836,0.5427015296836001,27,-1.1102230246251565e-16
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2045,0.503012682879,0.5030126828789999,27,1.1102230246251565e-16
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,0.437793680402,0.437793680402,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2021,1.95413989231872,1.95413989231872,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2025,1.385126971200536,1.385126971200536,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2030,1.440137080868868,1.440137080868868,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2035,1.471528981342575,1.4715289813425751,27,-2.220446049250313e-16
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2040,1.475060968187573,1.4750609681875728,27,2.220446049250313e-16
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2045,1.445146989240743,1.445146989240743,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2050,1.415704717246356,1.415704717246356,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2021,0.39309558378,0.39309558378000004,27,-5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2025,0.30481987012,0.30481987012,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2030,0.3338164744988,0.33381647449880003,27,-5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2035,0.3776183030763,0.37761830307630007,27,-5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2040,0.4865358121232,0.48653581212319996,27,5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2045,0.46328373173757,0.4632837317375699,27,5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2050,0.4674030425085,0.4674030425085,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2021,0.2329966556422,0.2329966556422,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2025,0.16952883056093,0.16952883056093002,27,-2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,0.209212178728626,0.209212178728626,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,0.308231664788682,0.308231664788682,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,0.357000677297484,0.35700067729748397,27,5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2045,0.332333990304649,0.33233399030464905,27,-5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,0.354242048057576,0.354242048057576,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,0.0079918170518,0.0079918170518,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,0.0212695055794,0.021269505579399998,27,3.469446951953614e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,0.0223716335115,0.0223716335115,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2045,0.0190803913128,0.0190803913128,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,0.0156119675331,0.015611967533099999,27,1.734723475976807e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2021,0.03091539011652,0.03091539011652,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2025,0.026003734056089,0.026003734056089,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,0.029206382636807,0.029206382636807002,27,-3.469446951953614e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,0.038297796774161,0.038297796774160994,27,6.938893903907228e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,0.049234015617622,0.049234015617621994,27,6.938893903907228e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2045,0.048461819429741,0.048461819429741,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,0.050563514379163,0.050563514379162997,27,6.938893903907228e-18
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2021,1.29713226278,1.29713226278,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2025,0.88222697954,0.8822269795400001,27,-1.1102230246251565e-16
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,0.852971704939,0.852971704939,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,0.719085841458,0.7190858414580001,27,-1.1102230246251565e-16
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,0.4350776741037,0.4350776741037,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2045,0.373558679532,0.373558679532,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,0.306470764774,0.306470764774,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2021,1.95413989231872,1.95413989231872,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2025,1.382579414277019,1.382579414277019,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2030,1.433198557855033,1.4331985578550328,27,2.220446049250313e-16
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2035,1.464503111676543,1.464503111676543,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2040,1.350219812653506,1.3502198126535059,27,2.220446049250313e-16
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2045,1.23671861231676,1.23671861231676,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2050,1.194291337252339,1.194291337252339,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2021,0.237726444237,0.237726444237,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2025,0.2699496266529,0.2699496266529,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2030,0.26619068037465,0.26619068037465005,27,-5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2035,0.25915246315894,0.25915246315894,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2040,0.25135365626407,0.25135365626406997,27,5.551115123125783e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2045,0.23950716844029,0.23950716844029002,27,-2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2050,0.22930161538571,0.22930161538570998,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2021,0.18899469,0.18899469,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2025,0.216096216,0.216096216,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,0.2134533632,0.2134533632,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2035,0.2088353288,0.20883532879999997,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2040,0.2063786839,0.2063786839,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2045,0.2028028067,0.2028028067,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2050,0.198102389,0.198102389,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2021,2.1708123e-05,2.1708123e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2025,2.46291859e-05,2.46291859e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,2.429662975e-05,2.429662975e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,2.357167054e-05,2.357167054e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,2.228800007e-05,2.2288000069999996e-05,27,3.3881317890172014e-21
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2045,2.002200809e-05,2.0022008090000003e-05,27,-3.3881317890172014e-21
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,1.82621145e-05,1.82621145e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2021,7.253111399999999e-05,7.253111399999999e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2025,8.2291467e-05,8.229146699999999e-05,27,1.3552527156068805e-20
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,8.11807449e-05,8.11807449e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,7.87589884e-05,7.87589884e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,7.447018400000001e-05,7.447018400000001e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2045,6.68978622e-05,6.68978622e-05,27,0.0
+GCAM,NDC_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,6.101457121e-05,6.1014571210000004e-05,27,-6.776263578034403e-21
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2021,0.18899469,0.18899469,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2025,0.214829662,0.21482966199999998,27,2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,0.2119811547,0.2119811547,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2035,0.2063787084,0.20637870839999997,27,2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2040,0.19941897,0.19941897,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2045,0.1879933698,0.18799336980000003,27,-2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2050,0.1783306566,0.1783306566,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2021,2.1708123e-05,2.1708123e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2025,2.4473879e-05,2.4473879e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,2.411723287e-05,2.411723287e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,2.328411443e-05,2.328411443e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,2.153795268e-05,2.153795268e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2045,1.851642037e-05,1.851642037e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,1.631433927e-05,1.631433927e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2021,7.253111399999999e-05,7.253111399999999e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2025,8.177251799999999e-05,8.177251799999999e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,8.058130659999999e-05,8.05813066e-05,27,-1.3552527156068805e-20
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,7.779815150000001e-05,7.77981515e-05,27,1.3552527156068805e-20
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,7.19640122e-05,7.19640122e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2045,6.18674348e-05,6.18674348e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,5.450709587e-05,5.450709587e-05,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2021,0.237726444237,0.237726444237,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2025,0.268386334397,0.26838633439700005,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2030,0.26439419844947,0.26439419844947004,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2035,0.25621190615593,0.25621190615593004,27,-5.551115123125783e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2040,0.24316405326488,0.24316405326488003,27,-2.7755575615628914e-17
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2045,0.22221746736517,0.22221746736517,27,0.0
+GCAM,NDC_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2050,0.20634308239514,0.20634308239514002,27,-2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2021,0.18899469,0.18899469,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2025,0.212879637,0.212879637,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,0.2097298431,0.20972984309999998,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2035,0.2029256606,0.20292566059999997,27,2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2040,0.1910870438,0.1910870438,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2045,0.1719892397,0.17198923970000002,27,-2.7755575615628914e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2050,0.158022091,0.158022091,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2021,2.1708123e-05,2.1708123e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2025,2.42378737e-05,2.42378737e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,2.384679641e-05,2.384679641e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,2.288527568e-05,2.2885275680000002e-05,27,-3.3881317890172014e-21
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,2.065170754e-05,2.065170754e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2045,1.691762026e-05,1.691762026e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,1.435432339e-05,1.4354323389999999e-05,27,1.6940658945086007e-21
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2021,7.253111399999999e-05,7.253111399999999e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2025,8.0983951e-05,8.0983951e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,7.96776452e-05,7.96776452e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,7.6465412e-05,7.6465412e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,6.90027449e-05,6.90027449e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2045,5.65254367e-05,5.652543669999999e-05,27,6.776263578034403e-21
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,4.795856818e-05,4.795856818e-05,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2021,0.237726444237,0.237726444237,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2025,0.2659770918247,0.26597709182470003,27,-5.551115123125783e-17
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2030,0.26164162613161,0.26164162613161,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2035,0.25205970660768,0.25205970660768,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2040,0.23333928111244,0.23333928111244,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2045,0.20353815509696,0.20353815509696,27,0.0
+GCAM,NDC_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2050,0.18278769219157,0.18278769219157,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2021,0.5698767002,0.5698767002,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2025,0.421808065765,0.421808065765,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2030,0.46769655220194,0.46769655220194006,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2035,0.4593383804125,0.45933838041249997,27,5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2040,0.48725027564393,0.48725027564393003,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2045,0.52358230384446,0.5235823038444599,27,1.1102230246251565e-16
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2050,0.51701348248929,0.51701348248929,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2021,0.072678603,0.072678603,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2025,0.053582004,0.053582004,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2030,0.05946272624994,0.05946272624994,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2035,0.0584147571666,0.058414757166599995,27,6.938893903907228e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2040,0.06085669824793,0.06085669824793,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2045,0.06411650086646,0.06411650086646,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2050,0.06297854466389,0.06297854466389,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2021,0.211048011,0.211048011,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2025,0.16195924588,0.16195924588,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2030,0.17956410562,0.17956410562000003,27,-2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2035,0.16616934288,0.16616934288000004,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2040,0.15497565611,0.15497565611,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2045,0.14062362006,0.14062362005999998,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2050,0.135472908546,0.135472908546,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2030,0.00066878585,0.0006687858499999999,27,1.0842021724855044e-19
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2035,0.000450724487,0.000450724487,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2040,0.005942193536,0.005942193536000001,27,-8.673617379884035e-19
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2045,0.022677961996,0.022677961995999998,27,3.469446951953614e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2050,0.035786962006,0.035786962006,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2021,0.0993173538,0.09931735380000001,27,-1.3877787807814457e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2025,0.06303749112,0.06303749112,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2030,0.05682550241,0.056825502410000006,27,-6.938893903907228e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2035,0.070667910777,0.07066791077699999,27,1.3877787807814457e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2040,0.075868304853,0.075868304853,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2045,0.08095289053,0.08095289053,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2050,0.080336904999,0.08033690499900001,27,-1.3877787807814457e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2021,0.1868327324,0.18683273239999998,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2025,0.143229324765,0.14322932476499997,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2030,0.171175432072,0.17117543207199998,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2035,0.1636356451019,0.16363564510189998,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2040,0.189607422897,0.189607422897,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2045,0.215211330392,0.21521133039200002,27,-2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2050,0.2024381622744,0.20243816227439998,27,2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2021,0.072678603,0.072678603,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2025,0.052838236,0.05283823599999999,27,6.938893903907228e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2030,0.05615211913727,0.05615211913727,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2035,0.05411379341496,0.05411379341495999,27,6.938893903907228e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2040,0.05490617762486,0.05490617762486,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2045,0.05732880529061,0.057328805290610005,27,-6.938893903907228e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2050,0.05566300067418,0.05566300067418,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2021,0.211048011,0.211048011,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2025,0.159814762412,0.159814762412,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2030,0.173007324256,0.173007324256,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2035,0.156685888758,0.156685888758,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2040,0.145315545757,0.145315545757,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2045,0.128359713591,0.12835971359099999,27,2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2050,0.1207189605497,0.12071896054970001,27,-1.3877787807814457e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2030,0.00048418444,0.00048418444000000006,27,-5.421010862427522e-20
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2035,0.000307884159,0.000307884159,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2040,0.003969518941,0.003969518940999999,27,8.673617379884035e-19
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2045,0.020041434047,0.020041434047,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2050,0.031946915615,0.031946915615,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2021,0.0993173538,0.09931735380000001,27,-1.3877787807814457e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2025,0.062141098371,0.062141098371,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2030,0.054142004097,0.054142004097,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2035,0.06620774480200001,0.06620774480200001,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2040,0.068638267731,0.068638267731,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2045,0.07217466518,0.07217466518,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2050,0.070401264864,0.070401264864,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2021,0.1868327324,0.18683273239999998,27,2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2025,0.1411466394572,0.14114663945720002,27,-2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2030,0.1573828177822,0.1573828177822,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2035,0.1476501139537,0.1476501139537,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2040,0.1634358076579,0.1634358076579,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2045,0.1857501005169,0.18575010051690002,27,-2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2050,0.173738785613,0.173738785613,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2021,0.5698767002,0.5698767002,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2025,0.4159407362402,0.41594073624019995,27,5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2030,0.44116844971247,0.44116844971247,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2035,0.42496542508766,0.42496542508766,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2040,0.43626531771176,0.43626531771175997,27,5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2045,0.46365471862551,0.46365471862551005,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2050,0.45246892731588,0.45246892731588,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2021,0.072678603,0.072678603,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2025,0.052528216,0.052528215999999996,27,6.938893903907228e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2030,0.0545819601175,0.054581960117499995,27,6.938893903907228e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2035,0.0520381072456,0.0520381072456,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2040,0.0519574542583,0.051957454258300007,27,-6.938893903907228e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2045,0.0539280867839,0.0539280867839,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Electricity,EJ/yr,2050,0.0519533237096,0.0519533237096,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2021,0.211048011,0.211048011,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2025,0.158963503,0.15896350299999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2030,0.1703963877,0.17039638769999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2035,0.151641046,0.15164104600000003,27,-2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2040,0.139951736,0.13995173599999997,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2045,0.121484017,0.12148401700000001,27,-1.3877787807814457e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Gases,EJ/yr,2050,0.1121857123,0.11218571229999999,27,1.3877787807814457e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2030,0.00047249141,0.0004724914100000001,27,-1.0842021724855044e-19
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2035,0.00029690751,0.00029690751000000003,27,-5.421010862427522e-20
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2040,0.00308446007,0.00308446007,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2045,0.01854818112,0.018548181120000003,27,-3.469446951953614e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Hydrogen,EJ/yr,2050,0.03041724368,0.030417243679999997,27,3.469446951953614e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2021,0.0993173538,0.09931735380000001,27,-1.3877787807814457e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2025,0.0618129028,0.0618129028,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2030,0.05096344368,0.05096344368,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2035,0.06364401485,0.06364401485,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2040,0.06453924176,0.06453924176,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2045,0.06715049459,0.06715049459,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Liquids,EJ/yr,2050,0.06490666175,0.06490666175,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2021,0.1868327324,0.18683273239999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2025,0.140210084,0.14021008399999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2030,0.1524022127086,0.1524022127086,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2035,0.1410939848455,0.1410939848455,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2040,0.1513473694038,0.15134736940380003,27,-2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2045,0.170907673685,0.17090767368500004,27,-2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement|Solids,EJ/yr,2050,0.1580308206149,0.15803082061489998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2021,0.5698767002,0.5698767002,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2025,0.4135147058,0.41351470579999994,27,5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2030,0.4288164956161,0.4288164956161,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2035,0.4087140604511,0.4087140604511,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2040,0.4108802614921,0.4108802614921,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2045,0.4320184531789,0.43201845317890003,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Metallic Minerals|Cement,EJ/yr,2050,0.4174937620545,0.41749376205449995,27,5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2021,1.95413989231872,1.95413989231872,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2025,1.390658942972194,1.3906589429721938,27,2.220446049250313e-16
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2030,1.471779644167616,1.471779644167616,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2035,1.509103153018989,1.509103153018989,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2040,1.66601803027134,1.6660180302713403,27,-2.220446049250313e-16
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2045,1.684178047816858,1.684178047816858,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel,EJ/yr,2050,1.663147295130319,1.6631472951303192,27,-2.220446049250313e-16
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2021,0.39309558378,0.39309558378000004,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2025,0.306875520934,0.306875520934,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2030,0.3442221903263,0.3442221903263,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2035,0.3909230918413,0.3909230918413,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2040,0.45810112082,0.45810112082000004,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2045,0.46519601160685,0.46519601160685,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2050,0.4621975208263,0.46219752082629995,27,5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2021,0.2329966556422,0.2329966556422,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2025,0.1705738357227,0.1705738357227,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,0.214179974627983,0.214179974627983,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,0.319219266617552,0.319219266617552,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,0.427364554949494,0.42736455494949405,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2045,0.449168301209659,0.449168301209659,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,0.485569493031778,0.485569493031778,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,0.008334307398799999,0.008334307398799999,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,0.0219956453348,0.0219956453348,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,0.0384378712849,0.0384378712849,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2045,0.0411514091621,0.04115140916210001,27,-6.938893903907228e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,0.0415851791386,0.041585179138600006,27,-6.938893903907228e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2021,0.03091539011652,0.03091539011652,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2025,0.026177367720494,0.026177367720493998,27,3.469446951953614e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,0.029987389237533,0.029987389237533,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,0.039623774067337,0.039623774067337005,27,-6.938893903907228e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,0.051211982583246,0.051211982583246,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2045,0.054061362826249,0.054061362826249,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,0.057446527199641,0.057446527199640995,27,6.938893903907228e-18
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2021,1.29713226278,1.29713226278,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2025,0.887032218595,0.887032218595,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,0.875055782577,0.875055782577,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,0.737341375158,0.737341375158,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,0.6909025006337,0.6909025006337,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2045,0.674600963012,0.6746009630120001,27,-1.1102230246251565e-16
+GCAM,LTT_NoCE,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,0.616348574934,0.6163485749340001,27,-1.1102230246251565e-16
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2021,0.39309558378,0.39309558378000004,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2025,0.305469697481,0.305469697481,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2030,0.3356201074734,0.3356201074734,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2035,0.380388347787,0.38038834778700004,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2040,0.4548474306163,0.45484743061629995,27,5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2045,0.45846231773393,0.45846231773393004,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2050,0.454746944176,0.45474694417600003,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2021,0.2329966556422,0.2329966556422,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2025,0.16985566250769,0.16985566250769002,27,-2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,0.206711299096126,0.206711299096126,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,0.309649146109827,0.30964914610982697,27,5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,0.389070587035682,0.38907058703568204,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2045,0.38237285110448,0.38237285110448,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,0.391812889516584,0.391812889516584,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,0.0076342795761,0.007634279576099999,27,8.673617379884035e-19
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,0.0210694245833,0.021069424583300002,27,-3.469446951953614e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,0.0294765793322,0.029476579332200003,27,-3.469446951953614e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2045,0.0299518803503,0.029951880350299994,27,6.938893903907228e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,0.0290124414687,0.029012441468700002,27,-3.469446951953614e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2021,0.03091539011652,0.03091539011652,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2025,0.026058259634846,0.026058259634845996,27,3.469446951953614e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,0.029167926549242,0.029167926549242,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,0.038566715217448,0.03856671521744799,27,6.938893903907228e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,0.048252273453504,0.048252273453504,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2045,0.049638507703519,0.049638507703519005,27,-6.938893903907228e-18
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,0.050926540570957,0.050926540570957,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2021,1.29713226278,1.29713226278,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2025,0.883743351577,0.883743351577,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,0.861003468174,0.861003468174,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,0.721855347645,0.721855347645,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,0.5361844349328,0.5361844349328,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2045,0.492350312532,0.492350312532,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,0.417227911036,0.41722791103600004,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2021,1.95413989231872,1.95413989231872,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2025,1.385126971200536,1.385126971200536,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2030,1.440137080868868,1.440137080868868,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2035,1.471528981342575,1.4715289813425751,27,-2.220446049250313e-16
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2040,1.457831305370486,1.4578313053704859,27,2.220446049250313e-16
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2045,1.412775869424229,1.412775869424229,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2050,1.343726726768241,1.3437267267682411,27,-2.220446049250313e-16
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2021,0.39309558378,0.39309558378000004,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2025,0.30481987012,0.30481987012,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2030,0.3338164744988,0.33381647449880003,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2035,0.3776183030763,0.37761830307630007,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2040,0.482469454094,0.48246945409399994,27,5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2045,0.45845176383418,0.45845176383418,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Electricity,EJ/yr,2050,0.4617566966858,0.4617566966858,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2021,0.2329966556422,0.2329966556422,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2025,0.16952883056093,0.16952883056093002,27,-2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2030,0.209212178728626,0.209212178728626,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2035,0.308231664788682,0.308231664788682,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2040,0.351240372969311,0.351240372969311,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2045,0.316080250586069,0.31608025058606903,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Gases,EJ/yr,2050,0.321787436013839,0.32178743601383897,27,5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2021,0.0,0.0,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2025,0.0,0.0,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,0.0079918170518,0.0079918170518,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,0.0212695055794,0.021269505579399998,27,3.469446951953614e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,0.0231344866988,0.0231344866988,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2045,0.0216863741094,0.021686374109400004,27,-3.469446951953614e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,0.0205394348527,0.020539434852700003,27,-3.469446951953614e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2021,0.03091539011652,0.03091539011652,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2025,0.026003734056089,0.026003734056089,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2030,0.029206382636807,0.029206382636807002,27,-3.469446951953614e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2035,0.038297796774161,0.038297796774160994,27,6.938893903907228e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2040,0.048208587736216,0.048208587736215995,27,6.938893903907228e-18
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2045,0.046874961103634,0.046874961103634,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,0.048341732817602,0.04834173281760201,27,-1.3877787807814457e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2021,1.29713226278,1.29713226278,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2025,0.88222697954,0.8822269795400001,27,-1.1102230246251565e-16
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2030,0.852971704939,0.852971704939,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2035,0.719085841458,0.7190858414580001,27,-1.1102230246251565e-16
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2040,0.4313815387305,0.43138153873050006,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2045,0.366941440196,0.36694144019599995,27,5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel|Solids,EJ/yr,2050,0.298510688922,0.298510688922,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2021,1.95413989231872,1.95413989231872,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2025,1.382579414277019,1.382579414277019,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2030,1.433198557855033,1.4331985578550328,27,2.220446049250313e-16
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2035,1.464503111676543,1.464503111676543,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2040,1.336434440228827,1.336434440228827,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2045,1.210034789829283,1.210034789829283,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Iron and Steel,EJ/yr,2050,1.150935989291941,1.1509359892919409,27,2.220446049250313e-16
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2021,0.237726444237,0.237726444237,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2025,0.2699496266529,0.2699496266529,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2030,0.26619068037465,0.26619068037465005,27,-5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2035,0.25915246315894,0.25915246315894,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2040,0.25116138934377,0.25116138934376997,27,5.551115123125783e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2045,0.23882278334299,0.23882278334298998,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2050,0.22769811353631,0.22769811353631,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2021,0.18899469,0.18899469,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2025,0.216096216,0.216096216,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,0.2134533632,0.2134533632,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2035,0.2088353288,0.20883532879999997,27,2.7755575615628914e-17
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2040,0.2063217149,0.2063217149,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2045,0.202750728,0.202750728,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2050,0.1978165282,0.1978165282,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2021,2.1708123e-05,2.1708123e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2025,2.46291859e-05,2.46291859e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,2.429662975e-05,2.429662975e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,2.357167054e-05,2.357167054e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,2.229557077e-05,2.229557077e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2045,2.007669779e-05,2.0076697789999995e-05,27,3.3881317890172014e-21
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,1.83518461e-05,1.83518461e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2021,7.253111399999999e-05,7.253111399999999e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2025,8.2291467e-05,8.229146699999999e-05,27,1.3552527156068805e-20
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,8.11807449e-05,8.11807449e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,7.87589884e-05,7.87589884e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,7.4495493e-05,7.4495493e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2045,6.70804752e-05,6.70804752e-05,27,0.0
+GCAM,LTT_NoCE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,6.131429021e-05,6.131429021e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2021,0.18899469,0.18899469,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2025,0.214829662,0.21482966199999998,27,2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,0.2119811547,0.2119811547,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2035,0.2063787084,0.20637870839999997,27,2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2040,0.199418922,0.199418922,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2045,0.1879933118,0.1879933118,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2050,0.1783306414,0.1783306414,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2021,2.1708123e-05,2.1708123e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2025,2.4473879e-05,2.4473879e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,2.411723287e-05,2.411723287e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,2.328411443e-05,2.328411443e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,2.154984018e-05,2.1549840179999998e-05,27,3.3881317890172014e-21
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2045,1.856951057e-05,1.856951057e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,1.641524527e-05,1.641524527e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2021,7.253111399999999e-05,7.253111399999999e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2025,8.177251799999999e-05,8.177251799999999e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,8.058130659999999e-05,8.05813066e-05,27,-1.3552527156068805e-20
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,7.779815150000001e-05,7.77981515e-05,27,1.3552527156068805e-20
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,7.20037592e-05,7.20037592e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2045,6.20446738e-05,6.204467380000001e-05,27,-1.3552527156068805e-20
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,5.484409507e-05,5.484409507e-05,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2021,0.237726444237,0.237726444237,27,0.0
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2025,0.268386334397,0.26838633439700005,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2030,0.26439419844947,0.26439419844947004,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2035,0.25621190615593,0.25621190615593004,27,-5.551115123125783e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2040,0.24304708919938,0.24304708919938003,27,-2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2045,0.22166021789437,0.22166021789437002,27,-2.7755575615628914e-17
+GCAM,LTT_MedCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2050,0.20521909970034,0.20521909970034002,27,-2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2021,0.18899469,0.18899469,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2025,0.212879637,0.212879637,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2030,0.2097298431,0.20972984309999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2035,0.2029256606,0.20292566059999997,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2040,0.1910870138,0.19108701379999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2045,0.1719891978,0.17198919780000002,27,-2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Electricity,EJ/yr,2050,0.1579987421,0.15799874209999998,27,2.7755575615628914e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2021,2.1708123e-05,2.1708123e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2025,2.42378737e-05,2.42378737e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,2.384679641e-05,2.384679641e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,2.288527568e-05,2.2885275680000002e-05,27,-3.3881317890172014e-21
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,2.066222204e-05,2.0662222040000003e-05,27,-3.3881317890172014e-21
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2045,1.696361006e-05,1.696361006e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,1.443943839e-05,1.443943839e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2021,7.253111399999999e-05,7.253111399999999e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2025,8.0983951e-05,8.0983951e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,7.96776452e-05,7.96776452e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,7.6465412e-05,7.6465412e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,6.903790490000001e-05,6.90379049e-05,27,1.3552527156068805e-20
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2045,5.66790605e-05,5.66790605e-05,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,4.824288978e-05,4.8242889779999995e-05,27,6.776263578034403e-21
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2021,0.237726444237,0.237726444237,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2025,0.2659770918247,0.26597709182470003,27,-5.551115123125783e-17
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2030,0.26164162613161,0.26164162613161,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2035,0.25205970660768,0.25205970660768,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2040,0.23323582918694,0.23323582918694,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2045,0.20305584961056,0.20305584961056,27,0.0
+GCAM,LTT_HighCE_EU,Final Energy|Industry|Non-Ferrous Metals|Aluminum,EJ/yr,2050,0.18179355252817,0.18179355252816998,27,2.7755575615628914e-17
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2021,1093.950839863326,1093.950839863326,27,0.0
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2025,957.7423783810814,957.7423783810815,27,-1.1368683772161603e-13
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2030,912.975031038765,912.9750310387651,27,-1.1368683772161603e-13
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2035,815.5078918774154,815.5078918774154,27,0.0
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2040,647.8725788036296,647.8725788036297,27,-1.1368683772161603e-13
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2045,468.8553982257975,468.8553982257975,27,0.0
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2050,369.8014877806859,369.8014877806859,27,0.0
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2021,144.8382774798338,144.83827747983378,26,2.842170943040401e-14
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2025,106.7948926097086,106.79489260970864,26,-4.263256414560601e-14
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2030,111.4797659252859,111.47976592528588,26,2.842170943040401e-14
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2035,110.4170468257399,110.41704682573992,26,-1.4210854715202004e-14
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2040,84.61849967444859,84.61849967444859,26,0.0
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2045,42.18965814921742,42.18965814921742,26,0.0
+GCAM,NDC_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2050,20.92044110357919,20.920441103579194,26,-3.552713678800501e-15
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2021,1093.950839863326,1093.950839863326,27,0.0
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2025,956.5400070217333,956.5400070217332,27,1.1368683772161603e-13
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2030,909.4396567629482,909.4396567629483,27,-1.1368683772161603e-13
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2035,811.4614692331727,811.4614692331726,27,1.1368683772161603e-13
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2040,630.114897595136,630.1148975951361,27,-1.1368683772161603e-13
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2045,448.059213848887,448.059213848887,27,0.0
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2050,347.8756171640445,347.8756171640445,27,0.0
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2021,144.8382774798338,144.83827747983378,26,2.842170943040401e-14
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2025,105.3124189429072,105.31241894290721,26,-1.4210854715202004e-14
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2030,107.474050380703,107.47405038070305,26,-4.263256414560601e-14
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2035,104.3890860085266,104.38908600852658,26,2.842170943040401e-14
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2040,85.08610469823776,85.08610469823776,26,0.0
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2045,46.43172121787907,46.43172121787906,26,1.4210854715202004e-14
+GCAM,NDC_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2050,27.3137235365764,27.3137235365764,26,0.0
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2021,1093.950839863326,1093.950839863326,27,0.0
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2025,955.9852518055588,955.9852518055587,27,1.1368683772161603e-13
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2030,907.1206962442361,907.1206962442363,27,-2.2737367544323206e-13
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2035,810.1390946868373,810.1390946868373,27,0.0
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2040,620.2146054555134,620.2146054555135,27,-1.1368683772161603e-13
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2045,435.4120638275669,435.4120638275669,27,0.0
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2050,335.5855358821925,335.5855358821926,27,-5.684341886080802e-14
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2021,144.8382774798338,144.83827747983378,26,2.842170943040401e-14
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2025,104.6827041428499,104.68270414284996,26,-5.684341886080802e-14
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2030,104.5090374702408,104.50903747024081,26,-1.4210854715202004e-14
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2035,100.5126249826308,100.51262498263084,26,-4.263256414560601e-14
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2040,84.7224611043087,84.7224611043087,26,0.0
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2045,48.572362251689,48.57236225168899,26,7.105427357601002e-15
+GCAM,NDC_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2050,30.77407547105097,30.774075471050978,26,-7.105427357601002e-15
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2021,1093.950839863326,1093.950839863326,27,0.0
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2025,957.7423783810814,957.7423783810815,27,-1.1368683772161603e-13
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2030,912.975031038765,912.9750310387651,27,-1.1368683772161603e-13
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2035,815.5078918774154,815.5078918774154,27,0.0
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2040,637.1760123460049,637.176012346005,27,-1.1368683772161603e-13
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2045,442.3498546771274,442.34985467712744,27,-5.684341886080802e-14
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2050,316.9611800051015,316.9611800051014,27,5.684341886080802e-14
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2021,144.8382774798338,144.83827747983378,26,2.842170943040401e-14
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2025,106.7948926097086,106.79489260970864,26,-4.263256414560601e-14
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2030,111.4797659252859,111.47976592528588,26,2.842170943040401e-14
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2035,110.4170468257399,110.41704682573992,26,-1.4210854715202004e-14
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2040,83.44394906004982,83.44394906004982,26,0.0
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2045,39.13057938275999,39.13057938275999,26,0.0
+GCAM,LTT_NoCE,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2050,16.45141160772225,16.45141160772225,26,0.0
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2021,1093.950839863326,1093.950839863326,27,0.0
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2025,956.5400070217333,956.5400070217332,27,1.1368683772161603e-13
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2030,909.4396567629482,909.4396567629483,27,-1.1368683772161603e-13
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2035,811.4614692331727,811.4614692331726,27,1.1368683772161603e-13
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2040,621.5657395723424,621.5657395723425,27,-1.1368683772161603e-13
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2045,424.7518022993501,424.75180229935,27,1.1368683772161603e-13
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2050,300.5183161545938,300.5183161545937,27,5.684341886080802e-14
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2021,144.8382774798338,144.83827747983378,26,2.842170943040401e-14
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2025,105.3124189429072,105.31241894290721,26,-1.4210854715202004e-14
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2030,107.474050380703,107.47405038070305,26,-4.263256414560601e-14
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2035,104.3890860085266,104.38908600852658,26,2.842170943040401e-14
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2040,83.83012265394959,83.83012265394959,26,0.0
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2045,41.77692870375856,41.776928703758564,26,-7.105427357601002e-15
+GCAM,LTT_MedCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2050,19.64773974685549,19.647739746855493,26,-3.552713678800501e-15
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2021,1093.950839863326,1093.950839863326,27,0.0
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2025,955.9852518055588,955.9852518055587,27,1.1368683772161603e-13
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2030,907.1206962442361,907.1206962442363,27,-2.2737367544323206e-13
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2035,810.1390946868373,810.1390946868373,27,0.0
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2040,612.7962766174065,612.7962766174063,27,2.2737367544323206e-13
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2045,414.1651664204208,414.16516642042075,27,5.684341886080802e-14
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Energy|Demand|Industry,Mt CO2-equiv/yr,2050,291.9605868845022,291.9605868845022,27,0.0
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2021,144.8382774798338,144.83827747983378,26,2.842170943040401e-14
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2025,104.6827041428499,104.68270414284996,26,-5.684341886080802e-14
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2030,104.5090374702408,104.50903747024081,26,-1.4210854715202004e-14
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2035,100.5126249826308,100.51262498263084,26,-4.263256414560601e-14
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2040,83.57846306609137,83.57846306609139,26,-1.4210854715202004e-14
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2045,43.40705753573276,43.40705753573276,26,0.0
+GCAM,LTT_HighCE_EU,Emissions|Kyoto Gases|Industrial Processes,Mt CO2-equiv/yr,2050,21.77068892833916,21.770688928339155,26,3.552713678800501e-15

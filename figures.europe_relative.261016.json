@@ -1,0 +1,27 @@
+{
+  "suite": "europe_relative",
+  "input": "results_allCE_261008.csv",
+  "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+  "gcam_sheet": "Sheet1",
+  "output": "report_figures_europe_relative_261016",
+  "combined_pdf": "report_figures_with_emissions.pdf",
+  "preserve_individual_figures": [
+    "fig01_material_production_response",
+    "fig02_energy_response"
+  ],
+  "config_file": "figures.europe_relative.261016.json",
+  "region_mapping": "data/OMNIA_region_mapping_241120.csv",
+  "regions": ["EUE", "EUM", "EUW"],
+  "scenarios": [
+    "ndc_noce", "ndc_medce_eu", "ndc_highce_eu",
+    "baseline_noce", "baseline_medce_eu", "baseline_highce_eu"
+  ],
+  "years": [2019, 2024, 2030, 2035, 2040, 2050],
+  "gcam_years": [2021, 2025, 2030, 2035, 2040, 2045, 2050],
+  "historical_year": 2019,
+  "gcam_historical_year": 2021,
+  "comparison_year": 2050,
+  "missing_activity": "zero",
+  "formats": ["pdf", "svg", "png"],
+  "dpi": 600
+}

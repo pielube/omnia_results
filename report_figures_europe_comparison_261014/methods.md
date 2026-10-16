@@ -28,13 +28,23 @@ Every future CE percentage uses **the same model, climate pathway, sector and fu
 
 The 2 × 3 layout has NDC above NDC+LTT and cement, iron and steel, and aluminium columns. Within each historical/future category, OMNIA is on the left and hatched GCAM on the right. Scales match across models and climate rows within each sector.
 
-OMNIA cement selects `Production|Non-Metallic Minerals|Cement`; metal totals sum exact primary and secondary production parents. GCAM selects the exact reported cement parent, `Production|Iron and Steel|Steel`, and `Production|Non-Ferrous Metals|Aluminum`, in `Mt/yr`. GCAM has no production-route split, so metal totals are shown as grey hatched bars, not primary or secondary production. OMNIA secondary shares are annotated where legible. Clinker has no matching GCAM series and is omitted from the figure; any exported OMNIA clinker values are explicitly context.
+OMNIA cement selects `Production|Non-Metallic Minerals|Cement`; metal totals sum exact primary and secondary production parents. GCAM selects the exact reported cement parent, `Production|Iron and Steel|Steel`, and `Production|Non-Ferrous Metals|Aluminum`, in `Mt/yr`. GCAM has no exported production-route split, so its reported metal output is shown as grey hatched bars without assigning it to a route. **GCAM aluminium's primary/secondary coverage is unconfirmed**; the export is not assumed to represent the same production boundary as OMNIA's primary-plus-secondary total. OMNIA secondary shares are annotated where legible. Clinker has no matching GCAM series and is omitted from the figure; any exported OMNIA clinker values are explicitly context.
 
 ## Figure 2: final-energy mix
 
 The layout and bar categories match Figure 1. Exact carrier parents select electricity, gases, hydrogen, liquids and solids without adding overlapping detailed fuel children. OMNIA totals sum its documented carrier parents; its cement export has no hydrogen parent. GCAM totals select the reported sector final-energy parent in `EJ/yr`. GCAM cement and steel report five carrier parents; aluminium reports electricity, liquids and solids, without gas or hydrogen parents.
 
 **Unallocated energy** is GCAM's reported sector total minus the sum of its supplied carrier parents. The residual is positive for aluminium in the supplied export and is shown as a separate stack component. No unreported carrier is invented and no residual is assigned to gases or hydrogen. Near-zero arithmetic residue below `1e-12 EJ/yr` is recorded as zero. The reported totals and exact residual coefficients remain in the source CSV. All stack components reproduce the totals used for percentage annotations.
+
+### Aluminium scope remains unconfirmed
+
+The workbook does not define whether its aluminium production includes primary only or primary plus secondary, nor whether its aluminium final-energy parent includes alumina refining. These definitions remain unconfirmed. The figures retain the source-defined output and energy quantities, with explicit caveats on both charts.
+
+[Public GCAM documentation](https://jgcri.github.io/gcam-doc/demand_energy.html) describes alumina refining and aluminium smelting, with historical calibration using electrolytic aluminium production. This supports a possible primary-oriented process-scope explanation for the cross-model difference. It does **not establish the custom GCAM-Europe circularity export's definitions**, especially in future CE scenarios. The unidentified energy residual cannot be attributed to alumina refining, a fuel, feedstocks or duplicate accounting from the workbook alone.
+
+The historical plotted quantities imply apparent energy/output ratios of approximately 25.2 GJ/t for OMNIA (7.76 Mt and 0.1953 EJ in 2019) and 55.5 GJ/t for GCAM (4.28 Mt and 0.2377 EJ in 2021). These are **diagnostic apparent ratios, not harmonised efficiency comparisons**. OMNIA's historical output includes 2.25 Mt primary and 5.51 Mt secondary aluminium. In 2050 NDC, its secondary share is approximately 76.9% with no CE, versus 57% and 67% with medium/high CE; the changing route mix helps explain energy growth despite lower total output. The scenario inputs are needed to identify the constraints behind those shares.
+
+The outstanding GCAM information is: the production query's technology/route membership, the energy query's process and fuel membership, and how CE changes those routes and inputs. These definitions are needed before harmonising output or comparing energy intensity across models.
 
 ## Figure 3: reported industrial GHG response
 

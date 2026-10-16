@@ -4,7 +4,7 @@
   "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
   "gcam_sheet": "Sheet1",
   "output": "report_figures_europe_comparison_261014",
-  "combined_pdf": "report_figures.pdf",
+  "combined_pdf": "report_figures_scope_notes.pdf",
   "config_file": "figures.europe_comparison.261014.json",
   "region_mapping": "data/OMNIA_region_mapping_241120.csv",
   "regions": ["EUE", "EUM", "EUW"],

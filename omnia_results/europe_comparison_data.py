@@ -65,8 +65,9 @@ class EuropeComparisonData:
             "The OMNIA EU regions include Greenland, Faroe Islands, Andorra, Monaco and San Marino in the supplied country mapping; these cannot be removed from regional data.",
             "GCAM source LTT scenarios are paired with OMNIA baseline (NDC+LTT); the scenario names alone do not establish identical policy assumptions.",
             "Historical bars use OMNIA 2019 and GCAM 2021 observations separately; no interpolation or historical alignment is imposed.",
-            "GCAM reports total cement, steel and aluminium production, without clinker or primary/secondary route splits.",
+            "GCAM reports cement, steel and aluminium output without exported clinker or primary/secondary route splits. Aluminium route coverage remains unconfirmed and is not assumed equivalent to OMNIA primary plus secondary.",
             "GCAM aluminium energy includes an Unallocated residual between the reported sector total and its reported carrier parents; the residual is not assigned to an unreported carrier.",
+            "GCAM aluminium's alumina-refining coverage is unconfirmed. The energy residual has no confirmed process attribution, and cross-model energy/output quotients are apparent ratios rather than harmonised efficiency measures.",
             "Industrial GHG boundaries differ: OMNIA reports Emissions|GHG|Industry; GCAM combines industry energy-demand Kyoto gases with industrial-process Kyoto gases. GCAM has no comparable cement/steel/aluminium GHG decomposition.",
         ]
 
@@ -401,13 +402,19 @@ class EuropeComparisonData:
                               [f"Production|{sector.path}|Primary", f"Production|{sector.path}|Secondary"])
                 rows.append(dict(Model=model, Metric="Material production", Sector=sector.label,
                                  SourceVariables=json.dumps(production), SourceUnit="Mt/yr", FigureUnit="Mt/yr",
-                                 Definition="Total reported production" if model == "GCAM" or sector.key == "cement" else "Primary plus secondary production"))
+                                 Definition=("Reported aluminium output; primary/secondary coverage unconfirmed"
+                                             if model == "GCAM" and sector.key == "aluminium" else
+                                             "Reported production" if model == "GCAM" or sector.key == "cement" else
+                                             "Primary plus secondary production")))
                 fuels = sector.fuels if model == MODELS[0] else GCAM_FUELS[sector.key]
                 parent = f"Final Energy|Industry|{sector.path}"
                 rows.append(dict(Model=model, Metric="Final energy", Sector=sector.label,
                                  SourceVariables=json.dumps([parent + "|" + f for f in fuels]), SourceUnit="EJ/yr", FigureUnit="EJ/yr",
                                  TotalSourceVariables=json.dumps([parent] if model == "GCAM" else [parent + "|" + f for f in fuels]),
-                                 Definition="Reported sector energy total, with reported carriers and unallocated residual" if model == "GCAM" else "Sum exact carrier parents"))
+                                 Definition=("Reported aluminium energy; alumina-refining coverage unconfirmed; residual unidentified"
+                                             if model == "GCAM" and sector.key == "aluminium" else
+                                             "Reported sector energy total, with reported carriers and unallocated residual"
+                                             if model == "GCAM" else "Sum exact carrier parents")))
             definitions, unit = self._emissions_definitions(model)
             for series, (variables, coefficients) in definitions.items():
                 rows.append(dict(Model=model, Metric="Industrial GHG emissions", Sector="Industry", Series=series,

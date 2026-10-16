@@ -118,7 +118,7 @@ The configuration currently preserves the reviewed individual files for Figures 
 
 ## European OMNIA-ENGAGE / GCAM comparison
 
-The [European comparison gallery](report_figures_europe_comparison_261014/index.html) and [three-page PDF](report_figures_europe_comparison_261014/report_figures.pdf) compare [results_allCE_261008.csv](results_allCE_261008.csv) with [the standardized GCAM workbook](DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx). The three figures adapt the consolidated material-production, energy-mix and emissions-response designs. Both climate pathways retain only no, medium and high **EU-only CE**; EU+ scenarios are excluded.
+The [European comparison gallery](report_figures_europe_comparison_261014/index.html) and [three-page PDF](report_figures_europe_comparison_261014/report_figures_scope_notes.pdf) compare [results_allCE_261008.csv](results_allCE_261008.csv) with [the standardized GCAM workbook](DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx). The three figures adapt the consolidated material-production, energy-mix and emissions-response designs. Both climate pathways retain only no, medium and high **EU-only CE**; EU+ scenarios are excluded.
 
 ```powershell
 python -m omnia_results --config figures.europe_comparison.261014.json
@@ -126,9 +126,23 @@ python -m omnia_results --config figures.europe_comparison.261014.json
 
 OMNIA sums **EUE, EUM and EUW**, while GCAM selects its supplied **EU-27 aggregate once**, checked against available country sums. The OMNIA regions include some additional small countries/territories, documented in [geography membership](report_figures_europe_comparison_261014/geography_membership.csv). Historical bars use **2019 for OMNIA and 2021 for GCAM**, without interpolation; all future bars use 2050. Each CE percentage references the same model, pathway and year's no-CE result.
 
-GCAM production has no primary/secondary or clinker breakdown, so metal bars show its reported totals alongside OMNIA's route stacks, and clinker is omitted. The energy figure retains GCAM's reported totals and displays the aluminium carrier-accounting residual as **Unallocated**. The emissions figure compares **source-defined industrial GHG totals**, with an explicit scope note: OMNIA reported industry GHG versus GCAM industrial energy-demand plus industrial-process Kyoto gases. Its decomposition preserves each model's own reported components; no comparable GCAM sector GHG breakdown is available. Gas coverage and accounting conventions are not assumed harmonised.
+GCAM production has no exported primary/secondary or clinker breakdown, so metal bars show its reported output alongside OMNIA's route stacks, and clinker is omitted. **GCAM aluminium's route coverage and alumina-refining energy coverage remain unconfirmed**; its output is not assumed equivalent to OMNIA primary plus secondary, and energy/output ratios are not harmonised efficiency comparisons. The energy figure retains GCAM's reported totals and displays the unidentified aluminium carrier-accounting residual as **Unallocated**. The emissions figure compares **source-defined industrial GHG totals**, with an explicit scope note: OMNIA reported industry GHG versus GCAM industrial energy-demand plus industrial-process Kyoto gases. Its decomposition preserves each model's own reported components; no comparable GCAM sector GHG breakdown is available. Gas coverage and accounting conventions are not assumed harmonised.
 
 Each figure includes PDF/SVG/600 dpi PNG artwork and a source CSV. [Methods](report_figures_europe_comparison_261014/methods.md), [captions](report_figures_europe_comparison_261014/captions.md), scenario and variable mappings, aggregate checks, missing-input records and source hashes document the comparison. `europe_comparison_data.py` performs exact source extraction; `europe_comparison.py` renders and exports the collection. Excel input adds `openpyxl` to the project dependencies.
+
+## European CE percentage-response figures
+
+The [percentage-response gallery](report_figures_europe_relative_261016/index.html) and [three-page PDF](report_figures_europe_relative_261016/report_figures_with_emissions.pdf) focus on changes from **each model's own 2050 no-CE case**, matching pathway and reference scope. The production figure compares total percentage changes with paired OMNIA/GCAM bars. The energy figure shows signed carrier contributions in percentage points, with black diamonds marking the net percentage change. Each of those figures uses a common percentage scale across all six panels.
+
+```powershell
+python -m omnia_results --config figures.europe_relative.261016.json
+```
+
+The reference is `100 × (CE − no CE) / no CE`, so no CE is zero by construction. This view compares CE responses without assuming alignment in absolute model levels; historical bars are omitted. The aluminium scope limitations remain explicit. The preceding absolute-value collection is retained.
+
+The [third figure](report_figures_europe_relative_261016/fig03_emissions_response.pdf) compares reported **all-industry GHG responses** in one row: NDC on the left and NDC+LTT on the right. OMNIA uses `Emissions|GHG|Industry` directly, including sectors beyond cement, steel and aluminium; GCAM sums industry energy-demand and industrial-process Kyoto gases. Each model uses its own industry no-CE reference. GCAM has partial sector CO2 data but no matched three-sector GHG totals, so no sector breakdown is plotted. [GCAM emissions coverage](report_figures_europe_relative_261016/gcam_emissions_availability.csv) and its [energy/process contributions](report_figures_europe_relative_261016/gcam_emissions_context.csv) document the available detail. OMNIA-only three-sector calculations remain unplotted CSV context; their missing NDC+LTT aluminium inputs retain the provisional zero convention without replacing the reported industry-parent inputs used by the bars.
+
+All three figures include PDF/SVG/600 dpi PNG artwork and source CSVs. [Methods](report_figures_europe_relative_261016/methods.md), [net responses](report_figures_europe_relative_261016/comparison_summary.csv), [contribution checks](report_figures_europe_relative_261016/contribution_checks.csv) and audit metadata retain the raw quantities, reference denominators and exact source definitions. Production-route contributions are exported as context; energy contributions share a total-energy denominator so they reconstruct the net response. The reviewed individual Figures 1–2 are preserved after source-data and PNG verification. Calculations are in `europe_relative_data.py` and `europe_relative_emissions_data.py`; rendering is in `europe_relative.py` and `europe_relative_emissions.py`.
 
 ## Report structure
 
@@ -210,3 +224,24 @@ The [methods](report_figures/baseline_noce/methods.md) and [captions](report_fig
 - [pipeline.py](omnia_results/pipeline.py): configuration and command-line entry point; [plots.py](omnia_results/plots.py) retains the detailed figure workflow and shared style.
 
 Calculation and rendering remain separate; both report suites reuse the source metrics while retaining their explicitly documented geographic definitions.
+
+## Global steel: OPEN-PROM and OMNIA
+
+The [global steel comparison gallery](report_figures_openprom_comparison_261016/index.html) and [four-page PDF](report_figures_openprom_comparison_261016/report_figures.pdf) compare OPEN-PROM with OMNIA across NDC and NDC+LTT, at Medium and High ambition. OMNIA includes both **EU-only** and **EU plus partners (EU+)** CE cases; every plotted quantity is a global total. The OPEN-PROM ambition cases are shown as supplied. Their policy content and geographic coverage are not documented in these files, so matching Medium/High labels does not establish equivalent measures or adoption areas across models.
+
+```powershell
+python -m omnia_results --config figures.openprom_comparison.261016.json
+```
+
+| Figure | Contents |
+| --- | --- |
+| [1: Energy levels](report_figures_openprom_comparison_261016/fig01_energy_levels.pdf) | Global steel final-energy trajectories in EJ/yr, including each model's reference. |
+| [2: Energy response](report_figures_openprom_comparison_261016/fig02_energy_response.pdf) | Percentage changes relative to each model's own reference in the same pathway and year. |
+| [3: Emissions levels](report_figures_openprom_comparison_261016/fig03_emissions_levels.pdf) | Reported global steel emissions trajectories, with the different accounting scopes identified. |
+| [4: Emissions response](report_figures_openprom_comparison_261016/fig04_emissions_response.pdf) | Percentage changes in the reported emissions quantities relative to each model's own reference. |
+
+Each figure separates the NDC/NDC+LTT pathways and Medium/High ambition in small multiples. Responses use `100 × (ambition case − reference) / reference`: OPEN-PROM uses the corresponding NDC or NDC+LTT reference CSV, while OMNIA uses the matching no-CE scenario. OPEN-PROM keeps its annual source observations from 2019 to 2050; OMNIA uses its actual configured source years without interpolation. OPEN-PROM final energy converts Mtoe to EJ using **1 Mtoe = 0.041868 EJ**. OMNIA final energy sums the five exact steel carrier parents across all 28 model regions.
+
+**Emissions are not harmonized totals.** OPEN-PROM supplies steel energy-related CO2 after capture in Mt CO2/yr; it has no steel-specific process-emissions or steel GHG total. OMNIA supplies reported steel GHG emissions in Mt CO2e/yr. Relative responses permit comparison of changes within those reported scopes, but do not remove the boundary difference. Capture is not subtracted again. OMNIA retains the repository's provisional zero treatment of missing additive activity, with affected inputs recorded in the missing-input ledger.
+
+Each individual figure has PDF, editable SVG, 600 dpi PNG and source CSV exports. The collection includes an HTML gallery, [methods](report_figures_openprom_comparison_261016/methods.md), captions, [audit metadata](report_figures_openprom_comparison_261016/audit.json) and [2050 comparison summary](report_figures_openprom_comparison_261016/comparison_2050.csv), preserving the raw totals, reference denominators and percentage changes used for interpretation. Configuration is in [figures.openprom_comparison.261016.json](figures.openprom_comparison.261016.json); calculations and rendering use the dedicated OPEN-PROM comparison modules.

@@ -1,0 +1,121 @@
+{
+  "generated_utc": "2026-10-16T10:00:58.695179+00:00",
+  "figure_count": 3,
+  "sources": {
+    "OMNIA-ENGAGE": {
+      "file": "results_allCE_261008.csv",
+      "sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46"
+    },
+    "GCAM": {
+      "file": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+      "sha256": "0a19286a48537a20bf1e57780fe0aff5a8547f3481f71d6e119174a1659f78d4"
+    }
+  },
+  "region_mapping_sha256": "53728d27a37fcaac1c5ea9b5a3723a3eadcd1167bbe579f2bb4b084c8b362585",
+  "config": {
+    "suite": "europe_relative",
+    "input": "results_allCE_261008.csv",
+    "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+    "gcam_sheet": "Sheet1",
+    "output": "report_figures_europe_relative_261016",
+    "combined_pdf": "report_figures_with_emissions.pdf",
+    "preserve_individual_figures": [
+      "fig01_material_production_response",
+      "fig02_energy_response"
+    ],
+    "config_file": "figures.europe_relative.261016.json",
+    "region_mapping": "data/OMNIA_region_mapping_241120.csv",
+    "regions": [
+      "EUE",
+      "EUM",
+      "EUW"
+    ],
+    "scenarios": [
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu"
+    ],
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "gcam_years": [
+      2021,
+      2025,
+      2030,
+      2035,
+      2040,
+      2045,
+      2050
+    ],
+    "historical_year": 2019,
+    "gcam_historical_year": 2021,
+    "comparison_year": 2050,
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  "normalisation": {
+    "formula": "100 * (CE - no_CE) / no_CE_total",
+    "reference_matches": [
+      "Model",
+      "Climate",
+      "Sector",
+      "Year"
+    ],
+    "reference_year": 2050,
+    "absolute_alignment_assumed": false,
+    "emissions_reference": "Each model's source-defined all-industry no-CE GHG",
+    "emissions_context_reference": "Unplotted OMNIA three-sector context uses combined cement, steel and aluminium no-CE GHG",
+    "component_unit": "percentage points",
+    "net_unit": "%"
+  },
+  "source_row_counts": {
+    "OMNIA-ENGAGE": 24535,
+    "GCAM": 128322
+  },
+  "missing_input_count": 364,
+  "complete_contribution_checks": 60,
+  "max_contribution_closure_error_pp": 1.4210854715202004e-14,
+  "versions": {
+    "python": "3.11.15",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.9",
+    "openpyxl": "3.1.5"
+  },
+  "notes": [
+    "OMNIA-ENGAGE aggregates EUE, EUM and EUW; GCAM selects its EU-27 aggregate once, without adding the country rows.",
+    "The OMNIA EU regions include Greenland, Faroe Islands, Andorra, Monaco and San Marino in the supplied country mapping; these cannot be removed from regional data.",
+    "GCAM source LTT scenarios are paired with OMNIA baseline (NDC+LTT); the scenario names alone do not establish identical policy assumptions.",
+    "Historical bars use OMNIA 2019 and GCAM 2021 observations separately; no interpolation or historical alignment is imposed.",
+    "GCAM reports cement, steel and aluminium output without exported clinker or primary/secondary route splits. Aluminium route coverage remains unconfirmed and is not assumed equivalent to OMNIA primary plus secondary.",
+    "GCAM aluminium energy includes an Unallocated residual between the reported sector total and its reported carrier parents; the residual is not assigned to an unreported carrier.",
+    "GCAM aluminium's alumina-refining coverage is unconfirmed. The energy residual has no confirmed process attribution, and cross-model energy/output quotients are apparent ratios rather than harmonised efficiency measures.",
+    "Industrial GHG boundaries differ: OMNIA reports Emissions|GHG|Industry; GCAM combines industry energy-demand Kyoto gases with industrial-process Kyoto gases. GCAM has no comparable cement/steel/aluminium GHG decomposition.",
+    "Every response uses the same model, climate pathway, sector and comparison-year no-CE total as its denominator.",
+    "Component values are signed percentage-point contributions: 100 times the component CE-minus-no-CE change divided by the no-CE sector total. Net values use the same calculation for the sector total and are percentages.",
+    "GCAM metal output has no exported primary/secondary route split. Its single reported-metal contribution does not establish equivalent route coverage across models.",
+    "GCAM aluminium energy retains an Unallocated contribution from reported sector total minus reported carrier parents; no process or carrier attribution is assumed.",
+    "Incomplete inputs retain the source adapter's explicit missing-activity treatment. Nonfinite or nonpositive no-CE sector totals produce gaps for every contribution and net response.",
+    "No historical bars or absolute quantities are plotted. Their raw comparison-year values remain in the source CSVs.",
+    "All six production panels share one percentage scale; all six energy panels share another common percentage scale.",
+    "Production plots only the net response; route contributions are exported as context to avoid implying matching GCAM routes.",
+    "Emissions panels a,b compare reported all-industry totals only; OMNIA selects Emissions|GHG|Industry directly, including sectors beyond cement, steel and aluminium.",
+    "OMNIA-only three-sector responses and industry decompositions remain unplotted CSV context with ContextOnly=True and Plotted=False.",
+    "GCAM provides partial sector CO2 variables but no matching cement/steel/aluminium GHG totals; these are not substituted for GHG.",
+    "Under the configured zero policy, missing NDC+LTT aluminium GHG in all three OMNIA EU regions is provisional zero in unplotted sector context; it does not replace the reported industry-parent inputs.",
+    "The companion absolute-value figures remain in report_figures_europe_comparison_261014."
+  ]
+}

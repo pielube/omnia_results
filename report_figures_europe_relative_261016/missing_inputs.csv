@@ -1,0 +1,365 @@
+Model,Scenario,Region,Variable,Unit,Year,Issue,Treatment
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Production|Iron and Steel|Secondary,Mt/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Production|Non-Ferrous Metals|Aluminum|Secondary,Mt/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Production|Non-Ferrous Metals|Aluminum|Primary,Mt/yr,2040,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,ndc_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Hydrogen,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Iron and Steel|Liquids,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Gases,EJ/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2030,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2019,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Hydrogen,EJ/yr,2024,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Liquids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2019,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2024,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2030,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2035,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2040,absent row,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Final Energy|Industry|Non-Ferrous Metals|Aluminum|Solids,EJ/yr,2050,absent row,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_medce_eu,EUW,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_noce,EUW,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUE,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2040,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUM,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero
+OMNIA-ENGAGE,baseline_highce_eu,EUW,Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum,MtCO2e/yr,2050,blank cell,zero

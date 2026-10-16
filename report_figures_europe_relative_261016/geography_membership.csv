@@ -1,0 +1,60 @@
+Model,SourceRegion,Country,ISO3,Aggregation,MatchedGCAMCountry,IncludedInGCAM
+OMNIA-ENGAGE,EUE,Poland,POL,"Sum EUE, EUM and EUW once",Poland,True
+OMNIA-ENGAGE,EUE,Czechia,CZE,"Sum EUE, EUM and EUW once",Czech Republic,True
+OMNIA-ENGAGE,EUE,Romania,ROU,"Sum EUE, EUM and EUW once",Romania,True
+OMNIA-ENGAGE,EUE,Hungary,HUN,"Sum EUE, EUM and EUW once",Hungary,True
+OMNIA-ENGAGE,EUE,Bulgaria,BGR,"Sum EUE, EUM and EUW once",Bulgaria,True
+OMNIA-ENGAGE,EUE,Slovakia,SVK,"Sum EUE, EUM and EUW once",Slovakia,True
+OMNIA-ENGAGE,EUE,Croatia,HRV,"Sum EUE, EUM and EUW once",Croatia,True
+OMNIA-ENGAGE,EUE,Lithuania,LTU,"Sum EUE, EUM and EUW once",Lithuania,True
+OMNIA-ENGAGE,EUE,Slovenia,SVN,"Sum EUE, EUM and EUW once",Slovenia,True
+OMNIA-ENGAGE,EUE,Estonia,EST,"Sum EUE, EUM and EUW once",Estonia,True
+OMNIA-ENGAGE,EUE,Latvia,LVA,"Sum EUE, EUM and EUW once",Latvia,True
+OMNIA-ENGAGE,EUW,Germany,DEU,"Sum EUE, EUM and EUW once",Germany,True
+OMNIA-ENGAGE,EUW,Netherlands,NLD,"Sum EUE, EUM and EUW once",Netherlands,True
+OMNIA-ENGAGE,EUW,Belgium,BEL,"Sum EUE, EUM and EUW once",Belgium,True
+OMNIA-ENGAGE,EUW,Sweden,SWE,"Sum EUE, EUM and EUW once",Sweden,True
+OMNIA-ENGAGE,EUW,Austria,AUT,"Sum EUE, EUM and EUW once",Austria,True
+OMNIA-ENGAGE,EUW,Finland,FIN,"Sum EUE, EUM and EUW once",Finland,True
+OMNIA-ENGAGE,EUW,Denmark,DNK,"Sum EUE, EUM and EUW once",Denmark,True
+OMNIA-ENGAGE,EUW,Ireland,IRL,"Sum EUE, EUM and EUW once",Ireland,True
+OMNIA-ENGAGE,EUW,Luxembourg,LUX,"Sum EUE, EUM and EUW once",Luxembourg,True
+OMNIA-ENGAGE,EUW,Greenland,GRL,"Sum EUE, EUM and EUW once",Greenland,False
+OMNIA-ENGAGE,EUW,Faroe Islands,FRO,"Sum EUE, EUM and EUW once",Faroe Islands,False
+OMNIA-ENGAGE,EUW,Andorra,AND,"Sum EUE, EUM and EUW once",Andorra,False
+OMNIA-ENGAGE,EUM,France,FRA,"Sum EUE, EUM and EUW once",France,True
+OMNIA-ENGAGE,EUM,Monaco,MCO,"Sum EUE, EUM and EUW once",Monaco,False
+OMNIA-ENGAGE,EUM,Italy,ITA,"Sum EUE, EUM and EUW once",Italy,True
+OMNIA-ENGAGE,EUM,San Marino,SMR,"Sum EUE, EUM and EUW once",San Marino,False
+OMNIA-ENGAGE,EUM,Spain,ESP,"Sum EUE, EUM and EUW once",Spain,True
+OMNIA-ENGAGE,EUM,Greece,GRC,"Sum EUE, EUM and EUW once",Greece,True
+OMNIA-ENGAGE,EUM,Portugal,PRT,"Sum EUE, EUM and EUW once",Portugal,True
+OMNIA-ENGAGE,EUM,Cyprus,CYP,"Sum EUE, EUM and EUW once",Cyprus,True
+OMNIA-ENGAGE,EUM,Malta,MLT,"Sum EUE, EUM and EUW once",Malta,True
+GCAM,EU-27,Austria,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Belgium,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Bulgaria,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Croatia,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Cyprus,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Czech Republic,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Denmark,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Estonia,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Finland,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,France,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Germany,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Greece,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Hungary,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Ireland,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Italy,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Latvia,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Lithuania,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Luxembourg,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Malta,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Netherlands,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Poland,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Portugal,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Romania,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Slovakia,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Slovenia,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Spain,,Use EU-27 aggregate once; country rows document membership only,,True
+GCAM,EU-27,Sweden,,Use EU-27 aggregate once; country rows document membership only,,True

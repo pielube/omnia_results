@@ -1,0 +1,177 @@
+{
+  "generated_utc": "2026-10-16T09:55:42.821767+00:00",
+  "config": {
+    "suite": "openprom_comparison",
+    "input": "results_allCE_261008.csv",
+    "output": "report_figures_openprom_comparison_261016",
+    "openprom_workbook": "open_prom_results/ENGAGE Medium and High Ambition Scenarios.xlsx",
+    "openprom_references": {
+      "ndc": {
+        "path": "open_prom_results/ENGAGE_NDC.csv",
+        "scenario": "NDC2100fixUSA_2026-10-07_14-04-29"
+      },
+      "baseline": {
+        "path": "open_prom_results/OPEN_PROM_ENGAGE_NDCLTT.csv",
+        "scenario": "ENGAGE_NDC_LTT"
+      }
+    },
+    "workbook_scenarios": {
+      "ndc": {
+        "medium": {
+          "sheet": "NDC-Medium",
+          "scenario": "ENGAGE-NDC-Medium"
+        },
+        "high": {
+          "sheet": "NDC-High",
+          "scenario": "ENGAGE-NDC-High"
+        }
+      },
+      "baseline": {
+        "medium": {
+          "sheet": "NDC-LTT-Medium",
+          "scenario": "ENGAGE-NDC-LTT-Medium"
+        },
+        "high": {
+          "sheet": "NDC-LTT-High",
+          "scenario": "ENGAGE-NDC-LTT-High"
+        }
+      }
+    },
+    "scenarios": [
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu",
+      "baseline_medce_gbl",
+      "baseline_highce_gbl",
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "ndc_medce_gbl",
+      "ndc_highce_gbl"
+    ],
+    "historical_year": 2019,
+    "comparison_year": 2050,
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "openprom_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026,
+      2027,
+      2028,
+      2029,
+      2030,
+      2031,
+      2032,
+      2033,
+      2034,
+      2035,
+      2036,
+      2037,
+      2038,
+      2039,
+      2040,
+      2041,
+      2042,
+      2043,
+      2044,
+      2045,
+      2046,
+      2047,
+      2048,
+      2049,
+      2050
+    ],
+    "regions": [
+      "AFE",
+      "AFN",
+      "AFW",
+      "AFZ",
+      "ANZ",
+      "ASC",
+      "ASE",
+      "ASO",
+      "BRA",
+      "CAN",
+      "CHL",
+      "CHN",
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW",
+      "IDN",
+      "IND",
+      "JPN",
+      "LAM",
+      "MDA",
+      "MEA",
+      "MEX",
+      "NIG",
+      "RUS",
+      "SKT",
+      "USA"
+    ],
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600,
+    "combined_pdf": "report_figures.pdf"
+  },
+  "sources": {
+    "OMNIA-ENGAGE": {
+      "file": "results_allCE_261008.csv",
+      "sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46"
+    },
+    "OPEN-PROM workbook": {
+      "file": "open_prom_results\\ENGAGE Medium and High Ambition Scenarios.xlsx",
+      "sha256": "0514fdd2afa56d563e1fae254470ee6bced7f79ce4e55f8a08a04a24bb93a1d7"
+    },
+    "OPEN-PROM NDC reference": {
+      "file": "open_prom_results\\ENGAGE_NDC.csv",
+      "sha256": "677f9603cdf7878cad52d487985fa3f23aedc4f91991b09072def34bd5bed6ce"
+    },
+    "OPEN-PROM NDC+LTT reference": {
+      "file": "open_prom_results\\OPEN_PROM_ENGAGE_NDCLTT.csv",
+      "sha256": "bdae3ac45ed929efebd5b722b1738535d3dbc6510a4e7caece44c3ae50282942"
+    }
+  },
+  "figure_count": 4,
+  "metric_row_count": 504,
+  "missing_input_count": 2621,
+  "aggregation_check_count": 3276,
+  "versions": {
+    "python": "3.11.15",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "openpyxl": "3.1.5"
+  },
+  "notes": [
+    "Global OMNIA totals sum all configured model regions once. EU and EU+ describe CE policy coverage, not the plotted geography; EU+ means EU plus partners.",
+    "OPEN-PROM uses its reported World aggregate once; country rows and the overlapping EU aggregate are never added to World.",
+    "OPEN-PROM Medium/High are paired by climate and ambition label only. Their intervention geography and assumptions are unconfirmed; no match to OMNIA EU or EU+ coverage is asserted.",
+    "OMNIA final energy sums the five exact steel carrier parents in EJ/yr. OPEN-PROM uses its steel final-energy parent in Mtoe, multiplied by 0.041868 EJ/Mtoe.",
+    "Emissions retain different accounting scopes: OMNIA steel sector GHG (MtCO2e/yr) versus OPEN-PROM steel energy-demand CO2 after capture (MtCO2/yr). OPEN-PROM steel process emissions and non-CO2 gases are unavailable. Percentage changes retain this difference and do not establish equal absolute emissions.",
+    "CE responses use each model's corresponding NDC or NDC+LTT reference at the same year. Historical changes use that model/climate reference's historical observation; neither model is scaled to the other.",
+    "OPEN-PROM capture and gross energy CO2 are supplementary diagnostics; capture is already reflected in net energy CO2 and is not subtracted again. No OMNIA gross emissions total is inferred from GHG plus CO2 capture.",
+    "OMNIA missing additive activity uses the explicit 'zero' policy. Missing OPEN-PROM World data are rejected; no zero filling is applied to OPEN-PROM.",
+    "The source-defined emissions have different gas/process boundaries; percentages do not harmonise them.",
+    "OPEN-PROM medium/high is paired descriptively with OMNIA medium/high CE; policy and adoption geography equivalence is unconfirmed.",
+    "All calculations read the raw sources directly; previous exploration caches and generated figures are not inputs."
+  ]
+}

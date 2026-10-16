@@ -1,0 +1,53 @@
+[
+  {
+    "number": "1",
+    "slug": "fig01_material_production_response",
+    "title": "Circular-economy effects on European material production",
+    "question": "How much does EU-only CE change material output relative to each model's no-CE case?",
+    "caption": "Percentage changes in European material production in 2050, with NDC above NDC+LTT and cement, iron and steel, and aluminium columns. Each policy category pairs OMNIA-ENGAGE on the left with hatched GCAM on the right. The medium and high EU-only CE scenarios are compared with each model's own no-CE scenario in the same pathway, sector and year: 100 × (CE output − no-CE output) / no-CE output. No CE is the zero reference by construction. The same percentage scale is used across all six panels. Markers identify observed values, including near-zero responses; labels are rounded to 0.1% and are not the plotting coordinates. Missing values remain gaps. Cement excludes clinker; OMNIA metal output sums primary and secondary routes, while GCAM uses its source-reported metal series. GCAM aluminium's route coverage is unconfirmed. Route contributions are exported as context but are not stacked in this figure, because GCAM has no matching route decomposition. Normalisation focuses on within-model CE responses and does not establish agreement in absolute production or energy levels, or harmonise the models' process boundaries. Historical bars are omitted because these are matched-year CE contrasts. OMNIA sums EUE, EUM and EUW; GCAM selects its EU-27 aggregate once. The OMNIA regions include some small non-EU countries and territories. Only medium/high CE applied in the EU enters; EU+ cases are excluded. Raw source quantities, reference totals, exact variables, regions and calculation coefficients accompany every result. A missing, nonfinite or nonpositive reference makes the response undefined.",
+    "section": "Main report",
+    "panel_count": 6,
+    "width_mm": 180.0,
+    "height_mm": 175.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "individual_artifacts_preserved": true
+  },
+  {
+    "number": "2",
+    "slug": "fig02_energy_response",
+    "title": "Circular-economy effects on European final-energy demand",
+    "question": "How do fuels contribute to the total-energy response to EU-only CE?",
+    "caption": "Changes in European final-energy demand in 2050, with NDC above NDC+LTT and cement, iron and steel, and aluminium columns. Paired bars place OMNIA-ENGAGE on the left and hatched GCAM on the right. Every fuel segment is 100 × (CE carrier energy − no-CE carrier energy) / no-CE total sector energy, using the same model, pathway, sector and year. These segments are percentage-point contributions to the total-energy percentage change; they are not carrier-specific percentage changes. Positive and negative contributions stack independently from zero. Black diamonds and signed labels show the net total-energy percentage change. All six panels share one percentage scale, retaining increases as well as decreases. Exact carrier parents are selected once. GCAM's total-energy reference retains its reported sector parent; Unallocated is the reported parent minus supplied carrier parents in each scenario. Its change remains an unidentified contribution, with no fuel or process attribution. GCAM aluminium's alumina-refining coverage is unconfirmed. Normalisation focuses on within-model CE responses and does not establish agreement in absolute production or energy levels, or harmonise the models' process boundaries. Historical bars are omitted because these are matched-year CE contrasts. OMNIA sums EUE, EUM and EUW; GCAM selects its EU-27 aggregate once. The OMNIA regions include some small non-EU countries and territories. Only medium/high CE applied in the EU enters; EU+ cases are excluded. Raw source quantities, reference totals, exact variables, regions and calculation coefficients accompany every result. A missing, nonfinite or nonpositive reference makes the response undefined.",
+    "section": "Main report",
+    "panel_count": 6,
+    "width_mm": 180.0,
+    "height_mm": 175.0,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "individual_artifacts_preserved": true
+  },
+  {
+    "number": "3",
+    "slug": "fig03_emissions_response",
+    "title": "Circular economy effects on European industrial GHG emissions",
+    "question": "How do reported all-industry GHG emissions respond to circular economy?",
+    "caption": "EU-only CE effects on reported European industrial GHG emissions in 2050, with NDC on the left and NDC+LTT on the right. Panels a,b compare source-defined all-industry percentage changes for OMNIA-ENGAGE (left solid bar) and GCAM (right hatched bar), calculated as 100 × (CE industry GHG − no-CE industry GHG) / no-CE industry GHG in the same model, pathway and year. OMNIA selects the reported all-industry parent Emissions|GHG|Industry, including sectors beyond cement, iron and steel, and aluminium; it is not the sum of those three sectors. GCAM sums Emissions|Kyoto Gases|Energy|Demand|Industry and Emissions|Kyoto Gases|Industrial Processes. The inventories' gas coverage, GWP conventions and process boundaries are not documented as harmonised. Scales match between climate columns. Reported negative GHG is retained, and carbon capture is not subtracted again. GCAM has no matching sector GHG/Kyoto aggregates, so no sector breakdown is plotted. Its partial sector CO2 variables cannot reconstruct complete cement, steel and aluminium GHG inventories and are not substituted. Industry decompositions and the separate OMNIA three-sector calculations remain unplotted CSV context, with Plotted=False. Missing sector inputs in that context do not replace the independently reported industry parent. Original source quantities, reference totals, units, variables, regions, missing treatments and coefficients accompany the CSVs. Only medium/high EU-only CE is selected. Geographic boundaries retain the documented OMNIA EU-region versus GCAM EU-27 approximation. No CE is zero by construction, which does not establish agreement in absolute emissions or harmonise source inventories.",
+    "section": "Main report",
+    "panel_count": 2,
+    "width_mm": 180.0,
+    "height_mm": 105.00000000000001,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "individual_artifacts_preserved": false
+  }
+]

@@ -130,7 +130,7 @@ class EuropeComparisonBuilder:
         fig, axes = self._bar_canvas(title, f"EU-only CE settings | historical references and {self.config['comparison_year']} production")
         handles = [Patch(facecolor=PRODUCT_COLORS["Primary"], label="Cement / primary metal"),
                    Patch(facecolor=PRODUCT_COLORS["Secondary"], label="Secondary metal (OMNIA)"),
-                   Patch(facecolor="#ADB8BE", edgecolor="#53626B", hatch=HATCH, label="Total metal (GCAM)")]
+                   Patch(facecolor="#ADB8BE", edgecolor="#53626B", hatch=HATCH, label="Reported metal (GCAM)")]
         fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(.035, .862), ncol=3,
                    fontsize=5.8, columnspacing=1.3, handlelength=1.5, frameon=False)
         for column, sector in enumerate(SECTORS):
@@ -171,8 +171,10 @@ class EuropeComparisonBuilder:
             "Each category pairs OMNIA-ENGAGE on the left with hatched GCAM on the right. "
             "Historical bars use the model's own no-CE scenario at 2019 (OMNIA) or 2021 (GCAM); "
             "future categories show no, medium and high CE in the EU in 2050. EU+ scenarios are excluded. "
-            "OMNIA metal output stacks primary and secondary routes; GCAM reports total metal production only. "
-            "GCAM's grey hatched total is not assigned to a production route. Cement excludes clinker; "
+            "OMNIA metal output stacks primary and secondary routes; GCAM bars show its reported metal output. "
+            "The custom GCAM aluminium series does not establish whether primary and secondary output are both "
+            "included. Its route coverage is unconfirmed and is not assumed equivalent to OMNIA's combined output. "
+            "GCAM's grey hatched output is not assigned to a production route. Cement excludes clinker; "
             "clinker is omitted because GCAM provides no corresponding series. OMNIA secondary shares are "
             "shown within sufficiently large segments. Future annotations use each model's own no-CE total "
             "under the same climate pathway in 2050: 100 × (scenario/reference − 1). "
@@ -217,7 +219,10 @@ class EuropeComparisonBuilder:
             "electricity, gases, hydrogen, liquids, solids and unallocated energy. Exact carrier parents enter "
             "each stack once. GCAM's reported sector total is retained; Unallocated is this total minus the "
             "sum of its supplied carrier parents (nonzero for aluminium). Missing fuel variables are not "
-            "assigned to a carrier or silently imputed as zero. OMNIA totals sum the documented carrier parents. Historical "
+            "assigned to a carrier or silently imputed as zero. OMNIA totals sum the documented carrier parents. "
+            "GCAM aluminium's alumina-refining coverage is unconfirmed; the Unallocated residual has no "
+            "confirmed process or fuel attribution. Cross-model energy/output quotients are apparent ratios, "
+            "not harmonised efficiency measures. Historical "
             "references use 2019 (OMNIA) and 2021 (GCAM), with no interpolation. Future bars compare no, "
             "medium and high EU-only CE in 2050. Each future percentage uses the same model, pathway and "
             "year's no-CE final energy. Sector scales match across pathways and models. " + self._common_caption())
@@ -397,12 +402,14 @@ class EuropeComparisonBuilder:
         notes = [
             f"Historical bars: OMNIA {historical} / GCAM {gcam_historical}. All other bars: {future}; no interpolation.",
             f"Labels above: change from each model's {future} no CE in the same pathway. M/H = medium/high CE.",
-            ("OMNIA metal stacks show routes; GCAM totals have no route breakdown. Cement excludes clinker."
+            ("OMNIA metal stacks show routes; GCAM shows reported output. Cement excludes clinker."
              if production else "GCAM unallocated energy = reported sector total minus supplied carrier parents (aluminium)."),
+            ("Aluminium: GCAM route coverage is unconfirmed; OMNIA includes primary + secondary."
+             if production else "Aluminium: GCAM alumina-refining coverage is unconfirmed; see methods."),
             "OMNIA: EUE + EUM + EUW; GCAM: EU-27 aggregate. Model geographic boundaries differ slightly.",
             self._missing_note(),
         ]
-        for y, note in zip((.124, .100, .076, .052, .028), notes):
+        for y, note in zip((.138, .116, .094, .072, .050, .028), notes):
             fig.text(.035, y, note, fontsize=5.5, color="#52616A", va="bottom")
 
     def _missing_note(self):
@@ -440,6 +447,11 @@ def generate_europe_comparison(config, base):
             for fmt in config["formats"]:
                 metadata = {"Title": spec.title, "Description": spec.caption, "Date": None} if fmt == "svg" else None
                 spec.figure.savefig(directory / f"{spec.slug}.{fmt}", dpi=config["dpi"], metadata=metadata)
+                if fmt == "svg":
+                    svg_path = directory / f"{spec.slug}.svg"
+                    svg_text = svg_path.read_text(encoding="utf-8")
+                    svg_path.write_text("\n".join(line.rstrip(" \t") for line in svg_text.splitlines()) + "\n",
+                                        encoding="utf-8")
             book.savefig(spec.figure)
             spec.data.to_csv(directory / f"{spec.slug}.csv", index=False)
             width, height = spec.figure.get_size_inches() * 25.4
@@ -516,13 +528,23 @@ Every future CE percentage uses **the same model, climate pathway, sector and fu
 
 The 2 × 3 layout has NDC above NDC+LTT and cement, iron and steel, and aluminium columns. Within each historical/future category, OMNIA is on the left and hatched GCAM on the right. Scales match across models and climate rows within each sector.
 
-OMNIA cement selects `Production|Non-Metallic Minerals|Cement`; metal totals sum exact primary and secondary production parents. GCAM selects the exact reported cement parent, `Production|Iron and Steel|Steel`, and `Production|Non-Ferrous Metals|Aluminum`, in `Mt/yr`. GCAM has no production-route split, so metal totals are shown as grey hatched bars, not primary or secondary production. OMNIA secondary shares are annotated where legible. Clinker has no matching GCAM series and is omitted from the figure; any exported OMNIA clinker values are explicitly context.
+OMNIA cement selects `Production|Non-Metallic Minerals|Cement`; metal totals sum exact primary and secondary production parents. GCAM selects the exact reported cement parent, `Production|Iron and Steel|Steel`, and `Production|Non-Ferrous Metals|Aluminum`, in `Mt/yr`. GCAM has no exported production-route split, so its reported metal output is shown as grey hatched bars without assigning it to a route. **GCAM aluminium's primary/secondary coverage is unconfirmed**; the export is not assumed to represent the same production boundary as OMNIA's primary-plus-secondary total. OMNIA secondary shares are annotated where legible. Clinker has no matching GCAM series and is omitted from the figure; any exported OMNIA clinker values are explicitly context.
 
 ## Figure 2: final-energy mix
 
 The layout and bar categories match Figure 1. Exact carrier parents select electricity, gases, hydrogen, liquids and solids without adding overlapping detailed fuel children. OMNIA totals sum its documented carrier parents; its cement export has no hydrogen parent. GCAM totals select the reported sector final-energy parent in `EJ/yr`. GCAM cement and steel report five carrier parents; aluminium reports electricity, liquids and solids, without gas or hydrogen parents.
 
 **Unallocated energy** is GCAM's reported sector total minus the sum of its supplied carrier parents. The residual is positive for aluminium in the supplied export and is shown as a separate stack component. No unreported carrier is invented and no residual is assigned to gases or hydrogen. Near-zero arithmetic residue below `1e-12 EJ/yr` is recorded as zero. The reported totals and exact residual coefficients remain in the source CSV. All stack components reproduce the totals used for percentage annotations.
+
+### Aluminium scope remains unconfirmed
+
+The workbook does not define whether its aluminium production includes primary only or primary plus secondary, nor whether its aluminium final-energy parent includes alumina refining. These definitions remain unconfirmed. The figures retain the source-defined output and energy quantities, with explicit caveats on both charts.
+
+[Public GCAM documentation](https://jgcri.github.io/gcam-doc/demand_energy.html) describes alumina refining and aluminium smelting, with historical calibration using electrolytic aluminium production. This supports a possible primary-oriented process-scope explanation for the cross-model difference. It does **not establish the custom GCAM-Europe circularity export's definitions**, especially in future CE scenarios. The unidentified energy residual cannot be attributed to alumina refining, a fuel, feedstocks or duplicate accounting from the workbook alone.
+
+The historical plotted quantities imply apparent energy/output ratios of approximately 25.2 GJ/t for OMNIA (7.76 Mt and 0.1953 EJ in 2019) and 55.5 GJ/t for GCAM (4.28 Mt and 0.2377 EJ in 2021). These are **diagnostic apparent ratios, not harmonised efficiency comparisons**. OMNIA's historical output includes 2.25 Mt primary and 5.51 Mt secondary aluminium. In 2050 NDC, its secondary share is approximately 76.9% with no CE, versus 57% and 67% with medium/high CE; the changing route mix helps explain energy growth despite lower total output. The scenario inputs are needed to identify the constraints behind those shares.
+
+The outstanding GCAM information is: the production query's technology/route membership, the energy query's process and fuel membership, and how CE changes those routes and inputs. These definitions are needed before harmonising output or comparing energy intensity across models.
 
 ## Figure 3: reported industrial GHG response
 
@@ -559,7 +581,7 @@ main{{max-width:1080px;margin:auto;padding:42px 26px}}h1{{font-size:32px;line-he
 <p>OMNIA-ENGAGE / GCAM · European industry</p><h1>Comparing EU-only circular-economy scenarios</h1>
 <p class="intro">Three figures compare material production, final-energy mixes and reported industrial GHG under NDC and NDC+LTT, with no, medium and high CE in the EU.</p>
 <p><a class="download" href="{combined}">Download all three figures · PDF</a></p>
-<p class="scope">OMNIA sums its EU model regions (EUE, EUM, EUW); GCAM uses its EU-27 aggregate. The boundaries differ slightly. Historical references use 2019 / 2021. GCAM reports no production-route split or matching sector GHG; Figure 3 compares source-defined industrial totals with explicit scope notes.</p>
+<p class="scope">OMNIA sums its EU model regions (EUE, EUM, EUW); GCAM uses its EU-27 aggregate. The boundaries differ slightly. Historical references use 2019 / 2021. GCAM aluminium's production-route and alumina-refining energy coverage remain unconfirmed; energy/output ratios are not harmonised efficiency comparisons. GCAM reports no matching sector GHG; Figure 3 compares source-defined industrial totals with explicit scope notes.</p>
 <p><a href="source_data.csv">All source data</a> · <a href="captions.md">Captions</a> · <a href="methods.md">Methods</a> · <a href="audit.json">Audit</a><br>
 <a href="scenario_mapping.csv">Scenario mapping</a> · <a href="geography_membership.csv">Geography</a> · <a href="variable_mapping.csv">Variables</a> · <a href="gcam_aggregation_checks.csv">GCAM aggregate checks</a> · <a href="missing_inputs.csv">Missing inputs</a></p>
 {cards}

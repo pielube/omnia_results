@@ -1,0 +1,17 @@
+Model,Climate,ClimateLabel,Ambition,Coverage,Scenario,ReferenceScenario,Source,Sheet,Scope
+OMNIA-ENGAGE,ndc,NDC,Reference,Reference,ndc_noce,ndc_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,ndc,NDC,Medium,EU,ndc_medce_eu,ndc_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,ndc,NDC,High,EU,ndc_highce_eu,ndc_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,ndc,NDC,Medium,EU+,ndc_medce_gbl,ndc_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,ndc,NDC,High,EU+,ndc_highce_gbl,ndc_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,baseline,NDC+LTT,Reference,Reference,baseline_noce,baseline_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,baseline,NDC+LTT,Medium,EU,baseline_medce_eu,baseline_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,baseline,NDC+LTT,High,EU,baseline_highce_eu,baseline_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,baseline,NDC+LTT,Medium,EU+,baseline_medce_gbl,baseline_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OMNIA-ENGAGE,baseline,NDC+LTT,High,EU+,baseline_highce_gbl,baseline_noce,C:\git\omnia_results\results_allCE_261008.csv,,Global; all configured OMNIA regions
+OPEN-PROM,ndc,NDC,Reference,Unspecified,NDC2100fixUSA_2026-10-07_14-04-29,NDC2100fixUSA_2026-10-07_14-04-29,C:\git\omnia_results\open_prom_results\ENGAGE_NDC.csv,,Global; reported World aggregate
+OPEN-PROM,ndc,NDC,Medium,Unspecified,ENGAGE-NDC-Medium,NDC2100fixUSA_2026-10-07_14-04-29,C:\git\omnia_results\open_prom_results\ENGAGE Medium and High Ambition Scenarios.xlsx,NDC-Medium,Global; reported World aggregate
+OPEN-PROM,ndc,NDC,High,Unspecified,ENGAGE-NDC-High,NDC2100fixUSA_2026-10-07_14-04-29,C:\git\omnia_results\open_prom_results\ENGAGE Medium and High Ambition Scenarios.xlsx,NDC-High,Global; reported World aggregate
+OPEN-PROM,baseline,NDC+LTT,Reference,Unspecified,ENGAGE_NDC_LTT,ENGAGE_NDC_LTT,C:\git\omnia_results\open_prom_results\OPEN_PROM_ENGAGE_NDCLTT.csv,,Global; reported World aggregate
+OPEN-PROM,baseline,NDC+LTT,Medium,Unspecified,ENGAGE-NDC-LTT-Medium,ENGAGE_NDC_LTT,C:\git\omnia_results\open_prom_results\ENGAGE Medium and High Ambition Scenarios.xlsx,NDC-LTT-Medium,Global; reported World aggregate
+OPEN-PROM,baseline,NDC+LTT,High,Unspecified,ENGAGE-NDC-LTT-High,ENGAGE_NDC_LTT,C:\git\omnia_results\open_prom_results\ENGAGE Medium and High Ambition Scenarios.xlsx,NDC-LTT-High,Global; reported World aggregate
