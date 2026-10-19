@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import hashlib
 from html import escape
 import json
+import os
 from pathlib import Path
 import platform
 
@@ -11,6 +12,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 from matplotlib import ticker
 import numpy as np
 import pandas as pd
@@ -42,6 +44,59 @@ def response_summary(frame, year):
             .reset_index(drop=True))
 
 
+def draw_openprom_emissions_panels(axes, frame, year=2050, letters=("a", "b")):
+    """Draw paired 2050 bars with the Europe comparison's model encoding.
+
+    EU+ describes OMNIA's adoption area; both models' quantities remain global
+    steel. Each bar retains its own model/climate reference denominator.
+    """
+    from .europe_comparison import HATCH, _clean_axes
+    from .europe_relative import OFFSETS, POSITIONS, WIDTH, _net_labels
+
+    selected = frame.loc[frame.Metric.eq("Emissions") & frame.Year.eq(year) &
+                         frame.Ambition.isin(AMBITIONS) &
+                         ((frame.Model.eq("OMNIA-ENGAGE") & frame.Coverage.eq("EU+")) |
+                          (frame.Model.eq("OPEN-PROM") & frame.Coverage.eq("Unspecified")))].copy()
+    if selected.empty:
+        raise ValueError(f"No global steel emissions comparisons for {year}")
+    if selected.duplicated(["Model", "Climate", "Ambition"]).any():
+        raise ValueError("Duplicate global steel emissions comparison bars")
+    values = selected.PercentChange.to_numpy(dtype=float)
+    finite = np.r_[0., values[np.isfinite(values)]]
+    low, high = float(finite.min()), float(finite.max())
+    span = max(high - low, 5.)
+    limits = (5 * np.floor((low - .20 * span) / 5),
+              5 * np.ceil((high + .15 * span) / 5))
+    selected["Panel"] = selected.Climate.map(dict(zip(CLIMATES, letters)))
+    selected["PlotValue"] = selected.PercentChange
+    selected["PlotUnit"] = "%"
+    selected["Role"] = "plotted"
+    selected["Plotted"] = True
+    for column, climate in enumerate(CLIMATES):
+        ax = axes[column]
+        _clean_axes(ax, letters[column], CLIMATE_LABELS[climate],
+                    "Steel emissions change\nfrom own reference (%)")
+        ax.set_xlim(-.65, 2.)
+        ax.set_xticks(POSITIONS, ["Medium\nsetting", "High\nsetting"], fontsize=6.3)
+        ax.tick_params(axis="x", length=0, pad=5)
+        ax.axhline(0, color="#53626B", linewidth=.7, zorder=2)
+        ax.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=100, decimals=0))
+        ax.yaxis.set_major_locator(ticker.MultipleLocator(20 if span > 40 else 10 if span > 20 else 5))
+        for index, model in enumerate(("OMNIA-ENGAGE", "OPEN-PROM")):
+            bars = selected.loc[selected.Model.eq(model) & selected.Climate.eq(climate)]
+            heights = bars.set_index("Ambition").PercentChange.reindex(AMBITIONS).to_numpy(dtype=float)
+            x = POSITIONS + OFFSETS[index]
+            color = "#0072B2" if index == 0 else "#89969E"
+            ax.bar(x, heights, WIDTH, color=color, edgecolor="#53626B" if index else "white",
+                   linewidth=.45, hatch=HATCH if index else None, zorder=3)
+            present = np.isfinite(heights)
+            ax.scatter(x[present], heights[present], marker="D" if index else "o", s=13,
+                       color=color, edgecolors="white", linewidths=.4, zorder=5)
+            _net_labels(ax, x, heights, index, stagger=False)
+        ax.set_ylim(*limits)
+    return selected
+
+
 class OpenPromComparisonBuilder:
     """Rows separate settings; columns separate climate pathways."""
 
@@ -64,6 +119,8 @@ class OpenPromComparisonBuilder:
             Line2D([], [], color=COLORS["EU+"], marker="s", markerfacecolor="white",
                    markersize=3, linewidth=1.2, label="OMNIA: CE in EU+"),
         ]
+        if relative:
+            handles = [handles[0], handles[2]]
         if not relative:
             handles += [Line2D([], [], color=COLORS["OPEN-PROM"], linestyle="--",
                                linewidth=.9, label="OPEN-PROM reference"),
@@ -99,6 +156,8 @@ class OpenPromComparisonBuilder:
                 markevery=markevery, zorder=2 if reference else 3)
 
     def build(self, number, metric, relative):
+        if metric == "Emissions" and relative:
+            return self.emissions_response()
         frame = self.frame.loc[self.frame.Metric.eq(metric)].copy()
         if frame.empty:
             raise ValueError(f"No comparison observations for {metric}")
@@ -119,7 +178,8 @@ class OpenPromComparisonBuilder:
         fig.legend(handles=self._handles(relative), loc="upper left", bbox_to_anchor=(.035, .884),
                    ncol=3, fontsize=6, handlelength=2.4, columnspacing=1.7,
                    labelspacing=.9, frameon=False)
-        limits = self._limits(frame.loc[~frame.Ambition.eq("Reference")] if relative else frame, relative)
+        limit_frame = frame.loc[~frame.Ambition.eq("Reference") & ~frame.Coverage.eq("EU")] if relative else frame
+        limits = self._limits(limit_frame, relative)
         plot_frames = []
         for row, ambition in enumerate(AMBITIONS):
             for col, climate in enumerate(CLIMATES):
@@ -132,7 +192,7 @@ class OpenPromComparisonBuilder:
                     self._plot(ax, selected, model="OMNIA-ENGAGE", coverage="Reference", reference=True, relative=False)
                 policies = selected.loc[selected.Ambition.eq(ambition)]
                 self._plot(ax, policies, model="OPEN-PROM", coverage="Unspecified", reference=False, relative=relative)
-                for coverage in ("EU", "EU+"):
+                for coverage in (("EU+",) if relative else ("EU", "EU+")):
                     self._plot(ax, policies, model="OMNIA-ENGAGE", coverage=coverage, reference=False, relative=relative)
                 if relative:
                     ax.axhline(0, color="#7C898E", linewidth=.55, zorder=1)
@@ -155,7 +215,6 @@ class OpenPromComparisonBuilder:
                     final = policies.loc[policies.Year.eq(self.config["comparison_year"])]
                     labels = []
                     for model, coverage, label in (("OPEN-PROM", "Unspecified", "OPEN"),
-                                                   ("OMNIA-ENGAGE", "EU", "EU"),
                                                    ("OMNIA-ENGAGE", "EU+", "EU+")):
                         values = final.loc[final.Model.eq(model) & final.Coverage.eq(coverage), "PercentChange"]
                         labels.append(f"{label} {_signed(values.iloc[0])}" if len(values) else f"{label} unavailable")
@@ -164,10 +223,13 @@ class OpenPromComparisonBuilder:
                 selected["Panel"] = panel
                 selected["PlotValue"] = selected["PercentChange" if relative else "Value"]
                 selected["PlotUnit"] = "%" if relative else selected.Unit
-                selected["Role"] = np.where(relative & selected.Ambition.eq("Reference"), "context", "plotted")
+                selected["Role"] = np.where(relative & (selected.Ambition.eq("Reference") | selected.Coverage.eq("EU")),
+                                            "context", "plotted")
                 plot_frames.append(selected)
         notes = [
-            "All values are global. EU/EU+ identify OMNIA's CE adoption area; EU+ = EU plus partners (17 regions).",
+            ("All values are global. OMNIA EU+ = CE in EU plus partners (17 regions)."
+             if relative else
+             "All values are global. EU/EU+ identify OMNIA's CE adoption area; EU+ = EU plus partners (17 regions)."),
             "OPEN-PROM medium/high policy content and adoption geography are undocumented; labels are paired descriptively.",
             ("Different historical levels are retained; no calibration or production-scope adjustment is imposed."
              if energy else "CO₂/GHG and process-accounting boundaries differ. Percentages do not harmonise the emissions scopes."),
@@ -183,6 +245,66 @@ class OpenPromComparisonBuilder:
                             "How do the global steel responses compare across model, climate and OMNIA adoption area?",
                             caption, fig, pd.concat(plot_frames, ignore_index=True), 4)
 
+    def emissions_response(self):
+        """Match the reference emissions figure's two-panel paired-bar style."""
+        from .europe_comparison import HATCH
+
+        year = self.config["comparison_year"]
+        title = "Global steel emissions: response to medium/high settings"
+        fig, axes = plt.subplots(1, 2, figsize=(180 / 25.4, 105 / 25.4), squeeze=False)
+        for column, ax in enumerate(axes[0]):
+            ax.set_position([.105 if column == 0 else .610, .300, .365, .370])
+        fig.text(.035, .970, title, fontsize=8, weight="bold", va="top")
+        fig.text(.035, .900, f"{year} | OMNIA CE in EU+ | change from each model's own pathway reference",
+                 fontsize=6.7, color="#52616A", va="top")
+        fig.legend(handles=[Patch(facecolor="#0072B2", edgecolor="#53626B", linewidth=.45,
+                                  label="OMNIA-ENGAGE · EU+ · left"),
+                            Patch(facecolor="#89969E", edgecolor="#53626B", linewidth=.45,
+                                  hatch=HATCH, label="OPEN-PROM · right")],
+                   loc="upper left", bbox_to_anchor=(.035, .835), ncol=2,
+                   fontsize=6.2, handlelength=1.8, handletextpad=.6, columnspacing=2, frameon=False)
+        plotted = draw_openprom_emissions_panels(axes[0], self.frame, year)
+        data = self.frame.loc[self.frame.Metric.eq("Emissions")].copy()
+        mask = data.Year.eq(year) & data.Ambition.isin(AMBITIONS) & (
+            (data.Model.eq("OMNIA-ENGAGE") & data.Coverage.eq("EU+")) |
+            (data.Model.eq("OPEN-PROM") & data.Coverage.eq("Unspecified")))
+        data["Plotted"] = mask
+        data["ContextOnly"] = ~mask
+        data["Role"] = np.where(mask, "plotted", "context")
+        data["Panel"] = np.where(mask, data.Climate.map({"ndc": "a", "baseline": "b"}), "")
+        data["PlotValue"] = data.PercentChange.where(mask)
+        data["PlotUnit"] = "%"
+        if len(plotted) != int(mask.sum()):
+            raise ValueError("Global steel emissions plot/export selections disagree")
+        notes = [
+            "OMNIA: reported steel GHG; OPEN-PROM: energy-related steel CO₂. Gas/process boundaries differ.",
+            f"Each model uses its own {year} pathway reference; capture is not subtracted again.",
+            "OMNIA CE in EU+ (17 regions); OPEN-PROM intervention and adoption geography are undocumented.",
+            ("OMNIA missing activity = zero (provisional). Medium/high labels do not establish equivalent policies."
+             if self.config["missing_activity"] == "zero" else
+             "OMNIA missing activity is retained. Medium/high labels do not establish equivalent policies."),
+        ]
+        for y, note in zip((.160, .120, .080, .040), notes):
+            fig.text(.035, y, note, fontsize=5.4, color="#52616A", va="bottom")
+        caption = (
+            f"Global steel emissions responses in {year}, with NDC on the left and NDC+LTT on the right. "
+            "Each medium/high category pairs OMNIA-ENGAGE CE in EU plus partners (left solid blue bar) "
+            "with OPEN-PROM's corresponding ambition setting (right grey hatched bar). EU-only OMNIA cases "
+            "are not plotted. Each value is 100 × (setting − reference) / reference in the same model, climate "
+            "and year. OMNIA uses the pathway's no-CE scenario; OPEN-PROM uses its supplied matching CSV reference. "
+            "All totals are global; EU+ denotes the 17-region CE adoption area, not the area aggregated. "
+            "OMNIA selects Emissions|GHG|Industry|Iron and Steel in MtCO2e/yr; OPEN-PROM selects "
+            "Emissions|CO2|Energy|Demand|Industry|Iron and Steel in Mt CO2/yr. OPEN-PROM has no steel-specific "
+            "process-emissions or GHG total. The different gas and accounting scopes are not harmonised by "
+            "percentages. The medium/high labels do not establish equivalent interventions or adoption geography. "
+            "Capture is not subtracted again. Markers identify observed endpoints, including zero; missing values "
+            "remain gaps. The two panels share a percentage scale. Absolute quantities and references remain in "
+            "the source CSV, and unplotted EU-only cases and other years are explicitly marked as context. "
+            + notes[3])
+        return ReportFigure("fig04_emissions_response", "4", title,
+                            "How do global steel emissions respond under OMNIA EU+ and OPEN-PROM settings?",
+                            caption, fig, data, 2)
+
     def _caption(self, metric, relative):
         text = ("Global steel final-energy demand" if metric == "Energy" else
                 "Global steel source-defined emissions: OMNIA reported GHG versus OPEN-PROM energy-related CO2")
@@ -191,7 +313,8 @@ class OpenPromComparisonBuilder:
         text += (
             "Rows show medium then high settings; columns show NDC then NDC+LTT. "
             "OPEN-PROM's corresponding NDC/NDC+LTT CSV supplies its reference; OMNIA uses the same climate's no-CE scenario. "
-            "The two OMNIA curves change CE adoption area (EU or EU plus partners); every plotted quantity is global. "
+            + ("Only OMNIA EU+ and OPEN-PROM are plotted; EU-only OMNIA remains unplotted CSV context. Every plotted quantity is global. "
+               if relative else "The two OMNIA curves change CE adoption area (EU or EU plus partners); every plotted quantity is global. ") +
             "OPEN-PROM medium/high scenario labels do not establish equivalent interventions or geographic coverage. "
             "OPEN-PROM uses the supplied World aggregate once; OMNIA sums its 28 model regions once. "
             "OPEN-PROM annual observations and OMNIA source years are retained from 2019 through 2050, "
@@ -226,6 +349,7 @@ def _sha256(path):
 def generate_openprom_comparison(config, base):
     """Recalculate and render into a dedicated collection directory."""
     from .openprom_comparison_data import OpenPromComparisonData
+    from .consolidation import _save_individual_figure
     import openpyxl
 
     base = Path(base)
@@ -238,20 +362,17 @@ def generate_openprom_comparison(config, base):
             metadata={"Title": "Global steel: OMNIA-ENGAGE and OPEN-PROM"}) as book:
         for spec in builder.figures():
             check_figure_bounds(spec.figure, spec.slug)
-            for fmt in config["formats"]:
-                metadata = {"Title": spec.title, "Description": spec.caption, "Date": None} if fmt == "svg" else None
-                spec.figure.savefig(directory / f"{spec.slug}.{fmt}", dpi=config["dpi"], metadata=metadata)
+            preserved = _save_individual_figure(spec, directory, config)
             book.savefig(spec.figure)
-            spec.data.to_csv(directory / f"{spec.slug}.csv", index=False)
             width, height = spec.figure.get_size_inches() * 25.4
             plt.close(spec.figure)
             records.append({"number": spec.number, "slug": spec.slug, "title": spec.title,
                             "question": spec.question, "caption": spec.caption, "section": spec.section,
                             "panel_count": spec.panel_count, "width_mm": float(width), "height_mm": float(height),
-                            "formats": config["formats"]})
+                            "formats": config["formats"], "individual_artifacts_preserved": preserved})
             plotted.append(spec.data.assign(Figure=spec.slug))
             captions.append(f"## Figure {spec.number}: {spec.title}\n\n{spec.caption}\n")
-            print(f"Rendered global steel comparison/{spec.slug}", flush=True)
+            print(f"{'Preserved' if preserved else 'Rendered'} global steel comparison/{spec.slug}", flush=True)
     frame = data.frame()
     frame.to_csv(directory / "global_steel_metrics.csv", index=False)
     pd.concat(plotted, ignore_index=True).to_csv(directory / "source_data.csv", index=False)
@@ -278,7 +399,84 @@ def generate_openprom_comparison(config, base):
     (directory / "captions.md").write_text("# Global steel comparison captions\n\n" + "\n".join(captions), encoding="utf-8")
     _write_methods(directory, config)
     _write_gallery(directory, config, records, summary)
+    if config.get("combined_comparison_config"):
+        _export_combined_emissions(data, config, base)
     print(f"Saved four global steel comparison figures to {directory}", flush=True)
+
+
+def _export_combined_emissions(openprom_data, config, base):
+    """Recalculate the European row without modifying its original collection."""
+    from .emissions_comparison import build_combined_emissions
+    from .europe_relative_data import EuropeRelativeData
+
+    europe_config_path = (base / config["combined_comparison_config"]).resolve()
+    europe_config = json.loads(europe_config_path.read_text(encoding="utf-8"))
+    if europe_config["comparison_year"] != config["comparison_year"]:
+        raise ValueError("The two emissions comparisons must use the same comparison year")
+    europe_data = EuropeRelativeData(europe_config, europe_config_path.parent)
+    directory = (base / config["combined_comparison_output"]).resolve()
+    directory.mkdir(parents=True, exist_ok=True)
+    with plt.rc_context(COMPARISON_STYLE):
+        spec = build_combined_emissions(europe_data.emissions_response(), openprom_data.frame(),
+                                        year=config["comparison_year"])
+        check_figure_bounds(spec.figure, spec.slug)
+        for fmt in config["formats"]:
+            metadata = {"Title": spec.title, "Description": spec.caption, "Date": None} if fmt == "svg" else None
+            spec.figure.savefig(directory / f"{spec.slug}.{fmt}", dpi=config["dpi"], metadata=metadata)
+        width, height = spec.figure.get_size_inches() * 25.4
+        plt.close(spec.figure)
+    spec.data.to_csv(directory / f"{spec.slug}.csv", index=False)
+    spec.data.to_csv(directory / "source_data.csv", index=False)
+    plotted = spec.data.loc[spec.data.Plotted]
+    plotted.to_csv(directory / "comparison_2050.csv", index=False)
+    record = {"number": spec.number, "slug": spec.slug, "title": spec.title,
+              "question": spec.question, "caption": spec.caption, "section": spec.section,
+              "panel_count": spec.panel_count, "width_mm": float(width), "height_mm": float(height),
+              "formats": config["formats"]}
+    source_paths = {**openprom_data.sources,
+                    "GCAM": europe_data.source_data.gcam_source,
+                    "European region mapping": (europe_config_path.parent / europe_config["region_mapping"]).resolve()}
+    audit = {"generated_utc": datetime.now(timezone.utc).isoformat(),
+             "sources": {name: {"file": str(path), "sha256": _sha256(path)} for name, path in source_paths.items()},
+             "openprom_config": config, "europe_config": europe_config,
+             "figure_count": 1, "panel_count": 4, "plotted_row_count": len(plotted),
+             "notes": ["Panels a,b retain the European all-industry EU-only CE comparison with GCAM.",
+                       "Panels c,d retain global steel, OMNIA EU+ versus OPEN-PROM; EU-only OMNIA is not plotted.",
+                       "Each row has its own shared percentage scale and source-defined emissions inventories.",
+                       "Existing European figures and other collections are not modified by this export.",
+                       "Both rows calculate from raw sources through their existing adapters; figure CSVs and artwork are not calculation inputs."]}
+    (directory / "audit.json").write_text(json.dumps(audit, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
+    (directory / "manifest.json").write_text(json.dumps([record], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (directory / "captions.md").write_text(f"# Combined emissions comparison\n\n{spec.caption}\n", encoding="utf-8")
+    methods = (
+        "# Combined emissions comparison methods\n\n"
+        "Regenerate with `python -m omnia_results --config figures.openprom_comparison.261016.json`. "
+        "The OPEN-PROM config names the European comparison config and the separate combined-output directory.\n\n"
+        "The top row reproduces the European all-industry comparison at 2050 for EU-only medium/high CE: "
+        "OMNIA reported Emissions|GHG|Industry versus GCAM industry energy-demand plus industrial-process Kyoto gases. "
+        "The bottom row compares global steel under OMNIA EU+ and OPEN-PROM medium/high settings: "
+        "OMNIA sector GHG versus OPEN-PROM steel energy-related CO2. Both rows use their original source adapters, "
+        "scenarios, exact units and own-model same-year references. Gas/process boundaries are not harmonised. "
+        "EU/EU+ denotes policy adoption; output geography differs between the rows. The percentage scales match "
+        "within each row and are independent between rows. Only the OMNIA EU+ cases enter the lower row. "
+        "The OPEN-PROM intervention and adoption geography remain unspecified.\n\n"
+        "Original absolute quantities and denominator provenance accompany every bar. PlotValue/PlotUnit "
+        "identify percentages; Value/Unit retain each input adapter's original row definition. Plotted and "
+        "PlotRole distinguish the sixteen plotted bars from reference and decomposition context. "
+        "ComparisonRow and Panel identify the figure's two distinct scopes. Carbon capture is not subtracted again. "
+        "Missing activity retains the configurations' provisional zero assumption for OMNIA; unavailable "
+        "responses remain gaps. Source hashes and both configurations are recorded in audit.json. "
+        "The existing European figure is preserved.\n")
+    (directory / "methods.md").write_text(methods, encoding="utf-8")
+    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Emissions comparison · GCAM and OPEN-PROM</title>
+<style>body{{font:15px/1.6 Arial,sans-serif;color:#233139;background:#f4f5f3;margin:0}}main{{max-width:1080px;margin:auto;padding:36px 24px}}a{{color:#006887}}img{{width:100%;height:auto}}.figure-card{{background:white;padding:22px;margin:24px 0}}figure{{margin:0}}.downloads{{display:flex;gap:16px}}.scope{{background:#e7eeed;padding:16px}}figcaption{{font-size:13px}}h3{{font-size:23px}}</style>
+</head><body><main><h1>Emissions responses: GCAM and OPEN-PROM comparisons</h1>
+<p class="scope">Top: European all-industry emissions, EU-only CE. Bottom: global steel, OMNIA CE in EU+ versus OPEN-PROM. Gas/process inventories and policy coverage remain different. Each model uses its own 2050 reference; scales match within each row.</p>
+<p><a href="{spec.slug}.pdf">Download four-panel figure · PDF</a> · <a href="comparison_2050.csv">2050 plotted values</a> · <a href="methods.md">Methods</a> · <a href="audit.json">Audit</a></p>
+{_figure_card(record)}</main></body></html>'''
+    (directory / "index.html").write_text(page, encoding="utf-8")
+    print(f"Rendered four-panel emissions comparison to {directory}", flush=True)
 
 
 def _write_methods(directory, config):
@@ -292,7 +490,7 @@ python -m omnia_results --config {config.get('config_file', 'figures.openprom_co
 
 ## Purpose and source selection
 
-The collection compares global final energy and source-defined steel emissions under NDC and NDC+LTT, with medium/high OPEN-PROM settings and both EU and EU-plus-partner OMNIA CE adoption areas. The four sheets of `{config['openprom_workbook']}` supply OPEN-PROM medium/high cases. Its two configured CSVs supply the matching climate-pathway references. OMNIA reads `{config['input']}` directly; `ndc_*` is NDC and `baseline_*` is NDC+LTT. Exact identifiers, sheets and reference scenarios are retained in `scenario_mapping.csv`. No previous figure data or temporary exploration cache is a calculation input.
+The collection compares global final energy and source-defined steel emissions under NDC and NDC+LTT. Absolute-level Figures 1 and 3 and the summary tables retain both EU and EU-plus-partner OMNIA CE adoption areas. Response Figures 2 and 4 show only OMNIA EU+ alongside OPEN-PROM; EU-only cases remain unplotted context. Figure 2 retains four time-series panels. Figure 4 uses two paired-bar panels at 2050, styled like the European all-industry comparison. The four sheets of `{config['openprom_workbook']}` supply OPEN-PROM medium/high cases. Its two configured CSVs supply the matching climate-pathway references. OMNIA reads `{config['input']}` directly; `ndc_*` is NDC and `baseline_*` is NDC+LTT. Exact identifiers, sheets and reference scenarios are retained in `scenario_mapping.csv`. No previous figure data or temporary exploration cache is a calculation input.
 
 The OPEN-PROM workbook does not document the intervention behind Medium/High or its adoption geography. Matching these labels with OMNIA medium/high CE is descriptive and does not establish equivalent policies, scenario assumptions or causal effects. The two OPEN-PROM CSVs are treated as the supplied pathway references, without assuming an independently confirmed no-CE definition.
 
@@ -300,7 +498,7 @@ The OPEN-PROM workbook does not document the intervention behind Medium/High or 
 
 OPEN-PROM selects `World` once. Country rows, the EU aggregate and World are never added together. Aggregation checks compare World with the disjoint 13-group partition that includes EU once. OMNIA sums its 28 source regions once. Both OMNIA EU and EU+ curves are **global totals**: EU/EU+ specifies the CE adoption area, not the aggregation boundary. EU is EUE/EUM/EUW (three regions); EU+ also includes 14 partner regions (17 in total). The source suffix `_gbl` does not mean worldwide CE adoption.
 
-The main figures retain OPEN-PROM's annual 2019–2050 observations and OMNIA's 2019, 2024, 2030, 2035, 2040 and 2050 observations. Markers indicate common supplied comparison years; all other OPEN-PROM annual observations remain on the line. Lines connect observed model outputs; no interpolation onto a common grid, smoothing, extrapolation or calibration is introduced. All 2050 comparisons use actual 2050 observations. Historical diagnostics in the metric table use the model/climate reference's 2019 observation.
+The trajectory figures retain OPEN-PROM's annual 2019–2050 observations and OMNIA's 2019, 2024, 2030, 2035, 2040 and 2050 observations. Markers indicate common supplied comparison years; all other OPEN-PROM annual observations remain on the line. Lines connect observed model outputs; no interpolation onto a common grid, smoothing, extrapolation or calibration is introduced. Figure 4 instead selects only 2050 emissions responses, with NDC left and NDC+LTT right; each medium/high category pairs solid blue OMNIA EU+ on the left with grey hatched OPEN-PROM on the right, plus endpoint markers and signed percentage labels. All 2050 comparisons use actual 2050 observations. Historical diagnostics in the metric table use the model/climate reference's 2019 observation.
 
 ## Final energy
 
@@ -318,7 +516,7 @@ OPEN-PROM's reported net series equals its gross steel energy-CO2 series minus r
 
 Each response is `100 × (setting − reference) / reference`, using the **same model, climate pathway, steel variable and model year**. OMNIA uses its climate's no-CE scenario for both adoption areas. OPEN-PROM uses the corresponding supplied CSV reference. The percentage is not a change from 2019. Missing, nonfinite or nonpositive references produce gaps. Positive values indicate increases, negative values decreases; signed outcomes are preserved.
 
-Absolute figures retain the references as dashed curves. Response figures show only the three medium/high comparisons (OPEN-PROM, OMNIA EU, OMNIA EU+), with 2050 values printed below each panel. Common axis limits across the four panels within each figure allow comparisons between settings and climate pathways.
+Absolute figures retain the references as dashed curves. Energy response Figure 2 shows only OPEN-PROM and OMNIA EU+, with 2050 values printed below each panel; the orange EU-only curve, its legend entry and endpoint text are omitted. Emissions response Figure 4 also excludes EU-only OMNIA and shows eight 2050 bars across two climate panels, with medium/high categories. Common axis limits apply across the four panels in Figures 1–3 and across the two panels in Figure 4. Unplotted observations, including EU-only cases and other years, are flagged as context in the response CSVs.
 
 ## Missing inputs and validation
 
@@ -328,7 +526,9 @@ The XLSX reader decodes shared/inline strings and converts numeric strings befor
 
 ## Artifacts
 
-Figures 1/2 show final-energy levels/responses; Figures 3/4 show source-defined emissions levels/responses. Each has PDF, editable SVG, 600 dpi PNG and figure CSV. The four-page PDF collects them in that order. `global_steel_metrics.csv` contains one row per metric/model/scenario/year; `source_data.csv` also records figure/panel, plotted value/unit and context roles. `comparison_2050.csv` retains levels, absolute changes, references and percentages at full precision. The gallery presents 2050 totals and responses together. Captions, scenario mapping, diagnostics, missing inputs, checks and source SHA-256 hashes accompany the exports.
+Figures 1/2 show final-energy levels/responses; Figures 3/4 show source-defined emissions levels/responses. Each has PDF, editable SVG, 600 dpi PNG and figure CSV. The four-page PDF collects them in that order. `global_steel_metrics.csv` contains one row per metric/model/scenario/year; `source_data.csv` also records figure/panel, plotted value/unit and context roles. `comparison_2050.csv` retains levels, absolute changes, references and percentages at full precision. The gallery presents 2050 totals and responses together. Captions, scenario mapping, diagnostics, missing inputs, checks and source SHA-256 hashes accompany the exports. The configured preserved Figures 1 and 3 retain their reviewed individual files only after fresh source CSV and PNG verification.
+
+The same command also exports a separate four-panel emissions figure in `{config.get('combined_comparison_output', 'report_figures_emissions_comparison_261019')}`. It places the original European all-industry/EU-only comparison with GCAM above the global-steel/OMNIA-EU+ comparison with OPEN-PROM. Scales match within rows; geography, sectors and emissions inventories remain different between rows. The original GCAM artwork is not modified. Both rows are calculated from raw inputs, and the combined figure includes source data, methods and an audit.
 """
     (directory / "methods.md").write_text(text, encoding="utf-8")
 
@@ -360,6 +560,11 @@ def _write_gallery(directory, config, records, summary):
     missing_note = ("OMNIA missing activity follows the provisional zero assumption."
                     if config["missing_activity"] == "zero" else
                     "Missing activity is retained; incomplete aggregates appear as gaps.")
+    combined_link = ""
+    if config.get("combined_comparison_output"):
+        relative = os.path.relpath(config["combined_comparison_output"], config["output"]).replace("\\", "/")
+        combined_link = (f'<p><a href="{escape(relative, quote=True)}/index.html">'
+                         'Combined four-panel GCAM and OPEN-PROM emissions comparison</a></p>')
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Global steel · OMNIA-ENGAGE / OPEN-PROM</title>
 <style>
@@ -376,8 +581,9 @@ th,td{{text-align:left;padding:12px;border-bottom:1px solid #dce3e2}}td strong{{
 </style></head><body><main>
 <p>OMNIA-ENGAGE / OPEN-PROM · Global steel · 2019–2050</p>
 <h1>Steel energy and emissions across scenarios</h1>
-<p class="intro">Absolute levels and changes from each model's own reference. Four OPEN-PROM medium/high scenarios are compared with OMNIA's medium/high CE in the EU and EU plus partners, under both NDC and NDC+LTT.</p>
+<p class="intro">Absolute levels and changes from each model's own reference. Absolute figures and tables retain both OMNIA EU and EU+ cases. Response figures show only OMNIA EU+ alongside OPEN-PROM: energy trajectories in Figure 2 and paired 2050 emissions bars in Figure 4, under NDC and NDC+LTT.</p>
 <p><a class="download" href="{combined}">Download all four figures · PDF</a></p>
+{combined_link}
 <p class="scope"><strong>Every quantity is global.</strong> EU/EU+ identifies OMNIA's CE adoption area, not the area being summed. OPEN-PROM's medium/high intervention and adoption geography are undocumented; the labels do not establish equivalent policies.<br><strong>Emissions scopes differ:</strong> OMNIA reports steel GHG; OPEN-PROM reports steel energy-related CO₂. Its export has no matching steel process-emissions or GHG total. Percentage responses retain this difference. {missing_note}</p>
 <nav aria-label="Figures"><a href="#figure1">Energy levels</a><a href="#figure2">Energy response</a><a href="#figure3">Emissions levels</a><a href="#figure4">Emissions response</a></nav>
 <h2>2050 final energy</h2>{_summary_table(summary, 'Energy')}

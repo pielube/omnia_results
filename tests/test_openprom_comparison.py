@@ -4,6 +4,7 @@ from types import SimpleNamespace
 import unittest
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import to_rgba
 import numpy as np
 import pandas as pd
 
@@ -78,7 +79,7 @@ class OpenPromComparisonFigureTests(unittest.TestCase):
             "fig01_energy_levels", "fig02_energy_response",
             "fig03_emissions_levels", "fig04_emissions_response",
         ])
-        for spec in specs:
+        for spec in specs[:3]:
             self.assertEqual(spec.panel_count, 4)
             self.assertEqual([ax.get_title(loc="left") for ax in spec.figure.axes], [
                 "Medium | NDC", "Medium | NDC+LTT", "High | NDC", "High | NDC+LTT",
@@ -91,6 +92,15 @@ class OpenPromComparisonFigureTests(unittest.TestCase):
                 observations = spec.data.loc[spec.data.Panel.eq(panel)]
                 self.assertEqual(set(observations.Climate), {climate})
                 self.assertEqual(set(observations.Ambition), {"Reference", ambition})
+        emissions = specs[3]
+        self.assertEqual(emissions.panel_count, 2)
+        self.assertEqual([ax.get_title(loc="left") for ax in emissions.figure.axes], ["NDC", "NDC+LTT"])
+        self.assertEqual(emissions.figure.axes[0].get_ylim(), emissions.figure.axes[1].get_ylim())
+        for panel, climate in (("a", "ndc"), ("b", "baseline")):
+            plotted = emissions.data.loc[emissions.data.Panel.eq(panel) & emissions.data.Role.eq("plotted")]
+            self.assertEqual(set(plotted.Climate), {climate})
+            self.assertEqual(set(plotted.Ambition), {"Medium", "High"})
+            self.assertEqual(set(plotted.Year), {2050})
 
     def test_absolute_curves_use_source_values_and_years_with_each_reference_once(self):
         for number, metric in ((1, "Energy"), (3, "Emissions")):
@@ -117,30 +127,91 @@ class OpenPromComparisonFigureTests(unittest.TestCase):
             np.testing.assert_allclose(spec.data.PlotValue, spec.data.Value)
             self.assertTrue(spec.data.PlotUnit.eq(spec.data.Unit).all())
 
-    def test_response_curves_keep_signed_percentages_and_context_references(self):
-        for number, metric in ((2, "Energy"), (4, "Emissions")):
-            spec = self._build(number, metric, True)
-            for ax, climate, ambition in zip(spec.figure.axes,
-                                             ("ndc", "baseline", "ndc", "baseline"),
-                                             ("Medium", "Medium", "High", "High")):
-                self.assertEqual(len(ax.lines), 4)
-                for line, (model, coverage) in zip(ax.lines[:3], (("OPEN-PROM", "Unspecified"),
-                                                                 ("OMNIA-ENGAGE", "EU"),
-                                                                 ("OMNIA-ENGAGE", "EU+"))):
-                    expected = self._selected(metric, climate, ambition, model, coverage)
-                    np.testing.assert_array_equal(line.get_xdata(), expected.Year)
-                    np.testing.assert_allclose(line.get_ydata(), expected.PercentChange)
-                np.testing.assert_array_equal(ax.lines[3].get_ydata(), [0., 0.])
-                self.assertLess(ax.get_ylim()[0], -70.)
-                self.assertGreater(ax.get_ylim()[1], 24.)
-            context = spec.data.Ambition.eq("Reference")
-            self.assertTrue(spec.data.loc[context, "Role"].eq("context").all())
-            self.assertTrue(spec.data.loc[~context, "Role"].eq("plotted").all())
-            np.testing.assert_allclose(spec.data.PlotValue, spec.data.PercentChange)
-            self.assertEqual(set(spec.data.PlotUnit), {"%"})
-            # Exported absolute observations remain available alongside plotted percentages.
-            self.assertTrue(spec.data.loc[~context, "Value"].gt(0.).all())
-            self.assertTrue(spec.data.loc[~context, "PlotValue"].lt(0.).any())
+    def test_energy_response_keeps_openprom_and_eu_plus_curves_with_context_references(self):
+        spec = self._build(2, "Energy", True)
+        for ax, climate, ambition in zip(spec.figure.axes,
+                                         ("ndc", "baseline", "ndc", "baseline"),
+                                         ("Medium", "Medium", "High", "High")):
+            self.assertEqual(len(ax.lines), 3)
+            for line, (model, coverage) in zip(ax.lines[:2], (("OPEN-PROM", "Unspecified"),
+                                                             ("OMNIA-ENGAGE", "EU+"))):
+                expected = self._selected("Energy", climate, ambition, model, coverage)
+                np.testing.assert_array_equal(line.get_xdata(), expected.Year)
+                np.testing.assert_allclose(line.get_ydata(), expected.PercentChange)
+            np.testing.assert_array_equal(ax.lines[2].get_ydata(), [0., 0.])
+            self.assertLess(ax.get_ylim()[0], -70.)
+            self.assertGreater(ax.get_ylim()[1], 0.)
+            endpoint = " ".join(text.get_text() for text in ax.texts if text.get_text().startswith("2050:"))
+            self.assertIn("EU+", endpoint)
+            self.assertNotIn("EU ", endpoint)
+        context = spec.data.Ambition.eq("Reference") | spec.data.Coverage.eq("EU")
+        self.assertTrue(spec.data.loc[context, "Role"].eq("context").all())
+        self.assertTrue(spec.data.loc[~context, "Role"].eq("plotted").all())
+        legend = " ".join(text.get_text() for item in spec.figure.legends for text in item.get_texts())
+        self.assertIn("OMNIA: CE in EU+", legend)
+        self.assertNotIn("OMNIA: CE in EU ", legend + " ")
+        np.testing.assert_allclose(spec.data.PlotValue, spec.data.PercentChange)
+        self.assertEqual(set(spec.data.PlotUnit), {"%"})
+        self.assertTrue(spec.data.loc[~context, "Value"].gt(0.).all())
+        self.assertTrue(spec.data.loc[~context, "PlotValue"].lt(0.).any())
+
+    def test_emissions_bars_use_only_2050_openprom_and_eu_plus_percentages(self):
+        spec = self._build(4, "Emissions", True)
+        plotted = spec.data.loc[spec.data.Plotted]
+        self.assertEqual(len(plotted), 8)
+        self.assertTrue(spec.data.Plotted.eq(spec.data.Role.eq("plotted")).all())
+        self.assertEqual(set(plotted.Year), {2050})
+        self.assertEqual(set(plotted.Ambition), {"Medium", "High"})
+        self.assertEqual(set(plotted.loc[plotted.Model.eq("OMNIA-ENGAGE"), "Coverage"]), {"EU+"})
+        np.testing.assert_allclose(plotted.PlotValue, plotted.PercentChange)
+        self.assertEqual(set(plotted.PlotUnit), {"%"})
+        self.assertTrue(spec.data.loc[spec.data.Ambition.eq("Reference"), "Role"].eq("context").all())
+        self.assertTrue(spec.data.loc[spec.data.Coverage.eq("EU"), "Role"].eq("context").all())
+        self.assertTrue(spec.data.loc[spec.data.Year.ne(2050), "Role"].eq("context").all())
+        for ax, climate in zip(spec.figure.axes, ("ndc", "baseline")):
+            self.assertEqual(len(ax.patches), 4)
+            expected = [self._selected("Emissions", climate, ambition, model, coverage)
+                        .loc[lambda frame: frame.Year.eq(2050), "PercentChange"].iloc[0]
+                        for model, coverage in (("OMNIA-ENGAGE", "EU+"), ("OPEN-PROM", "Unspecified"))
+                        for ambition in ("Medium", "High")]
+            np.testing.assert_allclose([bar.get_height() for bar in ax.patches], expected)
+            for bar in ax.patches[:2]:
+                np.testing.assert_allclose(bar.get_facecolor(), to_rgba("#0072B2"))
+                self.assertFalse(bar.get_hatch())
+            for bar in ax.patches[2:]:
+                np.testing.assert_allclose(bar.get_facecolor(), to_rgba("#89969E"))
+                self.assertEqual(bar.get_hatch(), "////")
+
+    def test_response_figures_retain_positive_eu_plus_changes(self):
+        frame = self.frame.copy()
+        selected = (frame.Climate.eq("ndc") & frame.Model.eq("OMNIA-ENGAGE") &
+                    frame.Coverage.eq("EU+") & frame.Ambition.eq("Medium") & frame.Year.eq(2050))
+        frame.loc[selected, "PercentChange"] = 12.5
+        frame.loc[selected, "Value"] = frame.loc[selected, "ReferenceValue"] * 1.125
+        builder = self._builder(frame)
+        energy = self._build(2, "Energy", True, builder)
+        self.assertEqual(energy.figure.axes[0].lines[1].get_ydata()[-1], 12.5)
+        self.assertGreater(energy.figure.axes[0].get_ylim()[1], 12.5)
+        emissions = self._build(4, "Emissions", True, builder)
+        self.assertEqual(emissions.figure.axes[0].patches[0].get_height(), 12.5)
+        self.assertGreater(emissions.figure.axes[0].get_ylim()[1], 12.5)
+        labels = " ".join(text.get_text() for text in emissions.figure.axes[0].texts)
+        self.assertIn("+12.5%", labels)
+
+    def test_emissions_missing_bar_stays_missing_and_observed_zero_has_a_marker(self):
+        frame = self.frame.copy()
+        selected = (frame.Metric.eq("Emissions") & frame.Climate.eq("ndc") &
+                    frame.Model.eq("OPEN-PROM") & frame.Year.eq(2050))
+        frame.loc[selected & frame.Ambition.eq("Medium"), "PercentChange"] = np.nan
+        frame.loc[selected & frame.Ambition.eq("High"), "PercentChange"] = 0.
+        spec = self._build(4, "Emissions", True, self._builder(frame))
+        axis = spec.figure.axes[0]
+        self.assertTrue(np.isnan(axis.patches[2].get_height()))
+        self.assertEqual(axis.patches[3].get_height(), 0.)
+        observations = np.concatenate([item.get_offsets() for item in axis.collections])
+        self.assertEqual(len(observations), 3)
+        self.assertTrue(np.isclose(observations, [1.56, 0.]).all(axis=1).any())
+        self.assertFalse(np.isclose(observations[:, 0], .21).any())
 
     def test_missing_observation_remains_gap_and_observed_zero_remains_zero(self):
         frame = self.frame.copy()
@@ -163,7 +234,7 @@ class OpenPromComparisonFigureTests(unittest.TestCase):
             spec = self._build(number, "Emissions", relative)
             visible = " ".join(text.get_text() for text in spec.figure.texts)
             self.assertIn("reported steel GHG", visible)
-            self.assertIn("energy-related CO", visible)
+            self.assertRegex(visible, r"energy-related (?:steel )?CO")
             self.assertIn("boundaries differ", visible)
             self.assertIn("no steel-specific process-emissions or GHG total", spec.caption)
             self.assertIn("different gas and accounting scopes", spec.caption)
@@ -171,18 +242,17 @@ class OpenPromComparisonFigureTests(unittest.TestCase):
             self.assertEqual(units, {"Mt CO2/yr", "Mt CO2e/yr"})
 
     def test_bottom_response_annotations_leave_space_above_figure_notes(self):
-        for number, metric in ((2, "Energy"), (4, "Emissions")):
-            spec = self._build(number, metric, True)
-            spec.figure.canvas.draw()
-            renderer = spec.figure.canvas.get_renderer()
-            first_note = spec.figure.texts[3].get_window_extent(renderer)
-            for ax in spec.figure.axes[2:]:
-                annotations = [text for text in ax.texts
-                               if text.get_text().startswith("2050:")]
-                self.assertEqual(len(annotations), 1)
-                endpoint_note = annotations[0].get_window_extent(renderer)
-                self.assertFalse(endpoint_note.overlaps(first_note))
-                self.assertGreaterEqual(endpoint_note.y0 - first_note.y1, 3.)
+        spec = self._build(2, "Energy", True)
+        spec.figure.canvas.draw()
+        renderer = spec.figure.canvas.get_renderer()
+        first_note = spec.figure.texts[3].get_window_extent(renderer)
+        for ax in spec.figure.axes[2:]:
+            annotations = [text for text in ax.texts
+                           if text.get_text().startswith("2050:")]
+            self.assertEqual(len(annotations), 1)
+            endpoint_note = annotations[0].get_window_extent(renderer)
+            self.assertFalse(endpoint_note.overlaps(first_note))
+            self.assertGreaterEqual(endpoint_note.y0 - first_note.y1, 3.)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-16T09:55:42.821767+00:00",
+  "generated_utc": "2026-10-19T08:47:01.773000+00:00",
   "config": {
     "suite": "openprom_comparison",
     "input": "results_allCE_261008.csv",
@@ -130,7 +130,13 @@
       "png"
     ],
     "dpi": 600,
-    "combined_pdf": "report_figures.pdf"
+    "combined_pdf": "report_figures.pdf",
+    "preserve_individual_figures": [
+      "fig01_energy_levels",
+      "fig03_emissions_levels"
+    ],
+    "combined_comparison_config": "figures.europe_relative.261016.json",
+    "combined_comparison_output": "report_figures_emissions_comparison_261019"
   },
   "sources": {
     "OMNIA-ENGAGE": {

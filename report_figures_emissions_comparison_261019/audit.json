@@ -1,0 +1,231 @@
+{
+  "generated_utc": "2026-10-19T09:04:02.362286+00:00",
+  "sources": {
+    "OMNIA-ENGAGE": {
+      "file": "C:\\git\\omnia_results\\results_allCE_261008.csv",
+      "sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46"
+    },
+    "OPEN-PROM workbook": {
+      "file": "C:\\git\\omnia_results\\open_prom_results\\ENGAGE Medium and High Ambition Scenarios.xlsx",
+      "sha256": "0514fdd2afa56d563e1fae254470ee6bced7f79ce4e55f8a08a04a24bb93a1d7"
+    },
+    "OPEN-PROM NDC reference": {
+      "file": "C:\\git\\omnia_results\\open_prom_results\\ENGAGE_NDC.csv",
+      "sha256": "677f9603cdf7878cad52d487985fa3f23aedc4f91991b09072def34bd5bed6ce"
+    },
+    "OPEN-PROM NDC+LTT reference": {
+      "file": "C:\\git\\omnia_results\\open_prom_results\\OPEN_PROM_ENGAGE_NDCLTT.csv",
+      "sha256": "bdae3ac45ed929efebd5b722b1738535d3dbc6510a4e7caece44c3ae50282942"
+    },
+    "GCAM": {
+      "file": "C:\\git\\omnia_results\\DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+      "sha256": "0a19286a48537a20bf1e57780fe0aff5a8547f3481f71d6e119174a1659f78d4"
+    },
+    "European region mapping": {
+      "file": "C:\\git\\omnia_results\\data\\OMNIA_region_mapping_241120.csv",
+      "sha256": "53728d27a37fcaac1c5ea9b5a3723a3eadcd1167bbe579f2bb4b084c8b362585"
+    }
+  },
+  "openprom_config": {
+    "suite": "openprom_comparison",
+    "input": "results_allCE_261008.csv",
+    "output": "report_figures_openprom_comparison_261016",
+    "openprom_workbook": "open_prom_results/ENGAGE Medium and High Ambition Scenarios.xlsx",
+    "openprom_references": {
+      "ndc": {
+        "path": "open_prom_results/ENGAGE_NDC.csv",
+        "scenario": "NDC2100fixUSA_2026-10-07_14-04-29"
+      },
+      "baseline": {
+        "path": "open_prom_results/OPEN_PROM_ENGAGE_NDCLTT.csv",
+        "scenario": "ENGAGE_NDC_LTT"
+      }
+    },
+    "workbook_scenarios": {
+      "ndc": {
+        "medium": {
+          "sheet": "NDC-Medium",
+          "scenario": "ENGAGE-NDC-Medium"
+        },
+        "high": {
+          "sheet": "NDC-High",
+          "scenario": "ENGAGE-NDC-High"
+        }
+      },
+      "baseline": {
+        "medium": {
+          "sheet": "NDC-LTT-Medium",
+          "scenario": "ENGAGE-NDC-LTT-Medium"
+        },
+        "high": {
+          "sheet": "NDC-LTT-High",
+          "scenario": "ENGAGE-NDC-LTT-High"
+        }
+      }
+    },
+    "scenarios": [
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu",
+      "baseline_medce_gbl",
+      "baseline_highce_gbl",
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "ndc_medce_gbl",
+      "ndc_highce_gbl"
+    ],
+    "historical_year": 2019,
+    "comparison_year": 2050,
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "openprom_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026,
+      2027,
+      2028,
+      2029,
+      2030,
+      2031,
+      2032,
+      2033,
+      2034,
+      2035,
+      2036,
+      2037,
+      2038,
+      2039,
+      2040,
+      2041,
+      2042,
+      2043,
+      2044,
+      2045,
+      2046,
+      2047,
+      2048,
+      2049,
+      2050
+    ],
+    "regions": [
+      "AFE",
+      "AFN",
+      "AFW",
+      "AFZ",
+      "ANZ",
+      "ASC",
+      "ASE",
+      "ASO",
+      "BRA",
+      "CAN",
+      "CHL",
+      "CHN",
+      "ENE",
+      "ENW",
+      "EUE",
+      "EUM",
+      "EUW",
+      "IDN",
+      "IND",
+      "JPN",
+      "LAM",
+      "MDA",
+      "MEA",
+      "MEX",
+      "NIG",
+      "RUS",
+      "SKT",
+      "USA"
+    ],
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600,
+    "combined_pdf": "report_figures.pdf",
+    "preserve_individual_figures": [
+      "fig01_energy_levels",
+      "fig03_emissions_levels"
+    ],
+    "combined_comparison_config": "figures.europe_relative.261016.json",
+    "combined_comparison_output": "report_figures_emissions_comparison_261019"
+  },
+  "europe_config": {
+    "suite": "europe_relative",
+    "input": "results_allCE_261008.csv",
+    "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+    "gcam_sheet": "Sheet1",
+    "output": "report_figures_europe_relative_261016",
+    "combined_pdf": "report_figures_with_emissions.pdf",
+    "preserve_individual_figures": [
+      "fig01_material_production_response",
+      "fig02_energy_response"
+    ],
+    "config_file": "figures.europe_relative.261016.json",
+    "region_mapping": "data/OMNIA_region_mapping_241120.csv",
+    "regions": [
+      "EUE",
+      "EUM",
+      "EUW"
+    ],
+    "scenarios": [
+      "ndc_noce",
+      "ndc_medce_eu",
+      "ndc_highce_eu",
+      "baseline_noce",
+      "baseline_medce_eu",
+      "baseline_highce_eu"
+    ],
+    "years": [
+      2019,
+      2024,
+      2030,
+      2035,
+      2040,
+      2050
+    ],
+    "gcam_years": [
+      2021,
+      2025,
+      2030,
+      2035,
+      2040,
+      2045,
+      2050
+    ],
+    "historical_year": 2019,
+    "gcam_historical_year": 2021,
+    "comparison_year": 2050,
+    "missing_activity": "zero",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  "figure_count": 1,
+  "panel_count": 4,
+  "plotted_row_count": 16,
+  "notes": [
+    "Panels a,b retain the European all-industry EU-only CE comparison with GCAM.",
+    "Panels c,d retain global steel, OMNIA EU+ versus OPEN-PROM; EU-only OMNIA is not plotted.",
+    "Each row has its own shared percentage scale and source-defined emissions inventories.",
+    "Existing European figures and other collections are not modified by this export.",
+    "Both rows calculate from raw sources through their existing adapters; figure CSVs and artwork are not calculation inputs."
+  ]
+}
