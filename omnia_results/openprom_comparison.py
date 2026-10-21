@@ -363,6 +363,10 @@ def generate_openprom_comparison(config, base):
         for spec in builder.figures():
             check_figure_bounds(spec.figure, spec.slug)
             preserved = _save_individual_figure(spec, directory, config)
+            if not preserved and "svg" in config["formats"]:
+                path = directory / f"{spec.slug}.svg"
+                svg = path.read_text(encoding="utf-8")
+                path.write_text("\n".join(line.rstrip(" \t") for line in svg.splitlines()) + "\n", encoding="utf-8")
             book.savefig(spec.figure)
             width, height = spec.figure.get_size_inches() * 25.4
             plt.close(spec.figure)
@@ -423,6 +427,10 @@ def _export_combined_emissions(openprom_data, config, base):
         for fmt in config["formats"]:
             metadata = {"Title": spec.title, "Description": spec.caption, "Date": None} if fmt == "svg" else None
             spec.figure.savefig(directory / f"{spec.slug}.{fmt}", dpi=config["dpi"], metadata=metadata)
+            if fmt == "svg":
+                path = directory / f"{spec.slug}.svg"
+                svg = path.read_text(encoding="utf-8")
+                path.write_text("\n".join(line.rstrip(" \t") for line in svg.splitlines()) + "\n", encoding="utf-8")
         width, height = spec.figure.get_size_inches() * 25.4
         plt.close(spec.figure)
     spec.data.to_csv(directory / f"{spec.slug}.csv", index=False)
@@ -440,7 +448,11 @@ def _export_combined_emissions(openprom_data, config, base):
              "sources": {name: {"file": str(path), "sha256": _sha256(path)} for name, path in source_paths.items()},
              "openprom_config": config, "europe_config": europe_config,
              "figure_count": 1, "panel_count": 4, "plotted_row_count": len(plotted),
-             "notes": ["Panels a,b retain the European all-industry EU-only CE comparison with GCAM.",
+             "notes": ["Panels a,b compare the combined cement, iron-and-steel and aluminium response in both models under EU-only CE; other industry is unplotted context.",
+                       "The European row sums OMNIA sector GHG and GCAM sector CO2 separately before normalising to each model's own combined three-sector no-CE reference; sector percentages are not averaged.",
+                       "GCAM combines non-metallic-minerals energy CO2 (cement-energy proxy), cement process CO2, iron-and-steel energy CO2 and aluminium-specific energy CO2; no sector Kyoto-gas totals are supplied.",
+                       "The GCAM non-metallic-minerals final-energy parent equals its cement child in the supplied workbook; the energy-CO2 category remains a cement proxy rather than a documented cement-exclusive inventory.",
+                       "OMNIA NDC+LTT aluminium GHG blanks retain the configured provisional-zero treatment, which does not establish physical zero emissions.",
                        "Panels c,d retain global steel, OMNIA EU+ versus OPEN-PROM; EU-only OMNIA is not plotted.",
                        "Each row has its own shared percentage scale and source-defined emissions inventories.",
                        "Existing European figures and other collections are not modified by this export.",
@@ -452,8 +464,23 @@ def _export_combined_emissions(openprom_data, config, base):
         "# Combined emissions comparison methods\n\n"
         "Regenerate with `python -m omnia_results --config figures.openprom_comparison.261016.json`. "
         "The OPEN-PROM config names the European comparison config and the separate combined-output directory.\n\n"
-        "The top row reproduces the European all-industry comparison at 2050 for EU-only medium/high CE: "
-        "OMNIA reported Emissions|GHG|Industry versus GCAM industry energy-demand plus industrial-process Kyoto gases. "
+        "The top row compares the combined cement, iron-and-steel and aluminium emissions response at 2050 "
+        "for EU-only medium/high CE in both models. Other industry is excluded from the plotted totals. "
+        "OMNIA sums its three reported Emissions|GHG|Industry subsector totals in MtCO2e/yr. "
+        "GCAM sums four exact variables in Mt CO2/yr: "
+        "Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals; "
+        "Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement; "
+        "Emissions|CO2|Energy|Demand|Industry|Iron and Steel; and "
+        "Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals|Aluminum. "
+        "The non-metallic-minerals energy category is used as a cement-energy proxy: its reported "
+        "final-energy parent equals the cement child in the supplied workbook, but this does not "
+        "establish a documented cement-exclusive emissions inventory. Cement process CO2 is added once; "
+        "overlapping industry, non-ferrous-metals and process parents are excluded. The export provides "
+        "no additional steel/aluminium process-CO2 children or sector Kyoto-gas totals. The GCAM CO2 "
+        "scope therefore remains distinct from OMNIA GHG. Absolute sector quantities are summed first, "
+        "then compared with the same model's combined three-sector no-CE reference; sector percentages "
+        "are not averaged. GCAM is read from "
+        f"`{europe_config['gcam_input']}`, as configured in `{config['combined_comparison_config']}`.\n\n"
         "The bottom row compares global steel under OMNIA EU+ and OPEN-PROM medium/high settings: "
         "OMNIA sector GHG versus OPEN-PROM steel energy-related CO2. Both rows use their original source adapters, "
         "scenarios, exact units and own-model same-year references. Gas/process boundaries are not harmonised. "
@@ -464,15 +491,18 @@ def _export_combined_emissions(openprom_data, config, base):
         "identify percentages; Value/Unit retain each input adapter's original row definition. Plotted and "
         "PlotRole distinguish the sixteen plotted bars from reference and decomposition context. "
         "ComparisonRow and Panel identify the figure's two distinct scopes. Carbon capture is not subtracted again. "
-        "Missing activity retains the configurations' provisional zero assumption for OMNIA; unavailable "
+        "Missing activity retains the configurations' provisional zero assumption for OMNIA. In particular, "
+        "NDC+LTT aluminium GHG is blank in all three OMNIA EU regions for no/medium/high CE and is "
+        "provisionally treated as zero; this does not establish physical zero emissions. Unavailable "
         "responses remain gaps. Source hashes and both configurations are recorded in audit.json. "
-        "The existing European figure is preserved.\n")
+        "All-industry totals and sector decompositions remain unplotted context. This combined export "
+        "writes only its own output directory.\n")
     (directory / "methods.md").write_text(methods, encoding="utf-8")
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Emissions comparison · GCAM and OPEN-PROM</title>
 <style>body{{font:15px/1.6 Arial,sans-serif;color:#233139;background:#f4f5f3;margin:0}}main{{max-width:1080px;margin:auto;padding:36px 24px}}a{{color:#006887}}img{{width:100%;height:auto}}.figure-card{{background:white;padding:22px;margin:24px 0}}figure{{margin:0}}.downloads{{display:flex;gap:16px}}.scope{{background:#e7eeed;padding:16px}}figcaption{{font-size:13px}}h3{{font-size:23px}}</style>
 </head><body><main><h1>Emissions responses: GCAM and OPEN-PROM comparisons</h1>
-<p class="scope">Top: European all-industry emissions, EU-only CE. Bottom: global steel, OMNIA CE in EU+ versus OPEN-PROM. Gas/process inventories and policy coverage remain different. Each model uses its own 2050 reference; scales match within each row.</p>
+<p class="scope">Top: combined European cement, iron-and-steel and aluminium emissions, EU-only CE in both models; OMNIA sector GHG versus GCAM sector CO2, including a cement-energy proxy. Bottom: global steel, OMNIA CE in EU+ versus OPEN-PROM. Gas/process inventories and policy coverage remain different. Each model uses its own 2050 reference; scales match within each row. OMNIA NDC+LTT aluminium blanks retain the provisional-zero assumption.</p>
 <p><a href="{spec.slug}.pdf">Download four-panel figure · PDF</a> · <a href="comparison_2050.csv">2050 plotted values</a> · <a href="methods.md">Methods</a> · <a href="audit.json">Audit</a></p>
 {_figure_card(record)}</main></body></html>'''
     (directory / "index.html").write_text(page, encoding="utf-8")
@@ -490,7 +520,7 @@ python -m omnia_results --config {config.get('config_file', 'figures.openprom_co
 
 ## Purpose and source selection
 
-The collection compares global final energy and source-defined steel emissions under NDC and NDC+LTT. Absolute-level Figures 1 and 3 and the summary tables retain both EU and EU-plus-partner OMNIA CE adoption areas. Response Figures 2 and 4 show only OMNIA EU+ alongside OPEN-PROM; EU-only cases remain unplotted context. Figure 2 retains four time-series panels. Figure 4 uses two paired-bar panels at 2050, styled like the European all-industry comparison. The four sheets of `{config['openprom_workbook']}` supply OPEN-PROM medium/high cases. Its two configured CSVs supply the matching climate-pathway references. OMNIA reads `{config['input']}` directly; `ndc_*` is NDC and `baseline_*` is NDC+LTT. Exact identifiers, sheets and reference scenarios are retained in `scenario_mapping.csv`. No previous figure data or temporary exploration cache is a calculation input.
+The collection compares global final energy and source-defined steel emissions under NDC and NDC+LTT. Absolute-level Figures 1 and 3 and the summary tables retain both EU and EU-plus-partner OMNIA CE adoption areas. Response Figures 2 and 4 show only OMNIA EU+ alongside OPEN-PROM; EU-only cases remain unplotted context. Figure 2 retains four time-series panels. Figure 4 uses two paired-bar panels at 2050, styled like the European three-sector comparison. The four sheets of `{config['openprom_workbook']}` supply OPEN-PROM medium/high cases. Its two configured CSVs supply the matching climate-pathway references. OMNIA reads `{config['input']}` directly; `ndc_*` is NDC and `baseline_*` is NDC+LTT. Exact identifiers, sheets and reference scenarios are retained in `scenario_mapping.csv`. No previous figure data or temporary exploration cache is a calculation input.
 
 The OPEN-PROM workbook does not document the intervention behind Medium/High or its adoption geography. Matching these labels with OMNIA medium/high CE is descriptive and does not establish equivalent policies, scenario assumptions or causal effects. The two OPEN-PROM CSVs are treated as the supplied pathway references, without assuming an independently confirmed no-CE definition.
 
@@ -528,7 +558,7 @@ The XLSX reader decodes shared/inline strings and converts numeric strings befor
 
 Figures 1/2 show final-energy levels/responses; Figures 3/4 show source-defined emissions levels/responses. Each has PDF, editable SVG, 600 dpi PNG and figure CSV. The four-page PDF collects them in that order. `global_steel_metrics.csv` contains one row per metric/model/scenario/year; `source_data.csv` also records figure/panel, plotted value/unit and context roles. `comparison_2050.csv` retains levels, absolute changes, references and percentages at full precision. The gallery presents 2050 totals and responses together. Captions, scenario mapping, diagnostics, missing inputs, checks and source SHA-256 hashes accompany the exports. The configured preserved Figures 1 and 3 retain their reviewed individual files only after fresh source CSV and PNG verification.
 
-The same command also exports a separate four-panel emissions figure in `{config.get('combined_comparison_output', 'report_figures_emissions_comparison_261019')}`. It places the original European all-industry/EU-only comparison with GCAM above the global-steel/OMNIA-EU+ comparison with OPEN-PROM. Scales match within rows; geography, sectors and emissions inventories remain different between rows. The original GCAM artwork is not modified. Both rows are calculated from raw inputs, and the combined figure includes source data, methods and an audit.
+The same command also exports a separate four-panel emissions figure in `{config.get('combined_comparison_output', 'report_figures_emissions_comparison_261019')}`. Its top row compares the combined European cement, iron-and-steel and aluminium response under EU-only CE in both OMNIA and GCAM; other industry is excluded from the bars. OMNIA sums reported sector GHG, while GCAM sums the available sector CO2: cement energy and processes, steel energy and aluminium-specific energy. GCAM's non-metallic-minerals energy category is a cement proxy, supported by the supplied final-energy parent equalling its cement child; it is not documented as a cement-exclusive emissions inventory. Sector quantities are summed before normalising to each model's own combined three-sector no-CE reference. OMNIA NDC+LTT aluminium blanks retain the configured provisional-zero assumption. The GCAM input is selected by `{config.get('combined_comparison_config', 'figures.europe_relative.261016.json')}`. The lower row retains the global-steel/OMNIA-EU+ comparison with OPEN-PROM. Scales match within rows; geography, sectors and emissions inventories remain different between rows. Both rows are calculated from raw inputs, and the combined figure includes source data, methods and an audit. This export writes only to its separate combined-output directory.
 """
     (directory / "methods.md").write_text(text, encoding="utf-8")
 

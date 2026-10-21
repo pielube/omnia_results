@@ -16,6 +16,7 @@ from .europe_comparison_data import (CLIMATES, GCAM_FUELS, GCAM_PRODUCTION,
                                      source_scenario)
 from .metrics import SECTORS
 from .europe_relative_emissions_data import RelativeEmissionsDataMixin
+from .europe_relative_routes_data import RelativeRouteProductionDataMixin
 
 
 MATERIAL_METRIC = "Material production response"
@@ -30,7 +31,7 @@ def _contribution(change, total_reference):
     return 100 * change / total_reference
 
 
-class EuropeRelativeData(RelativeEmissionsDataMixin):
+class EuropeRelativeData(RelativeEmissionsDataMixin, RelativeRouteProductionDataMixin):
     """Read the supplied raw sources through the existing validated adapter."""
 
     models, climates, policies = MODELS, CLIMATES, RESPONSE_POLICIES
@@ -41,9 +42,9 @@ class EuropeRelativeData(RelativeEmissionsDataMixin):
         self.comparison_year = self.source_data.comparison_year
         self._frames, self._closure_checks = {}, []
         self.notes = [
-            "Every response uses the same model, climate pathway, sector and comparison-year no-CE total as its denominator.",
+            "Every response uses the same model, climate pathway, production/energy/emissions scope and comparison-year no-CE reference as its denominator.",
             "Component values are signed percentage-point contributions: 100 times the component CE-minus-no-CE change divided by the no-CE sector total. Net values use the same calculation for the sector total and are percentages.",
-            "GCAM metal output has no exported primary/secondary route split. Its single reported-metal contribution does not establish equivalent route coverage across models.",
+            "The total-material dataset retains reported GCAM metal totals. The optional steel-route dataset selects explicit primary and secondary children and uses each route's own reference; GCAM aluminium route coverage remains unconfirmed.",
             "GCAM aluminium energy retains an Unallocated contribution from reported sector total minus reported carrier parents; no process or carrier attribution is assumed.",
             "Incomplete inputs retain the source adapter's explicit missing-activity treatment. Nonfinite or nonpositive no-CE sector totals produce gaps for every contribution and net response.",
         ]

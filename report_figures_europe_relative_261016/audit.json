@@ -1,27 +1,29 @@
 {
-  "generated_utc": "2026-10-16T10:00:58.695179+00:00",
-  "figure_count": 3,
+  "generated_utc": "2026-10-21T08:25:29.831576+00:00",
+  "figure_count": 4,
   "sources": {
     "OMNIA-ENGAGE": {
       "file": "results_allCE_261008.csv",
       "sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46"
     },
     "GCAM": {
-      "file": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
-      "sha256": "0a19286a48537a20bf1e57780fe0aff5a8547f3481f71d6e119174a1659f78d4"
+      "file": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
+      "sha256": "f1d2511d3ade12201e32673cd97470100da2d8aae2dc73de3f8e1453660ff119"
     }
   },
   "region_mapping_sha256": "53728d27a37fcaac1c5ea9b5a3723a3eadcd1167bbe579f2bb4b084c8b362585",
   "config": {
     "suite": "europe_relative",
     "input": "results_allCE_261008.csv",
-    "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+    "gcam_input": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
     "gcam_sheet": "Sheet1",
     "output": "report_figures_europe_relative_261016",
-    "combined_pdf": "report_figures_with_emissions.pdf",
+    "combined_pdf": "report_figures_with_steel_routes.pdf",
+    "include_steel_route_figure": true,
     "preserve_individual_figures": [
       "fig01_material_production_response",
-      "fig02_energy_response"
+      "fig02_energy_response",
+      "fig03_emissions_response"
     ],
     "config_file": "figures.europe_relative.261016.json",
     "region_mapping": "data/OMNIA_region_mapping_241120.csv",
@@ -76,17 +78,23 @@
     ],
     "reference_year": 2050,
     "absolute_alignment_assumed": false,
-    "emissions_reference": "Each model's source-defined all-industry no-CE GHG",
-    "emissions_context_reference": "Unplotted OMNIA three-sector context uses combined cement, steel and aluminium no-CE GHG",
+    "emissions_reference": "Each model's combined cement, iron-and-steel and aluminium same-year no-CE emissions",
+    "emissions_inventories": {
+      "OMNIA-ENGAGE": "Reported sector GHG in MtCO2e/yr",
+      "GCAM": "Reported sector CO2 in Mt CO2/yr"
+    },
+    "emissions_context_reference": "Unplotted all-industry context retains each model's own all-industry GHG denominator",
     "component_unit": "percentage points",
-    "net_unit": "%"
+    "net_unit": "%",
+    "steel_route_reference": "Figure 4 uses each model/pathway/year steel route's own no-CE output, not total steel",
+    "steel_route_percentages_additive": false
   },
   "source_row_counts": {
     "OMNIA-ENGAGE": 24535,
-    "GCAM": 128322
+    "GCAM": 135558
   },
   "missing_input_count": 364,
-  "complete_contribution_checks": 60,
+  "complete_contribution_checks": 64,
   "max_contribution_closure_error_pp": 1.4210854715202004e-14,
   "versions": {
     "python": "3.11.15",
@@ -100,22 +108,33 @@
     "The OMNIA EU regions include Greenland, Faroe Islands, Andorra, Monaco and San Marino in the supplied country mapping; these cannot be removed from regional data.",
     "GCAM source LTT scenarios are paired with OMNIA baseline (NDC+LTT); the scenario names alone do not establish identical policy assumptions.",
     "Historical bars use OMNIA 2019 and GCAM 2021 observations separately; no interpolation or historical alignment is imposed.",
-    "GCAM reports cement, steel and aluminium output without exported clinker or primary/secondary route splits. Aluminium route coverage remains unconfirmed and is not assumed equivalent to OMNIA primary plus secondary.",
+    "The total-output comparison selects reported GCAM cement, steel and aluminium parents. Aluminium route coverage remains unconfirmed and is not assumed equivalent to OMNIA primary plus secondary; explicit steel children are selected only by the separate route comparison.",
     "GCAM aluminium energy includes an Unallocated residual between the reported sector total and its reported carrier parents; the residual is not assigned to an unreported carrier.",
     "GCAM aluminium's alumina-refining coverage is unconfirmed. The energy residual has no confirmed process attribution, and cross-model energy/output quotients are apparent ratios rather than harmonised efficiency measures.",
     "Industrial GHG boundaries differ: OMNIA reports Emissions|GHG|Industry; GCAM combines industry energy-demand Kyoto gases with industrial-process Kyoto gases. GCAM has no comparable cement/steel/aluminium GHG decomposition.",
-    "Every response uses the same model, climate pathway, sector and comparison-year no-CE total as its denominator.",
+    "Every response uses the same model, climate pathway, production/energy/emissions scope and comparison-year no-CE reference as its denominator.",
     "Component values are signed percentage-point contributions: 100 times the component CE-minus-no-CE change divided by the no-CE sector total. Net values use the same calculation for the sector total and are percentages.",
-    "GCAM metal output has no exported primary/secondary route split. Its single reported-metal contribution does not establish equivalent route coverage across models.",
+    "The total-material dataset retains reported GCAM metal totals. The optional steel-route dataset selects explicit primary and secondary children and uses each route's own reference; GCAM aluminium route coverage remains unconfirmed.",
     "GCAM aluminium energy retains an Unallocated contribution from reported sector total minus reported carrier parents; no process or carrier attribution is assumed.",
     "Incomplete inputs retain the source adapter's explicit missing-activity treatment. Nonfinite or nonpositive no-CE sector totals produce gaps for every contribution and net response.",
     "No historical bars or absolute quantities are plotted. Their raw comparison-year values remain in the source CSVs.",
     "All six production panels share one percentage scale; all six energy panels share another common percentage scale.",
-    "Production plots only the net response; route contributions are exported as context to avoid implying matching GCAM routes.",
-    "Emissions panels a,b compare reported all-industry totals only; OMNIA selects Emissions|GHG|Industry directly, including sectors beyond cement, steel and aluminium.",
-    "OMNIA-only three-sector responses and industry decompositions remain unplotted CSV context with ContextOnly=True and Plotted=False.",
-    "GCAM provides partial sector CO2 variables but no matching cement/steel/aluminium GHG totals; these are not substituted for GHG.",
-    "Under the configured zero policy, missing NDC+LTT aluminium GHG in all three OMNIA EU regions is provisional zero in unplotted sector context; it does not replace the reported industry-parent inputs.",
-    "The companion absolute-value figures remain in report_figures_europe_comparison_261014."
-  ]
+    "Figure 1 plots total production responses, with unplotted route contributions retained as context.",
+    "Emissions panels a,b compare the combined cement, iron-and-steel and aluminium response for both models; other industry is excluded from numerator and denominator.",
+    "Sector contributions and all-industry responses remain unplotted CSV context with ContextOnly=True and Plotted=False.",
+    "OMNIA sector GHG is compared with GCAM reported sector CO2; no GHG equivalence or undocumented GWP conversion is assumed.",
+    "GCAM cement sums non-metallic-minerals energy CO2 and cement-process CO2; aluminium selects the specific child, without adding its overlapping non-ferrous parent.",
+    "gcam_sector_scope_checks.csv verifies the non-metallic-minerals final-energy parent equals its cement child for all selected source years and scenarios.",
+    "Under the configured zero policy, missing NDC+LTT aluminium GHG in all three OMNIA EU regions remains provisional zero and affects the plotted three-sector sum; flags and source rows retain that assumption.",
+    "The companion absolute-value figures remain in report_figures_europe_comparison_261014.",
+    "Figure 4 adds separate primary and secondary steel columns alongside unchanged cement/aluminium responses; all eight panels share one percentage scale.",
+    "Figure 4 steel percentages use route-specific denominators and are not additive; they are excluded from percentage-point contribution checks.",
+    "steel_route_checks.csv verifies GCAM reported primary plus secondary steel equals its total in every complete selected scenario/year.",
+    "OMNIA NDC+LTT no-CE secondary steel is missing in all three EU regions at the comparison year; the percentage is undefined under both zero and preserve policies. Panel g shows a gap and explicit annotation.",
+    "Existing Figures 1-3 individual PDF/SVG/PNG/CSV artifacts are preserved after source-CSV and rendered-PNG equality checks when listed in preserve_individual_figures."
+  ],
+  "complete_steel_route_checks": 42,
+  "max_steel_route_closure_error_mt": 2.842170943040401e-14,
+  "undefined_route_response_count": 2,
+  "route_responses_with_missing_reference": 4
 }

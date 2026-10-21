@@ -1,13 +1,15 @@
 {
   "suite": "europe_relative",
   "input": "results_allCE_261008.csv",
-  "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+  "gcam_input": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
   "gcam_sheet": "Sheet1",
   "output": "report_figures_europe_relative_261016",
-  "combined_pdf": "report_figures_with_emissions.pdf",
+  "combined_pdf": "report_figures_with_steel_routes.pdf",
+  "include_steel_route_figure": true,
   "preserve_individual_figures": [
     "fig01_material_production_response",
-    "fig02_energy_response"
+    "fig02_energy_response",
+    "fig03_emissions_response"
   ],
   "config_file": "figures.europe_relative.261016.json",
   "region_mapping": "data/OMNIA_region_mapping_241120.csv",

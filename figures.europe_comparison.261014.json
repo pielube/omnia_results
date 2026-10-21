@@ -1,7 +1,7 @@
 {
   "suite": "europe_comparison",
   "input": "results_allCE_261008.csv",
-  "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+  "gcam_input": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
   "gcam_sheet": "Sheet1",
   "output": "report_figures_europe_comparison_261014",
   "combined_pdf": "report_figures_scope_notes.pdf",

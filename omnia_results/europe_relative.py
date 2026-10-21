@@ -22,6 +22,7 @@ from .metrics import SECTORS
 from .report import ReportFigure, check_figure_bounds
 from .report_gallery import _figure_card
 from .europe_relative_emissions import RelativeEmissionsFigures
+from .europe_relative_routes import RelativeRouteProductionFigures
 
 
 POLICIES = ("medce_eu", "highce_eu")
@@ -67,7 +68,7 @@ def _net_labels(ax, x, values, model_index, *, stagger=True):
                     bbox={"facecolor": "white", "edgecolor": "none", "pad": .35})
 
 
-class EuropeRelativeBuilder(RelativeEmissionsFigures):
+class EuropeRelativeBuilder(RelativeEmissionsFigures, RelativeRouteProductionFigures):
     def __init__(self, data, config):
         self.data, self.config = data, config
 
@@ -75,6 +76,8 @@ class EuropeRelativeBuilder(RelativeEmissionsFigures):
         yield self.material_response()
         yield self.energy_response()
         yield self.emissions_response()
+        if self.config.get("include_steel_route_figure", False):
+            yield self.material_response_by_steel_route()
 
     def _canvas(self, title, *, energy=False):
         fig, axes = plt.subplots(2, 3, figsize=(180 / 25.4, 175 / 25.4), squeeze=False)
@@ -143,8 +146,9 @@ class EuropeRelativeBuilder(RelativeEmissionsFigures):
             "near-zero responses; labels are rounded to 0.1% and are not the plotting coordinates. Missing values "
             "remain gaps. Cement excludes clinker; OMNIA metal output sums primary and secondary routes, while "
             "GCAM uses its source-reported metal series. GCAM aluminium's route coverage is unconfirmed. "
-            "Route contributions are exported as context but are not stacked in this figure, because GCAM has "
-            "no matching route decomposition. " + self._common_caption())
+            "Route contributions are exported as context but are not stacked in this total-output figure. "
+            "The updated GCAM workbook also reports primary and secondary steel; the optional Figure 4 "
+            "compares those routes using their own no-CE production references. " + self._common_caption())
         return ReportFigure("fig01_material_production_response", "1", title,
                             "How much does EU-only CE change material output relative to each model's no-CE case?",
                             caption, fig, data, 6)
@@ -271,11 +275,21 @@ def generate_europe_relative(config, base):
     all_data.loc[all_data.Role == "net"].to_csv(directory / "comparison_summary.csv", index=False)
     data.closure_checks.to_csv(directory / "contribution_checks.csv", index=False)
     data.emissions_availability().to_csv(directory / "gcam_emissions_availability.csv", index=False)
+    data.emissions_scope_checks.to_csv(directory / "gcam_sector_scope_checks.csv", index=False)
     all_data.loc[(all_data.Figure == "fig03_emissions_response") & (all_data.Model == "GCAM") &
                  (all_data.Role == "component")].to_csv(directory / "gcam_emissions_context.csv", index=False)
     source.scenario_mapping().to_csv(directory / "scenario_mapping.csv", index=False)
     source.geography_membership().to_csv(directory / "geography_membership.csv", index=False)
-    variables = source.variable_mapping()
+    variables = pd.concat([source.variable_mapping(), data.sector_emissions_mapping()], ignore_index=True)
+    if config.get("include_steel_route_figure", False):
+        routes = data.material_response_by_steel_route()
+        route_mapping = routes.loc[routes.Route.isin(["Primary", "Secondary"]),
+                                   ["Model", "Metric", "Sector", "Route", "SourceVariables",
+                                    "SourceCoefficients"]].drop_duplicates().copy()
+        route_mapping["SourceUnit"], route_mapping["FigureUnit"] = "Mt/yr", "%"
+        route_mapping["Definition"] = "Percentage change relative to the same model/pathway steel route's own no-CE output"
+        variables = pd.concat([variables, route_mapping], ignore_index=True)
+        data.steel_route_checks.to_csv(directory / "steel_route_checks.csv", index=False)
     variables.to_csv(directory / "variable_mapping.csv", index=False)
     source.aggregation_checks.to_csv(directory / "gcam_aggregation_checks.csv", index=False)
     source.missing_inputs.to_csv(directory / "missing_inputs.csv", index=False)
@@ -289,8 +303,9 @@ def generate_europe_relative(config, base):
                                "reference_matches": ["Model", "Climate", "Sector", "Year"],
                                "reference_year": config["comparison_year"],
                                "absolute_alignment_assumed": False,
-                               "emissions_reference": "Each model's source-defined all-industry no-CE GHG",
-                               "emissions_context_reference": "Unplotted OMNIA three-sector context uses combined cement, steel and aluminium no-CE GHG",
+                               "emissions_reference": "Each model's combined cement, iron-and-steel and aluminium same-year no-CE emissions",
+                               "emissions_inventories": {"OMNIA-ENGAGE": "Reported sector GHG in MtCO2e/yr", "GCAM": "Reported sector CO2 in Mt CO2/yr"},
+                               "emissions_context_reference": "Unplotted all-industry context retains each model's own all-industry GHG denominator",
                                "component_unit": "percentage points", "net_unit": "%"},
              "source_row_counts": {model: len(raw) for model, raw in source.raw.items()},
              "missing_input_count": len(source.missing_inputs),
@@ -301,12 +316,30 @@ def generate_europe_relative(config, base):
              "notes": [*source.notes, *data.notes,
                        "No historical bars or absolute quantities are plotted. Their raw comparison-year values remain in the source CSVs.",
                        "All six production panels share one percentage scale; all six energy panels share another common percentage scale.",
-                       "Production plots only the net response; route contributions are exported as context to avoid implying matching GCAM routes.",
-                       "Emissions panels a,b compare reported all-industry totals only; OMNIA selects Emissions|GHG|Industry directly, including sectors beyond cement, steel and aluminium.",
-                       "OMNIA-only three-sector responses and industry decompositions remain unplotted CSV context with ContextOnly=True and Plotted=False.",
-                       "GCAM provides partial sector CO2 variables but no matching cement/steel/aluminium GHG totals; these are not substituted for GHG.",
-                       "Under the configured zero policy, missing NDC+LTT aluminium GHG in all three OMNIA EU regions is provisional zero in unplotted sector context; it does not replace the reported industry-parent inputs.",
+                       "Figure 1 plots total production responses, with unplotted route contributions retained as context.",
+                       "Emissions panels a,b compare the combined cement, iron-and-steel and aluminium response for both models; other industry is excluded from numerator and denominator.",
+                       "Sector contributions and all-industry responses remain unplotted CSV context with ContextOnly=True and Plotted=False.",
+                       "OMNIA sector GHG is compared with GCAM reported sector CO2; no GHG equivalence or undocumented GWP conversion is assumed.",
+                       "GCAM cement sums non-metallic-minerals energy CO2 and cement-process CO2; aluminium selects the specific child, without adding its overlapping non-ferrous parent.",
+                       "gcam_sector_scope_checks.csv verifies the non-metallic-minerals final-energy parent equals its cement child for all selected source years and scenarios.",
+                       "Under the configured zero policy, missing NDC+LTT aluminium GHG in all three OMNIA EU regions remains provisional zero and affects the plotted three-sector sum; flags and source rows retain that assumption.",
                        "The companion absolute-value figures remain in report_figures_europe_comparison_261014."]}
+    if config.get("include_steel_route_figure", False):
+        checks = data.steel_route_checks
+        error = checks.Difference.abs().max()
+        audit["normalisation"]["steel_route_reference"] = "Figure 4 uses each model/pathway/year steel route's own no-CE output, not total steel"
+        audit["normalisation"]["steel_route_percentages_additive"] = False
+        audit["complete_steel_route_checks"] = int(checks.Complete.sum())
+        audit["max_steel_route_closure_error_mt"] = float(error) if pd.notna(error) else None
+        audit["undefined_route_response_count"] = int((~routes.ResponseDefined).sum())
+        audit["route_responses_with_missing_reference"] = int(routes.ReferenceMissingInputCount.gt(0).sum())
+        audit["notes"].extend([
+            "Figure 4 adds separate primary and secondary steel columns alongside unchanged cement/aluminium responses; all eight panels share one percentage scale.",
+            "Figure 4 steel percentages use route-specific denominators and are not additive; they are excluded from percentage-point contribution checks.",
+            "steel_route_checks.csv verifies GCAM reported primary plus secondary steel equals its total in every complete selected scenario/year.",
+            "OMNIA NDC+LTT no-CE secondary steel is missing in all three EU regions at the comparison year; the percentage is undefined under both zero and preserve policies. Panel g shows a gap and explicit annotation.",
+            "Existing Figures 1-3 individual PDF/SVG/PNG/CSV artifacts are preserved after source-CSV and rendered-PNG equality checks when listed in preserve_individual_figures.",
+        ])
     (directory / "audit.json").write_text(json.dumps(audit, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
     (directory / "manifest.json").write_text(json.dumps(records, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (directory / "captions.md").write_text("# European CE percentage-response captions\n\n" + "\n".join(captions), encoding="utf-8")
@@ -316,6 +349,27 @@ def generate_europe_relative(config, base):
 
 
 def _write_methods(directory, config):
+    include_routes = config.get("include_steel_route_figure", False)
+    route_methods = ""
+    if include_routes:
+        route_methods = """## Figure 4: material production with separate steel routes
+
+The new **2 × 4** figure retains cement and aluminium from Figure 1, with separate primary and secondary iron-and-steel columns between them. NDC appears above NDC+LTT. Paired medium/high EU-only CE bars retain the model colours, hatch and endpoint markers. All eight panels share one percentage scale.
+
+For steel, the formula is **100 × (CE route output − no-CE route output) / no-CE route output**. Each route uses its own same-model, same-pathway, same-year no-CE production. These are production changes, not route shares or changes in shares. The two percentages are not additive and do not use the total-steel denominator from Figure 1's unplotted contribution rows. Cement and aluminium responses equal Figure 1 exactly.
+
+OMNIA selects `Production|Iron and Steel|Primary` and `Production|Iron and Steel|Secondary`; GCAM selects `Production|Iron and Steel|Steel|Primary` and `Production|Iron and Steel|Steel|Secondary`, all in Mt/yr. GCAM's reported primary-plus-secondary sum is checked against its reported steel total for each selected source scenario/year in `steel_route_checks.csv`. Incomplete checks remain flagged; no missing route output is fabricated. These checks are distinct from percentage-point contribution closure.
+
+**OMNIA NDC+LTT no-CE secondary steel is blank in all three EU regions in 2050.** Under the configured zero policy its route reference becomes provisional zero, so the percentage remains undefined. Preserving the blanks also leaves it undefined. Panel g therefore contains only GCAM bars and explicitly identifies the unavailable OMNIA reference; it does not substitute a total-steel denominator or infer a production value. Unavailable, nonfinite and nonpositive aggregate route references produce gaps, while observed zero changes retain endpoint markers. Partly missing OMNIA inputs follow the configured activity policy and retain explicit completeness and provisional-zero flags. `ResponseDefined`, `ReferenceComplete`, `ReferenceIssue`, `ReferenceMissingInputCount` and the full source-input lists distinguish missing references from reported physical zero production.
+
+"""
+    artifact_description = (
+        "Figure 4 is 240 × 175 mm. The four-page combined PDF is "
+        f"`{config['combined_pdf']}`; the earlier three-page collection remains available. "
+        "Existing Figures 1–3 individual artwork and CSVs are preserved after equality checks; "
+        "the new figure and collection metadata are generated from the raw sources."
+        if include_routes else
+        f"The combined three-page PDF is `{config['combined_pdf']}`. Figures are generated directly from the raw sources.")
     text = f"""# European CE percentage-response methods
 
 Regenerate the collection:
@@ -326,7 +380,7 @@ python -m omnia_results --config {config['config_file']}
 
 ## What the normalisation compares
 
-All three figures compare EU-only medium/high CE with **the same model's own {config['comparison_year']} no-CE result**, matching climate pathway and emissions/sector scope. The formula is **100 × (CE − no CE) / no CE**. A model's reference is never taken from the other model or the other climate pathway.
+All figures compare EU-only medium/high CE with **the same model's own {config['comparison_year']} no-CE result**, matching climate pathway and production/energy/emissions scope. The formula is **100 × (CE − no CE) / no CE**. A model's reference is never taken from the other model or the other climate pathway. Separate steel routes, when shown, each use their own route's reference.
 
 No CE is 0% by construction. Equal zero references do not establish agreement in absolute production or energy. These figures focus on CE responses; the [companion absolute collection](../report_figures_europe_comparison_261014/index.html) documents the underlying level differences. Normalisation also does not establish identical process boundaries, CE assumptions or calibration. Historical observations are omitted because these are CE-versus-no-CE comparisons at one future year.
 
@@ -334,7 +388,7 @@ The sources remain `{config['input']}` and `{config['gcam_input']}`, sheet `{con
 
 ## Scenario and geographic selection
 
-NDC appears above NDC+LTT in Figures 1–2 and to its left in Figure 3. `ndc_*` and `NDC_*` identify the NDC cases; OMNIA `baseline_*` and GCAM `LTT_*` are paired under NDC+LTT. Matching display labels do not establish identical climate-policy assumptions. Only medium/high CE applied in the EU is compared, each against its own no-CE reference; EU+ cases are excluded.
+NDC appears above NDC+LTT in the production and energy figures and to its left in Figure 3. `ndc_*` and `NDC_*` identify the NDC cases; OMNIA `baseline_*` and GCAM `LTT_*` are paired under NDC+LTT. Matching display labels do not establish identical climate-policy assumptions. Only medium/high CE applied in the EU is compared, each against its own no-CE reference; EU+ cases are excluded.
 
 OMNIA sums EUE, EUM and EUW. GCAM selects its reported EU-27 aggregate once, without adding overlapping country rows. The aggregate is checked against available-country sums. OMNIA's model regions also contain Greenland, Faroe Islands, Andorra, Monaco and San Marino, so its boundary is an approximation to GCAM's EU-27. `scenario_mapping.csv`, `geography_membership.csv` and `gcam_aggregation_checks.csv` retain the definitions and checks.
 
@@ -354,39 +408,46 @@ Positive and negative contributions stack separately around zero, retaining incr
 
 OMNIA final energy sums exact parent carriers, excluding nested children. GCAM retains its reported sector-energy parent for its total and reference. Its Unallocated component is reported total minus its supplied carrier parents, calculated separately for CE and no CE; the plotted contribution is the difference between those residuals divided by the no-CE total. The residual's fuel/process attribution remains unidentified. **GCAM aluminium's alumina-refining coverage is unconfirmed.** The figure therefore compares source-defined responses rather than harmonised energy intensities.
 
-## Figure 3: reported all-industry responses
+## Figure 3: combined cement, steel and aluminium responses
 
-Figure 3 uses a **1 × 2** layout with NDC on the left and NDC+LTT on the right. **Panels a,b** reproduce the earlier emissions figure's industry-level percentage comparison: paired OMNIA and GCAM bars, each divided by its own {config['comparison_year']} no-CE industry total. **OMNIA selects the reported all-industry parent `Emissions|GHG|Industry` directly**, in `MtCO2e/yr`. It includes sectors beyond cement, iron and steel, and aluminium; it is not formed by adding those three sectors. GCAM sums `Emissions|Kyoto Gases|Energy|Demand|Industry` and `Emissions|Kyoto Gases|Industrial Processes`, both in `Mt CO2-equiv/yr`. The two panels share a common percentage scale. This compares source-defined industrial responses. Their gas coverage, GWP conventions and process boundaries are not documented as harmonised.
+Figure 3 retains its **1 × 2** layout, paired model bars, colours and endpoint markers, with NDC on the left and NDC+LTT on the right. Each bar now shows **100 × (sum of three-sector CE emissions − sum of three-sector no-CE emissions) / sum of three-sector no-CE emissions** within the same model, pathway, geography and {config['comparison_year']} year. The sum covers cement, iron and steel, and aluminium only. Other industry is excluded from both numerator and denominator. Individual-sector percentages are not averaged. The two panels share one percentage scale.
 
-No sector breakdown is plotted. The earlier OMNIA-only three-sector calculations remain **unplotted CSV context**, with `PanelKind=three_sector`, `ContextOnly=True`, `DisplayRole=context` and `Plotted=False`. Their contributions use `100 × (sector CE GHG − sector no-CE GHG) / combined three-sector no-CE GHG`; their net rows use the same combined three-sector reference. This contextual denominator differs from the industry denominator used by every displayed bar. These context rows have no displayed panel assignment.
+**OMNIA reports sector GHG in MtCO2e/yr; GCAM reports sector CO2 in Mt CO2/yr.** The updated workbook adds useful CO2 disaggregation, but still supplies no complete three-sector Kyoto/GHG inventory. This is a comparison of responses within the reported quantities, with gas coverage, GWP conventions and process boundaries explicitly source-defined.
 
-In that unplotted context, individual-sector percentage changes are not used: the NDC+LTT no-CE steel GHG value is negative, and aluminium GHG inputs are blank. Contributions use the positive combined three-sector reference instead, while preserving negative reported emissions. Carbon capture is not subtracted again. Under the configured zero policy, **NDC+LTT aluminium GHG blanks in all three OMNIA EU regions, in no CE and both CE cases, are provisionally treated as zero in sector context**. This does not establish zero physical emissions, and these sector imputations do not replace the independently reported industry-parent inputs used in the chart. `UsesProvisionalZeros`, `AllEUAluminiumMissingAsZero`, raw missing-input lists and scenario flags retain the context assumption in the CSV. Under `preserve`, incomplete three-sector references and contributions remain gaps; the independently reported industry comparison can remain available.
+| Model/sector | Exact source selection |
+| --- | --- |
+| OMNIA cement | Emissions\\|GHG\\|Industry\\|Non-Metallic Minerals\\|Cement |
+| OMNIA steel | Emissions\\|GHG\\|Industry\\|Iron and Steel |
+| OMNIA aluminium | Emissions\\|GHG\\|Industry\\|Non-Ferrous Metals\\|Aluminum |
+| GCAM cement energy | Emissions\\|CO2\\|Energy\\|Demand\\|Industry\\|Non-Metallic Minerals |
+| GCAM cement processes | Emissions\\|CO2\\|Industrial Processes\\|Non-Metallic Minerals\\|Cement |
+| GCAM steel | Emissions\\|CO2\\|Energy\\|Demand\\|Industry\\|Iron and Steel |
+| GCAM aluminium | Emissions\\|CO2\\|Energy\\|Demand\\|Industry\\|Non-Ferrous Metals\\|Aluminum |
 
-### Available GCAM detail and the limit to sector matching
+GCAM's non-metallic-minerals energy category is assigned to cement: the reported final-energy parent equals its cement child in this workbook. A runtime check verifies this identity for each selected scenario/year and exports the values in `gcam_sector_scope_checks.csv`. The cement-process parent overlaps the selected cement child; the non-ferrous-metals energy-CO2 parent overlaps the selected aluminium child. These parents are not added again. No additional steel/aluminium process-CO2 child is exported, so none is fabricated. Capture is not subtracted again.
 
-The supplied workbook contains no matched cement/steel/aluminium GHG or Kyoto-gas aggregates. Its available sector CO2 snippets have different boundaries:
+Only combined three-sector net responses are displayed: `PanelKind=three_sector`, `Role=net`, `Plotted=True`. Sector contributions remain context, each divided by its own model's combined three-sector no-CE total; they reconstruct the net response. All-industry GHG responses are also retained as unplotted context, with their separate industry denominators. `ContextOnly=True`, `DisplayRole=context` and `Plotted=False` identify unplotted rows, which have no displayed panel assignment. GCAM's unplotted contributions are also exported in `gcam_emissions_context.csv`, and `gcam_emissions_availability.csv` inventories the available source quantities.
 
-| GCAM variable | Available coverage | Why it cannot substitute for OMNIA sector GHG |
-| --- | --- | --- |
-| `Emissions|CO2|Industrial Processes|Cement` | Cement process CO2 | Missing cement energy emissions and non-CO2 GHG. |
-| `Emissions|CO2|Energy|Demand|Industry|Iron and Steel` | Steel energy-demand CO2 | Not an all-GHG sector total. |
-| `Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals` | Broader non-ferrous energy-demand CO2 | Neither aluminium-specific nor all-GHG. |
+Negative reported emissions are retained. The NDC+LTT no-CE steel GHG value in OMNIA is negative, so individual-sector percentages are not used. Under the configured zero policy, **NDC+LTT aluminium GHG blanks in all three OMNIA EU regions, in no CE and both CE cases, are provisionally treated as zero**. This affects the displayed combined sum and does not establish physical zero emissions. `UsesProvisionalZeros`, `AllEUAluminiumMissingAsZero`, raw missing-input lists and scenario flags retain this assumption in the CSV. Under `preserve`, incomplete sector sums remain gaps.
 
-These quantities are not substituted for GHG or assigned undocumented warming potentials. `gcam_emissions_availability.csv` inventories every source emissions variable/unit and records its coverage limitations. GCAM's available energy-demand versus industrial-process GHG contributions are retained in `gcam_emissions_context.csv`, using its own no-CE industry total. OMNIA's industry-sector and Other industry residual contributions also remain in the figure CSV as context. `Plotted=False` identifies all emissions context; the chart plots industry nets only.
+{route_methods}## Missing inputs and provenance
 
-## Missing inputs and provenance
+OMNIA follows the configured `{config['missing_activity']}` activity policy; the default provisional zero treatment is retained from the existing report and identified where plotted inputs use it. In Figure 3, missing sector inputs affect the displayed combined three-sector response and are flagged explicitly. GCAM missing aggregate values remain gaps. Required variables/units and GCAM aggregate rows cannot be fabricated. Nonfinite or nonpositive total references produce undefined contributions and net responses. `missing_inputs.csv` records affected selected inputs and their treatment.
 
-OMNIA follows the configured `{config['missing_activity']}` activity policy; the default provisional zero treatment is retained from the existing report and identified where plotted inputs use it. In Figure 3, missing sector inputs affect unplotted decomposition context, while the bars use independently reported industry-parent inputs. GCAM missing aggregate values remain gaps. Required variables/units and GCAM aggregate rows cannot be fabricated. Nonfinite or nonpositive total references produce undefined contributions and net responses. `missing_inputs.csv` records affected selected inputs and their treatment.
+Each source-data row retains its CE and no-CE absolute quantities, signed numerator, reference denominator, conversion factor, original scenarios, year, variables, units, coefficients and regions. `comparison_summary.csv` collects the net responses. Components use `Unit=percentage points`; net rows use `Unit=%`. The `Plotted` flag identifies series selected for display; an undefined response still has no mark. Emissions records additionally identify `PanelKind`, `EmissionsScope` and `EmissionsCoverage`. Separate steel-route records identify `ProductionGroup`, `Route` and their own-route `DenominatorScope`.
 
-Each source-data row retains its CE and no-CE absolute quantities, signed numerator, total reference denominator, conversion factor, original scenarios, year, variables, units, coefficients and regions. `comparison_summary.csv` collects the net responses. Components use `Unit=percentage points`; net rows use `Unit=%`. The `Plotted` flag distinguishes chart marks from context. Emissions records additionally identify `PanelKind`, `EmissionsScope` and `EmissionsCoverage`.
-
-Figures 1–2 are 180 × 175 mm; the single-row Figure 3 is 180 × 105 mm. All include vector PDF, editable SVG text and 600 dpi PNG exports, plus a combined three-page PDF (`{config['combined_pdf']}`). The reviewed individual Figures 1–2 are retained byte-for-byte after their freshly calculated CSV and PNG match the existing exports. Automated bounds checks and visual review check label placement. No values are rescaled between models, displaced, clipped, smoothed or extrapolated to improve apparent agreement.
+Figures 1–2 are 180 × 175 mm; the single-row Figure 3 is 180 × 105 mm. All include vector PDF, editable SVG text and 600 dpi PNG exports. {artifact_description} The updated GCAM production values retain their supplied precision. Automated bounds checks and visual review check label placement. No values are rescaled between models, displaced, clipped, smoothed or extrapolated to improve apparent agreement.
 """
     (directory / "methods.md").write_text(text, encoding="utf-8")
 
 
 def _write_gallery(directory, config, records):
     cards = "\n".join(_figure_card(record) for record in records)
+    count = len(records)
+    route_intro = (" An additional production figure separates primary and secondary steel, each relative to its own route's no-CE output."
+                   if config.get("include_steel_route_figure", False) else "")
+    route_link = (' · <a href="steel_route_checks.csv">Steel route checks</a>'
+                  if config.get("include_steel_route_figure", False) else "")
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>European circular-economy percentage responses</title>
 <style>
@@ -400,10 +461,10 @@ main{{max-width:1080px;margin:auto;padding:42px 26px}}h1{{font-size:32px;line-he
 @media(max-width:600px){{main{{padding:24px 12px}}.figure-heading,figure{{padding-left:12px;padding-right:12px}}h1{{font-size:25px}}}}
 </style></head><body><main><p>OMNIA-ENGAGE / GCAM · European industry</p>
 <h1>Comparing the response to circular economy</h1>
-<p class="intro">Three figures show {config['comparison_year']} percentage changes from each model's own no-CE case: production, final energy, and emissions. The emissions figure compares reported all-industry responses in two panels, with NDC on the left and NDC+LTT on the right. Both pathways retain medium/high EU-only CE.</p>
-<p><a class="download" href="{escape(config['combined_pdf'], quote=True)}">Download all three figures · PDF</a></p>
-<p class="scope">No CE is 0% by construction within each model, pathway and reference scope. This normalisation does not establish agreement in absolute levels or harmonise process boundaries. OMNIA's emissions bars use its reported all-industry parent, including sectors beyond cement, steel and aluminium. GCAM uses industry energy-demand plus industrial-process Kyoto gases and has no matching three-sector GHG totals. Aluminium production and energy process coverage remain unconfirmed. The <a href="../report_figures_europe_comparison_261014/index.html">absolute-value comparison</a> remains available.</p>
-<p><a href="comparison_summary.csv">Net percentage responses</a> · <a href="source_data.csv">All source data</a> · <a href="contribution_checks.csv">Contribution checks</a> · <a href="methods.md">Methods</a> · <a href="captions.md">Captions</a> · <a href="audit.json">Audit</a><br><a href="gcam_emissions_availability.csv">GCAM emissions coverage</a> · <a href="gcam_emissions_context.csv">GCAM energy/process contributions</a></p>
+<p class="intro">{count} figures show {config['comparison_year']} percentage changes from each model's own no-CE case: production, final energy, and emissions. The emissions figure compares combined cement, steel and aluminium responses in two panels, with NDC on the left and NDC+LTT on the right. Both pathways retain medium/high EU-only CE.{route_intro}</p>
+<p><a class="download" href="{escape(config['combined_pdf'], quote=True)}">Download all {count} figures · PDF</a></p>
+<p class="scope">No CE is 0% by construction within each model, pathway and reference scope. This normalisation does not establish agreement in absolute levels or harmonise process boundaries. Emissions bars sum cement, iron and steel, and aluminium only in both models. OMNIA reports sector GHG; GCAM reports sector CO2, with cement energy and processes plus reported steel/aluminium energy CO2. These inventories remain source-defined. Aluminium production and energy process coverage remain unconfirmed. The <a href="../report_figures_europe_comparison_261014/index.html">absolute-value comparison</a> remains available.</p>
+<p><a href="comparison_summary.csv">Net percentage responses</a> · <a href="source_data.csv">All source data</a> · <a href="contribution_checks.csv">Contribution checks</a> · <a href="methods.md">Methods</a> · <a href="captions.md">Captions</a> · <a href="audit.json">Audit</a><br><a href="gcam_emissions_availability.csv">GCAM emissions coverage</a> · <a href="gcam_emissions_context.csv">GCAM context contributions</a> · <a href="gcam_sector_scope_checks.csv">Cement scope checks</a>{route_link}</p>
 {cards}<footer>Calculated directly from {escape(config['input'])} and {escape(config['gcam_input'])}. PDF, editable SVG, 600 dpi PNG and full-precision CSV accompany each figure.</footer>
 </main></body></html>'''
     (directory / "index.html").write_text(page, encoding="utf-8")

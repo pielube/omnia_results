@@ -1,4 +1,4 @@
-"""Emissions chart shows all-industry responses and keeps sector detail as context."""
+"""Emissions chart shows combined three-sector responses with explicit gas scopes."""
 
 import unittest
 
@@ -20,39 +20,46 @@ class EuropeRelativeEmissionsFigureTests(unittest.TestCase):
     def tearDown(self):
         plt.close("all")
 
-    def test_industry_bars_match_own_model_responses_and_use_common_pathway_scale(self):
+    def test_three_sector_bars_match_own_model_responses_and_use_common_pathway_scale(self):
         with plt.rc_context(COMPARISON_STYLE):
             spec = self.builder.emissions_response()
             check_figure_bounds(spec.figure, spec.slug)
-        np.testing.assert_allclose([p.get_height() for p in spec.figure.axes[0].patches], [-10, -20, -13, -23])
+        np.testing.assert_allclose([p.get_height() for p in spec.figure.axes[0].patches], [-5, -65, -16, -38])
         self.assertEqual(len(spec.figure.axes), 2)
         self.assertEqual(spec.panel_count, 2)
         self.assertEqual(spec.figure.axes[0].get_ylim(), spec.figure.axes[1].get_ylim())
         context = spec.data.loc[(spec.data.PanelKind == "industry") & (spec.data.Role == "component")]
         self.assertFalse(context.Plotted.any())
 
-    def test_all_plotted_rows_use_industry_parent_scope_and_sector_detail_is_context_only(self):
+    def test_only_combined_three_sector_nets_are_plotted_and_gas_scopes_are_explicit(self):
         with plt.rc_context(COMPARISON_STYLE):
             spec = self.builder.emissions_response()
         plotted = spec.data.loc[spec.data.Plotted]
         self.assertEqual(len(plotted), 8)
         self.assertEqual(set(plotted.Model), {"OMNIA-ENGAGE", "GCAM"})
-        self.assertEqual(set(plotted.PanelKind), {"industry"})
+        self.assertEqual(set(plotted.PanelKind), {"three_sector"})
         self.assertEqual(set(plotted.Role), {"net"})
-        focus = spec.data.loc[spec.data.PanelKind == "three_sector"]
-        self.assertEqual(set(focus.Model), {"OMNIA-ENGAGE"})
-        self.assertFalse(focus.Plotted.any())
-        self.assertTrue(focus.ContextOnly.all())
-        self.assertEqual(set(focus.DisplayRole), {"context"})
-        self.assertTrue(focus.Panel.eq("").all())
-        self.assertEqual(set(focus.loc[focus.Climate == "ndc", "Denominator"]), {240})
+        self.assertEqual(set(plotted.Panel), {"a", "b"})
+        industry = spec.data.loc[spec.data.PanelKind == "industry"]
+        self.assertFalse(industry.Plotted.any())
+        self.assertTrue(industry.ContextOnly.all())
+        self.assertEqual(set(industry.DisplayRole), {"context"})
+        self.assertTrue(industry.Panel.eq("").all())
+        components = spec.data.loc[spec.data.Role.eq("component")]
+        self.assertFalse(components.Plotted.any())
+        self.assertTrue(components.ContextOnly.all())
         omnia = plotted.loc[plotted.Model.eq("OMNIA-ENGAGE")]
-        self.assertEqual(set(omnia.loc[omnia.Climate == "ndc", "Denominator"]), {600})
-        self.assertIn("including sectors beyond cement, steel and aluminium",
-                      " ".join(t.get_text() for t in spec.figure.texts))
-        self.assertIn("reported all-industry parent Emissions|GHG|Industry", spec.caption)
+        gcam = plotted.loc[plotted.Model.eq("GCAM")]
+        self.assertEqual(set(omnia.loc[omnia.Climate == "ndc", "Denominator"]), {240})
+        self.assertEqual(set(gcam.loc[gcam.Climate == "ndc", "Denominator"]), {250})
+        notes = " ".join(t.get_text() for t in spec.figure.texts)
+        self.assertIn("cement, steel and aluminium", notes)
+        self.assertIn("OMNIA GHG", notes)
+        self.assertIn("GCAM CO2", notes.replace("\u2082", "2"))
+        self.assertIn("Other industry is excluded from numerator and denominator", spec.caption)
+        self.assertIn("Sector percentages are not averaged", spec.caption)
 
-    def test_missing_sector_inputs_do_not_replace_independently_reported_industry_bars(self):
+    def test_plotted_omnia_totals_explicitly_flag_provisional_missing_aluminium_zeros(self):
         fixture = fixtures.EuropeRelativeEmissionsDataTests()
         fixture.setUp()
         source = fixture.omnia.copy()
@@ -62,12 +69,18 @@ class EuropeRelativeEmissionsFigureTests(unittest.TestCase):
         builder = EuropeRelativeBuilder(data, {**fixture.config, "missing_activity": "zero"})
         with plt.rc_context(COMPARISON_STYLE):
             spec = builder.emissions_response()
-        net = spec.data.loc[(spec.data.PanelKind == "three_sector") & (spec.data.Climate == "baseline") & (spec.data.Role == "net")]
+        net = spec.data.loc[(spec.data.PanelKind == "three_sector") & (spec.data.Model == "OMNIA-ENGAGE")
+                            & (spec.data.Climate == "baseline") & (spec.data.Role == "net")]
         self.assertTrue(net.AllEUAluminiumMissingAsZero.all())
-        self.assertFalse(net.Plotted.any())
-        self.assertFalse(spec.data.loc[spec.data.Plotted, "UsesProvisionalZeros"].any())
-        np.testing.assert_allclose([p.get_height() for p in spec.figure.axes[0].patches], [-10, -20, -13, -23])
-        self.assertIn("do not replace the independently reported industry parent", spec.caption)
+        self.assertTrue(net.Plotted.all())
+        self.assertTrue(net.UsesProvisionalZeros.all())
+        self.assertFalse(spec.data.loc[spec.data.Plotted & spec.data.Model.eq("GCAM"), "UsesProvisionalZeros"].any())
+        np.testing.assert_allclose([p.get_height() for p in spec.figure.axes[0].patches], [-5, -65, -16, -38])
+        np.testing.assert_allclose([p.get_height() for p in spec.figure.axes[1].patches], [10, -80, -16, -38])
+        notes = " ".join(t.get_text() for t in spec.figure.texts)
+        self.assertIn("aluminium blanks", notes)
+        self.assertIn("zero (provisional)", notes)
+        self.assertIn("without establishing physical zero emissions", spec.caption)
 
 
 if __name__ == "__main__":

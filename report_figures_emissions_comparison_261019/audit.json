@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-19T09:04:02.362286+00:00",
+  "generated_utc": "2026-10-19T17:55:45.785197+00:00",
   "sources": {
     "OMNIA-ENGAGE": {
       "file": "C:\\git\\omnia_results\\results_allCE_261008.csv",
@@ -18,8 +18,8 @@
       "sha256": "bdae3ac45ed929efebd5b722b1738535d3dbc6510a4e7caece44c3ae50282942"
     },
     "GCAM": {
-      "file": "C:\\git\\omnia_results\\DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
-      "sha256": "0a19286a48537a20bf1e57780fe0aff5a8547f3481f71d6e119174a1659f78d4"
+      "file": "C:\\git\\omnia_results\\DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
+      "sha256": "f1d2511d3ade12201e32673cd97470100da2d8aae2dc73de3f8e1453660ff119"
     },
     "European region mapping": {
       "file": "C:\\git\\omnia_results\\data\\OMNIA_region_mapping_241120.csv",
@@ -167,14 +167,11 @@
   "europe_config": {
     "suite": "europe_relative",
     "input": "results_allCE_261008.csv",
-    "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+    "gcam_input": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
     "gcam_sheet": "Sheet1",
     "output": "report_figures_europe_relative_261016",
     "combined_pdf": "report_figures_with_emissions.pdf",
-    "preserve_individual_figures": [
-      "fig01_material_production_response",
-      "fig02_energy_response"
-    ],
+    "preserve_individual_figures": [],
     "config_file": "figures.europe_relative.261016.json",
     "region_mapping": "data/OMNIA_region_mapping_241120.csv",
     "regions": [
@@ -222,7 +219,11 @@
   "panel_count": 4,
   "plotted_row_count": 16,
   "notes": [
-    "Panels a,b retain the European all-industry EU-only CE comparison with GCAM.",
+    "Panels a,b compare the combined cement, iron-and-steel and aluminium response in both models under EU-only CE; other industry is unplotted context.",
+    "The European row sums OMNIA sector GHG and GCAM sector CO2 separately before normalising to each model's own combined three-sector no-CE reference; sector percentages are not averaged.",
+    "GCAM combines non-metallic-minerals energy CO2 (cement-energy proxy), cement process CO2, iron-and-steel energy CO2 and aluminium-specific energy CO2; no sector Kyoto-gas totals are supplied.",
+    "The GCAM non-metallic-minerals final-energy parent equals its cement child in the supplied workbook; the energy-CO2 category remains a cement proxy rather than a documented cement-exclusive inventory.",
+    "OMNIA NDC+LTT aluminium GHG blanks retain the configured provisional-zero treatment, which does not establish physical zero emissions.",
     "Panels c,d retain global steel, OMNIA EU+ versus OPEN-PROM; EU-only OMNIA is not plotted.",
     "Each row has its own shared percentage scale and source-defined emissions inventories.",
     "Existing European figures and other collections are not modified by this export.",

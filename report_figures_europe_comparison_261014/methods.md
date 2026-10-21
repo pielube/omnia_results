@@ -8,7 +8,7 @@ python -m omnia_results --config figures.europe_comparison.261014.json
 
 ## Sources and selection
 
-Calculations read `results_allCE_261008.csv` and `DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx` (`Sheet1`) directly. Previously exported figures and CSVs are not calculation inputs. `audit.json` records source and regional-mapping hashes, software versions and the complete configuration.
+Calculations read `results_allCE_261008.csv` and `DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx` (`Sheet1`) directly. Previously exported figures and CSVs are not calculation inputs. `audit.json` records source and regional-mapping hashes, software versions and the complete configuration.
 
 Six scenarios are selected from each model: NDC and NDC+LTT, each with no, medium and high CE applied in the EU only. No EU+ scenarios enter the collection. OMNIA `baseline_*` and GCAM `LTT_*` are paired under the display label NDC+LTT; OMNIA `ndc_*` and GCAM `NDC_*` are paired as NDC. These source labels do not establish identical policy assumptions. `scenario_mapping.csv` retains every original identifier.
 

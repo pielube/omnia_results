@@ -1,4 +1,4 @@
-"""Independent GHG examples for industry and focused three-sector responses."""
+"""Independent examples for three-sector GHG/CO2 responses and industry context."""
 
 import json
 from pathlib import Path
@@ -49,8 +49,19 @@ class EuropeRelativeEmissionsDataTests(unittest.TestCase):
                     else:
                         add(model, scenario, "Emissions|Kyoto Gases|Energy|Demand|Industry", "Mt CO2-equiv/yr", (70, 63, 56)[p] * scale)
                         add(model, scenario, "Emissions|Kyoto Gases|Industrial Processes", "Mt CO2-equiv/yr", (30, 24, 21)[p] * scale)
+                        for variable, amounts in (
+                            ("Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals", (10, 8, 6)),
+                            ("Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement", (20, 16, 12)),
+                            ("Emissions|CO2|Energy|Demand|Industry|Iron and Steel", (15, 14, 10)),
+                            ("Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals|Aluminum", (5, 4, 3)),
+                        ):
+                            add(model, scenario, variable, "Mt CO2/yr", amounts[p] * scale)
+                        for variable in ("Final Energy|Industry|Non-Metallic Minerals",
+                                         "Final Energy|Industry|Non-Metallic Minerals|Cement"):
+                            add(model, scenario, variable, "EJ/yr", 2 * scale)
                         for variable in ("Emissions|CO2|Industrial Processes|Cement",
-                                         "Emissions|CO2|Energy|Demand|Industry|Iron and Steel",
+                                         "Emissions|CO2|Industrial Processes|Non-Metallic Minerals",
+                                         "Emissions|CO2|Energy|Demand|Industry",
                                          "Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals"):
                             add(model, scenario, variable, "Mt CO2/yr", (99999, 0, 99999)[p])
                         add(model, scenario, "Carbon Capture|Energy|Demand|Industry", "Mt CO2/yr", 99999)
@@ -107,9 +118,40 @@ class EuropeRelativeEmissionsDataTests(unittest.TestCase):
         self.assertEqual(cement.Unit, "percentage points")
         self.assertEqual(len(json.loads(cement.DenominatorSourceVariables)), 3)
         self.assertNotIn("Emissions|GHG|Industry", json.loads(cement.DenominatorSourceVariables))
-        self.assertEqual(set(frame.loc[frame.PanelKind.eq("three_sector"), "Model"]), {MODELS[0]})
-        self.assertEqual(set(frame.loc[frame.PanelKind.eq("industry"), "Panel"]), {"a", "b"})
-        self.assertEqual(set(frame.loc[frame.PanelKind.eq("three_sector"), "Panel"]), {"c", "d"})
+        self.assertEqual(set(frame.loc[frame.PanelKind.eq("three_sector"), "Model"]), set(MODELS))
+        self.assertEqual(set(frame.loc[frame.PanelKind.eq("three_sector"), "Panel"]), {"a", "b"})
+
+    def test_gcam_aggregate_combines_selected_sector_co2_with_its_own_total_reference(self):
+        frame = self.data().emissions_response()
+        medium = self.select(frame, "three_sector", model="GCAM")
+        high = self.select(frame, "three_sector", model="GCAM", policy="highce_eu")
+        self.assertEqual(medium.Denominator, 250)
+        self.assertEqual(medium.ReferenceValue, 250)
+        self.assertEqual(medium.ScenarioValue, 210)
+        self.assertAlmostEqual(medium.Value, -16)
+        self.assertAlmostEqual(high.Value, -38)
+        cement = self.select(frame, "three_sector", "Cement", model="GCAM")
+        self.assertEqual(cement.ReferenceValue, 150)
+        self.assertEqual(cement.ScenarioValue, 120)
+        self.assertAlmostEqual(cement.Value, -12)
+        self.assertEqual(json.loads(cement.SourceVariables), [
+            "Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals",
+            "Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement",
+        ])
+        self.assertEqual(json.loads(cement.SourceUnits), ["Mt CO2/yr", "Mt CO2/yr"])
+        self.assertEqual(len(json.loads(medium.SourceVariables)), 4)
+        self.assertIn("CO2", medium.EmissionsCoverage)
+        self.assertIn("GHG", self.select(frame, "three_sector").EmissionsCoverage)
+        self.assertNotEqual(medium.Denominator, self.select(frame, "industry", model="GCAM").Denominator)
+
+    def test_gcam_cement_energy_proxy_requires_parent_child_scope_agreement(self):
+        gcam = self.gcam.copy()
+        for region, change in (("EU-27", .5), ("Austria", .2), ("Belgium", .3)):
+            mask = (gcam.Scenario.eq("NDC_MedCE_EU") & gcam.Region.eq(region)
+                    & gcam.Variable.eq("Final Energy|Industry|Non-Metallic Minerals"))
+            gcam.loc[mask, "2050"] += change
+        with self.assertRaisesRegex(ValueError, "cement energy"):
+            self.data(gcam=gcam).emissions_response()
 
     def test_signed_components_close_to_net_and_industry_components_are_context(self):
         data = self.data()
@@ -127,11 +169,24 @@ class EuropeRelativeEmissionsDataTests(unittest.TestCase):
         self.assertTrue(data.closure_checks.Complete.all())
         self.assertLess(data.closure_checks.Difference.abs().max(), 1e-10)
 
-    def test_no_co2_substitution_or_second_subtraction_of_capture(self):
+    def test_broader_parents_and_capture_do_not_enter_three_sector_totals(self):
         frame = self.data().emissions_response()
         source_variables = {variable for values in frame.SourceVariables for variable in json.loads(values)}
-        self.assertFalse(any(variable.startswith("Emissions|CO2|") for variable in source_variables))
         self.assertFalse(any(variable.startswith("Carbon Capture|") for variable in source_variables))
+        selected = json.loads(self.select(frame, "three_sector", model="GCAM").SourceVariables)
+        self.assertEqual(set(selected), {
+            "Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals",
+            "Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement",
+            "Emissions|CO2|Energy|Demand|Industry|Iron and Steel",
+            "Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals|Aluminum",
+        })
+        self.assertNotIn("Emissions|CO2|Industrial Processes|Non-Metallic Minerals", selected)
+        self.assertNotIn("Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals", selected)
+        self.assertNotIn("Emissions|CO2|Industrial Processes|Cement", selected)
+        self.assertNotIn("Emissions|CO2|Energy|Demand|Industry", selected)
+        self.assertEqual(json.loads(self.select(frame, "three_sector", model="GCAM").SourceCoefficients), [1, 1, 1, 1])
+        omnia = self.select(frame, "three_sector")
+        self.assertTrue(all(variable.startswith("Emissions|GHG|") for variable in json.loads(omnia.SourceVariables)))
         gc = self.select(frame, "industry", model="GCAM")
         self.assertAlmostEqual(gc.Value, -13)
         self.assertEqual(json.loads(gc.SourceVariables), ["Emissions|Kyoto Gases|Energy|Demand|Industry",
@@ -155,7 +210,8 @@ class EuropeRelativeEmissionsDataTests(unittest.TestCase):
         aluminium = self.select(zero, "three_sector", "Aluminium", climate="baseline")
         self.assertEqual((aluminium.ScenarioValue, aluminium.ReferenceValue, aluminium.Value), (0, 0, 0))
         preserve = self.data(omnia=omnia, missing_activity="preserve").emissions_response()
-        focused = preserve.loc[preserve.PanelKind.eq("three_sector") & preserve.Climate.eq("baseline")]
+        focused = preserve.loc[preserve.PanelKind.eq("three_sector") & preserve.Model.eq(MODELS[0])
+                               & preserve.Climate.eq("baseline")]
         self.assertTrue(focused.Value.isna().all())
         self.assertFalse(focused.UsesProvisionalZeros.any())
         self.assertTrue(np.isfinite(self.select(preserve, "industry", climate="baseline").Value))
@@ -170,6 +226,7 @@ class EuropeRelativeEmissionsDataTests(unittest.TestCase):
         self.assertTrue(np.isnan(self.select(frame, "three_sector", "Aluminium").Value))
         self.assertTrue(np.isfinite(self.select(frame, "three_sector", "Cement").Value))
         check = data.closure_checks.loc[data.closure_checks.PanelKind.eq("three_sector")
+                                        & data.closure_checks.Model.eq(MODELS[0])
                                         & data.closure_checks.Climate.eq("ndc")
                                         & data.closure_checks.Policy.eq("medce_eu")].iloc[0]
         self.assertFalse(check.Complete)
@@ -183,30 +240,52 @@ class EuropeRelativeEmissionsDataTests(unittest.TestCase):
                     mask = omnia.Scenario.eq("ndc_noce") & omnia.Region.eq(region) & omnia.Variable.eq(variable) & omnia.Unit.eq("MtCO2e/yr")
                     omnia.loc[mask, "2050"] = amount * weight
             frame = self.data(omnia=omnia).emissions_response()
-            focused = frame.loc[frame.PanelKind.eq("three_sector") & frame.Climate.eq("ndc")]
+            focused = frame.loc[frame.PanelKind.eq("three_sector") & frame.Model.eq(MODELS[0])
+                                & frame.Climate.eq("ndc")]
             self.assertTrue(focused.Value.isna().all())
             self.assertTrue(np.isfinite(self.select(frame, "industry").Value))
 
     def test_gcam_aggregate_missingness_remains_preserved_under_omnia_zero_policy(self):
         gcam = self.gcam.copy()
         mask = (gcam.Scenario.eq("NDC_NoCE") & gcam.Region.eq("EU-27")
-                & gcam.Variable.eq("Emissions|Kyoto Gases|Industrial Processes"))
+                & gcam.Variable.eq("Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement"))
         gcam.loc[mask, "2050"] = np.nan
         frame = self.data(gcam=gcam, missing_activity="zero").emissions_response()
-        gc = frame.loc[frame.Model.eq("GCAM") & frame.Climate.eq("ndc")]
+        gc = frame.loc[frame.Model.eq("GCAM") & frame.Climate.eq("ndc") & frame.PanelKind.eq("three_sector")]
         self.assertTrue(gc.Value.isna().all())
         self.assertFalse(gc.UsesProvisionalZeros.any())
+        self.assertTrue(np.isfinite(self.select(frame, "industry", model="GCAM").Value))
+
+    def test_missing_gcam_ce_sector_co2_keeps_gap_without_fabricating_partial_total(self):
+        gcam = self.gcam.copy()
+        mask = (gcam.Scenario.eq("NDC_MedCE_EU") & gcam.Region.eq("EU-27")
+                & gcam.Variable.eq("Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals|Aluminum"))
+        gcam.loc[mask, "2050"] = np.nan
+        data = self.data(gcam=gcam, missing_activity="zero")
+        frame = data.emissions_response()
+        net = self.select(frame, "three_sector", model="GCAM")
+        self.assertTrue(np.isnan(net.Value))
+        self.assertFalse(net.UsesProvisionalZeros)
+        self.assertEqual(net.MissingInputCount, 1)
+        self.assertTrue(np.isfinite(self.select(frame, "three_sector", "Cement", model="GCAM").Value))
+        self.assertTrue(np.isfinite(self.select(frame, "three_sector", model="GCAM", policy="highce_eu").Value))
 
     def test_availability_inventory_identifies_the_unmatched_co2_boundaries(self):
         inventory = self.data().emissions_availability()
-        self.assertEqual(len(inventory), 5)
+        self.assertEqual(len(inventory), 10)
         self.assertEqual(int(inventory.SelectedForIndustry.sum()), 2)
         self.assertFalse(inventory.ComparableSectorGHG.any())
-        self.assertFalse(inventory.UsedInThreeSector.any())
+        self.assertEqual(int(inventory.UsedInThreeSector.sum()), 4)
+        selected = inventory.loc[inventory.UsedInThreeSector]
+        self.assertEqual(set(selected.Unit), {"Mt CO2/yr"})
+        self.assertFalse(selected.SelectedForIndustry.any())
         cement = inventory.loc[inventory.Variable.eq("Emissions|CO2|Industrial Processes|Cement")].iloc[0]
         nonferrous = inventory.loc[inventory.Variable.eq("Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals")].iloc[0]
         self.assertIn("process CO2 only", cement.Explanation)
         self.assertIn("Broader non-ferrous", nonferrous.Explanation)
+        self.assertFalse(nonferrous.UsedInThreeSector)
+        selected_cement = selected.loc[selected.Variable.eq("Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement")].iloc[0]
+        self.assertIn("without adding its overlapping process parent", selected_cement.Explanation)
         self.assertEqual(cement.Unit, "Mt CO2/yr")
 
     def test_cached_emissions_are_copies_and_do_not_duplicate_audit(self):

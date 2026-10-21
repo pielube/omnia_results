@@ -26,8 +26,8 @@ def _row_legend(fig, external, y):
 def _draw_europe_panels(axes, frame, year):
     data = frame.loc[frame.Year.eq(year)].copy()
     data["SourcePanel"] = data.get("Panel", "")
-    data["ComparisonRow"] = "European all industry"
-    data["Plotted"] = data.PanelKind.eq("industry") & data.Role.eq("net")
+    data["ComparisonRow"] = "European three sectors"
+    data["Plotted"] = data.PanelKind.eq("three_sector") & data.Role.eq("net")
     data["ContextOnly"] = ~data.Plotted
     data["PlotRole"] = np.where(data.Plotted, "plotted", "context")
     data["DisplayRole"] = data.PlotRole
@@ -38,7 +38,7 @@ def _draw_europe_panels(axes, frame, year):
     for column, climate in enumerate(CLIMATES):
         ax, letter = axes[column], chr(97 + column)
         data.loc[data.Plotted & data.Climate.eq(climate), "Panel"] = letter
-        _clean_axes(ax, letter, CLIMATE_LABELS[climate], "Industry GHG change\nfrom no CE (%)")
+        _clean_axes(ax, letter, CLIMATE_LABELS[climate], "Three-sector emissions change\nfrom no CE (%)")
         ax.set_xlim(-.65, 2.)
         ax.set_xticks(POSITIONS, ["Medium CE\nEU", "High CE\nEU"], fontsize=6.3)
         ax.tick_params(axis="x", length=0, pad=5)
@@ -83,7 +83,7 @@ def build_combined_emissions(europe_frame, openprom_frame, year=2050):
     fig.text(.035, .980, title, fontsize=8, weight="bold", va="top")
     fig.text(.035, .951, f"{year} | changes from each model's own same-year no-CE/reference case",
              fontsize=6.7, color="#52616A", va="top")
-    fig.text(.035, .917, "Europe · reported all-industry GHG · EU-only CE in both models",
+    fig.text(.035, .917, "Europe · cement, steel + aluminium emissions · EU-only CE in both models",
              fontsize=6.9, weight="bold", va="top")
     _row_legend(fig, "GCAM", .894)
     europe = _draw_europe_panels(axes[0], europe_frame, year)
@@ -119,21 +119,30 @@ def build_combined_emissions(europe_frame, openprom_frame, year=2050):
     data = pd.concat([europe, selected, references], ignore_index=True, sort=False)
 
     notes = [
-        "Top: OMNIA reported all-industry GHG; GCAM industry energy-demand + industrial-process Kyoto gases.",
+        "Top: OMNIA sector GHG; GCAM sector CO₂ (cement energy + processes; steel/aluminium energy CO₂).",
         "Bottom: OMNIA reported steel GHG; OPEN-PROM steel energy-related CO₂. Gas and process boundaries differ.",
         "Global steel: OMNIA CE in EU+; OPEN-PROM intervention area unspecified. Policy equivalence is unconfirmed.",
         f"Reference: each model's own {year} case. Percentage scales match within rows; inventories differ between rows.",
-        "Capture is not subtracted again. Missing inputs retain the source treatment; unavailable responses remain gaps.",
+        "OMNIA LTT aluminium blanks use provisional zeros. Capture is not subtracted again; unavailable responses remain gaps.",
     ]
     for y, note in zip((.096, .075, .054, .033, .012), notes):
         fig.text(.035, y, note, fontsize=5.05, color="#52616A", va="bottom")
     caption = (
         f"Emissions responses in {year}, with NDC on the left and NDC+LTT on the right. "
-        "Panels a,b reproduce the European all-industry GHG comparison for medium/high EU-only CE, pairing "
-        "solid OMNIA-ENGAGE bars on the left with hatched GCAM bars on the right. OMNIA selects its reported "
-        "all-industry parent Emissions|GHG|Industry, including sectors beyond cement, iron and steel, and "
-        "aluminium. GCAM sums Emissions|Kyoto Gases|Energy|Demand|Industry and "
-        "Emissions|Kyoto Gases|Industrial Processes. OMNIA sums EUE, EUM and EUW; GCAM selects EU-27 once. "
+        "Panels a,b compare the combined cement, iron and steel, and aluminium emissions response for "
+        "medium/high EU-only CE, pairing solid OMNIA-ENGAGE bars on the left with hatched GCAM bars on "
+        "the right. OMNIA sums the three reported Emissions|GHG|Industry subsector totals in MtCO2e/yr. "
+        "GCAM sums four reported Emissions|CO2 series in Mt CO2/yr: "
+        "Energy|Demand|Industry|Non-Metallic Minerals (a cement-energy proxy), "
+        "Industrial Processes|Non-Metallic Minerals|Cement, Energy|Demand|Industry|Iron and Steel, and "
+        "Energy|Demand|Industry|Non-Ferrous Metals|Aluminum. GCAM therefore includes cement energy "
+        "and process CO2, but only the reported energy CO2 series for steel and aluminium. The supplied "
+        "non-metallic-minerals final-energy parent equals its cement child in the checked source rows, "
+        "supporting the cement-energy mapping for this export. Sector GHG totals are not supplied "
+        "by GCAM, so its CO2 inventory is not harmonised to OMNIA's sector GHG. Other industry is excluded "
+        "from both upper-row totals. Sector quantities are summed before computing the response against "
+        "the same model's combined three-sector no-CE reference; sector percentages are not averaged. "
+        "OMNIA sums EUE, EUM and EUW; GCAM selects EU-27 once. "
         "These regional boundaries differ slightly. Panels c,d compare global steel responses, pairing "
         "OMNIA-ENGAGE CE in the EU plus partners (EU+) with OPEN-PROM medium/high scenarios. The global "
         "output scope is distinct from the policy adoption area. OPEN-PROM's intervention definitions and "
@@ -149,10 +158,12 @@ def build_combined_emissions(europe_frame, openprom_frame, year=2050):
         "conventions and process boundaries remain source-defined. Reported negative emissions and "
         "signed increases are retained; carbon capture is not subtracted again. Endpoint markers identify "
         "observed values, including zero, and signed labels are rounded to 0.1%. Missing responses remain "
-        "gaps. Original source quantities, references, variables, regions, units and missing treatments "
-        "are retained in the source data. European decompositions and focused three-sector calculations "
-        "remain unplotted context, identified by PlotRole=context; only industry net rows are plotted in "
-        "the upper row. The lower row excludes OMNIA's EU-only CE cases."
+        "gaps. With the configured zero treatment, blank OMNIA LTT aluminium inputs in all three EU "
+        "regions use provisional zeros; this does not establish physical zero emissions. Original source "
+        "quantities, references, variables, regions, units and missing treatments are retained in the "
+        "source data. European all-industry rows and sector decompositions remain unplotted context, "
+        "identified by PlotRole=context; only three-sector net rows are plotted in the upper row. "
+        "The lower row excludes OMNIA's EU-only CE cases."
     )
     return ReportFigure("fig05_emissions_comparison", "5", title,
                         "How do reported emissions respond within each model and comparison scope?",

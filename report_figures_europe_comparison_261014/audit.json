@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-10-14T10:53:24.935809+00:00",
+  "generated_utc": "2026-10-19T17:52:21.348235+00:00",
   "sources": {
     "OMNIA-ENGAGE": {
       "file": "results_allCE_261008.csv",
       "sha256": "efdf6a60802f574bb315d0aec2968bd8bb67227bdc5dab771fb621e4d90f8c46"
     },
     "GCAM": {
-      "file": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
-      "sha256": "0a19286a48537a20bf1e57780fe0aff5a8547f3481f71d6e119174a1659f78d4"
+      "file": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
+      "sha256": "f1d2511d3ade12201e32673cd97470100da2d8aae2dc73de3f8e1453660ff119"
     }
   },
   "region_mapping_sha256": "53728d27a37fcaac1c5ea9b5a3723a3eadcd1167bbe579f2bb4b084c8b362585",
   "config": {
     "suite": "europe_comparison",
     "input": "results_allCE_261008.csv",
-    "gcam_input": "DIAMOND_GCAMEurope8p7p3_circularity_13102026_standardized.xlsx",
+    "gcam_input": "DIAMOND_8p7p3_industry_19102026_standardized_v2.xlsx",
     "gcam_sheet": "Sheet1",
     "output": "report_figures_europe_comparison_261014",
     "combined_pdf": "report_figures_scope_notes.pdf",
@@ -64,7 +64,7 @@
   "figure_count": 3,
   "source_row_counts": {
     "OMNIA-ENGAGE": 24535,
-    "GCAM": 128322
+    "GCAM": 135558
   },
   "historical_years": {
     "OMNIA-ENGAGE": 2019,

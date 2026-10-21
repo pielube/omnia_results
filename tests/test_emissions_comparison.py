@@ -21,15 +21,16 @@ def _europe_frame():
         reference = (600. if model == "OMNIA-ENGAGE" else 2300.) * (2 if climate == "baseline" else 1)
         for policy, response in zip(("medce_eu", "highce_eu"), responses):
             common = dict(Model=model, Climate=climate, Policy=policy, Year=2050,
-                          Panel="a" if climate == "ndc" else "b", PanelKind="industry",
+                          Panel="a" if climate == "ndc" else "b", PanelKind="three_sector",
                           Role="net", Value=response, Unit="%", SourceFile=f"{model}.raw",
-                          SourceVariables=f"{model} industry GHG", Denominator=reference,
+                          SourceVariables=f"{model} cement + steel + aluminium GHG", Denominator=reference,
                           ReferenceValue=reference, ScenarioValue=reference * (1 + response / 100),
                           DenominatorUnit="MtCO2e/yr", Coverage="EU", ReferenceYear=2050)
             rows.append(common)
             # These context-only rows must not change either bar heights or limits.
             rows.append({**common, "Role": "component", "Value": 90000., "Unit": "percentage points"})
-            rows.append({**common, "PanelKind": "three_sector", "Value": -90000.})
+            rows.append({**common, "PanelKind": "industry", "Value": -90000.,
+                         "SourceVariables": f"{model} all industry GHG"})
     return pd.DataFrame(rows).sample(frac=1., random_state=17).reset_index(drop=True)
 
 
@@ -102,9 +103,9 @@ class EmissionsComparisonFigureTests(unittest.TestCase):
         self.assertEqual(set(plotted.Panel), {"a", "b", "c", "d"})
         self.assertEqual(set(spec.data.Year), {2050})
         self.assertTrue(plotted.PlotUnit.eq("%").all())
-        europe = plotted.loc[plotted.ComparisonRow.eq("European all industry")]
+        europe = plotted.loc[plotted.ComparisonRow.eq("European three sectors")]
         np.testing.assert_allclose(europe.PlotValue, europe.Value)
-        self.assertTrue(europe.PanelKind.eq("industry").all())
+        self.assertTrue(europe.PanelKind.eq("three_sector").all())
         self.assertTrue(europe.Role.eq("net").all())
         self.assertEqual(set(europe.loc[europe.Model.eq("GCAM"), "ReferenceValue"]), {2300, 4600})
         steel = plotted.loc[plotted.ComparisonRow.eq("Global steel")]
@@ -119,21 +120,25 @@ class EmissionsComparisonFigureTests(unittest.TestCase):
         self.assertEqual(len(refs), 4)
         self.assertTrue(refs.ContextOnly.all())
         self.assertTrue(refs.Panel.eq("").all())
-        self.assertTrue(spec.data.loc[spec.data.PanelKind.eq("three_sector"), "ContextOnly"].all())
+        self.assertTrue(spec.data.loc[spec.data.PanelKind.eq("industry"), "ContextOnly"].all())
 
     def test_visible_scope_labels_and_bounds_are_explicit(self):
         spec = self._build()
         with plt.rc_context(COMPARISON_STYLE):
             check_figure_bounds(spec.figure, spec.slug)
         visible = " ".join(text.get_text() for text in spec.figure.texts)
-        for phrase in ("Europe", "all-industry GHG", "EU-only CE", "OPEN-PROM global", "CE in EU+",
+        for phrase in ("Europe", "cement, steel + aluminium emissions", "EU-only CE", "OPEN-PROM global", "CE in EU+",
                        "intervention area unspecified", "energy-related CO", "boundaries differ",
-                       "scales match within rows"):
+                       "scales match within rows", "OMNIA sector GHG; GCAM sector CO₂",
+                       "OMNIA LTT aluminium blanks use provisional zeros"):
             self.assertIn(phrase, visible)
         self.assertIn("carbon capture is not subtracted again", spec.caption)
         self.assertIn("do not establish policy equivalence", spec.caption)
         self.assertIn("independent between rows", spec.caption)
         self.assertIn("no steel-specific process-emissions or GHG total", spec.caption)
+        self.assertIn("a cement-energy proxy", spec.caption)
+        self.assertIn("sector percentages are not averaged", spec.caption)
+        self.assertIn("only three-sector net rows are plotted", spec.caption)
 
 
 if __name__ == "__main__":

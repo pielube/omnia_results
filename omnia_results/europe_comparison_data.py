@@ -65,7 +65,7 @@ class EuropeComparisonData:
             "The OMNIA EU regions include Greenland, Faroe Islands, Andorra, Monaco and San Marino in the supplied country mapping; these cannot be removed from regional data.",
             "GCAM source LTT scenarios are paired with OMNIA baseline (NDC+LTT); the scenario names alone do not establish identical policy assumptions.",
             "Historical bars use OMNIA 2019 and GCAM 2021 observations separately; no interpolation or historical alignment is imposed.",
-            "GCAM reports cement, steel and aluminium output without exported clinker or primary/secondary route splits. Aluminium route coverage remains unconfirmed and is not assumed equivalent to OMNIA primary plus secondary.",
+            "The total-output comparison selects reported GCAM cement, steel and aluminium parents. Aluminium route coverage remains unconfirmed and is not assumed equivalent to OMNIA primary plus secondary; explicit steel children are selected only by the separate route comparison.",
             "GCAM aluminium energy includes an Unallocated residual between the reported sector total and its reported carrier parents; the residual is not assigned to an unreported carrier.",
             "GCAM aluminium's alumina-refining coverage is unconfirmed. The energy residual has no confirmed process attribution, and cross-model energy/output quotients are apparent ratios rather than harmonised efficiency measures.",
             "Industrial GHG boundaries differ: OMNIA reports Emissions|GHG|Industry; GCAM combines industry energy-demand Kyoto gases with industrial-process Kyoto gases. GCAM has no comparable cement/steel/aluminium GHG decomposition.",

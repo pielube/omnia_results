@@ -10,12 +10,51 @@ from .metrics import SECTORS
 
 
 INDUSTRY_METRIC = "Industrial GHG response"
-THREE_SECTOR_METRIC = "Three-sector GHG response"
+THREE_SECTOR_METRIC = "Three-sector emissions response"
 ALUMINIUM_GHG = "Emissions|GHG|Industry|Non-Ferrous Metals|Aluminum"
+GCAM_SECTOR_CO2 = {
+    "Cement": ["Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals",
+               "Emissions|CO2|Industrial Processes|Non-Metallic Minerals|Cement"],
+    "Iron and steel": ["Emissions|CO2|Energy|Demand|Industry|Iron and Steel"],
+    "Aluminium": ["Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals|Aluminum"],
+}
 
 
 class RelativeEmissionsDataMixin:
     """Extend EuropeRelativeData using its raw-source extraction and row schema."""
+
+    @staticmethod
+    def _sector_emissions_definitions(model):
+        if model == MODELS[0]:
+            return {sector.label: ([f"Emissions|GHG|Industry|{sector.path}"], [1])
+                    for sector in SECTORS}, "MtCO2e/yr"
+        return {name: (variables, [1] * len(variables))
+                for name, variables in GCAM_SECTOR_CO2.items()}, "Mt CO2/yr"
+
+    @property
+    def emissions_scope_checks(self):
+        """Check the cement-energy assignment against the supplied physical scopes."""
+        key = "emissions_scope_checks"
+        if key not in self._frames:
+            rows = []
+            parent = "Final Energy|Industry|Non-Metallic Minerals"
+            child = parent + "|Cement"
+            for climate in CLIMATES:
+                for policy in POLICIES:
+                    scenario = source_scenario("GCAM", climate, policy)
+                    total = self.source_data._series("GCAM", scenario, parent, "EJ/yr")
+                    cement = self.source_data._series("GCAM", scenario, child, "EJ/yr")
+                    for year in total.index:
+                        agrees = bool(np.isfinite(total.loc[year]) and np.isfinite(cement.loc[year])
+                                      and np.isclose(total.loc[year], cement.loc[year], rtol=1e-10, atol=1e-12))
+                        if not agrees:
+                            raise ValueError(f"GCAM cement energy scope differs from non-metallic minerals: {scenario} {year}")
+                        rows.append(dict(Model="GCAM", Scenario=scenario, Region="EU-27", Year=year,
+                                         ParentVariable=parent, CementVariable=child, Unit="EJ/yr",
+                                         ParentValue=total.loc[year], CementValue=cement.loc[year],
+                                         Difference=total.loc[year] - cement.loc[year], Matches=agrees))
+            self._frames[key] = pd.DataFrame(rows)
+        return self._frames[key].copy()
 
     def _emissions_missingness(self, model, scenario, reference_scenario, definition, total_definition, unit):
         """Record every missing input relevant to the component and its denominator."""
@@ -52,11 +91,14 @@ class RelativeEmissionsDataMixin:
                      "Industry energy-demand Kyoto gases plus industrial-process Kyoto gases")
             coverage = "Reported all industry; model emissions boundaries differ"
         else:
-            components = {sector.label: ([f"Emissions|GHG|Industry|{sector.path}"], [1]) for sector in SECTORS}
-            total_definition = ([f"Emissions|GHG|Industry|{sector.path}" for sector in SECTORS], [1, 1, 1])
-            source_unit, metric, sector, offset = "MtCO2e/yr", THREE_SECTOR_METRIC, "Three material sectors", 2
-            scope = "Sum of reported cement, iron and steel, and aluminium GHG; excludes other industry"
-            coverage = "OMNIA-ENGAGE material-sector GHG only; no matched GCAM sector GHG decomposition"
+            components, source_unit = self._sector_emissions_definitions(model)
+            total_variables = [variable for variables, _ in components.values() for variable in variables]
+            total_definition = (total_variables, [1] * len(total_variables))
+            metric, sector, offset = THREE_SECTOR_METRIC, "Three material sectors", 0
+            scope = "Combined cement, iron and steel, and aluminium; excludes other industry"
+            coverage = ("OMNIA reported sector GHG; GCAM comparison uses CO2, not harmonised GHG"
+                        if model == MODELS[0] else
+                        "GCAM reported CO2: cement energy and processes, steel energy, aluminium energy; OMNIA comparison uses GHG")
 
         scenario = source_scenario(model, climate, policy)
         reference_scenario = source_scenario(model, climate, "noce")
@@ -97,29 +139,33 @@ class RelativeEmissionsDataMixin:
     def emissions_response(self):
         if "emissions" in self._frames:
             return self._frames["emissions"].copy()
+        self.emissions_scope_checks
         rows = []
         for model in MODELS:
             for climate in CLIMATES:
                 for policy in POLICIES[1:]:
                     rows.extend(self._emissions_case(model, climate, policy, "industry"))
-                    if model == MODELS[0]:
-                        rows.extend(self._emissions_case(model, climate, policy, "three_sector"))
+                    rows.extend(self._emissions_case(model, climate, policy, "three_sector"))
         self._frames["emissions"] = pd.DataFrame(rows)
         return self._frames["emissions"].copy()
 
     def emissions_availability(self):
-        """Inventory GCAM emissions without substituting narrower CO2 variables."""
+        """Inventory the separate industry-GHG context and plotted sector-CO2 inputs."""
         raw = self.source_data.raw["GCAM"]
         selected = raw.loc[raw.Variable.str.startswith("Emissions|")]
         industry = {"Emissions|Kyoto Gases|Energy|Demand|Industry", "Emissions|Kyoto Gases|Industrial Processes"}
+        sectors = {variable for variables in GCAM_SECTOR_CO2.values() for variable in variables}
         explanations = {
+            GCAM_SECTOR_CO2["Cement"][0]: "Selected cement energy CO2: exported non-metallic-minerals energy category; its final-energy parent equals the cement child in this workbook.",
+            GCAM_SECTOR_CO2["Cement"][1]: "Selected cement process CO2; added once to cement energy CO2, without adding its overlapping process parent.",
+            GCAM_SECTOR_CO2["Iron and steel"][0]: "Selected reported iron-and-steel energy CO2; no additional steel process-CO2 child is exported.",
+            GCAM_SECTOR_CO2["Aluminium"][0]: "Selected aluminium-specific reported energy CO2; overlapping non-ferrous-metals parent is excluded.",
             "Emissions|CO2|Industrial Processes|Cement": "Cement process CO2 only; excludes cement energy emissions and non-CO2 GHG. Not a matched cement-sector GHG total.",
-            "Emissions|CO2|Energy|Demand|Industry|Iron and Steel": "Iron and steel energy-demand CO2 only; not a reported all-GHG sector total.",
             "Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals": "Broader non-ferrous-metals energy-demand CO2; neither aluminium-specific nor an all-GHG sector total.",
         }
         rows = []
         for (variable, unit), values in selected.groupby(["Variable", "Unit"], sort=True):
-            explanation = ("Used as a component of the reported industry GHG definition; no matched material-sector GHG decomposition."
+            explanation = ("Used only in unplotted all-industry GHG context."
                            if variable in industry else explanations.get(variable,
                            "Not mapped to a comparable cement, iron-and-steel or aluminium GHG sector total."))
             rows.append(dict(Model="GCAM", Variable=variable, Unit=unit,
@@ -128,6 +174,16 @@ class RelativeEmissionsDataMixin:
                              SourceRegions=json.dumps(sorted(values.Region.unique())),
                              SourceScenarios=json.dumps(sorted(values.Scenario.unique())),
                              EU27Available=bool(values.Region.eq("EU-27").any()),
-                             SelectedForIndustry=variable in industry, UsedInThreeSector=False,
+                             SelectedForIndustry=variable in industry, UsedInThreeSector=variable in sectors,
                              ComparableSectorGHG=False, Explanation=explanation))
+        return pd.DataFrame(rows)
+
+    def sector_emissions_mapping(self):
+        rows = []
+        for model in MODELS:
+            components, unit = self._sector_emissions_definitions(model)
+            for name, (variables, coefficients) in components.items():
+                rows.append(dict(Model=model, Metric=THREE_SECTOR_METRIC, Sector=name,
+                                 SourceVariables=json.dumps(variables), SourceCoefficients=json.dumps(coefficients),
+                                 SourceUnit=unit, FigureUnit="%", Definition="Component of the combined three-sector response; model gas/process scopes differ"))
         return pd.DataFrame(rows)
